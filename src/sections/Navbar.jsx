@@ -1,16 +1,20 @@
 import { useState } from "react";
+import { navLinks} from "../constants/index.js";
 
-const NavItem = () => {
+const NavItems = () => {
     return (
         <ul className="nav-ul">
-            {["Home", "About", "Projects", "Contact"].map((item) => (
-                <li key={item} className="nav-li">
-                    <a href="/" className="nav-li_a">{item}</a>
+            {navLinks.map(({id, href, name}) => (
+                <li key={id} className="nav-li">
+                    <a href={href} className="nav-li_a"
+                       onClick={() => {}}>
+                                            {name}
+                    </a>
                 </li>
             ))}
         </ul>
-    );
-};
+    )
+}
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(true);
@@ -31,9 +35,15 @@ const Navbar = () => {
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className="w-6 h-6"/>
                     </button>
                     <nav className="sm:flex hidden">
-                        <NavItem/>
+                        <NavItems/>
                     </nav>
                 </div>
+            </div>
+
+            <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+                <nav className="p-5">
+                    <NavItems/>
+                </nav>
             </div>
         </header>
     );
