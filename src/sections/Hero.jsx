@@ -1,14 +1,16 @@
-import React, {Suspense} from 'react'
+import {Suspense} from 'react'
 import {Canvas} from "@react-three/fiber";
 import {PerspectiveCamera} from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader.jsx";
-import HackerRoom from "../components/HackerRoom.jsx";
+import {HackerRoom} from "../components/HackerRoom.jsx";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
 import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
 import Cube from "../components/Cube.jsx";
 import Rings from "../components/Rings.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
@@ -28,11 +30,13 @@ const Hero = () => {
                     <Suspense fallback={<CanvasLoader/>}>
                     <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
 
-                    <HackerRoom
-                        position={sizes.deskPosition}
-                        scale={sizes.deskScale}
-                        rotation={[0.5, -Math.PI, 0]}
-                    />
+                        <HeroCamera isMobile={isMobile}>
+                            <HackerRoom
+                                position={sizes.deskPosition}
+                                scale={sizes.deskScale}
+                                rotation={[0, -Math.PI, 0]}
+                            />
+                        </HeroCamera>
                         <group>
                             <Target position={sizes.targetPosition}/>
                             <ReactLogo position={sizes.reactLogoPosition}/>
@@ -43,6 +47,11 @@ const Hero = () => {
                         <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
                 </Canvas>
+            </div>
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                <a href="#contact" className="w-fit">
+                    <Button name="Let's Work together" isBeam cotainerClass="sm:w-fit w-full sm:min-w-96"/>
+                </a>
             </div>
         </section>
     )
