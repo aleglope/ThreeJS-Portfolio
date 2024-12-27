@@ -86,7 +86,7 @@ const CustomGlobe = () => {
         altitude: 0.25,
         text: "I'm here!",
         color: "white",
-        size: 1.5,
+        size: 5,
     };
 
     return (
