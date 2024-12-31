@@ -5,18 +5,20 @@ import {useState} from "react";
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
 
-    const handleCopy = () => {
-        navigator.clipboard.writeText('agonzlopez.11@gmail.com');
-
-        setHasCopied(true);
-
-        setTimeout(() => {
-            setHasCopied(false);
-        }, 2000);
-    }
+    const handleCopy = async () => {
+        try {
+            await navigator.clipboard.writeText('agonzlopez.11@gmail.com');
+            setHasCopied(true);
+            setTimeout(() => {
+                setHasCopied(false);
+            }, 2000);
+        } catch (error) {
+            console.error('Error al copiar al portapapeles:', error);
+        }
+    };
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="about">
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 {/* Primer elemento del grid */}
                 <div className="col-span-1 xl:row-span-3">
@@ -84,7 +86,7 @@ const About = () => {
                     </div>
                 <div className="xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
-                        <img src="assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] sm:h-[276] h-fit object-cover sm:object-top" />
+                        <img src="/assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] sm:h-[276] h-fit object-cover sm:object-top" />
                         <div className="space-y-2">
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
