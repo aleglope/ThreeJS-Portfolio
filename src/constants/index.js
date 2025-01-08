@@ -54,12 +54,12 @@ export const myProjects = [
       border: "0.2px solid #36201D",
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
-    spotlight: "/assets/spotlight-galicia.png",
+    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
         name: "Python",
-        path: "/assets/python.svg",
+        path: "/assets/Python.svg",
       },
       {
         id: 2,
@@ -77,26 +77,36 @@ export const myProjects = [
     texture: "/textures/project/coworking.mp4",
     logo: "/assets/project-logo-coworking.png",
     logoStyle: {
-      backgroundColor: "#13202F",
-      border: "0.2px solid #17293E",
-      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
-    spotlight: "/assets/spotlight-coworking.png",
+    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
-        name: "Angular",
-        path: "/assets/angular.svg",
-      },
-      {
-        id: 2,
         name: "Ontimize",
         path: "/assets/ontimize.svg",
       },
       {
+        id: 2,
+        name: "Angular",
+        path: "/assets/angular.svg",
+      },
+      {
         id: 3,
+        name: "Java",
+        path: "/assets/java.svg",
+      },
+      {
+        id: 4,
         name: "Spring Boot",
-        path: "/assets/spring.svg",
+        path: "/assets/springboot.svg",
+      },
+      {
+        id: 5,
+        name: "PostgreSQL",
+        path: "/assets/Postgresql.svg",
       },
     ],
   },
@@ -107,13 +117,13 @@ export const myProjects = [
       "Built with React Three Fiber and TailwindCSS, this project demonstrates Alejandro’s ability to create interactive and engaging web experiences.",
     href: "#",
     texture: "/textures/project/groove-in-club.mp4",
-    logo: "/assets/project-logo-groove.png",
+    logo: "/assets/Logo.jpg",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
       boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
-    spotlight: "/assets/spotlight-groove.png",
+    spotlight: "/assets/spotlight2.png",
     tags: [
       {
         id: 1,
@@ -122,13 +132,23 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "React Three Fiber",
-        path: "/assets/react-three-fiber.svg",
+        name: "Three.js",
+        path: "/assets/threejs.svg",
       },
       {
         id: 3,
         name: "TailwindCSS",
         path: "/assets/tailwindcss.png",
+      },
+      {
+        id: 4,
+        name: "Next.js",
+        path: "/assets/nextjs.svg",
+      },
+      {
+        id: 5,
+        name: "Typescript.js",
+        path: "/assets/typescript.png",
       },
     ],
   },
@@ -177,17 +197,7 @@ export const myProjects = [
       {
         id: 1,
         name: "Python",
-        path: "/assets/python.svg",
-      },
-      {
-        id: 2,
-        name: "Folium",
-        path: "/assets/folium.svg",
-      },
-      {
-        id: 3,
-        name: "GDAL",
-        path: "/assets/gdal.svg",
+        path: "/assets/Python.svg",
       },
     ],
   },
@@ -204,7 +214,7 @@ export const myProjects = [
       border: "0.2px solid #2A3C4D",
       boxShadow: "0px 0px 60px 0px #3D5A6C4D",
     },
-    spotlight: "/assets/spotlight-real-estate.png",
+    spotlight: "/assets/spotlight2.png",
     tags: [
       {
         id: 1,
@@ -214,12 +224,12 @@ export const myProjects = [
       {
         id: 2,
         name: "Java Spring Boot",
-        path: "/assets/spring-boot.svg",
+        path: "/assets/springboot.svg",
       },
       {
         id: 3,
         name: "MySQL",
-        path: "/assets/mysql.svg",
+        path: "/assets/Mysql.svg",
       },
     ],
   },
