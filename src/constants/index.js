@@ -25,7 +25,7 @@ export const clientReviews = [
   {
     id: 1,
     name: "Imatia",
-    position: "Founder",
+    position: "senior developer at Imatia",
     img: "assets/review2.png",
     review:
       "Working with Alejandro was an excellent experience. His expertise in Angular and Ontimize helped us deliver a robust and user-friendly application.",
@@ -34,7 +34,7 @@ export const clientReviews = [
     id: 2,
     name: "Groove In Club",
     position: "Event Manager at Groove In Club",
-    img: "assets/review-groove.png",
+    img: "assets/djbrenlla.png",
     review:
       "Alejandro developed a spectacular website for our DJ production house, using 3D technology to highlight our events and artists. His innovative approach and attention to detail took our online presence to a new level. Highly recommended!",
   },
@@ -48,23 +48,20 @@ export const myProjects = [
       "Developed using Python and Tkinter, this project highlights Alejandro’s passion for education and technology.",
     href: "#",
     texture: "/textures/project/galicia-map.mp4",
-    logo: "/assets/project-logo-galicia.png",
+    logo: "/assets/galicia.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#60f5a1",
+      background:
+        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(208, 213, 221, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
     },
-    spotlight: "/assets/spotlight1.png",
+    spotlight: "/assets/spotlight3.png",
     tags: [
       {
         id: 1,
         name: "Python",
         path: "/assets/Python.svg",
-      },
-      {
-        id: 2,
-        name: "Tkinter",
-        path: "/assets/tkinter.svg",
       },
     ],
   },
@@ -75,7 +72,7 @@ export const myProjects = [
       "Built with Angular, Ontimize Web, and Spring Boot, it features advanced filtering and CRUD operations.",
     href: "#",
     texture: "/textures/project/coworking.mp4",
-    logo: "/assets/project-logo-coworking.png",
+    logo: "/assets/sidenav-opened.png",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -115,9 +112,9 @@ export const myProjects = [
     desc: "An immersive 3D website for a DJ production house, showcasing their events, artists, and brand identity in a visually stunning format.",
     subdesc:
       "Built with React Three Fiber and TailwindCSS, this project demonstrates Alejandro’s ability to create interactive and engaging web experiences.",
-    href: "#",
+    href: "https://www.grooveinclub.es/",
     texture: "/textures/project/groove-in-club.mp4",
-    logo: "/assets/Logo.jpg",
+    logo: "/assets/LOGO GROOVE.svg",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
@@ -153,46 +150,19 @@ export const myProjects = [
     ],
   },
   {
-    title: "AWS Analytics Lab",
-    desc: "A data analytics lab to process and visualize data efficiently using AWS services like CloudFormation and S3.",
+    title: "GeoJSON Conversion and Mapping Tool",
+    desc: "A tool designed to convert GML files from the Spanish Cadastre to GeoJSON and visualize them on an interactive map using Folium.",
     subdesc:
-      "Demonstrates Alejandro’s skills in cloud computing and data analysis using state-of-the-art AWS tools.",
-    href: "#",
-    texture: "/textures/project/aws-lab.mp4",
-    logo: "/assets/project-logo-aws.png",
-    logoStyle: {
-      backgroundColor: "#0E1F38",
-      border: "0.2px solid #0E2D58",
-      boxShadow: "0px 0px 60px 0px #2F67B64D",
-    },
-    spotlight: "/assets/spotlight-aws.png",
-    tags: [
-      {
-        id: 1,
-        name: "AWS",
-        path: "/assets/aws.svg",
-      },
-      {
-        id: 2,
-        name: "CloudFormation",
-        path: "/assets/cloudformation.svg",
-      },
-    ],
-  },
-  {
-    title: "Herramienta de Conversión y Mapeo de GeoJSON",
-    desc: "Una herramienta diseñada para convertir archivos GML del Catastro Español a GeoJSON y visualizarlos en un mapa interactivo utilizando Folium.",
-    subdesc:
-      "Este proyecto demuestra habilidades avanzadas en procesamiento de datos espaciales con Python, incluyendo la transformación de coordenadas y la creación de mapas interactivos para análisis geoespacial.",
-    href: "#",
+      "This project showcases advanced skills in spatial data processing with Python, including coordinate transformation and the creation of interactive maps for geospatial analysis.",
+    href: "/assets/mapa_con_geojson.html",
     texture: "/textures/project/geojson-tool.mp4",
-    logo: "/assets/project-logo-geojson.png",
+    logo: "/assets/map.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
       boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
-    spotlight: "/assets/spotlight-geojson.png",
+    spotlight: "/assets/spotlight4.png",
     tags: [
       {
         id: 1,
@@ -202,13 +172,13 @@ export const myProjects = [
     ],
   },
   {
-    title: "Aplicación de Gestión Inmobiliaria",
-    desc: "Una solución integral para gestionar operaciones inmobiliarias, construida con Angular, Java Spring Boot y MySQL.",
+    title: "Real Estate Management Application",
+    desc: "An all-in-one solution for managing real estate operations, built with Angular, Java Spring Boot, and MySQL.",
     subdesc:
-      "Este proyecto combina un potente backend en Spring Boot con una interfaz intuitiva en Angular y una base de datos MySQL para garantizar la eficiencia y confiabilidad en la gestión de datos inmobiliarios.",
+      "This project combines a backend in Spring Boot with an intuitive Angular interface and a MySQL database for real estate data management",
     href: "#",
     texture: "/textures/project/real-estate.mp4",
-    logo: "/assets/project-logo-real-estate.png",
+    logo: "/assets/inmobiliaria.png",
     logoStyle: {
       backgroundColor: "#1A2B3C",
       border: "0.2px solid #2A3C4D",
@@ -273,32 +243,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Imatia Bootcamp",
+    name: "Imatia Bootcamp - Work Wander",
     pos: "Full-Stack Developer Trainee",
     duration: "2024 - Present",
     title:
       "Currently participating in an intensive bootcamp at Imatia, focusing on full-stack development with Angular, Ontimize framework, and Spring Boot. Learning enterprise-level application development and best practices.",
-    icon: "/assets/imatia.svg",
+    icon: "/assets/sidenav-opened.png",
     animation: "victory",
   },
   {
     id: 2,
     name: "Groove In Club",
-    pos: "Frontend Developer",
+    pos: "Fulstack Developer",
     duration: "2024",
     title:
       "Designed and developed an immersive website for Groove In Club using React Three Fiber to create interactive 3D experiences highlighting the producer's events and artists. The website significantly improved user engagement and brand visibility.",
-    icon: "/assets/figma.svg",
+    icon: "/assets/LOGO GROOVE.svg",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Real Estate Tech Solutions",
-    pos: "Full-Stack Developer",
+    name: "Ipartek Bootcamp - Real Estate Solutions",
+    pos: "Full-Stack Developer Trainee",
     duration: "2024",
     title:
       "Contributed to the development of a real estate management application using Angular for frontend, Java Spring Boot for backend, and MySQL for database. Focused on scalability, security, and optimized user experience.",
-    icon: "/assets/real-estate.svg",
-    animation: "idle",
+    icon: "/assets/inmobiliaria.png",
+    animation: "salute",
   },
 ];
