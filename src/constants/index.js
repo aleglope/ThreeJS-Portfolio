@@ -42,12 +42,72 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+    title: "Turtle Race Game",
+    desc: "A fun Python-based game using the turtle module where players bet on turtles of specific colors and compete to win coins.",
+    subdesc:
+      "This project showcases Alejandro’s skills in Python and game development using the standard library, emphasizing logic and user interaction.",
+    href: "#",
+    texture: "/textures/project/project1.mp4",
+    logo: "/assets/turtle.png",
+    logoStyle: {
+      backgroundColor: "#5C4C00",
+      background:
+        "linear-gradient(0deg, rgba(92, 76, 0, 0.5), rgba(92, 76, 0, 0.5)), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(92, 76, 0, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(92, 76, 0, 0.5)",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/Python.svg",
+      },
+    ],
+    sourceCode: "https://github.com/aleglope/Turtle-Race",
+  },
+  {
+    title: "Billboard to Spotify Playlist",
+    desc: "A Python-based program to create Spotify playlists from Billboard Hot 100 songs for a specific date. Ideal for music enthusiasts and developers looking to integrate APIs.",
+    subdesc:
+      "Developed using Python, this project demonstrates proficiency in web scraping, API integration, and automation.",
+    href: "#",
+    texture: "/textures/project/project1.mp4",
+    logo: "/assets/spotify.png",
+    logoStyle: {
+      backgroundColor: "#1DB954",
+      background:
+        "linear-gradient(0deg, #1DB95450, #1DB95450), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(208, 213, 221, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(29, 185, 84, 0.3)",
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/Python.svg",
+      },
+      {
+        id: 2,
+        name: "Web Scraping",
+        path: "/assets/beautifulsoup.png",
+      },
+      {
+        id: 3,
+        name: "Requests",
+        path: "/assets/request.png",
+      },
+    ],
+    sourceCode: "https://github.com/aleglope/Song-Search-Engine",
+  },
+  {
     title: "Galicia Map Quiz",
     desc: "An interactive map-based game to test knowledge of Galicia’s comarcas. Players can guess locations and improve their geographical skills.",
     subdesc:
       "Developed using Python and Tkinter, this project highlights Alejandro’s passion for education and technology.",
     href: "#",
-    texture: "/textures/project/galicia-map.mp4",
+    texture: "/textures/project/project1.mp4",
     logo: "/assets/galicia.png",
     logoStyle: {
       backgroundColor: "#60f5a1",
@@ -64,6 +124,7 @@ export const myProjects = [
         path: "/assets/Python.svg",
       },
     ],
+    sourceCode: "https://github.com/aleglope/Game-of-Regions",
   },
   {
     title: "Coworking Manager",
@@ -71,7 +132,7 @@ export const myProjects = [
     subdesc:
       "Built with Angular, Ontimize Web, and Spring Boot, it features advanced filtering and CRUD operations.",
     href: "#",
-    texture: "/textures/project/coworking.mp4",
+    texture: "/textures/project/project1.mp4",
     logo: "/assets/sidenav-opened.png",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -106,6 +167,7 @@ export const myProjects = [
         path: "/assets/Postgresql.svg",
       },
     ],
+    sourceCode: "https://github.com/CampusDual/cd2024bfs5g1",
   },
   {
     title: "Groove In Club Website",
@@ -113,7 +175,7 @@ export const myProjects = [
     subdesc:
       "Built with React Three Fiber and TailwindCSS, this project demonstrates Alejandro’s ability to create interactive and engaging web experiences.",
     href: "https://www.grooveinclub.es/",
-    texture: "/textures/project/groove-in-club.mp4",
+    texture: "/textures/project/project1.mp4",
     logo: "/assets/LOGO GROOVE.svg",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -148,6 +210,7 @@ export const myProjects = [
         path: "/assets/typescript.png",
       },
     ],
+    sourceCode: "#", // Proyecto privado
   },
   {
     title: "GeoJSON Conversion and Mapping Tool",
@@ -155,7 +218,7 @@ export const myProjects = [
     subdesc:
       "This project showcases advanced skills in spatial data processing with Python, including coordinate transformation and the creation of interactive maps for geospatial analysis.",
     href: "/assets/mapa_con_geojson.html",
-    texture: "/textures/project/geojson-tool.mp4",
+    texture: "/textures/project/project1.mp4",
     logo: "/assets/map.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -170,6 +233,7 @@ export const myProjects = [
         path: "/assets/Python.svg",
       },
     ],
+    sourceCode: "https://github.com/aleglope/Land-Parcel-Mapping",
   },
   {
     title: "Real Estate Management Application",
@@ -177,7 +241,7 @@ export const myProjects = [
     subdesc:
       "This project combines a backend in Spring Boot with an intuitive Angular interface and a MySQL database for real estate data management",
     href: "#",
-    texture: "/textures/project/real-estate.mp4",
+    texture: "/textures/project/project1.mp4",
     logo: "/assets/inmobiliaria.png",
     logoStyle: {
       backgroundColor: "#1A2B3C",
@@ -202,6 +266,30 @@ export const myProjects = [
         path: "/assets/Mysql.svg",
       },
     ],
+    sourceCode: "https://github.com/aleglope/Real-Estate-Backend",
+  },
+  {
+    title: "Restaurant Frontend in React",
+    desc: "A modern and attractive frontend application designed for a restaurant. The interface enhances user experience with well-defined sections such as the restaurant introduction, special menu, chef, gallery, and more.",
+    subdesc:
+      "This project leverages React components to ensure a clean, modular architecture, providing an efficient and scalable solution for frontend development.",
+    href: "https://restaurant-phi-six.vercel.app/",
+    texture: "/textures/project/project1.mp4",
+    logo: "/assets/restaurant.png",
+    logoStyle: {
+      backgroundColor: "#1C1A43",
+      border: "0.2px solid #252262",
+      boxShadow: "0px 0px 60px 0px #635BFF4D",
+    },
+    spotlight: "/assets/spotlight5.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/react.svg",
+      },
+    ],
+    sourceCode: "https://github.com/aleglope/Restaurant-Menu",
   },
 ];
 

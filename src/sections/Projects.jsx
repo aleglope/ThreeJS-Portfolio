@@ -9,6 +9,8 @@ const projectCount = myProjects.length;
 
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [hoveredTech, setHoveredTech] = useState(null);
 
   const currentProject = myProjects[selectedProjectIndex];
 
@@ -59,21 +61,72 @@ const Projects = () => {
           <div className="flex items-center justify-between flex-wrap gap-5">
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag, index) => (
-                <div key={index} className="tech-logo">
+                <div
+                  key={index}
+                  className="tech-logo relative"
+                  onMouseEnter={() => setHoveredTech(tag.name)}
+                  onMouseLeave={() => setHoveredTech(null)}
+                >
                   <img src={tag.path} alt={tag.name} />
+                  {hoveredTech === tag.name && (
+                    <div className="absolute top-12 left-1/2 -translate-x-1/2 bg-black-200/30 backdrop-blur-sm text-white-600/90 text-xs px-3 py-1.5 rounded-full transition-all duration-300 ease-in-out border border-white-600/10 whitespace-nowrap">
+                      {tag.name}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
 
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            <div className="flex flex-col gap-2">
+              <a
+                className="flex items-center gap-2 cursor-pointer text-white-600"
+                href={currentProject.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>Check Live Site</p>
+                <img
+                  src="/assets/arrow-up.png"
+                  alt="arrow"
+                  className="w-3 h-3"
+                />
+              </a>
+              {currentProject.sourceCode === "#" ? (
+                <div className="relative">
+                  <button
+                    className="flex items-center gap-2 cursor-pointer text-white-600"
+                    onMouseEnter={() => setShowTooltip(true)}
+                    onMouseLeave={() => setShowTooltip(false)}
+                  >
+                    <p>View Source Code</p>
+                    <img
+                      src="/assets/arrow-up.png"
+                      alt="github"
+                      className="w-3 h-3"
+                    />
+                  </button>
+                  {showTooltip && (
+                    <div className="absolute top-8 left-0 bg-black-200/30 backdrop-blur-sm text-white-600/90 text-xs px-3 py-1.5 rounded-full transition-all duration-300 ease-in-out border border-white-600/10">
+                      Este proyecto es privado
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <a
+                  className="flex items-center gap-2 cursor-pointer text-white-600"
+                  href={currentProject.sourceCode}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p>View Source Code</p>
+                  <img
+                    src="/assets/arrow-up.png"
+                    alt="github"
+                    className="w-3 h-3"
+                  />
+                </a>
+              )}
+            </div>
           </div>
           <div className="flex justify-between items-center mt-7">
             <button
