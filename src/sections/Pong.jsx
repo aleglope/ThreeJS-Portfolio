@@ -170,6 +170,34 @@ if game:
           className="border border-gray-700 rounded-lg shadow-lg shadow-purple-500/20"
           tabIndex="0"
         />
+
+        <div className="mt-12 max-w-2xl text-center space-y-4">
+          <h3 className="text-2xl font-semibold text-white mb-4">
+            Demostración de Integración Python-Web
+          </h3>
+          <p className="text-gray-400">
+            Este juego de Pong es una demostración técnica de la integración
+            entre Python y desarrollo web moderno. Originalmente desarrollado
+            como una aplicación de escritorio en Python puro, ha sido adaptado
+            para ejecutarse directamente en el navegador utilizando Pyodide.
+          </p>
+          <p className="text-gray-400">
+            La conversión mantuvo aproximadamente el 95% del código Python
+            original, requiriendo solo modificaciones mínimas para adaptarse al
+            entorno web. Esta implementación demuestra:
+          </p>
+          <ul className="text-gray-400 list-none space-y-2">
+            <li>• Ejecución de código Python nativo en el navegador</li>
+            <li>• Integración fluida entre React y Python</li>
+            <li>• Manejo de eventos del DOM desde Python</li>
+            <li>• Renderizado en canvas HTML5 desde Python</li>
+            <li>• Gestión de estado y física en tiempo real</li>
+          </ul>
+          <p className="text-purple-400 mt-4">
+            Una muestra práctica de cómo el código Python puede ser reutilizado
+            en aplicaciones web sin sacrificar la funcionalidad o rendimiento.
+          </p>
+        </div>
       </div>
     </section>
   );
