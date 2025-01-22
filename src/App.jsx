@@ -6,19 +6,21 @@ import Clients from "./sections/Clients.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
 import WorkExperience from "./sections/Experience.jsx";
+import Pong from "./sections/Pong.jsx";
 
 const App = () => {
-    return (
-        <main className="max-w-7xl mx-auto">
-            <Navbar/>
-            <Hero/>
-            <About/>
-            <Projects/>
-            <Clients/>
-            <Contact/>
-            <WorkExperience/>
-            <Footer/>
-        </main>
-    )
-}
-export default App
+  return (
+    <main className="max-w-7xl mx-auto">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Clients />
+      <Contact />
+      <WorkExperience />
+      <Pong />
+      <Footer />
+    </main>
+  );
+};
+export default App;
