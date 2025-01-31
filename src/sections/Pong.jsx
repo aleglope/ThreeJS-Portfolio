@@ -149,55 +149,65 @@ if game:
           Usa las teclas W/S para mover tu pala.
         </p>
 
-        {!gameStarted && (
-          <button
-            onClick={handleStartGame}
-            className="px-8 py-3 mb-8 bg-gradient-to-r from-purple-500 to-blue-500 
-                     text-white font-bold rounded-lg shadow-lg 
-                     hover:from-purple-600 hover:to-blue-600 
-                     transform hover:scale-105 transition-all
-                     animate-pulse"
-          >
-            ¡COMENZAR JUEGO!
-          </button>
-        )}
-
-        <canvas
-          id="pongCanvas"
-          ref={canvasRef}
-          width={800}
-          height={600}
-          className="border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 rounded-lg 
+        <div className="relative">
+          <canvas
+            id="pongCanvas"
+            ref={canvasRef}
+            width={800}
+            height={600}
+            className="border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 rounded-lg 
                      shadow-lg shadow-purple-500/20 p-[2px]"
-          tabIndex="0"
-        />
+            tabIndex="0"
+          />
 
-        <div className="mt-12 max-w-2xl text-center space-y-4">
-          <h3 className="text-2xl font-semibold text-white mb-4">
-            Demostración de Integración Python-Web
-          </h3>
-          <p className="text-gray-400">
-            Este juego de Pong es una demostración técnica de la integración
-            entre Python y desarrollo web moderno. Originalmente desarrollado
-            como una aplicación de escritorio en Python puro, ha sido adaptado
-            para ejecutarse directamente en el navegador utilizando Pyodide.
-          </p>
-          <p className="text-gray-400">
-            La conversión mantuvo aproximadamente el 95% del código Python
-            original, requiriendo solo modificaciones mínimas para adaptarse al
-            entorno web. Esta implementación demuestra:
-          </p>
-          <ul className="text-gray-400 list-none space-y-2">
-            <li>• Ejecución de código Python nativo en el navegador</li>
-            <li>• Integración fluida entre React y Python</li>
-            <li>• Manejo de eventos del DOM desde Python</li>
-            <li>• Renderizado en canvas HTML5 desde Python</li>
-            <li>• Gestión de estado y física en tiempo real</li>
-          </ul>
-          <p className="text-purple-400 mt-4">
-            Una muestra práctica de cómo el código Python puede ser reutilizado
-            en aplicaciones web sin sacrificar la funcionalidad o rendimiento.
-          </p>
+          {!gameStarted && (
+            <div className="absolute inset-0 bg-black bg-opacity-80 rounded-lg flex flex-col items-center justify-center p-8">
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                Python-Web Integration Showcase
+              </h3>
+              <div className="text-gray-300 text-center space-y-4 max-w-2xl mb-8">
+                <p>
+                  This Pong implementation serves as a technical demonstration
+                  of seamless Python integration in modern web development.
+                  Originally engineered as a desktop application in pure Python,
+                  it has been successfully adapted to run natively in the
+                  browser using Pyodide, showcasing the versatility of
+                  cross-platform development.
+                </p>
+                <p>
+                  The migration process preserved 95% of the original Python
+                  codebase, requiring minimal adaptations for web compatibility.
+                  This project exemplifies several key technical achievements:
+                </p>
+                <ul className="space-y-2">
+                  <li>
+                    • Native Python code execution in browser environments
+                  </li>
+                  <li>• Seamless React-Python state management integration</li>
+                  <li>• Real-time DOM event handling through Python</li>
+                  <li>• High-performance HTML5 Canvas rendering via Python</li>
+                  <li>• Complex real-time physics and state management</li>
+                </ul>
+                <p className="text-purple-400 mt-4">
+                  This implementation demonstrates how existing Python
+                  applications can be efficiently migrated to web platforms
+                  while maintaining performance, functionality, and code
+                  integrity - providing a cost-effective solution for
+                  modernizing legacy systems.
+                </p>
+              </div>
+              <button
+                onClick={handleStartGame}
+                className="px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 
+                         text-white font-bold rounded-lg shadow-lg 
+                         hover:from-purple-600 hover:to-blue-600 
+                         transform hover:scale-105 transition-all
+                         animate-pulse"
+              >
+                START GAME!
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
