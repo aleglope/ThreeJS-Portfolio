@@ -167,7 +167,8 @@ if game:
           ref={canvasRef}
           width={800}
           height={600}
-          className="border border-gray-700 rounded-lg shadow-lg shadow-purple-500/20"
+          className="border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 rounded-lg 
+                     shadow-lg shadow-purple-500/20 p-[2px]"
           tabIndex="0"
         />
 
