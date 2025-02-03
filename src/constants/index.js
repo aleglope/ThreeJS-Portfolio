@@ -26,9 +26,9 @@ export const clientReviews = [
     id: 1,
     name: "Imatia",
     position: "senior developer at Imatia",
-    img: "assets/review2.png",
+    img: "assets/CesarImatia.jpeg",
     review:
-      "Working with Alejandro was an excellent experience. His expertise in Angular and Ontimize helped us deliver a robust and user-friendly application.",
+      "I had the pleasure of being Alejandro's mentor during the bootcamp. His dedication and quick learning with Angular and Ontimize were impressive. He always showed great interest in learning and improving, effectively applying feedback. An exceptional student!",
   },
   {
     id: 2,
@@ -335,7 +335,7 @@ export const workExperiences = [
     pos: "Full-Stack Developer Trainee",
     duration: "2024 - Present",
     title:
-      "Currently participating in an intensive bootcamp at Imatia, focusing on full-stack development with Angular, Ontimize framework, and Spring Boot. Learning enterprise-level application development and best practices.",
+      "Developed a comprehensive coworking management web application during an intensive bootcamp at Imatia. Built the frontend using Angular and Ontimize framework, creating modular components with advanced features like dynamic coworking search, booking system, and service tags. Implemented backend with Spring Boot and PostgreSQL, following SOLID principles and creating RESTful APIs. Integrated data analytics with charts for booking trends, implemented efficient pagination, and collaborated using Git and Jira for professional development practices.",
     icon: "/assets/sidenav-opened.png",
     animation: "victory",
   },
