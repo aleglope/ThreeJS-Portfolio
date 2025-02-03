@@ -47,7 +47,7 @@ export const myProjects = [
     subdesc:
       "This project showcases Alejandro’s skills in Python and game development using the standard library, emphasizing logic and user interaction.",
     href: "#",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/TurtleRace.mp4",
     logo: "/assets/turtle.png",
     logoStyle: {
       backgroundColor: "#5C4C00",
@@ -72,7 +72,7 @@ export const myProjects = [
     subdesc:
       "Developed using Python, this project demonstrates proficiency in web scraping, API integration, and automation.",
     href: "#",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/SearchSongs.mp4",
     logo: "/assets/spotify.png",
     logoStyle: {
       backgroundColor: "#1DB954",
@@ -107,7 +107,7 @@ export const myProjects = [
     subdesc:
       "Developed using Python and Tkinter, this project highlights Alejandro’s passion for education and technology.",
     href: "#",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/Regions.mp4",
     logo: "/assets/galicia.png",
     logoStyle: {
       backgroundColor: "#60f5a1",
@@ -132,7 +132,7 @@ export const myProjects = [
     subdesc:
       "Built with Angular, Ontimize Web, and Spring Boot, it features advanced filtering and CRUD operations.",
     href: "#",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/Coworking.mp4",
     logo: "/assets/sidenav-opened.png",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -175,7 +175,7 @@ export const myProjects = [
     subdesc:
       "Built with React Three Fiber and TailwindCSS, this project demonstrates Alejandro’s ability to create interactive and engaging web experiences.",
     href: "https://www.grooveinclub.es/",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/Groove.mp4",
     logo: "/assets/LOGO GROOVE.svg",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -210,7 +210,7 @@ export const myProjects = [
         path: "/assets/typescript.png",
       },
     ],
-    sourceCode: "#", // Proyecto privado
+    sourceCode: "#",
   },
   {
     title: "GeoJSON Conversion and Mapping Tool",
@@ -218,7 +218,7 @@ export const myProjects = [
     subdesc:
       "This project showcases advanced skills in spatial data processing with Python, including coordinate transformation and the creation of interactive maps for geospatial analysis.",
     href: "/assets/mapa_con_geojson.html",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/GeoJson.mp4",
     logo: "/assets/map.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -241,7 +241,7 @@ export const myProjects = [
     subdesc:
       "This project combines a backend in Spring Boot with an intuitive Angular interface and a MySQL database for real estate data management",
     href: "#",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/RealState.mp4",
     logo: "/assets/inmobiliaria.png",
     logoStyle: {
       backgroundColor: "#1A2B3C",
@@ -274,7 +274,7 @@ export const myProjects = [
     subdesc:
       "This project leverages React components to ensure a clean, modular architecture, providing an efficient and scalable solution for frontend development.",
     href: "https://restaurant-phi-six.vercel.app/",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/RestFront.mp4",
     logo: "/assets/restaurant.png",
     logoStyle: {
       backgroundColor: "#1C1A43",

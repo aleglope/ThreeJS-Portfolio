@@ -32,7 +32,8 @@ const About = () => {
               <p className="grid-headtext">Hi, I'am Alejandro</p>
               <p className="grid-subtext">
                 With 1 year of experience, I have my skills in front-end and
-                backend development, with a focus on animated 3D websites.
+                backend development, with a focus on animated 3D websites and
+                cloud services.
               </p>
             </div>
           </div>
@@ -49,7 +50,7 @@ const About = () => {
               <p className="grid-headtext">Full Stack Developer</p>
               <p className="grid-subtext">
                 I specialize in JavaScript/Typescript with a focus on React and
-                Next.js ecosystems.
+                Next.js ecosystems and AI services.
               </p>
             </div>
           </div>
@@ -82,8 +83,13 @@ const About = () => {
             <div className>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Coding
-                isn´t just my profession - it is my passion.
+                I love solving problems and building things through code. My
+                passion extends beyond just coding - I'm an avid gamer who sees
+                the parallels between gaming strategies and coding solutions. I
+                embrace AI tools for continuous learning and to enhance my
+                productivity, making me a more efficient developer. Coding isn't
+                just my profession - it's where my passion for technology,
+                gaming, and innovation converges.
               </p>
             </div>
           </div>
