@@ -6,6 +6,7 @@ function Pong() {
   const pyodideRef = useRef(null);
   const gameRef = useRef(null);
   const [gameStarted, setGameStarted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     // Module loading system with dependency order management
@@ -124,6 +125,24 @@ if game_loop_proxy is not None:
     };
   }, []);
 
+  useEffect(() => {
+    // Función para detectar si es un dispositivo móvil
+    const checkIfMobile = () => {
+      const match = window.matchMedia("(max-width: 768px)");
+      setIsMobile(match.matches);
+    };
+
+    // Verificar inicialmente
+    checkIfMobile();
+
+    // Agregar listener para cambios en el tamaño de la ventana
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    mediaQuery.addListener(checkIfMobile);
+
+    // Cleanup
+    return () => mediaQuery.removeListener(checkIfMobile);
+  }, []);
+
   const handleStartGame = () => {
     if (pyodideRef.current) {
       pyodideRef.current.runPython(`
@@ -134,6 +153,31 @@ if game:
       setGameStarted(true);
     }
   };
+
+  // Si es un dispositivo móvil, mostrar mensaje alternativo
+  if (isMobile) {
+    return (
+      <section className="c-space my-20" id="pong">
+        <div className="relative min-h-[300px] flex items-center justify-center flex-col text-center px-4">
+          <h2 className="text-3xl font-extrabold mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 animate-gradient">
+              PONG ARCADE
+            </span>
+          </h2>
+          <div className="text-gray-400 max-w-md">
+            <p className="mb-4">
+              Lo siento, el juego de Pong está optimizado para ser jugado en
+              computadoras de escritorio.
+            </p>
+            <p>
+              Por favor, visita esta página desde un dispositivo con teclado
+              para disfrutar de la experiencia completa.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="c-space my-20" id="pong">
