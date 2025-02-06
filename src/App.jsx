@@ -7,6 +7,7 @@ import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
 import WorkExperience from "./sections/Experience.jsx";
 import Pong from "./sections/Pong.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <WorkExperience />
       <Pong />
       <Footer />
+      <Analytics />
     </main>
   );
 };
