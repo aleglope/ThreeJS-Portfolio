@@ -166,12 +166,12 @@ if game:
           </h2>
           <div className="text-gray-400 max-w-md">
             <p className="mb-4">
-              Lo siento, el juego de Pong está optimizado para ser jugado en
-              computadoras de escritorio.
+              Sorry, the Pong game is optimized to be played on desktop
+              computers.
             </p>
             <p>
-              Por favor, visita esta página desde un dispositivo con teclado
-              para disfrutar de la experiencia completa.
+              Please visit this page from a device with a keyboard to enjoy the
+              full experience.
             </p>
           </div>
         </div>
