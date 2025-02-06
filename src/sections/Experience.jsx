@@ -43,6 +43,13 @@ const WorkExperience = () => {
                   }
                   onPointerOut={() => setAnimationName("idle")}
                   className="work-content_container group"
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      setAnimationName(item.animation.toLowerCase());
+                    }
+                  }}
                 >
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">

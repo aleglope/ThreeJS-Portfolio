@@ -8,21 +8,25 @@ import Footer from "./sections/Footer.jsx";
 import WorkExperience from "./sections/Experience.jsx";
 import Pong from "./sections/Pong.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import CursorTrail from "./components/CursorTrail";
 
 const App = () => {
   return (
-    <main className="max-w-7xl mx-auto">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Clients />
-      <Contact />
-      <WorkExperience />
-      <Pong />
-      <Footer />
-      <Analytics />
-    </main>
+    <>
+      <CursorTrail />
+      <main className="max-w-7xl mx-auto">
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Clients />
+        <Contact />
+        <WorkExperience />
+        <Pong />
+        <Footer />
+        <Analytics />
+      </main>
+    </>
   );
 };
 export default App;

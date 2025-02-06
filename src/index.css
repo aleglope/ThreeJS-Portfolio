@@ -11,6 +11,14 @@
 body {
   background: #010103;
   font-family: "General Sans", sans-serif;
+  cursor: url("/assets/cursor.cur") 16 16, auto !important;
+}
+
+/* Cursor para elementos clickeables */
+a,
+button,
+[role="button"] {
+  cursor: url("/assets/cursorOrc.cur") 16 16, pointer !important;
 }
 
 @layer utilities {
@@ -113,7 +121,8 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    cursor: url("/assets/cursorOrc.cur") 16 16, auto !important;
   }
 
   .work-content_logo {
@@ -211,4 +220,73 @@ body {
 .animate-gradient {
   background-size: 200% auto;
   animation: gradient 3s linear infinite;
+}
+
+/* Cursor trail effect */
+.cursor-trail {
+  pointer-events: none;
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 255, 242, 0.4);
+  border-radius: 50%;
+  z-index: 9999;
+  transition: all 0.3s ease-out;
+  will-change: transform, opacity;
+  box-shadow: 0 0 15px rgba(0, 255, 242, 0.6), 0 0 30px rgba(0, 255, 242, 0.4),
+    0 0 45px rgba(0, 255, 242, 0.2);
+  mix-blend-mode: screen;
+}
+
+.cursor-trail::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 242, 0.2);
+  border-radius: 50%;
+  animation: pulseTrail 0.8s ease-out forwards;
+  will-change: transform, opacity;
+  filter: blur(2px);
+}
+
+.cursor-trail::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 242, 0.1);
+  border-radius: 50%;
+  animation: sparkleTrail 1.2s ease-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes pulseTrail {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkleTrail {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5) rotate(180deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0.8;
+  }
 }
