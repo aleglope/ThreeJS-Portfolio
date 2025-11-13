@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { navLinks } from "../constants/index.js";
+import { designNavLinks } from "../../constants/design.js";
 
 const NavItems = () => {
   return (
     <ul className="nav-ul">
-      {navLinks.map(({ id, href, name }) => (
+      {designNavLinks.map(({ id, href, name }) => (
         <li key={id} className="nav-li">
-          <a href={href} className="nav-li_a" onClick={() => {}}>
+          <a href={href} className="nav-li_a">
             {name}
           </a>
         </li>
@@ -16,7 +16,7 @@ const NavItems = () => {
   );
 };
 
-const Navbar = () => {
+const DesignNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
@@ -33,26 +33,28 @@ const Navbar = () => {
               AGonzL
             </button>
             <span className="text-neutral-600">|</span>
-            <span className="text-blue-500 font-semibold text-sm">Dev</span>
+            <span className="text-pink-500 font-semibold text-sm">Design</span>
           </div>
+
           <button
             onClick={toggleMenu}
             className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
             aria-label="Toggle menu"
           >
             <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
               alt="toggle"
               className="w-6 h-6"
             />
           </button>
+
           <nav className="sm:flex hidden items-center gap-6">
             <NavItems />
             <button
-              onClick={() => navigate("/design")}
-              className="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
+              onClick={() => navigate("/dev")}
+              className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
-              Design Portfolio
+              Dev Portfolio
             </button>
           </nav>
         </div>
@@ -63,10 +65,10 @@ const Navbar = () => {
           <NavItems />
           <div className="mt-4">
             <button
-              onClick={() => navigate("/design")}
-              className="w-full px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
+              onClick={() => navigate("/dev")}
+              className="w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
-              Design Portfolio
+              Dev Portfolio
             </button>
           </div>
         </nav>
@@ -75,4 +77,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DesignNavbar;
+

@@ -1,14 +1,15 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 
 const CursorTrail = () => {
   const [trails, setTrails] = useState([]);
   const maxTrails = 12; // Aumentamos la cantidad de puntos
   const trailLifetime = 1000; // 1 segundo de vida para cada punto
+  const trailIdCounter = useRef(0); // Contador único para keys
 
   const cleanupTrails = useCallback(() => {
     const now = Date.now();
     setTrails((prevTrails) =>
-      prevTrails.filter((trail) => now - trail.id < trailLifetime)
+      prevTrails.filter((trail) => now - trail.timestamp < trailLifetime)
     );
   }, []);
 
@@ -18,10 +19,12 @@ const CursorTrail = () => {
       const { clientX, clientY } = e;
 
       setTrails((prevTrails) => {
+        trailIdCounter.current += 1; // Incrementar contador
         const newTrail = {
           x: clientX,
           y: clientY,
-          id: Date.now(),
+          id: trailIdCounter.current, // ID único incremental
+          timestamp: Date.now(), // Timestamp para limpieza
           size: Math.random() * 4 + 6, // Tamaño aleatorio entre 6px y 10px
           rotation: Math.random() * 360, // Rotación aleatoria
         };
@@ -66,7 +69,7 @@ const CursorTrail = () => {
             width: `${trail.size}px`,
             height: `${trail.size}px`,
             transform: `rotate(${trail.rotation}deg)`,
-            opacity: Math.max(0, 1 - (Date.now() - trail.id) / trailLifetime),
+            opacity: Math.max(0, 1 - (Date.now() - trail.timestamp) / trailLifetime),
           }}
         />
       ))}
