@@ -17,7 +17,10 @@ body {
 /* Cursor para elementos clickeables */
 a,
 button,
-[role="button"] {
+[role="button"],
+.cursor-pointer,
+[style*="cursor: pointer"],
+[style*="cursor:pointer"] {
   cursor: url("/assets/cursorOrc.cur") 16 16, pointer !important;
 }
 
@@ -261,6 +264,26 @@ button,
   will-change: transform, opacity;
 }
 
+/* Interactive cursor trail (when hovering over clickable elements) */
+.cursor-trail-interactive {
+  background: rgba(245, 158, 11, 0.6) !important;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.8), 0 0 40px rgba(245, 158, 11, 0.6),
+    0 0 60px rgba(245, 158, 11, 0.4) !important;
+  transform: scale(1.3);
+  mix-blend-mode: screen;
+}
+
+.cursor-trail-interactive::before {
+  background: rgba(245, 158, 11, 0.3) !important;
+  animation: pulseTrailInteractive 1s ease-out infinite !important;
+  filter: blur(3px);
+}
+
+.cursor-trail-interactive::after {
+  background: rgba(245, 158, 11, 0.4) !important;
+  animation: sparkleTrailInteractive 1.2s ease-out infinite !important;
+}
+
 @keyframes pulseTrail {
   0% {
     transform: scale(1);
@@ -288,6 +311,44 @@ button,
   100% {
     transform: scale(1) rotate(360deg);
     opacity: 0.8;
+  }
+}
+
+@keyframes pulseTrailInteractive {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}
+
+@keyframes sparkleTrailInteractive {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.2;
+  }
+  25% {
+    transform: scale(1.2) rotate(90deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 0.4;
+  }
+  75% {
+    transform: scale(1.3) rotate(270deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.8) rotate(360deg);
+    opacity: 0.2;
   }
 }
 

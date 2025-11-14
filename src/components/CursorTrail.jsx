@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback, useRef } from "react";
 
 const CursorTrail = () => {
   const [trails, setTrails] = useState([]);
+  const [isHoveringInteractive, setIsHoveringInteractive] = useState(false);
   const maxTrails = 12;
   const trailLifetime = 1000;
   const trailIdCounter = useRef(0);
@@ -20,6 +21,20 @@ const CursorTrail = () => {
       const now = Date.now();
       mousePositionRef.current = { x: e.clientX, y: e.clientY };
 
+      // Check if hovering over interactive element
+      const target = e.target;
+      const isInteractive = target && (
+        target.tagName === 'A' ||
+        target.tagName === 'BUTTON' ||
+        target.getAttribute('role') === 'button' ||
+        target.classList.contains('cursor-pointer') ||
+        getComputedStyle(target).cursor === 'pointer' ||
+        target.closest('[class*="cursor-pointer"]') ||
+        target.closest('a') ||
+        target.closest('button')
+      );
+      setIsHoveringInteractive(isInteractive);
+
       // Throttle updates to prevent too frequent state changes
       if (now - lastUpdateRef.current > 50) { // ~20fps instead of 60fps
         lastUpdateRef.current = now;
@@ -33,6 +48,7 @@ const CursorTrail = () => {
             timestamp: now,
             size: Math.random() * 4 + 6,
             rotation: Math.random() * 360,
+            isInteractive,
           };
 
           const updatedTrails = [...prevTrails, newTrail].slice(-maxTrails);
@@ -57,7 +73,7 @@ const CursorTrail = () => {
       {trails.map((trail) => (
         <div
           key={trail.id}
-          className="cursor-trail"
+          className={`cursor-trail ${trail.isInteractive ? 'cursor-trail-interactive' : ''}`}
           style={{
             left: `${trail.x || 0}px`,
             top: `${trail.y || 0}px`,
