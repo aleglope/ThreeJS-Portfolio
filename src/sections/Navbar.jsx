@@ -28,9 +28,9 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={() => navigate("/")}
-              className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
-            >
-              AGonzL
+            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
+          >
+            AGonzL
             </button>
             <span className="text-neutral-600">|</span>
             <span className="text-blue-500 font-semibold text-sm">Dev</span>

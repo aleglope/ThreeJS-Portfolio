@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { designProjects, designCategories } from "../../constants/design.js";
 
 const DesignProjects = () => {
+  const navigate = useNavigate();
   const [filter, setFilter] = useState("All");
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -86,8 +88,18 @@ const DesignProjects = () => {
               </div>
 
               {/* View Project Button */}
-              <button className="flex items-center gap-2 text-pink-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                View Project
+              <button
+                onClick={() => {
+                  if (project.hasDetailPage && project.slug) {
+                    navigate(`/design/project/${project.slug}`);
+                  }
+                }}
+                className={`flex items-center gap-2 text-pink-400 font-semibold group-hover:translate-x-2 transition-transform duration-300 ${
+                  !project.hasDetailPage && "opacity-50 cursor-not-allowed"
+                }`}
+                disabled={!project.hasDetailPage}
+              >
+                {project.hasDetailPage ? "View Project" : "Coming Soon"}
                 <svg
                   className="w-4 h-4"
                   fill="none"

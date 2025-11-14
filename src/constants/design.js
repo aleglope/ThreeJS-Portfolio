@@ -32,6 +32,7 @@ export const designProjects = [
       "Complete brand identity package including logo, color palette, and brand guidelines.",
     image: "/assets/grid1.png",
     tags: ["Branding", "Logo Design", "Visual Identity"],
+    hasDetailPage: false,
   },
   {
     id: 2,
@@ -41,6 +42,7 @@ export const designProjects = [
       "Dynamic product showcase with motion graphics and professional color grading.",
     videoUrl: "/assets/spotlight1.png",
     tags: ["Premiere Pro", "After Effects", "Motion Graphics"],
+    hasDetailPage: false,
   },
   {
     id: 3,
@@ -50,6 +52,7 @@ export const designProjects = [
       "Complete social media visual campaign with consistent branding across platforms.",
     image: "/assets/grid2.png",
     tags: ["Social Media", "Digital Marketing", "Photoshop"],
+    hasDetailPage: false,
   },
   {
     id: 4,
@@ -59,8 +62,60 @@ export const designProjects = [
       "Professional corporate video with interviews, b-roll, and animated graphics.",
     videoUrl: "/assets/spotlight2.png",
     tags: ["Video Production", "Color Grading", "Sound Design"],
+    hasDetailPage: true,
+    slug: "corporate-video",
   },
 ];
+
+// Detailed project data with videos
+export const projectDetails = {
+  "corporate-video": {
+    id: 4,
+    title: "Corporate Video Production",
+    category: "Video Editing",
+    fullDescription:
+      "A comprehensive corporate video project featuring professional interviews, cinematic b-roll footage, and custom animated graphics. This project showcases my ability to create engaging corporate content that tells a compelling story while maintaining a professional aesthetic.",
+    client: "Tech Solutions Inc.",
+    year: "2024",
+    duration: "Multiple videos",
+    tags: ["Video Production", "Color Grading", "Sound Design", "Motion Graphics"],
+    coverImage: "/assets/spotlight2.png",
+    videos: [
+      {
+        id: 1,
+        title: "Company Overview",
+        description: "Main corporate presentation video",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight1.png",
+        duration: "3:45",
+      },
+      {
+        id: 2,
+        title: "Team Interviews",
+        description: "Employee testimonials and interviews",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "2:30",
+      },
+      {
+        id: 3,
+        title: "Product Demo",
+        description: "Detailed product demonstration",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight3.png",
+        duration: "4:15",
+      },
+      {
+        id: 4,
+        title: "Behind the Scenes",
+        description: "Making of the corporate video",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight4.png",
+        duration: "1:50",
+      },
+    ],
+  },
+};
 
 // Video Showcase data
 export const videoShowcase = [
