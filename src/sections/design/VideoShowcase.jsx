@@ -1,6 +1,30 @@
 import { useState } from "react";
 import ReactPlayer from "react-player";
+import {
+  MdAutoAwesome,
+  MdDesignServices,
+  MdAnalytics,
+  MdTextFields,
+  MdColorLens,
+  MdBrush,
+  MdVideocam,
+  MdMovieEdit,
+  MdFolderSpecial,
+} from "react-icons/md";
 import { videoShowcase, videoSkills } from "../../constants/design.js";
+
+// Icon mapping for skills
+const iconMap = {
+  MdAutoAwesome,
+  MdDesignServices,
+  MdAnalytics,
+  MdTextFields,
+  MdColorLens,
+  MdBrush,
+  MdVideocam,
+  MdMovieEdit,
+  MdFolderSpecial,
+};
 
 const VideoShowcase = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -207,37 +231,14 @@ const VideoShowcase = () => {
               <div
                 className={`w-16 h-16 bg-gradient-to-br ${skill.gradient} rounded-xl flex items-center justify-center mx-auto mb-4`}
               >
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  {skill.icon === "video" && (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                    />
-                  )}
-                  {skill.icon === "motion" && (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
-                    />
-                  )}
-                  {skill.icon === "sound" && (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-                    />
-                  )}
-                </svg>
+                {skill.iconComponent && iconMap[skill.iconComponent] ? (
+                  (() => {
+                    const IconComponent = iconMap[skill.iconComponent];
+                    return <IconComponent className="w-8 h-8 text-white" />;
+                  })()
+                ) : (
+                  <MdMovieEdit className="w-8 h-8 text-white" />
+                )}
               </div>
               <h4 className="text-white font-semibold mb-2">{skill.title}</h4>
               <p className="text-white-600 text-sm">{skill.description}</p>

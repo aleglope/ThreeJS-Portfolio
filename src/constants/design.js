@@ -392,6 +392,7 @@ export const videoSkills = [
       "AI-powered logo creation, brand identity systems, advanced AI design tools",
     gradient: "from-cyan-500 to-blue-600",
     icon: "ai-logo",
+    iconComponent: "MdAutoAwesome", // React Icons component name
     image: "/assets/github.svg",
   },
   {
@@ -401,6 +402,7 @@ export const videoSkills = [
       "Figma, Adobe XD, user research, interaction design, prototyping",
     gradient: "from-purple-500 to-pink-600",
     icon: "ux-ui",
+    iconComponent: "MdDesignServices",
     image: "/assets/figma.svg",
   },
   {
@@ -410,6 +412,7 @@ export const videoSkills = [
       "Market research, competitor analysis, brand positioning, target audience definition",
     gradient: "from-blue-500 to-indigo-600",
     icon: "brand-strategy",
+    iconComponent: "MdAnalytics",
     image: "/assets/Python.svg",
   },
   {
@@ -419,6 +422,7 @@ export const videoSkills = [
       "Custom font selection, typography systems, visual hierarchy, readability optimization",
     gradient: "from-violet-500 to-purple-600",
     icon: "typography",
+    iconComponent: "MdTextFields",
     image: "/assets/tailwindcss.png",
   },
   {
@@ -428,6 +432,7 @@ export const videoSkills = [
       "Color palette creation, brand colors, psychological impact, accessibility compliance",
     gradient: "from-pink-500 to-rose-600",
     icon: "color-theory",
+    iconComponent: "MdColorLens",
     image: "/assets/notion.svg",
   },
   {
@@ -437,6 +442,7 @@ export const videoSkills = [
       "AI-generated artwork, psychedelic designs, minimal aesthetics, custom client-inspired creations",
     gradient: "from-purple-600 to-pink-500",
     icon: "psychedelic-minimal",
+    iconComponent: "MdBrush",
     image: "/assets/react.svg",
   },
   {
@@ -446,6 +452,7 @@ export const videoSkills = [
       "Real-time video performance, audio-visual sync, Resolume Arena",
     gradient: "from-orange-500 to-red-600",
     icon: "vj",
+    iconComponent: "MdVideocam",
     image: "/assets/framer.png",
   },
   {
@@ -454,6 +461,7 @@ export const videoSkills = [
     description: "Premiere Pro, After Effects, DaVinci Resolve, Color Grading",
     gradient: "from-green-500 to-teal-600",
     icon: "video",
+    iconComponent: "MdMovieEdit",
     image: "/assets/threejs.svg",
   },
   {
@@ -463,6 +471,7 @@ export const videoSkills = [
       "Brand asset libraries, style guide creation, brand consistency tools",
     gradient: "from-teal-500 to-cyan-600",
     icon: "asset-management",
+    iconComponent: "MdFolderSpecial",
     image: "/assets/nextjs.svg",
   },
 ];
