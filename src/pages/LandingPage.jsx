@@ -1,13 +1,152 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, useState, useRef } from "react";
 import { PerspectiveCamera, Float } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import CanvasLoader from "../components/CanvasLoader";
 import Cube from "../components/Cube";
 import Rings from "../components/Rings";
 import ReactLogo from "../components/ReactLogo";
 import Target from "../components/Target";
 import CursorTrail from "../components/CursorTrail";
+
+// Wrapper con hover para ReactLogo
+const InteractiveReactLogo = ({ position, ...props }) => {
+  const groupRef = useRef();
+  const [hovered, setHovered] = useState(false);
+
+  useGSAP(
+    () => {
+      if (groupRef.current) {
+        gsap.to(groupRef.current.scale, {
+          x: hovered ? 1.15 : 1,
+          y: hovered ? 1.15 : 1,
+          z: hovered ? 1.15 : 1,
+          duration: 0.3,
+          ease: "power2.out",
+        });
+      }
+    },
+    { dependencies: [hovered] }
+  );
+
+  return (
+    <group ref={groupRef} position={position}>
+      {/* Mesh invisible para detectar hover */}
+      <mesh
+        visible={false}
+        onPointerEnter={(e) => {
+          e.stopPropagation();
+          setHovered(true);
+          document.body.style.cursor = "pointer";
+        }}
+        onPointerLeave={(e) => {
+          e.stopPropagation();
+          setHovered(false);
+          document.body.style.cursor = "auto";
+        }}
+      >
+        <boxGeometry args={[3, 3, 3]} />
+        <meshBasicMaterial transparent opacity={0} />
+      </mesh>
+      <ReactLogo position={[0, 0, 0]} {...props} />
+    </group>
+  );
+};
+
+// Wrapper con hover para Target
+const InteractiveTarget = ({ ...props }) => {
+  const groupRef = useRef();
+  const [hovered, setHovered] = useState(false);
+
+  useGSAP(
+    () => {
+      if (groupRef.current) {
+        gsap.to(groupRef.current.scale, {
+          x: hovered ? 1.3 : 1,
+          y: hovered ? 1.3 : 1,
+          z: hovered ? 1.3 : 1,
+          duration: 0.3,
+          ease: "power2.out",
+        });
+        gsap.to(groupRef.current.rotation, {
+          y: hovered ? Math.PI / 5 + 0.3 : Math.PI / 5,
+          duration: 0.3,
+          ease: "power2.out",
+        });
+      }
+    },
+    { dependencies: [hovered] }
+  );
+
+  return (
+    <group ref={groupRef}>
+      {/* Mesh invisible para detectar hover */}
+      <mesh
+        visible={false}
+        onPointerEnter={(e) => {
+          e.stopPropagation();
+          setHovered(true);
+          document.body.style.cursor = "pointer";
+        }}
+        onPointerLeave={(e) => {
+          e.stopPropagation();
+          setHovered(false);
+          document.body.style.cursor = "auto";
+        }}
+      >
+        <boxGeometry args={[3, 3, 3]} />
+        <meshBasicMaterial transparent opacity={0} />
+      </mesh>
+      <Target scale={1.2} {...props} />
+    </group>
+  );
+};
+
+// Wrapper con hover para Rings
+const InteractiveRings = ({ position, ...props }) => {
+  const groupRef = useRef();
+  const [hovered, setHovered] = useState(false);
+
+  useGSAP(
+    () => {
+      if (groupRef.current) {
+        gsap.to(groupRef.current.scale, {
+          x: hovered ? 1.2 : 1,
+          y: hovered ? 1.2 : 1,
+          z: hovered ? 1.2 : 1,
+          duration: 0.3,
+          ease: "power2.out",
+        });
+      }
+    },
+    { dependencies: [hovered] }
+  );
+
+  return (
+    <group ref={groupRef} position={position}>
+      {/* Mesh invisible para detectar hover */}
+      <mesh
+        visible={false}
+        onPointerEnter={(e) => {
+          e.stopPropagation();
+          setHovered(true);
+          document.body.style.cursor = "pointer";
+        }}
+        onPointerLeave={(e) => {
+          e.stopPropagation();
+          setHovered(false);
+          document.body.style.cursor = "auto";
+        }}
+      >
+        <boxGeometry args={[4, 4, 4]} />
+        <meshBasicMaterial transparent opacity={0} />
+      </mesh>
+      <Rings position={[0, 0, 0]} {...props} />
+    </group>
+  );
+};
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -18,7 +157,13 @@ const LandingPage = () => {
       <div className="min-h-screen w-full bg-black relative overflow-hidden">
         {/* Background 3D Canvas */}
         <div className="absolute inset-0 z-0">
-          <Canvas>
+          <Canvas
+            gl={{ antialias: true }}
+            camera={{ position: [0, 0, 20], fov: 75 }}
+            onCreated={(state) => {
+              state.gl.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            }}
+          >
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera makeDefault position={[0, 0, 20]} />
               <ambientLight intensity={1} />
@@ -34,16 +179,20 @@ const LandingPage = () => {
               </Float>
 
               {/* React Logo arriba */}
-              <ReactLogo position={[-6, 8, 1]} />
-              <ReactLogo position={[6, 8, 1]} />
+              <InteractiveReactLogo position={[-6, 8, 1]} />
+              <InteractiveReactLogo position={[6, 8, 1]} />
 
               {/* Target abajo */}
-              <Target position={[-10, -8, 1]} scale={1.2} />
-              <Target position={[10, -8, 1]} scale={1.2} />
+              <group position={[-10, -8, 1]}>
+                <InteractiveTarget />
+              </group>
+              <group position={[10, -8, 1]}>
+                <InteractiveTarget />
+              </group>
 
               {/* Rings decorativos a los lados */}
-              <Rings position={[-15, 0, 1]} />
-              <Rings position={[15, 0, 1]} />
+              <InteractiveRings position={[-15, 0, 1]} />
+              <InteractiveRings position={[15, 0, 1]} />
 
               {/* Cubos adicionales arriba y abajo */}
               <Float speed={1.3} rotationIntensity={0.9} floatIntensity={1.8}>
@@ -60,7 +209,7 @@ const LandingPage = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 min-h-screen flex flex-col items-center justify-center c-space">
+        <div className="relative z-10 min-h-screen flex flex-col items-center justify-center c-space pointer-events-none">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 font-generalsans">
@@ -72,7 +221,7 @@ const LandingPage = () => {
           </div>
 
           {/* Portfolio Selection Cards */}
-          <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl px-4">
+          <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl px-4 pointer-events-auto">
             {/* Development Portfolio Card */}
             <div
               onClick={() => navigate("/dev")}
