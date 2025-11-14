@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { navLinks } from "../constants/index.js";
 
@@ -18,11 +18,44 @@ const NavItems = () => {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
   const navigate = useNavigate();
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Si estamos en la parte superior, siempre mostrar el navbar
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else {
+        // Si scrolleamos hacia abajo, ocultar el navbar
+        // Si scrolleamos hacia arriba, mostrar el navbar
+        if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+          setIsVisible(false);
+        } else if (currentScrollY < lastScrollY.current) {
+          setIsVisible(true);
+        }
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black-90">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 bg-black-90 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <div className="flex items-center gap-4">

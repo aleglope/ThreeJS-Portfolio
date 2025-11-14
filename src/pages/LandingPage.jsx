@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import CanvasLoader from "../components/CanvasLoader";
 import Cube from "../components/Cube";
 import Rings from "../components/Rings";
+import ReactLogo from "../components/ReactLogo";
+import Target from "../components/Target";
 import CursorTrail from "../components/CursorTrail";
 
 const LandingPage = () => {
@@ -21,16 +23,38 @@ const LandingPage = () => {
               <PerspectiveCamera makeDefault position={[0, 0, 20]} />
               <ambientLight intensity={1} />
               <directionalLight position={[10, 10, 10]} intensity={0.5} />
-              
+
+              {/* Objetos decorativos alrededor de las tarjetas */}
+              {/* Cubos a los lados */}
               <Float speed={1.5} rotationIntensity={1} floatIntensity={2}>
-                <Cube position={[-8, 2, 0]} />
+                <Cube position={[-12, 3, 2]} />
               </Float>
-              
               <Float speed={1.2} rotationIntensity={0.8} floatIntensity={1.5}>
-                <Cube position={[8, -2, 0]} />
+                <Cube position={[12, -3, 2]} />
               </Float>
-              
-              <Rings position={[0, 0, -5]} />
+
+              {/* React Logo arriba */}
+              <ReactLogo position={[-6, 8, 1]} />
+              <ReactLogo position={[6, 8, 1]} />
+
+              {/* Target abajo */}
+              <Target position={[-10, -8, 1]} scale={1.2} />
+              <Target position={[10, -8, 1]} scale={1.2} />
+
+              {/* Rings decorativos a los lados */}
+              <Rings position={[-15, 0, 1]} />
+              <Rings position={[15, 0, 1]} />
+
+              {/* Cubos adicionales arriba y abajo */}
+              <Float speed={1.3} rotationIntensity={0.9} floatIntensity={1.8}>
+                <Cube position={[0, 10, 1]} />
+              </Float>
+              <Float speed={1.1} rotationIntensity={1.1} floatIntensity={2.2}>
+                <Cube position={[-5, -10, 1]} />
+              </Float>
+              <Float speed={1.4} rotationIntensity={0.7} floatIntensity={1.6}>
+                <Cube position={[5, -10, 1]} />
+              </Float>
             </Suspense>
           </Canvas>
         </div>
@@ -40,7 +64,7 @@ const LandingPage = () => {
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 font-generalsans">
-              Alejandro González
+              Alejandro González López
             </h1>
             <p className="text-2xl md:text-3xl text-gray_gradient font-generalsans">
               Choose Your Experience
@@ -56,7 +80,7 @@ const LandingPage = () => {
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
+
               <div className="relative z-10">
                 {/* Icon */}
                 <div className="w-20 h-20 mb-6 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -82,7 +106,8 @@ const LandingPage = () => {
 
                 {/* Description */}
                 <p className="text-white-600 text-lg mb-6">
-                  Full Stack Developer specializing in web applications, 3D experiences, and scalable systems.
+                  Full Stack Developer specializing in web applications, 3D
+                  experiences, and scalable systems.
                 </p>
 
                 {/* Tech badges */}
@@ -128,7 +153,7 @@ const LandingPage = () => {
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
+
               <div className="relative z-10">
                 {/* Icon */}
                 <div className="w-20 h-20 mb-6 bg-gradient-to-br from-pink-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -154,7 +179,8 @@ const LandingPage = () => {
 
                 {/* Description */}
                 <p className="text-white-600 text-lg mb-6">
-                  Creative visual storytelling through graphic design, video editing, and motion graphics.
+                  Creative visual storytelling through graphic design, video
+                  editing, and motion graphics.
                 </p>
 
                 {/* Tech badges */}
@@ -193,13 +219,6 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-
-          {/* Footer info */}
-          <div className="mt-16 text-center">
-            <p className="text-white-600 text-sm">
-              Scroll down or click a card to explore
-            </p>
-          </div>
         </div>
       </div>
 
@@ -223,4 +242,3 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-
