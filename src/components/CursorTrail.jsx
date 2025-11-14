@@ -2,58 +2,53 @@ import { useEffect, useState, useCallback, useRef } from "react";
 
 const CursorTrail = () => {
   const [trails, setTrails] = useState([]);
-  const maxTrails = 12; // Aumentamos la cantidad de puntos
-  const trailLifetime = 1000; // 1 segundo de vida para cada punto
-  const trailIdCounter = useRef(0); // Contador único para keys
+  const maxTrails = 12;
+  const trailLifetime = 1000;
+  const trailIdCounter = useRef(0);
+  const mousePositionRef = useRef({ x: 0, y: 0 });
+  const lastUpdateRef = useRef(0);
 
   const cleanupTrails = useCallback(() => {
     const now = Date.now();
     setTrails((prevTrails) =>
-      prevTrails.filter((trail) => now - trail.timestamp < trailLifetime)
+      prevTrails.filter((trail) => trail.timestamp && now - trail.timestamp < trailLifetime)
     );
   }, []);
 
   useEffect(() => {
-    let animationFrameId;
     const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-
-      setTrails((prevTrails) => {
-        trailIdCounter.current += 1; // Incrementar contador
-        const newTrail = {
-          x: clientX,
-          y: clientY,
-          id: trailIdCounter.current, // ID único incremental
-          timestamp: Date.now(), // Timestamp para limpieza
-          size: Math.random() * 4 + 6, // Tamaño aleatorio entre 6px y 10px
-          rotation: Math.random() * 360, // Rotación aleatoria
-        };
-
-        const updatedTrails = [...prevTrails, newTrail].slice(-maxTrails);
-        return updatedTrails;
-      });
-    };
-
-    // Configurar limpieza periódica
-    const cleanupInterval = setInterval(cleanupTrails, trailLifetime / 2);
-
-    // Agregar event listener con throttling
-    let lastMove = 0;
-    const throttledMouseMove = (e) => {
       const now = Date.now();
-      if (now - lastMove >= 16) {
-        // Aproximadamente 60fps
-        lastMove = now;
-        handleMouseMove(e);
+      mousePositionRef.current = { x: e.clientX, y: e.clientY };
+
+      // Throttle updates to prevent too frequent state changes
+      if (now - lastUpdateRef.current > 50) { // ~20fps instead of 60fps
+        lastUpdateRef.current = now;
+
+        setTrails((prevTrails) => {
+          trailIdCounter.current += 1;
+          const newTrail = {
+            x: mousePositionRef.current.x,
+            y: mousePositionRef.current.y,
+            id: trailIdCounter.current,
+            timestamp: now,
+            size: Math.random() * 4 + 6,
+            rotation: Math.random() * 360,
+          };
+
+          const updatedTrails = [...prevTrails, newTrail].slice(-maxTrails);
+          return updatedTrails;
+        });
       }
     };
 
-    window.addEventListener("mousemove", throttledMouseMove);
+    // Cleanup interval
+    const cleanupInterval = setInterval(cleanupTrails, trailLifetime / 2);
+
+    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", throttledMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
       clearInterval(cleanupInterval);
-      cancelAnimationFrame(animationFrameId);
     };
   }, [cleanupTrails]);
 
@@ -64,12 +59,12 @@ const CursorTrail = () => {
           key={trail.id}
           className="cursor-trail"
           style={{
-            left: `${trail.x}px`,
-            top: `${trail.y}px`,
-            width: `${trail.size}px`,
-            height: `${trail.size}px`,
-            transform: `rotate(${trail.rotation}deg)`,
-            opacity: Math.max(0, 1 - (Date.now() - trail.timestamp) / trailLifetime),
+            left: `${trail.x || 0}px`,
+            top: `${trail.y || 0}px`,
+            width: `${trail.size || 8}px`,
+            height: `${trail.size || 8}px`,
+            transform: `rotate(${trail.rotation || 0}deg)`,
+            opacity: trail.timestamp ? Math.max(0, 1 - (Date.now() - trail.timestamp) / trailLifetime) : 1,
           }}
         />
       ))}

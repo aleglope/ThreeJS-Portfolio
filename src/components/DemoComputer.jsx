@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useMemo } from "react";
 import { useGLTF, useAnimations, useVideoTexture } from "@react-three/drei";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -8,9 +8,13 @@ const DemoComputer = (props) => {
   const { nodes, materials, animations } = useGLTF("/models/computer.glb");
   const { actions } = useAnimations(animations, group);
 
-  const txt = useVideoTexture(
-    props.texture ? props.texture : "/textures/project/project1.mp4"
+  // Memoize the texture path to prevent unnecessary re-creation
+  const texturePath = useMemo(() =>
+    props.texture ? props.texture : "/textures/project/project1.mp4",
+    [props.texture]
   );
+
+  const txt = useVideoTexture(texturePath);
 
   useEffect(() => {
     if (txt) {

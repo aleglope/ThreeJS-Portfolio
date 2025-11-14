@@ -32,10 +32,27 @@ function Pong() {
       return moduleContents;
     };
 
+    const waitForCanvas = () => {
+      return new Promise((resolve) => {
+        const checkCanvas = () => {
+          const canvas = document.getElementById("pongCanvas");
+          if (canvas) {
+            resolve(canvas);
+          } else {
+            setTimeout(checkCanvas, 100);
+          }
+        };
+        checkCanvas();
+      });
+    };
+
     const initPyodide = async () => {
       // Pyodide initialization with proper namespace isolation
       // Critical for preventing global scope pollution
       try {
+        // Wait for canvas to be available
+        await waitForCanvas();
+
         pyodideRef.current = await loadPyodide();
 
         // Crear el entorno base

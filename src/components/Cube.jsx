@@ -1,15 +1,24 @@
+import React from "react";
 import gsap from "gsap";
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState, useCallback, useMemo } from "react";
 import { Float, useGLTF, useTexture } from "@react-three/drei";
 
-const Cube = ({ validPropsOnly = {}, ...props }) => {
+const Cube = React.memo(({ position, ...props }) => {
   const { nodes } = useGLTF("models/cube.glb");
   const texture = useTexture("textures/cube.png");
   const cubeRef = useRef();
   const [hovered, setHovered] = useState(false);
 
-  const handlePointerEnter = useCallback(() => setHovered(true), []);
-  const handlePointerLeave = useCallback(() => setHovered(false), []);
+  const handlePointerEnter = useCallback(() => {
+    setHovered(true);
+  }, []);
+
+  const handlePointerLeave = useCallback(() => {
+    setHovered(false);
+  }, []);
+
+  const geometry = useMemo(() => nodes.Cube.geometry, [nodes.Cube.geometry]);
+  const material = useMemo(() => nodes.Cube.material, [nodes.Cube.material]);
 
   useEffect(() => {
     if (cubeRef.current) {
@@ -34,18 +43,18 @@ const Cube = ({ validPropsOnly = {}, ...props }) => {
   return (
     <Float floatIntensity={2}>
       <group
-        position={[9, -4, 0]}
+        position={position || [9, -4, 0]}
         rotation={[2.6, 0.8, -1.8]}
         scale={0.74}
         dispose={undefined}
-        {...validPropsOnly}
+        {...props}
       >
         <mesh
           ref={cubeRef}
           castShadow
           receiveShadow
-          geometry={nodes.Cube.geometry}
-          material={nodes.Cube.material}
+          geometry={geometry}
+          material={material}
           onPointerEnter={handlePointerEnter}
           onPointerLeave={handlePointerLeave}
         >
@@ -54,7 +63,7 @@ const Cube = ({ validPropsOnly = {}, ...props }) => {
       </group>
     </Float>
   );
-};
+});
 
 useGLTF.preload("models/cube.glb");
 

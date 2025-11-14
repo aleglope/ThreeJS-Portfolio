@@ -80,7 +80,7 @@ const About = () => {
               alt="grid-3"
               className="w-full sm:h-[266px] h-fit object-contain"
             />
-            <div className>
+            <div className="space-y-2">
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
                 I love solving problems and building things through code. My
