@@ -1,12 +1,14 @@
-import { useRef, useEffect, useMemo } from "react";
+import { useRef, useEffect, useMemo, useState, useCallback } from "react";
 import { useGLTF, useAnimations, useVideoTexture } from "@react-three/drei";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const DemoComputer = (props) => {
   const group = useRef();
+  const screenRef = useRef();
   const { nodes, materials, animations } = useGLTF("/models/computer.glb");
   const { actions } = useAnimations(animations, group);
+  const [isScreenHovered, setIsScreenHovered] = useState(false);
 
   // Memoize the texture path to prevent unnecessary re-creation
   const texturePath = useMemo(() =>
@@ -15,6 +17,14 @@ const DemoComputer = (props) => {
   );
 
   const txt = useVideoTexture(texturePath);
+
+  const handleScreenEnter = useCallback(() => {
+    setIsScreenHovered(true);
+  }, []);
+
+  const handleScreenLeave = useCallback(() => {
+    setIsScreenHovered(false);
+  }, []);
 
   useEffect(() => {
     if (txt) {
@@ -30,10 +40,31 @@ const DemoComputer = (props) => {
     });
   }, [txt]);
 
+  // Animate screen scale and position on hover
+  useGSAP(() => {
+    if (screenRef.current) {
+      gsap.to(screenRef.current.scale, {
+        x: isScreenHovered ? 1.322 : 0.661, // Double size when hovered (100% larger)
+        y: isScreenHovered ? 1.216 : 0.608, // Double size when hovered (100% larger)
+        z: isScreenHovered ? 0.802 : 0.401, // Double size when hovered (100% larger)
+        duration: 0.4,
+        ease: "power2.out",
+      });
+
+      // Move screen forward on Z axis to bring it in front of the computer
+      gsap.to(screenRef.current.position, {
+        z: isScreenHovered ? 0.811 : 0.511, // Move forward by 0.3 units
+        duration: 0.4,
+        ease: "power2.out",
+      });
+    }
+  }, [isScreenHovered]);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
         <mesh
+          ref={screenRef}
           name="monitor-screen"
           // castShadow
           // receiveShadow
@@ -42,6 +73,8 @@ const DemoComputer = (props) => {
           position={[0.127, 1.831, 0.511]}
           rotation={[1.571, -0.005, 0.031]}
           scale={[0.661, 0.608, 0.401]}
+          onPointerEnter={handleScreenEnter}
+          onPointerLeave={handleScreenLeave}
         >
           <meshBasicMaterial map={txt} toneMapped={false} />
         </mesh>

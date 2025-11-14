@@ -32,7 +32,8 @@ export const designProjects = [
       "Complete brand identity package including logo, color palette, and brand guidelines.",
     image: "/assets/grid1.png",
     tags: ["Branding", "Logo Design", "Visual Identity"],
-    hasDetailPage: false,
+    hasDetailPage: true,
+    slug: "brand-identity-design",
   },
   {
     id: 2,
@@ -42,7 +43,8 @@ export const designProjects = [
       "Dynamic product showcase with motion graphics and professional color grading.",
     videoUrl: "/assets/spotlight1.png",
     tags: ["Premiere Pro", "After Effects", "Motion Graphics"],
-    hasDetailPage: false,
+    hasDetailPage: true,
+    slug: "product-showcase-video",
   },
   {
     id: 3,
@@ -52,7 +54,8 @@ export const designProjects = [
       "Complete social media visual campaign with consistent branding across platforms.",
     image: "/assets/grid2.png",
     tags: ["Social Media", "Digital Marketing", "Photoshop"],
-    hasDetailPage: false,
+    hasDetailPage: true,
+    slug: "social-media-campaign",
   },
   {
     id: 4,
@@ -69,6 +72,156 @@ export const designProjects = [
 
 // Detailed project data with videos
 export const projectDetails = {
+  "brand-identity-design": {
+    id: 1,
+    title: "Brand Identity Design",
+    category: "Graphic Design",
+    fullDescription:
+      "A comprehensive brand identity project that transformed a startup's visual presence. This project involved creating a complete brand system including logo design, color palette development, typography selection, and brand guidelines. The result was a cohesive visual identity that effectively communicated the company's values and mission across all touchpoints.",
+    client: "StartupXYZ",
+    year: "2024",
+    duration: "6 weeks",
+    tags: [
+      "Branding",
+      "Logo Design",
+      "Visual Identity",
+      "Typography",
+      "Color Theory",
+    ],
+    coverImage: "/assets/grid1.png",
+    videos: [
+      {
+        id: 1,
+        title: "Logo Design Process",
+        description:
+          "Complete logo design journey from concept to final design",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight1.png",
+        duration: "4:20",
+      },
+      {
+        id: 2,
+        title: "Brand Application",
+        description:
+          "How the brand identity is applied across different mediums",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "3:15",
+      },
+      {
+        id: 3,
+        title: "Style Guide Presentation",
+        description: "Complete brand guidelines and usage examples",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight3.png",
+        duration: "5:30",
+      },
+    ],
+  },
+  "product-showcase-video": {
+    id: 2,
+    title: "Product Showcase Video",
+    category: "Video Editing",
+    fullDescription:
+      "A dynamic product showcase video that brought a revolutionary tech gadget to life. This project combined stunning cinematography, creative motion graphics, and professional post-production techniques to create an engaging narrative that highlighted the product's unique features and benefits. The video successfully increased product awareness and drove significant sales conversions.",
+    client: "TechGadget Co.",
+    year: "2024",
+    duration: "8 weeks",
+    tags: [
+      "Video Production",
+      "Motion Graphics",
+      "Product Photography",
+      "Color Grading",
+      "Sound Design",
+    ],
+    coverImage: "/assets/spotlight1.png",
+    videos: [
+      {
+        id: 1,
+        title: "Main Product Showcase",
+        description: "Complete product demonstration with motion graphics",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight1.png",
+        duration: "2:45",
+      },
+      {
+        id: 2,
+        title: "Feature Breakdown",
+        description: "Detailed explanation of product features",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "3:20",
+      },
+      {
+        id: 3,
+        title: "Behind the Scenes",
+        description: "Production process and creative decisions",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight3.png",
+        duration: "4:10",
+      },
+      {
+        id: 4,
+        title: "Motion Graphics Reel",
+        description: "Showcase of custom animations and effects",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight4.png",
+        duration: "1:55",
+      },
+    ],
+  },
+  "social-media-campaign": {
+    id: 3,
+    title: "Social Media Campaign",
+    category: "Graphic Design",
+    fullDescription:
+      "A comprehensive social media campaign that increased brand engagement by 300%. This project involved creating a series of visually cohesive graphics, stories, and posts that maintained consistent branding across multiple platforms. The campaign utilized trending design styles, strategic color schemes, and compelling visual storytelling to create a strong brand presence and drive user interaction.",
+    client: "FashionForward",
+    year: "2024",
+    duration: "12 weeks",
+    tags: [
+      "Social Media",
+      "Digital Marketing",
+      "Content Creation",
+      "Brand Consistency",
+      "Visual Strategy",
+    ],
+    coverImage: "/assets/grid2.png",
+    videos: [
+      {
+        id: 1,
+        title: "Campaign Overview",
+        description: "Complete campaign strategy and results",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight1.png",
+        duration: "3:30",
+      },
+      {
+        id: 2,
+        title: "Design Process",
+        description: "From concept to final graphics",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "4:45",
+      },
+      {
+        id: 3,
+        title: "Platform Adaptations",
+        description: "How designs were adapted for different social platforms",
+        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        thumbnail: "/assets/spotlight3.png",
+        duration: "2:50",
+      },
+      {
+        id: 4,
+        title: "Campaign Results",
+        description: "Metrics and success analysis",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight4.png",
+        duration: "3:05",
+      },
+    ],
+  },
   "corporate-video": {
     id: 4,
     title: "Corporate Video Production",
@@ -78,7 +231,12 @@ export const projectDetails = {
     client: "Tech Solutions Inc.",
     year: "2024",
     duration: "Multiple videos",
-    tags: ["Video Production", "Color Grading", "Sound Design", "Motion Graphics"],
+    tags: [
+      "Video Production",
+      "Color Grading",
+      "Sound Design",
+      "Motion Graphics",
+    ],
     coverImage: "/assets/spotlight2.png",
     videos: [
       {
