@@ -32,7 +32,7 @@ const VideoShowcase = () => {
 
   const handleVideoSelect = (video) => {
     setSelectedVideo(video);
-    setIsPlaying(true); // Auto-play cuando se selecciona
+    setIsPlaying(false); // Reset playing state, ReactPlayer will handle autoplay
   };
 
   const handleClose = () => {
@@ -55,12 +55,12 @@ const VideoShowcase = () => {
           {selectedVideo ? (
             <div className="absolute inset-0 bg-black rounded-2xl border border-black-200 shadow-2xl">
               {/* Video Player Container */}
-              <div className="absolute inset-0 bg-black">
+              <div className="absolute inset-0 bg-black rounded-2xl overflow-hidden">
                 {selectedVideo.videoUrl.includes("youtube.com") ||
                 selectedVideo.videoUrl.includes("youtu.be") ||
                 selectedVideo.videoUrl.includes("vimeo.com") ? (
                   <ReactPlayer
-                    src={selectedVideo.videoUrl}
+                    url={selectedVideo.videoUrl}
                     width="100%"
                     height="100%"
                     controls={true}
@@ -72,8 +72,18 @@ const VideoShowcase = () => {
                     pip={false}
                     stopOnUnmount={true}
                     light={false}
+                    className="react-player"
+                    style={{ position: "absolute", top: 0, left: 0 }}
+                    onReady={() => {
+                      // Auto-play cuando el video está listo
+                      setIsPlaying(true);
+                    }}
                     onPlay={() => setIsPlaying(true)}
                     onPause={() => setIsPlaying(false)}
+                    onError={(error) => {
+                      console.error("Error playing video:", error);
+                      setIsPlaying(false);
+                    }}
                     config={{
                       youtube: {
                         playerVars: {
