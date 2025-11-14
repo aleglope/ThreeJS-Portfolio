@@ -195,7 +195,7 @@ const VideoShowcase = () => {
       {/* Skills Section */}
       <div className="mt-20 max-w-4xl mx-auto">
         <h3 className="text-3xl font-bold text-white text-center mb-8 font-generalsans">
-          Video Production Skills
+          Image and Video Production Skills
         </h3>
 
         <div className="grid md:grid-cols-3 gap-6">

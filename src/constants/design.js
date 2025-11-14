@@ -26,12 +26,18 @@ export const designNavLinks = [
 export const designProjects = [
   {
     id: 1,
-    title: "Brand Identity Design",
+    title: "Brand Identity & UX/UI Design",
     category: "Graphic Design",
     description:
-      "Complete brand identity package including logo, color palette, and brand guidelines.",
+      "Complete brand identity with AI-enhanced logo design, UX/UI systems, and comprehensive brand guidelines.",
     image: "/assets/grid1.png",
-    tags: ["Branding", "Logo Design", "Visual Identity"],
+    tags: [
+      "UX/UI Design",
+      "AI Logo Creation",
+      "Brand Identity",
+      "Web Design",
+      "Visual Systems",
+    ],
     hasDetailPage: true,
     slug: "brand-identity-design",
   },
@@ -42,7 +48,12 @@ export const designProjects = [
     description:
       "Revolutionary advertising solutions using AI-generated videos, avatars, and automated content creation for brands.",
     videoUrl: "/assets/spotlight1.png",
-    tags: ["AI Video Generation", "AI Avatars", "Automated Advertising", "Brand Storytelling"],
+    tags: [
+      "AI Video Generation",
+      "AI Avatars",
+      "Automated Advertising",
+      "Brand Storytelling",
+    ],
     hasDetailPage: true,
     slug: "ai-advertising-content",
   },
@@ -53,7 +64,13 @@ export const designProjects = [
     description:
       "Psychedelic posters, stunning concert visuals, and immersive VJ performances for DJ events and music festivals.",
     image: "/assets/grid2.png",
-    tags: ["VJing", "Psychedelic Art", "Concert Posters", "Live Visuals", "Music Events"],
+    tags: [
+      "VJing",
+      "Psychedelic Art",
+      "Concert Posters",
+      "Live Visuals",
+      "Music Events",
+    ],
     hasDetailPage: true,
     slug: "music-event-visuals",
   },
@@ -74,47 +91,62 @@ export const designProjects = [
 export const projectDetails = {
   "brand-identity-design": {
     id: 1,
-    title: "Brand Identity Design",
+    title: "Brand Identity & UX/UI Design",
     category: "Graphic Design",
     fullDescription:
-      "A comprehensive brand identity project that transformed a startup's visual presence. This project involved creating a complete brand system including logo design, color palette development, typography selection, and brand guidelines. The result was a cohesive visual identity that effectively communicated the company's values and mission across all touchpoints.",
-    client: "StartupXYZ",
+      "Revolutionary brand identity creation combining AI-powered logo design with comprehensive UX/UI systems and strategic brand development. Our approach integrates cutting-edge AI tools for logo generation and refinement with traditional design excellence in user experience and interface design. From initial concept to full brand implementation, we create cohesive visual systems that not only look stunning but also drive user engagement and business growth. Each project includes extensive research, AI-enhanced logo variations, complete UX/UI design systems, and detailed brand guidelines that ensure consistent application across all digital and physical touchpoints.",
+    client: "Multiple Tech Startups & Digital Agencies",
     year: "2024",
-    duration: "6 weeks",
+    duration: "8-12 weeks",
     tags: [
-      "Branding",
-      "Logo Design",
-      "Visual Identity",
-      "Typography",
-      "Color Theory",
+      "UX/UI Design",
+      "AI Logo Creation",
+      "Brand Identity",
+      "Web Design",
+      "Visual Systems",
+      "User Experience",
+      "Interface Design",
+      "Brand Strategy",
+      "AI-Enhanced Design",
+      "Digital Branding",
     ],
     coverImage: "/assets/grid1.png",
     videos: [
       {
         id: 1,
-        title: "Logo Design Process",
+        title: "AI Logo Design Process",
         description:
-          "Complete logo design journey from concept to final design",
+          "How AI tools accelerate logo creation while maintaining design excellence",
         videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
         thumbnail: "/assets/spotlight1.png",
-        duration: "4:20",
+        duration: "5:45",
       },
       {
         id: 2,
-        title: "Brand Application",
+        title: "UX/UI System Design",
         description:
-          "How the brand identity is applied across different mediums",
+          "Creating comprehensive user experience and interface design systems",
         videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
         thumbnail: "/assets/spotlight2.png",
-        duration: "3:15",
+        duration: "6:30",
       },
       {
         id: 3,
-        title: "Style Guide Presentation",
-        description: "Complete brand guidelines and usage examples",
+        title: "Brand Identity Implementation",
+        description:
+          "From logo to full brand system - complete identity rollout",
         videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
         thumbnail: "/assets/spotlight3.png",
-        duration: "5:30",
+        duration: "4:15",
+      },
+      {
+        id: 4,
+        title: "AI vs Traditional Design",
+        description:
+          "Balancing AI efficiency with human creativity in brand design",
+        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        thumbnail: "/assets/spotlight4.png",
+        duration: "7:20",
       },
     ],
   },
@@ -142,7 +174,8 @@ export const projectDetails = {
       {
         id: 1,
         title: "AI Avatar Showcase",
-        description: "Custom AI-generated avatars bringing brands to life with personality",
+        description:
+          "Custom AI-generated avatars bringing brands to life with personality",
         videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
         thumbnail: "/assets/spotlight1.png",
         duration: "3:15",
@@ -150,7 +183,8 @@ export const projectDetails = {
       {
         id: 2,
         title: "Automated Video Generation",
-        description: "How AI creates professional advertisements from simple text prompts",
+        description:
+          "How AI creates professional advertisements from simple text prompts",
         videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
         thumbnail: "/assets/spotlight2.png",
         duration: "4:30",
@@ -158,7 +192,8 @@ export const projectDetails = {
       {
         id: 3,
         title: "Brand Storytelling with AI",
-        description: "Transforming brand messages into compelling visual narratives",
+        description:
+          "Transforming brand messages into compelling visual narratives",
         videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
         thumbnail: "/assets/spotlight3.png",
         duration: "5:20",
@@ -166,7 +201,8 @@ export const projectDetails = {
       {
         id: 4,
         title: "AI vs Traditional Production",
-        description: "Comparing AI-generated content with traditional video production",
+        description:
+          "Comparing AI-generated content with traditional video production",
         videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
         thumbnail: "/assets/spotlight4.png",
         duration: "6:45",
@@ -198,7 +234,8 @@ export const projectDetails = {
       {
         id: 1,
         title: "Psychedelic Poster Collection",
-        description: "Mind-bending concert posters blending music and psychedelic art",
+        description:
+          "Mind-bending concert posters blending music and psychedelic art",
         videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
         thumbnail: "/assets/spotlight1.png",
         duration: "4:15",
@@ -206,7 +243,8 @@ export const projectDetails = {
       {
         id: 2,
         title: "Live VJ Performance",
-        description: "Real-time visual manipulation synchronized with electronic music",
+        description:
+          "Real-time visual manipulation synchronized with electronic music",
         videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
         thumbnail: "/assets/spotlight2.png",
         duration: "5:30",
@@ -320,51 +358,111 @@ export const videoShowcase = [
 ];
 
 // Project categories for filtering
-export const designCategories = ["All", "AI Content", "Music & Events", "Graphic Design", "Video Editing"];
+export const designCategories = [
+  "All",
+  "AI Content",
+  "Music & Events",
+  "Graphic Design",
+  "Video Editing",
+];
 
 // Project types for contact form
 export const projectTypes = [
   { value: "ai-video", label: "AI Video Generation" },
   { value: "ai-avatars", label: "AI Avatar Creation" },
   { value: "automated-ads", label: "Automated Advertising" },
+  { value: "ai-logo-design", label: "AI Logo Design & Branding" },
+  { value: "ux-ui-design", label: "UX/UI Design Systems" },
   { value: "vj-events", label: "VJing & Live Visuals" },
   { value: "concert-posters", label: "Concert Posters & Event Graphics" },
   { value: "music-videos", label: "Music Video Production" },
   { value: "design", label: "Graphic Design" },
   { value: "video", label: "Traditional Video Editing" },
   { value: "motion", label: "Motion Graphics" },
-  { value: "branding", label: "Branding" },
+  { value: "branding", label: "Traditional Branding" },
   { value: "other", label: "Other" },
 ];
 
-// Video production skills
+// Design & Branding skills
 export const videoSkills = [
   {
     id: 1,
-    title: "AI Video Generation",
-    description: "Runway ML, Pika Labs, Synthesia, Custom AI Models",
+    title: "AI Logo & Brand Design",
+    description:
+      "AI-powered logo creation, brand identity systems, advanced AI design tools",
     gradient: "from-cyan-500 to-blue-600",
-    icon: "ai",
+    icon: "ai-logo",
+    image: "/assets/github.svg",
   },
   {
     id: 2,
-    title: "VJing & Live Visuals",
-    description: "Real-time video performance, audio-visual sync, Resolume Arena",
+    title: "UX/UI Design Systems",
+    description:
+      "Figma, Adobe XD, user research, interaction design, prototyping",
     gradient: "from-purple-500 to-pink-600",
-    icon: "vj",
+    icon: "ux-ui",
+    image: "/assets/figma.svg",
   },
   {
     id: 3,
-    title: "Psychedelic Art Design",
-    description: "Psychedelic graphics, trippy visuals, music-inspired artwork",
-    gradient: "from-orange-500 to-red-600",
-    icon: "psychedelic",
+    title: "Brand Strategy & Research",
+    description:
+      "Market research, competitor analysis, brand positioning, target audience definition",
+    gradient: "from-blue-500 to-indigo-600",
+    icon: "brand-strategy",
+    image: "/assets/Python.svg",
   },
   {
     id: 4,
+    title: "Typography & Visual Hierarchy",
+    description:
+      "Custom font selection, typography systems, visual hierarchy, readability optimization",
+    gradient: "from-violet-500 to-purple-600",
+    icon: "typography",
+    image: "/assets/tailwindcss.png",
+  },
+  {
+    id: 5,
+    title: "Color Theory & Psychology",
+    description:
+      "Color palette creation, brand colors, psychological impact, accessibility compliance",
+    gradient: "from-pink-500 to-rose-600",
+    icon: "color-theory",
+    image: "/assets/notion.svg",
+  },
+  {
+    id: 6,
+    title: "Psychedelic & Minimal Art",
+    description:
+      "AI-generated artwork, psychedelic designs, minimal aesthetics, custom client-inspired creations",
+    gradient: "from-purple-600 to-pink-500",
+    icon: "psychedelic-minimal",
+    image: "/assets/react.svg",
+  },
+  {
+    id: 7,
+    title: "VJing & Live Visuals",
+    description:
+      "Real-time video performance, audio-visual sync, Resolume Arena",
+    gradient: "from-orange-500 to-red-600",
+    icon: "vj",
+    image: "/assets/framer.png",
+  },
+  {
+    id: 8,
     title: "Professional Editing",
     description: "Premiere Pro, After Effects, DaVinci Resolve, Color Grading",
     gradient: "from-green-500 to-teal-600",
     icon: "video",
+    image: "/assets/threejs.svg",
+  },
+  {
+    id: 9,
+    title: "Digital Asset Management",
+    description:
+      "Brand asset libraries, style guide creation, brand consistency tools",
+    gradient: "from-teal-500 to-cyan-600",
+    icon: "asset-management",
+    image: "/assets/nextjs.svg",
   },
 ];
