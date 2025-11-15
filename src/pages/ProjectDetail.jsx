@@ -5,6 +5,7 @@ import { projectDetails } from "../constants/design.js";
 import DesignNavbar from "../sections/design/DesignNavbar.jsx";
 import Footer from "../sections/Footer.jsx";
 import CursorTrail from "../components/CursorTrail";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -14,6 +15,33 @@ const ProjectDetail = () => {
     project?.videos?.[0] || null
   );
   const [isPlaying, setIsPlaying] = useState(false);
+  // Gallery navigation functions
+  const galleryCategories = project?.imageGallery
+    ? Object.keys(project.imageGallery)
+    : [];
+  const [activeGalleryCategory, setActiveGalleryCategory] = useState(
+    galleryCategories.length > 0 ? galleryCategories[0] : ""
+  );
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const currentGalleryImages =
+    project?.imageGallery?.[activeGalleryCategory] || [];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === currentGalleryImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? currentGalleryImages.length - 1 : prev - 1
+    );
+  };
+
+  const handleCategoryChange = (category) => {
+    setActiveGalleryCategory(category);
+    setCurrentImageIndex(0); // Reset to first image when changing category
+  };
 
   if (!project) {
     return (
@@ -97,6 +125,12 @@ const ProjectDetail = () => {
                   <p className="text-white-600 text-sm mb-2">Videos</p>
                   <p className="text-white font-semibold">
                     {project.videos.length} videos
+                  </p>
+                </div>
+                <div>
+                  <p className="text-white-600 text-sm mb-2">Gallery</p>
+                  <p className="text-white font-semibold">
+                    {galleryCategories.length} categories
                   </p>
                 </div>
               </div>
@@ -266,6 +300,114 @@ const ProjectDetail = () => {
           </div>
         </section>
 
+        {/* Image Gallery Section */}
+        {project.imageGallery && galleryCategories.length > 0 && (
+          <section className="c-space my-20">
+            <h2 className="text-3xl font-bold text-white mb-8 font-generalsans">
+              Project Gallery
+            </h2>
+
+            {/* Category Tabs */}
+            <div className="flex flex-wrap gap-4 mb-8">
+              {galleryCategories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => handleCategoryChange(category)}
+                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+                    activeGalleryCategory === category
+                      ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg shadow-pink-500/30"
+                      : "bg-black-300 text-white-600 hover:bg-black-200 hover:text-white"
+                  }`}
+                >
+                  {category}
+                  <span className="ml-2 text-xs opacity-75">
+                    ({project.imageGallery[category].length})
+                  </span>
+                </button>
+              ))}
+            </div>
+
+            {/* Gallery Carousel */}
+            {currentGalleryImages.length > 0 && (
+              <div className="relative max-w-6xl mx-auto">
+                {/* Main Image Display */}
+                <div className="relative rounded-xl overflow-hidden border border-pink-500/30 shadow-2xl shadow-pink-500/20 mb-6">
+                  <div className="relative w-full bg-black-300 flex items-center justify-center min-h-[400px]">
+                    <img
+                      src={currentGalleryImages[currentImageIndex].image}
+                      alt={currentGalleryImages[currentImageIndex].title}
+                      className="w-full h-auto object-contain transition-all duration-300"
+                    />
+
+                    {/* Navigation Arrows */}
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+                    >
+                      <MdChevronLeft className="w-6 h-6 text-white" />
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+                    >
+                      <MdChevronRight className="w-6 h-6 text-white" />
+                    </button>
+
+                    {/* Image Counter */}
+                    <div className="absolute bottom-4 right-4 px-3 py-1 bg-black/80 backdrop-blur-sm rounded-full text-white text-sm font-semibold">
+                      {currentImageIndex + 1} / {currentGalleryImages.length}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Image Info */}
+                <div className="bg-black-200 rounded-xl p-6 border border-pink-500/20">
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {currentGalleryImages[currentImageIndex].title}
+                  </h3>
+                  <p className="text-white-600 text-lg">
+                    {currentGalleryImages[currentImageIndex].description}
+                  </p>
+                </div>
+
+                {/* Thumbnail Navigation */}
+                <div className="flex gap-4 mt-6 overflow-x-auto pb-2 custom-scrollbar">
+                  {currentGalleryImages.map((image, index) => (
+                    <button
+                      key={image.id}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`flex-shrink-0 relative rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                        index === currentImageIndex
+                          ? "border-pink-500 shadow-lg shadow-pink-500/30"
+                          : "border-transparent hover:border-pink-500/50"
+                      }`}
+                    >
+                      <img
+                        src={image.image}
+                        alt={image.title}
+                        className="w-20 h-20 object-cover"
+                      />
+                      {index === currentImageIndex && (
+                        <div className="absolute inset-0 bg-pink-500/20 flex items-center justify-center">
+                          <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center">
+                            <svg
+                              className="w-4 h-4 text-white"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
         <Footer />
       </main>
     </>
@@ -273,5 +415,3 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
-
-
