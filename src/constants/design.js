@@ -30,7 +30,7 @@ export const designProjects = [
     category: "Graphic Design",
     description:
       "Complete brand identity with AI-enhanced logo design, UX/UI systems, and comprehensive brand guidelines.",
-    image: "/assets/grid1.png",
+    image: "/assets/MatematicGalaxy.jpeg",
     tags: [
       "UX/UI Design",
       "AI Logo Creation",
@@ -47,7 +47,7 @@ export const designProjects = [
     category: "AI Content",
     description:
       "Revolutionary advertising solutions using AI-generated videos, avatars, and automated content creation for brands.",
-    videoUrl: "/assets/spotlight1.png",
+    videoUrl: "/assets/MandalaIA.jpeg",
     tags: [
       "AI Video Generation",
       "AI Avatars",
@@ -63,7 +63,7 @@ export const designProjects = [
     category: "Music & Events",
     description:
       "Psychedelic posters, stunning concert visuals, and immersive VJ performances for DJ events and music festivals.",
-    image: "/assets/grid2.png",
+    image: "/assets/MatematicNeon.jpeg",
     tags: [
       "VJing",
       "Psychedelic Art",
@@ -80,7 +80,7 @@ export const designProjects = [
     category: "Video Editing",
     description:
       "Professional corporate video with interviews, b-roll, and animated graphics.",
-    videoUrl: "/assets/spotlight2.png",
+    image: "/assets/MatematicAurora.jpeg",
     tags: ["Video Production", "Color Grading", "Sound Design"],
     hasDetailPage: true,
     slug: "corporate-video",
@@ -152,13 +152,13 @@ export const projectDetails = {
   },
   "ai-advertising-content": {
     id: 2,
-    title: "AI-Generated Advertising Content",
+    title: "AI-Generated Advertising Content and Social Media Marketing",
     category: "AI Content",
     fullDescription:
       "Transform your brand's advertising with cutting-edge AI technology. Our AI-generated video solutions create stunning, professional-quality advertisements in record time. From custom AI avatars that represent your brand personality to automated video generation that adapts to your messaging, we deliver cost-effective, scalable advertising solutions that captivate audiences and drive engagement. Experience the future of marketing where creativity meets artificial intelligence.",
-    client: "Multiple Fortune 500 Brands",
-    year: "2024",
-    duration: "Instant to 48 hours",
+    client: "Multiple Clients",
+    year: "2025",
+    duration: "Instant to 72 hours",
     tags: [
       "AI Video Generation",
       "AI Avatars",
@@ -173,39 +173,39 @@ export const projectDetails = {
     videos: [
       {
         id: 1,
-        title: "AI Avatar Showcase",
+        title: "Cinematic Experiences Forged with AI",
         description:
-          "Custom AI-generated avatars bringing brands to life with personality",
-        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+          "We demonstrate how artificial intelligence brings complex advertising ideas to life for beverage brands like Alewences. This work captures an aesthetic of luxury and nightlife with vibrant neon colors, high-end vehicles, and dynamic settings—all generated with cinematic precision. We create top-tier advertisements that position your product as the leader in its category, adhering to any specific requirements for color, model, or environment. The future of your beverage campaigns is here.",
+        videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",
         thumbnail: "/assets/spotlight1.png",
-        duration: "3:15",
+        duration: "1:02",
       },
       {
         id: 2,
-        title: "Automated Video Generation",
+        title: "Convert Your Static Graphic into a Viral Ad",
         description:
-          "How AI creates professional advertisements from simple text prompts",
-        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+          "We transform your event’s traditional graphic materials (posters, flyers) into immersive, high-impact promotional videos ready for social media. We use visual effects, animation, and strategic music to bring every detail of the poster to life, ensuring a visual hook that maximizes visibility and engagement across platforms like Instagram, TikTok, and Facebook. The result: An essential tool for your promoters to generate buzz and guarantee attendance at your next party or event.",
+        videoUrl: "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
         thumbnail: "/assets/spotlight2.png",
-        duration: "4:30",
+        duration: "00:23",
       },
       {
         id: 3,
-        title: "Brand Storytelling with AI",
+        title: "The Future of Fashion Advertising",
         description:
-          "Transforming brand messages into compelling visual narratives",
-        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+          "Transform your brand's advertising. Our AI Avatar technology seamlessly models your clothing line, creating high-impact, full-production video ads without the need for human models or studio intervention. Save time, reduce costs, and accelerate content creation. Every outfit, every style, instantly visualized.",
+        videoUrl: "https://www.youtube.com/shorts/-48FW7i6peE",
         thumbnail: "/assets/spotlight3.png",
-        duration: "5:20",
+        duration: "00:51",
       },
       {
         id: 4,
-        title: "AI vs Traditional Production",
+        title: "The Evolution of DJ and Event Session Promotion",
         description:
-          "Comparing AI-generated content with traditional video production",
-        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+          "We transform the static design of your musical event poster into a vibrant, effects-driven video piece ready to generate hype across all platforms. Our process strictly respects the original visual identity of the poster, incorporating dynamic movements, light effects, and rhythmic energy that mirrors the event's atmosphere. This is the perfect solution for promoters and DJs who require high-quality content to maximize ticket sales and visual impact before the party. The poster is no longer just information; it's an experience.",
+        videoUrl: "https://www.youtube.com/shorts/vOZjQxlaAPY",
         thumbnail: "/assets/spotlight4.png",
-        duration: "6:45",
+        duration: "00:25",
       },
     ],
   },
