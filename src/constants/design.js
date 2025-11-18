@@ -26,7 +26,7 @@ export const designNavLinks = [
 export const designProjects = [
   {
     id: 1,
-    title: "Brand Identity & UX/UI Design",
+    title: "BRAND IDENTITY & UX/UI DESIGN",
     category: "Graphic Design",
     description:
       "Complete brand identity with AI-enhanced logo design, UX/UI systems, and comprehensive brand guidelines.",
@@ -43,7 +43,7 @@ export const designProjects = [
   },
   {
     id: 2,
-    title: "AI-Generated Advertising Content",
+    title: "AI-GENERATED ADVERTISING CONTENT",
     category: "AI Content",
     description:
       "Revolutionary advertising solutions using AI-generated videos, avatars, and automated content creation for brands.",
@@ -59,7 +59,7 @@ export const designProjects = [
   },
   {
     id: 3,
-    title: "Music Event Visuals & VJing",
+    title: "MUSIC EVENT VISUALS & VJING",
     category: "Music & Events",
     description:
       "Psychedelic posters, stunning concert visuals, and immersive VJ performances for DJ events and music festivals.",
@@ -76,14 +76,15 @@ export const designProjects = [
   },
   {
     id: 4,
-    title: "Corporate Video",
-    category: "Video Editing",
+    title:
+      "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
     description:
-      "Professional corporate video with interviews, b-roll, and animated graphics.",
+      "Innovative visual art in photography and video, created and enhanced with artificial intelligence.",
     image: "/assets/MatematicAurora.jpeg",
     tags: ["Video Production", "Color Grading", "Sound Design"],
     hasDetailPage: true,
-    slug: "corporate-video",
+    slug: "ai-photographic-art",
+    category: "AI Photography",
   },
 ];
 
@@ -430,12 +431,21 @@ export const projectDetails = {
       },
       {
         id: 4,
-        title: "The Evolution of DJ and Event Session Promotion",
+        title: "HALLOWEEN AI HORROR FRIEND - XENOMORPH WITH FRESH BREATH",
         description:
-          "We transform the static design of your musical event poster into a vibrant, effects-driven video piece ready to generate hype across all platforms. Our process strictly respects the original visual identity of the poster, incorporating dynamic movements, light effects, and rhythmic energy that mirrors the event's atmosphere. This is the perfect solution for promoters and DJs who require high-quality content to maximize ticket sales and visual impact before the party. The poster is no longer just information; it's an experience.",
-        videoUrl: "https://www.youtube.com/shorts/vOZjQxlaAPY",
+          "When you ask Artificial Intelligence for a 'terrifying friend for Halloween' 🎃, but you forget to put in the prompt 'with fresh breath'. Be careful what you wish for! 😂 And that's because even the most fearsome Xenomorph in the universe needs help after lunch. Who would have thought that the real terror wasn't its double jaw, but the astronaut breath? 🤢➡️🍬 This video is just one of the craziness I've been creating with AI for this Halloween. Creativity has no limits!",
+        videoUrl: "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
         thumbnail: "/assets/spotlight4.png",
         duration: "00:25",
+      },
+      {
+        id: 5,
+        title: "AI-GENERATED ALEWENCES CYBERPUNK AD - HYPERREALISTIC CAN",
+        description:
+          "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it. 🚀 (For Entrepreneurs and Brands!): STOP 🛑 Stop spending thousands on slow production. This Hollywood-quality blockbuster ad was created with AI in a fraction of the time (and cost!) 🤯. A hyperrealistic can in a cyberpunk world. Artificial Intelligence is the new marketing tool. This is what an ad looks like when there are no limits.",
+        videoUrl: "https://www.youtube.com/shorts/o0IVhvMOUqE",
+        thumbnail: "/assets/spotlight5.png",
+        duration: "00:30",
       },
     ],
   },
@@ -447,7 +457,7 @@ export const projectDetails = {
       "Immerse audiences in unforgettable music experiences through psychedelic art, dynamic VJ performances, and cutting-edge visual storytelling. From mind-bending concert posters that capture the essence of electronic music to real-time visual manipulations that sync perfectly with DJ sets, our work transforms ordinary events into extraordinary journeys. We blend traditional graphic design with live video performance, creating visual landscapes that enhance the musical experience and leave lasting impressions on festival-goers and club attendees alike.",
     client: "Various Music Festivals & DJ Collectives",
     year: "2024",
-    duration: "2-8 weeks per project",
+    duration: "1-2 weeks per project",
     tags: [
       "VJing",
       "Psychedelic Art",
@@ -467,7 +477,7 @@ export const projectDetails = {
           title: "NEON MUSIC - Festival de Música Electrónica",
           description:
             "Cartel moderno y vibrante para un festival de música electrónica. Utiliza un estilo de neón brillante sobre un fondo oscuro, con formas geométricas abstractas y un gran título 'NEON' en fuente futurista. El diseño sugiere una atmósfera de fiesta nocturna, luces láser y música dance.",
-          image: "/assets/poster/carteles1.png",
+          image: "/assets/poster/carteles1.jpg",
         },
         {
           id: 2,
@@ -537,14 +547,14 @@ export const projectDetails = {
           title: "Concierto de Rock 'THE GHOST' - Estilo Ilustración Oscura",
           description:
             "Cartel de estilo gótico y oscuro para un concierto de rock pesado. Presenta una ilustración detallada de una calavera o figura fantasma en blanco y negro, con tipografía 'heavy metal' en el título. El diseño es atmosférico y dramático, ideal para bandas de rock, metal o eventos temáticos.",
-          image: "/assets/poster/carteles13.png",
+          image: "/assets/poster/carteles11.jpg",
         },
         {
           id: 12,
           title: "Evento Musical 'LIVE DJ SET' - Geometría y Minimalismo",
           description:
             "Diseño minimalista y moderno para un evento de DJ Set. Utiliza una composición de figuras geométricas (círculos y líneas) en tonos apagados (gris, blanco, beige) con una fuente sans-serif limpia. El estilo es elegante, sutil y contemporáneo, ideal para música house, electrónica o inauguraciones de espacios minimalistas.",
-          image: "/assets/poster/carteles14.png",
+          image: "/assets/poster/carteles14.jpg",
         },
         {
           id: 13,
@@ -558,56 +568,107 @@ export const projectDetails = {
           title: "Concierto de Jazz/Blues - Estilo Silueta Neón",
           description:
             "Cartel sofisticado para un concierto de jazz o blues. El diseño utiliza la silueta de un músico tocando un instrumento (saxofón o guitarra) iluminada por luces de neón en colores fríos (azul, morado). La tipografía es elegante, capturando la atmósfera íntima y nocturna de un club de jazz.",
-          image: "/assets/poster/carteles16.png",
+          image: "/assets/poster/carteles16.jpg",
         },
         {
           id: 15,
           title: "Exposición de Arte Abstracto 'COLOR FLOW'",
           description:
             "Cartel de arte abstracto con colores vibrantes y efectos de flujo líquido o humo. La composición es dinámica, con el título 'COLOR FLOW' utilizando una tipografía moderna que parece derretirse o moverse con el fondo. Ideal para galerías de arte moderno o eventos creativos experimentales.",
-          image: "/assets/poster/carteles17.png",
+          image: "/assets/poster/carteles17.jpg",
         },
         {
           id: 16,
           title: "Lanzamiento de Producto 'FUTURE START' - Diseño Futurista",
           description:
             "Diseño futurista y de ciencia ficción para un lanzamiento de tecnología o evento de innovación. Presenta un fondo espacial o abstracto de tonos azules y morados con formas geométricas 3D y una rejilla de profundidad. La fuente es angular y moderna, enfatizando el concepto de 'FUTURE'.",
-          image: "/assets/poster/carteles18.png",
+          image: "/assets/poster/carteles18.jpg",
         },
         {
           id: 17,
           title: "Evento Deportivo Extremo 'ADRENALINE' - Dinámico y Fuerte",
           description:
             "Cartel agresivo y dinámico para un evento de deportes extremos o fitness. Utiliza un filtro de color rojo intenso sobre un fondo texturizado y una fuente audaz y distorsionada para el título 'ADRENALINE'. El diseño es potente, sugiriendo acción rápida, peligro y fuerza.",
-          image: "/assets/poster/carteles19.png",
+          image: "/assets/poster/carteles19.jpg",
         },
         {
           id: 18,
           title: "Conferencia de Diseño 'TYPOGRAPHY' - Enfoque Tipográfico",
           description:
             "Diseño gráfico minimalista que pone la tipografía como elemento central del arte. Utiliza la palabra 'TYPOGRAPHY' descompuesta o con texturas sutiles sobre un fondo neutro. El estilo es limpio, conceptual y se enfoca en la composición y el arte de la letra.",
-          image: "/assets/poster/carteles20.png",
+          image: "/assets/poster/carteles20.jpg",
         },
         {
           id: 19,
           title: "Festival de Verano 'SUMMER BREEZE' - Ilustración Tropical",
           description:
             "Cartel alegre y refrescante para un festival de verano o evento al aire libre. Presenta una ilustración de estilo tropical con palmeras y vegetación, utilizando una paleta de colores brillantes y saturados (verde, azul, naranja). La fuente es juguetona y evoca diversión y relajación.",
-          image: "/assets/poster/carteles21.png",
+          image: "/assets/poster/carteles21.jpg",
         },
         {
           id: 20,
           title: "Concierto o Evento 'DARK CITY' - Estilo Ciberpunk",
           description:
             "Cartel con fuerte influencia ciberpunk y estética de ciudad nocturna. Combina tonos oscuros con luces de neón rosa y azul brillante, y una tipografía distorsionada. El diseño es crudo, urbano y futurista, ideal para música alternativa, eventos de gaming o cine noir.",
-          image: "/assets/poster/carteles22.png",
+          image: "/assets/poster/carteles22.jpg",
+        },
+        {
+          id: 21,
+          title: "Feria de Tecnología 'INNOVATECH' - Minimalismo Futurista",
+          description:
+            "Cartel para una feria de tecnología moderna, con fondo blanco o plateado, formas geométricas y líneas delgadas en tonos metálicos (azul claro, gris, plata). Tipografía Sans Serif limpia y destellos sutiles que transmiten innovación, tecnología avanzada y profesionalismo.",
+          image: "/assets/poster/carteles23.jpg",
+        },
+        {
+          id: 22,
+          title:
+            "Festival de Cine Indie 'FRAME BY FRAME' - Collage Cinematográfico",
+          description:
+            "Diseño con recortes de fotogramas y elementos superpuestos simulando la edición y el arte del cine independiente. Paleta de colores cálidos y textura de papel o grano de película antigua. Transmite creatividad, pasión cinematográfica y autenticidad.",
+          image: "/assets/poster/carteles24.jpg",
+        },
+        {
+          id: 23,
+          title:
+            "Evento Educativo 'LEARN FEST' - Paleta Didáctica y Ilustración",
+          description:
+            "Cartel colorido y amigable con ilustraciones de libros, pizarras, y objetos educativos. Tipografía redondeada y colores brillantes (azul, naranja, amarillo) para estimular el aprendizaje y atraer a jóvenes y familias.",
+          image: "/assets/poster/carteles25.jpg",
+        },
+        {
+          id: 24,
+          title: "Concierto de Rock 'VOLTAGE' - Arte Eléctrico/Aggresivo",
+          description:
+            "Cartel oscuro con rayos eléctricos, siluetas de guitarras y tipografía desgarrada. Paleta de colores negro, blanco y amarillo neón, sugiriendo energía, ruido y potencia. El diseño impacta y es ideal para eventos de rock alternativo o metal.",
+          image: "/assets/poster/carteles26.png",
+        },
+        {
+          id: 25,
+          title: "Feria de Alimentos 'SABOR LOCAL' - Ilustración Orgánica",
+          description:
+            "Cartel con ilustraciones de frutas y verduras en estilo acuarela sobre un fondo claro. El diseño transmite frescura, salud y origen natural. Tipografía manuscrita o script, ideal para mercados saludables y eventos de productores locales.",
+          image: "/assets/poster/carteles27.jpg",
+        },
+        {
+          id: 26,
+          title: "Noche de Poesía 'VERSOS EN SOMBRA' - Estética Literaria",
+          description:
+            "Cartel elegante y poético con fondos oscuros, sombras largas y detalles de letras manuscritas o textos superpuestos. Elementos visuales como plumas, libros abiertos y copas de vino sugieren una atmósfera íntima y reflexiva.",
+          image: "/assets/poster/carteles13.png",
+        },
+        {
+          id: 27,
+          title: "Fiesta de Disfraces 'MASK PARTY' - Estilo Carnaval Moderno",
+          description:
+            "Cartel vibrante y festivo, con ilustraciones de máscaras coloridas, confeti y luces. Paleta de colores intensos (fucsia, azul, oro), composición dinámica y tipografía divertida, perfecto para capturar la energía y el misterio de una fiesta de disfraces para jóvenes.",
+          image: "/assets/poster/carteles12.jpg",
         },
       ],
     },
     videos: [
       {
         id: 1,
-        title: "Minimalist AI Nightclub Event Poster",
+        title: "MINIMALIST AI NIGHTCLUB EVENT POSTER",
         description:
           "A minimalist poster designed for a nightclub event, both created and edited using AI technology. The visual features clean lines, modern aesthetics, and a refined atmosphere, perfectly blending digital creativity with a minimalist approach—ideal for promoting exclusive nightlife experiences.",
         videoUrl: "https://www.youtube.com/watch?v=vOZjQxlaAPY",
@@ -616,24 +677,25 @@ export const projectDetails = {
       },
       {
         id: 2,
-        title: "Live VJ Performance",
+        title: "EDITING VIDEO FOR A POSTER DISCOTECA FOR A SOCIAL MEDIA POST",
         description:
-          "Real-time visual manipulation synchronized with electronic music",
-        videoUrl: "https://www.youtube.com/watch?v=Pthshy6sEHY",
+          "Video editing for a poster discoteca for a social media post using AI technology",
+        videoUrl: "https://www.youtube.com/watch?v=zwHNArb4730",
         thumbnail: "/assets/spotlight2.png",
-        duration: "5:30",
+        duration: "00:16",
       },
       {
         id: 3,
-        title: "Festival Visual Identity",
-        description: "Complete visual branding for music festivals and events",
-        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        title: "VIDEO EDITING",
+        description:
+          "A video fully edited and 100% created with Artificial Intelligence, showcasing the creative process behind a music festival poster. This project highlights the power of AI in both visual design and professional video editing.",
+        videoUrl: "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
         thumbnail: "/assets/spotlight3.png",
-        duration: "3:45",
+        duration: "02:57",
       },
       {
         id: 4,
-        title: "Audio-Visual Synergy",
+        title: "AUDIO-VISUAL SYNERGY",
         description: `Dive into this electrifying video edit, a high-energy montage that captures the intensity and narrative of the original track. This project demonstrates exceptional skill in synchronizing dynamic visual effects and rapid transitions with a soundtrack that speaks of ambition, risk, and unwavering determination.
 
 The music itself, the "Song of Arcane," was also created using Artificial Intelligence tools.
@@ -642,56 +704,184 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
         thumbnail: "/assets/spotlight4.png",
         duration: "02:15",
       },
+      {
+        id: 5,
+        title:
+          "EDITING VIDEO FOR A POSTER DISCOTECA VJING AND LIVE VISUALS FOR A SOCIAL MEDIA POST",
+        description:
+          "Video editing for a poster discoteca VJing and Live Visuals for a music festival using AI technology. Today we can create any design for any event and cheeper, con un precio muy reducido comparado con hace años",
+        videoUrl: "https://www.youtube.com/watch?v=1LTbk3_hLCU",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "05:00",
+      },
     ],
   },
-  "corporate-video": {
+  "ai-photographic-art": {
     id: 4,
-    title: "Corporate Video Production",
+    title:
+      "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
     category: "Video Editing",
     fullDescription:
-      "A comprehensive corporate video project featuring professional interviews, cinematic b-roll footage, and custom animated graphics. This project showcases my ability to create engaging corporate content that tells a compelling story while maintaining a professional aesthetic.",
-    client: "Tech Solutions Inc.",
-    year: "2024",
-    duration: "Multiple videos",
+      "Specializing in the creation of photographic art and audiovisual production through the integration of artificial intelligence, my work blends creativity, technique, and advanced technology to deliver unique images and videos, transforming artistic vision into innovative visual experiences.",
+    client: "Personal Projects",
+    year: "2025",
+    duration: "N/A",
     tags: [
-      "Video Production",
-      "Color Grading",
-      "Sound Design",
-      "Motion Graphics",
+      "artistic photography",
+      "digital art",
+      "AI photography",
+      "innovative visuals",
+      "AI-powered photography",
     ],
-    coverImage: "/assets/spotlight2.png",
+    coverImage: "/assets/photoart/art1.png",
+    imageGallery: {
+      photographicArt: [
+        {
+          id: 1,
+          title: "DIGITAL SOUL SERIES - ABSTRACT CONSCIOUSNESS",
+          description:
+            "Exploring the intersection between human consciousness and digital realms. This piece captures the ethereal connection between mind, nature, and technology through abstract visual elements enhanced by artificial intelligence.",
+          image: "/assets/photoart/art1.png",
+        },
+        {
+          id: 2,
+          title: "NATURE'S DIGITAL EMBRACE",
+          description:
+            "A harmonious blend of natural beauty and digital enhancement, showcasing how AI technology can amplify and reinterpret the organic world in stunning photographic art.",
+          image: "/assets/photoart/art2.jpeg",
+        },
+        {
+          id: 3,
+          title: "PIXELATED EMOTIONS",
+          description:
+            "Emotions captured and transformed through digital algorithms and AI processing. Each pixel tells a story of human experience reimagined in the digital age through innovative photography.",
+          image: "/assets/photoart/art3.png",
+        },
+        {
+          id: 4,
+          title: "CYBERNETIC DREAMS",
+          description:
+            "Dreamscapes where reality meets imagination through AI-enhanced photography. This piece represents the fusion of conscious thought and subconscious digital landscapes.",
+          image: "/assets/photoart/art4.jpeg",
+        },
+        {
+          id: 5,
+          title: "GOLDEN HOUR ALGORITHM",
+          description:
+            "The perfect moment captured and enhanced through AI algorithms. A tribute to the magic of natural light transformed by digital artistry and intelligent photographic processing.",
+          image: "/assets/photoart/art5.jpeg",
+        },
+        {
+          id: 6,
+          title: "DIGITAL RENAISSANCE",
+          description:
+            "Classical artistic principles reinterpreted through modern AI digital tools. A bridge between traditional art and contemporary technology in photographic expression.",
+          image: "/assets/photoart/art6.jpeg",
+        },
+        {
+          id: 7,
+          title: "NEURAL NETWORK VISIONS",
+          description:
+            "Visual representations inspired by artificial neural networks. Abstract patterns that emerge from complex computational processes in AI-generated photographic art.",
+          image: "/assets/photoart/art7.jpeg",
+        },
+        {
+          id: 8,
+          title: "QUANTUM AESTHETICS",
+          description:
+            "Exploring the beauty of quantum-inspired visual compositions through AI photography. Where particle physics meets artistic expression in digital imagery.",
+          image: "/assets/photoart/art8.jpeg",
+        },
+        {
+          id: 9,
+          title: "MEMORY FRAGMENTS",
+          description:
+            "Digital reconstructions of memory fragments through AI enhancement. Piecing together the puzzle of human experience through algorithmic interpretation in photography.",
+          image: "/assets/photoart/art9.jpeg",
+        },
+        {
+          id: 10,
+          title: "SYNTHETIC SERENITY",
+          description:
+            "Artificial tranquility created through digital synthesis and AI processing. A peaceful digital oasis crafted through innovative photographic techniques.",
+          image: "/assets/photoart/art10.jpeg",
+        },
+        {
+          id: 11,
+          title: "CODE CANVAS",
+          description:
+            "Art created from lines of code and algorithmic brushstrokes. Where programming meets painting in AI-powered digital photography and visual creation.",
+          image: "/assets/photoart/art11.jpeg",
+        },
+        {
+          id: 12,
+          title: "DIGITAL METAMORPHOSIS",
+          description:
+            "Transformation through digital means and AI enhancement. Evolution of form and color guided by intelligent algorithms in photographic art.",
+          image: "/assets/photoart/art12.jpeg",
+        },
+        {
+          id: 13,
+          title: "FRACTAL CONSCIOUSNESS",
+          description:
+            "Infinite patterns of self-similar consciousness. Exploring the fractal nature of human thought through visual art enhanced by artificial intelligence.",
+          image: "/assets/photoart/art13.jpeg",
+        },
+        {
+          id: 14,
+          title: "BINARY EMOTIONS",
+          description:
+            "Emotions expressed through binary code and digital interpretation. The language of computers speaking the language of feelings in AI photography.",
+          image: "/assets/photoart/art14.jpeg",
+        },
+        {
+          id: 15,
+          title: "ALGORITHMIC HARMONY",
+          description:
+            "Perfect balance achieved through mathematical precision and artistic vision. Where numbers create beauty in AI-enhanced photographic compositions.",
+          image: "/assets/photoart/art15.jpeg",
+        },
+        {
+          id: 16,
+          title: "DIGITAL GENESIS",
+          description:
+            "The birth of new forms through digital creation and AI processing. Witnessing the genesis of visual ideas in the digital realm through innovative photography.",
+          image: "/assets/photoart/art16.jpeg",
+        },
+        {
+          id: 17,
+          title: "NEURAL PATHWAYS",
+          description:
+            "Visual representation of neural connections and thought processes. Mapping the complex web of human cognition through AI-powered digital art and photography.",
+          image: "/assets/photoart/art17.png",
+        },
+        {
+          id: 18,
+          title: "COSMIC CODE",
+          description:
+            "Universal patterns decoded through digital artistry and AI enhancement. Connecting the cosmos through lines of code and visual elements in photographic expression.",
+          image: "/assets/photoart/art18.png",
+        },
+      ],
+    },
     videos: [
       {
         id: 1,
-        title: "Company Overview",
-        description: "Main corporate presentation video",
-        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+        title: "DIGITAL SOUL - CONSCIOUSNESS & NATURE INTERSECTION",
+        description:
+          "I explore the intersection between human consciousness, the beauty of nature, and the language of technology. 🌀 Each piece in my portfolio is a journey, an emotion captured in pixels and algorithms. This series, 'Digital Soul', visualizes our internal connection with the digital and natural universe. But art is not just for looking at. It's for feeling and owning. Comment what this image conveys to you. I would love to read your interpretation. 👇 And if you dream of having a unique piece of digital art that represents your own story or essence",
+        videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
         thumbnail: "/assets/spotlight1.png",
-        duration: "3:45",
+        duration: "00:28",
       },
       {
         id: 2,
-        title: "Team Interviews",
-        description: "Employee testimonials and interviews",
-        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+        title: "SELFIE TO FANTASY ART TRANSFORMATION",
+        description:
+          "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized. It's the perfect way to: ✔️ Create an unforgettable profile picture. ✔️ Make a gift that truly surprises. ✔️ Celebrate yourself with an artistic version you'll love. You send me your photo, and I create the magic. 🌟 Ready for your transformation?",
+        videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
         thumbnail: "/assets/spotlight2.png",
-        duration: "2:30",
-      },
-      {
-        id: 3,
-        title: "Product Demo",
-        description: "Detailed product demonstration",
-        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
-        thumbnail: "/assets/spotlight3.png",
-        duration: "4:15",
-      },
-      {
-        id: 4,
-        title: "Behind the Scenes",
-        description: "Making of the corporate video",
-        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
-        thumbnail: "/assets/spotlight4.png",
-        duration: "1:50",
+        duration: "00:41",
       },
     ],
   },
@@ -701,36 +891,76 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
 export const videoShowcase = [
   {
     id: 1,
-    title: "Showreel 2024",
+    title: "AI ADVERTISING MAGIC - ALEWENCES CYBERPUNK",
     thumbnail: "/assets/spotlight1.png",
-    duration: "2:30",
-    description: "A compilation of my best work from 2024",
-    videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+    duration: "00:30",
+    description:
+      "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it.",
+    videoUrl: "https://www.youtube.com/shorts/o0IVhvMOUqE",
   },
   {
     id: 2,
-    title: "DJ Event Poster Animation",
+    title: "DIGITAL SOUL - CONSCIOUSNESS & NATURE",
     thumbnail: "/assets/spotlight2.png",
-    duration: "0:16",
+    duration: "00:28",
     description:
-      "This video showcases a poster I designed for a DJ event. I applied effects and created motion graphics to bring the event poster to life.",
-    videoUrl: "https://www.youtube.com/watch?v=TU_VIDEO_ID_AQUI",
+      "I explore the intersection between human consciousness, the beauty of nature, and the language of technology. 🌀 Each piece in my portfolio is a journey, an emotion captured in pixels and algorithms. This series, 'Digital Soul', visualizes our internal connection with the digital and natural universe.",
+    videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
   },
   {
     id: 3,
-    title: "Motion Graphics Reel",
+    title: "SELFIE TO FANTASY ART TRANSFORMATION",
     thumbnail: "/assets/spotlight3.png",
-    duration: "3:15",
-    description: "Collection of motion graphics and animations",
-    videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+    duration: "00:41",
+    description:
+      "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized.",
+    videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
   },
   {
     id: 4,
-    title: "Documentary Short",
+    title: "HALLOWEEN AI HORROR FRIEND",
     thumbnail: "/assets/spotlight4.png",
-    duration: "5:00",
-    description: "Short documentary with cinematic storytelling",
-    videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
+    duration: "00:25",
+    description:
+      "When you ask Artificial Intelligence for a 'terrifying friend for Halloween' 🎃, but you forget to put in the prompt 'with fresh breath'. Be careful what you wish for! 😂 And that's because even the most fearsome Xenomorph in the universe needs help after lunch.",
+    videoUrl: "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
+  },
+  // Professional/Corporate Content
+  {
+    id: 5,
+    title: "BRAND IDENTITY SHOWCASE",
+    thumbnail: "/assets/spotlight5.png",
+    duration: "00:45",
+    description:
+      "Complete brand identity transformation using AI-powered design tools. From logo creation to comprehensive brand guidelines, witness how artificial intelligence revolutionizes the branding process while maintaining human creativity and strategic thinking.",
+    videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",
+  },
+  {
+    id: 6,
+    title: "CORPORATE VIDEO PRODUCTION",
+    thumbnail: "/assets/spotlight1.png",
+    duration: "01:15",
+    description:
+      "Professional corporate video production enhanced by AI technology. Combining cinematic storytelling with intelligent automation for compelling business narratives that engage audiences and drive results.",
+    videoUrl: "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
+  },
+  {
+    id: 7,
+    title: "PROFESSIONAL MOTION GRAPHICS",
+    thumbnail: "/assets/spotlight2.png",
+    duration: "00:35",
+    description:
+      "High-quality motion graphics created with AI assistance. From data visualization to explainer videos, discover how artificial intelligence accelerates the motion design process while maintaining professional standards.",
+    videoUrl: "https://www.youtube.com/shorts/-48FW7i6peE",
+  },
+  {
+    id: 8,
+    title: "DIGITAL MARKETING SOLUTIONS",
+    thumbnail: "/assets/spotlight3.png",
+    duration: "00:55",
+    description:
+      "Comprehensive digital marketing solutions powered by AI. From automated content creation to intelligent audience targeting, explore how artificial intelligence transforms marketing strategies and maximizes ROI.",
+    videoUrl: "https://youtube.com/shorts/vOZjQxlaAPY",
   },
 ];
 
