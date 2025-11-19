@@ -15,7 +15,8 @@ const DesignHero = () => {
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+      {/* Texto del hero - con z-index alto para estar encima */}
+      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 relative z-20">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hi, I am Alejandro <span className="waving-hand">👋</span>
         </p>
@@ -55,18 +56,18 @@ const DesignHero = () => {
           </Suspense>
         </Canvas>
 
-        {/* Modelo de Sketchfab - Reaper Scene */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        {/* Modelo de Sketchfab - Reaper Scene - Posicionado abajo */}
+        <div className="absolute inset-0 flex items-end justify-center pb-32 md:pb-24">
           <SketchfabModel
             modelId="31eb7468dce246538fc15edf25f97ef8"
             title="Reaper Scene"
-            scale={isMobile ? 0.8 : 1}
-            position={[0, 0]}
+            scale={isMobile ? 0.7 : 0.9}
+            position={[0, isMobile ? 50 : 30]}
           />
         </div>
       </div>
       
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space pointer-events-auto">
         <a href="#design-projects" className="w-fit">
           <Button
             name="View My Work"
