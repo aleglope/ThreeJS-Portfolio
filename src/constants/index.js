@@ -331,6 +331,16 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: "Rural Hackers 3D Gallery",
+    pos: "Creative Full Stack Developer",
+    duration: "2025",
+    title:
+      "Transformed the visual universe of RHackers from Instagram into an immersive web experience with Three.js. Designed a 3D gallery where each artwork comes to life, added a dedicated scene for the house dog, and created a foggy portal transporting users to an alternate world to discover 3D sculptures. Integrated interactive storytelling, asset optimization, serverless deployment, and a tech stack including React Three Fiber, GSAP, TailwindCSS, and Vercel to ensure smooth performance on any device.",
+    icon: "/assets/LogoRHackers.svg",
+    animation: "clapping",
+  },
+  {
+    id: 2,
     name: "Imatia Bootcamp - Work Wander",
     pos: "Full-Stack Developer Trainee",
     duration: "2024 - Present",
@@ -340,7 +350,7 @@ export const workExperiences = [
     animation: "victory",
   },
   {
-    id: 2,
+    id: 3,
     name: "Groove In Club",
     pos: "Fulstack Developer",
     duration: "2024",
@@ -350,7 +360,7 @@ export const workExperiences = [
     animation: "clapping",
   },
   {
-    id: 3,
+    id: 4,
     name: "Ipartek Bootcamp - Real Estate Solutions",
     pos: "Full-Stack Developer Trainee",
     duration: "2024",
