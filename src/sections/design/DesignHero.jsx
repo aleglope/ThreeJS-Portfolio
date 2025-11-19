@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import Cube from "../../components/Cube.jsx";
 import Rings from "../../components/Rings.jsx";
 import Button from "../../components/Button.jsx";
+import SketchfabModel from "../../components/SketchfabModel.jsx";
 
 const DesignHero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -23,7 +24,8 @@ const DesignHero = () => {
         </p>
       </div>
       
-      <div className="w-full h-full absolute inset-0">
+      <div className="w-full h-full absolute inset-0 pointer-events-none">
+        {/* Canvas 3D con elementos decorativos */}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
@@ -52,6 +54,16 @@ const DesignHero = () => {
             <pointLight position={[10, 10, 5]} intensity={0.5} color="#00ffff" />
           </Suspense>
         </Canvas>
+
+        {/* Modelo de Sketchfab - Reaper Scene */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <SketchfabModel
+            modelId="31eb7468dce246538fc15edf25f97ef8"
+            title="Reaper Scene"
+            scale={isMobile ? 0.8 : 1}
+            position={[0, 0]}
+          />
+        </div>
       </div>
       
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
