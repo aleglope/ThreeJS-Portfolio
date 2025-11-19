@@ -18,7 +18,7 @@ export const designNavLinks = [
   {
     id: 4,
     name: "Contact",
-    href: "#design-contact",
+    href: "#contact",
   },
 ];
 

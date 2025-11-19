@@ -123,7 +123,7 @@ const DesignProjects = () => {
       <div className="mt-16 text-center">
         <p className="text-white-600 mb-4">Want to see more of my work?</p>
         <a
-          href="#design-contact"
+          href="#contact"
           className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 hover:scale-105"
         >
           Get in Touch
