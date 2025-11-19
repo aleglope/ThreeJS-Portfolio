@@ -5,6 +5,7 @@ import VideoShowcase from "../sections/design/VideoShowcase.jsx";
 import Contact from "../sections/Contact.jsx";
 import Footer from "../sections/Footer.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import CursorTrail from "../components/CursorTrail";
 import { projectTypes } from "../constants/design.js";
 
@@ -26,6 +27,7 @@ const DesignPortfolio = () => {
         />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </main>
     </>
   );

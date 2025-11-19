@@ -8,6 +8,7 @@ import Footer from "../sections/Footer.jsx";
 import WorkExperience from "../sections/Experience.jsx";
 import Pong from "../sections/Pong.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import CursorTrail from "../components/CursorTrail";
 
 const DevPortfolio = () => {
@@ -25,6 +26,7 @@ const DevPortfolio = () => {
         <Pong />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </main>
     </>
   );

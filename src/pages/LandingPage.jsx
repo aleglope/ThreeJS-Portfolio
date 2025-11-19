@@ -4,6 +4,7 @@ import { PerspectiveCamera, Float } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import CanvasLoader from "../components/CanvasLoader";
 import Cube from "../components/Cube";
 import Rings from "../components/Rings";
@@ -154,6 +155,7 @@ const LandingPage = () => {
   return (
     <>
       <CursorTrail />
+      <SpeedInsights />
       <div className="min-h-screen w-full bg-black relative overflow-hidden">
         {/* Background 3D Canvas */}
         <div className="absolute inset-0 z-0">
