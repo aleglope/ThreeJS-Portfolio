@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ReactPlayer from "react-player";
 import {
   MdAutoAwesome,
@@ -29,10 +29,26 @@ const iconMap = {
 const VideoShowcase = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const videoPlayerRef = useRef(null);
+
+  // Function to detect mobile/tablet devices
+  const isMobileOrTablet = () => {
+    return window.innerWidth < 1024; // lg breakpoint in Tailwind
+  };
 
   const handleVideoSelect = (video) => {
     setSelectedVideo(video);
     setIsPlaying(false); // Reset playing state, ReactPlayer will handle autoplay
+
+    // Scroll to video player on mobile/tablet devices
+    if (isMobileOrTablet() && videoPlayerRef.current) {
+      setTimeout(() => {
+        videoPlayerRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100); // Small delay to ensure video is set before scrolling
+    }
   };
 
   const handleClose = () => {
@@ -50,7 +66,7 @@ const VideoShowcase = () => {
       </div>
 
       {/* Featured Video Player */}
-      <div className="mb-16 max-w-5xl mx-auto">
+      <div ref={videoPlayerRef} className="mb-16 max-w-5xl mx-auto">
         <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
           {selectedVideo ? (
             <div className="absolute inset-0 bg-black rounded-2xl border border-black-200 shadow-2xl">

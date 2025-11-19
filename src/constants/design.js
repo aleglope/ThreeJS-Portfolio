@@ -474,193 +474,191 @@ export const projectDetails = {
       posters: [
         {
           id: 1,
-          title: "NEON MUSIC - Festival de Música Electrónica",
+          title: "INDUSTRIAL TECHNO EVENT - BRUTALIST AESTHETIC",
           description:
-            "Cartel moderno y vibrante para un festival de música electrónica. Utiliza un estilo de neón brillante sobre un fondo oscuro, con formas geométricas abstractas y un gran título 'NEON' en fuente futurista. El diseño sugiere una atmósfera de fiesta nocturna, luces láser y música dance.",
+            "Monochromatic poster with an industrial and brutalist aesthetic for a techno music event. It features an imposing futuristic architectural structure with diagonal light lines creating depth. The design stands out for its dark and minimalist atmosphere, with clean typography announcing the artists, conveying an underground and avant-garde identity.",
           image: "/assets/poster/carteles1.jpg",
         },
         {
           id: 2,
-          title: "Festival de Cine 'CINE VIBRA' - Diseño Minimalista",
+          title: "RETRO POSTER 'BACK TO THE PAST' - SYNTHWAVE STYLE",
           description:
-            "Cartel minimalista para un festival de cine. Presenta una paleta de colores tierra y una ilustración de una mano sosteniendo un carrete de película simplificado. El diseño es limpio y artístico, enfocándose en la palabra 'CINE' en una fuente sans-serif, transmitiendo sofisticación y cultura.",
+            "Vibrant retrowave/synthwave style poster inspired by 80s pop culture. Features an iconic DeLorean car flying over a neon highway towards a futuristic city under a starry sky. The title 'BACK TO THE PAST' uses classic typography with gradients, evoking nostalgia and retro sci-fi.",
           image: "/assets/poster/carteles2.jpeg",
         },
         {
           id: 3,
-          title: "Exposición 'ART GLOW' - Abstracto y Vibrante",
+          title: "ART EXHIBITION 'CATEDRAL DAS ALMAS'",
           description:
-            "Diseño abstracto y visualmente impactante para una exposición de arte o galería. Presenta un gran número '5' o una forma geométrica con un fuerte degradado de colores cálidos (naranja, amarillo, rojo) y efectos de brillo, creando una sensación de energía creativa y modernidad.",
+            "Visually striking poster with a neo-gothic and occult aesthetic. Features a cathedral with sharp spires in black against a light background, with a large red devil face hovering above. Intricate blue smoke-like patterns surround the structure. The title 'Catedral das Almas' uses a gothic font, creating a dark, mysterious, and artistic atmosphere.",
           image: "/assets/poster/carteles3.jpeg",
         },
         {
           id: 4,
-          title: "Conferencia Tecnológica 'TECH HORIZON'",
+          title: "CYBERPUNK POSTER 'DARKWEB' - NEON & TECH",
           description:
-            "Cartel de estilo futurista y limpio para una conferencia o cumbre de tecnología. Combina tonos de azul y cian con líneas geométricas que sugieren una red o conexión digital. El diseño es profesional y apunta a temas de innovación y el futuro de la tecnología.",
+            "Cyberpunk style poster illustrating the concept of the 'Darkweb'. Shows a cluttered desk with multiple computer screens displaying code and red data maps, with a creepy white mask connected by wires in the foreground. The lighting is a mix of cool blue and ominous red neon, conveying a sense of high-tech danger and anonymity.",
           image: "/assets/poster/carteles4.jpeg",
         },
         {
           id: 5,
-          title: "Evento de Moda 'FASHION NIGHT' - Elegancia Bicolor",
+          title: "ABSTRACT ART 'FRAGMENTO' - CRYSTAL SHARDS",
           description:
-            "Cartel elegante y de alto contraste para un evento o desfile de moda. Utiliza una composición bicolor (blanco y negro) y tipografía de serif sofisticada para el título 'FASHION NIGHT', con una imagen sutil que evoca siluetas de modelos o arquitectura moderna.",
+            "Artistic poster titled 'Fragmento' featuring large, floating blue crystal shards with sharp edges against a beige, parchment-like background. Delicate lines and small particles surround the crystals, suggesting shattering or magical suspension. The title uses a decorative serif font with needle-and-thread motifs, adding a touch of handcrafted mystery.",
           image: "/assets/poster/carteles5.jpeg",
         },
         {
           id: 6,
-          title: "Concierto de Rock/Banda - Estilo Retro y Textura",
+          title: "METAL ALBUM COVER 'EYES OF RUIN'",
           description:
-            "Cartel con estética retro y 'grunge' para un concierto de rock o banda. Predominan los tonos oscuros y texturas rugosas, con un gran título 'CONCERT' y una ilustración que simula un cráneo o un motivo de la cultura pop, transmitiendo una energía fuerte y rebelde.",
+            "Dramatic 3D artwork for a metal band or album cover. The title 'EYES OF RUIN' is rendered in massive, cracked stone letters rising from a fiery, volcanic landscape with lava flows. Above, a stormy, dark sky sets a menacing tone. The design is heavy, impactful, and perfectly suited for the metal genre.",
           image: "/assets/poster/carteles6.jpeg",
         },
         {
           id: 7,
-          title: "Taller Creativo 'CREATE'",
+          title: "HORROR POSTER 'HORA DO PESADELO'",
           description:
-            "Diseño de cartel sencillo y moderno para un taller o clase creativa. Utiliza un fondo de color sólido y un icono geométrico que simboliza el proceso creativo. El enfoque está en el verbo 'CREATE' en una fuente limpia, sugiriendo un ambiente de aprendizaje práctico y diseño.",
+            "Chilling horror movie poster style design titled 'HORA DO PESADELO' (Nightmare Hour). Features a giant, screaming skull with a smaller red doorway inside its mouth, set against a dark, blood-red background. Above, a werewolf howls at a full moon. The composition creates a terrifying and classic horror atmosphere.",
           image: "/assets/poster/carteles7.jpeg",
         },
         {
           id: 8,
-          title: "Feria Gastronómica 'FOOD FUSION' - Diseño Cálido",
+          title: "DARK FANTASY 'RED EYES IN THE DARK'",
           description:
-            "Cartel para un evento o feria gastronómica. Emplea colores cálidos y apetitosos (naranja, amarillo) y un diseño gráfico que combina elementos de cocina y líneas fluidas. La tipografía es amigable y el diseño general invita a la degustación y la celebración culinaria.",
+            "Eerie dark fantasy poster featuring a humanoid figure with exposed muscle tissue and a visible brain, staring with glowing red eyes. The figure stands in a dark, silhouetted forest under a red moon. The title 'RED EYES IN THE DARK' is in bold red, emphasizing the creepy and supernatural theme.",
           image: "/assets/poster/carteles8.jpeg",
         },
         {
           id: 9,
-          title: "Exposición Urbana 'URBAN ART' - Graffiti y Color",
+          title: "FANTASY NOVEL COVER 'LEFT UNDEAD'",
           description:
-            "Cartel con influencia de arte callejero (street art) para una exposición urbana o galería. Combina tipografía de estilo graffiti con pinceladas audaces y una paleta de colores vibrantes y contrastantes. El diseño es enérgico y se dirige a una audiencia joven y moderna.",
+            "Fantasy book cover style poster titled 'LEFT UNDEAD - RISE & FALL'. Depicts a cloaked figure walking towards a dark, jagged castle or city silhouette under a giant, looming green snake in the sky. The color palette is a mix of sickly greens and yellows, suggesting a toxic or cursed world.",
           image: "/assets/poster/carteles9.jpeg",
         },
         {
           id: 10,
-          title: "Evento de Caridad 'HELP OTHERS'",
+          title: "SURREAL HORROR 'LEVEL UP BAD'",
           description:
-            "Cartel de estilo comunitario o de caridad con un diseño enfocado en la conexión humana. Predominan los colores suaves y una ilustración de personas interactuando, utilizando iconos de manos y abrazos. El mensaje principal es 'HELP OTHERS', transmitiendo empatía y llamado a la acción social.",
+            "Surreal and grotesque poster featuring a decaying, colorful skull with large eyes and exposed brain matter, resting on a landscape with blood rivers. Black birds fly in the stormy sky. The title 'LEVEL UP BAD' suggests a twisted game or dark fantasy narrative with a unique, disturbing art style.",
           image: "/assets/poster/carteles10.jpeg",
         },
         {
           id: 11,
-          title: "Concierto de Rock 'THE GHOST' - Estilo Ilustración Oscura",
+          title: "TECHNO EVENT '13 DICIEMBRE' - BRUTALIST RUINS",
           description:
-            "Cartel de estilo gótico y oscuro para un concierto de rock pesado. Presenta una ilustración detallada de una calavera o figura fantasma en blanco y negro, con tipografía 'heavy metal' en el título. El diseño es atmosférico y dramático, ideal para bandas de rock, metal o eventos temáticos.",
+            "Monochromatic flyer for a techno event on December 13th. Features a floating, concrete infinity symbol above a landscape of brutalist concrete ruins and floating debris. The high-contrast black and white style creates a stark, post-apocalyptic, and underground industrial vibe.",
           image: "/assets/poster/carteles11.jpg",
         },
         {
           id: 12,
-          title: "Evento Musical 'LIVE DJ SET' - Geometría y Minimalismo",
+          title: "MINIMALIST TECHNO POSTER - BLACK VOID",
           description:
-            "Diseño minimalista y moderno para un evento de DJ Set. Utiliza una composición de figuras geométricas (círculos y líneas) en tonos apagados (gris, blanco, beige) con una fuente sans-serif limpia. El estilo es elegante, sutil y contemporáneo, ideal para música house, electrónica o inauguraciones de espacios minimalistas.",
+            "Dark and minimalist techno poster featuring a concrete infinity symbol floating amidst abstract, blocky concrete structures in a black void. White laser-like lines cut through the darkness. The text lists artists like Alex Vigo and Manu TRC, maintaining a clean and mysterious underground aesthetic.",
           image: "/assets/poster/carteles14.jpg",
         },
         {
           id: 13,
-          title: "Festival de Música 'VIBES' - Tipografía Retro/Vintage",
+          title: "EVENT POSTER 'DIGITAL BRUTALISM'",
           description:
-            "Cartel con una fuerte estética retro y setentera. El diseño se centra en la palabra 'VIBES' con una fuente 'bubble' o curvilínea en colores cálidos y degradados (naranja, marrón, amarillo), enmarcada con patrones geométricos sutiles. Transmite una sensación de nostalgia, relajación y buena música.",
+            "High-energy event poster titled 'DIGITAL BRUTALISM'. Explodes with a central burst of concrete shards and bright white laser beams radiating outwards against a black background. The design captures the intensity and raw energy of industrial techno music.",
           image: "/assets/poster/carteles15.png",
         },
         {
           id: 14,
-          title: "Concierto de Jazz/Blues - Estilo Silueta Neón",
+          title: "TECHNO FLYER - FLOATING CONCRETE",
           description:
-            "Cartel sofisticado para un concierto de jazz o blues. El diseño utiliza la silueta de un músico tocando un instrumento (saxofón o guitarra) iluminada por luces de neón en colores fríos (azul, morado). La tipografía es elegante, capturando la atmósfera íntima y nocturna de un club de jazz.",
+            "Flyer for a techno event at 'A Pousada da Galiza Imaxinaria'. Shows a large, cracked concrete block with a painted infinity symbol floating in a brutalist architectural space. The scene is gritty and textured, with floating debris emphasizing a heavy, industrial sound.",
           image: "/assets/poster/carteles16.jpg",
         },
         {
           id: 15,
-          title: "Exposición de Arte Abstracto 'COLOR FLOW'",
+          title: "GOTHIC BRUTALISM - SHATTERED TOWER",
           description:
-            "Cartel de arte abstracto con colores vibrantes y efectos de flujo líquido o humo. La composición es dinámica, con el título 'COLOR FLOW' utilizando una tipografía moderna que parece derretirse o moverse con el fondo. Ideal para galerías de arte moderno o eventos creativos experimentales.",
+            "Vertical poster featuring a massive, gothic-style concrete tower splitting apart down the middle, revealing a dark void. Digital glitches and pixelated debris float around the structure. The high contrast and monumental scale suggest a powerful and destructive soundscape.",
           image: "/assets/poster/carteles17.jpg",
         },
         {
           id: 16,
-          title: "Lanzamiento de Producto 'FUTURE START' - Diseño Futurista",
+          title: "ABSTRACT TECHNO - LIGHT TUNNEL",
           description:
-            "Diseño futurista y de ciencia ficción para un lanzamiento de tecnología o evento de innovación. Presenta un fondo espacial o abstracto de tonos azules y morados con formas geométricas 3D y una rejilla de profundidad. La fuente es angular y moderna, enfatizando el concepto de 'FUTURE'.",
+            "Abstract poster design with long, concrete beams and bright light strips converging towards a central infinity symbol. The perspective creates a tunnel effect, drawing the viewer in. Debris and noise textures add to the raw, industrial techno aesthetic.",
           image: "/assets/poster/carteles18.jpg",
         },
         {
           id: 17,
-          title: "Evento Deportivo Extremo 'ADRENALINE' - Dinámico y Fuerte",
+          title: "CROSS SHAPE BRUTALISM - 13 DICIEMBRE",
           description:
-            "Cartel agresivo y dinámico para un evento de deportes extremos o fitness. Utiliza un filtro de color rojo intenso sobre un fondo texturizado y una fuente audaz y distorsionada para el título 'ADRENALINE'. El diseño es potente, sugiriendo acción rápida, peligro y fuerza.",
+            "Poster featuring a massive, cross-shaped concrete structure illuminated by a vertical beam of light. The surface is rough and weathered. The artist lineup is overlaid on the structure. The symmetry and lighting create a quasi-religious but industrial atmosphere.",
           image: "/assets/poster/carteles19.jpg",
         },
         {
           id: 18,
-          title: "Conferencia de Diseño 'TYPOGRAPHY' - Enfoque Tipográfico",
+          title: "FUTURISTIC RUINS - TRIANGULAR GATE",
           description:
-            "Diseño gráfico minimalista que pone la tipografía como elemento central del arte. Utiliza la palabra 'TYPOGRAPHY' descompuesta o con texturas sutiles sobre un fondo neutro. El estilo es limpio, conceptual y se enfoca en la composición y el arte de la letra.",
+            "Poster showing a triangular gateway or structure made of weathered concrete, with white neon lines forming geometric shapes. The infinity symbol floats at the top. The setting looks like ancient ruins modernized with cybernetic elements, fitting for a futuristic techno event.",
           image: "/assets/poster/carteles20.jpg",
         },
         {
           id: 19,
-          title: "Festival de Verano 'SUMMER BREEZE' - Ilustración Tropical",
+          title: "ELECTRIC CONCRETE - LIGHTNING STRIKES",
           description:
-            "Cartel alegre y refrescante para un festival de verano o evento al aire libre. Presenta una ilustración de estilo tropical con palmeras y vegetación, utilizando una paleta de colores brillantes y saturados (verde, azul, naranja). La fuente es juguetona y evoca diversión y relajación.",
+            "Dynamic poster with a chaotic arrangement of concrete beams and blocks. White lightning bolts crackle through the structure, adding energy and movement. The infinity symbol is prominent. The dark, stormy atmosphere suits hard techno or industrial music genres.",
           image: "/assets/poster/carteles21.jpg",
         },
         {
           id: 20,
-          title: "Concierto o Evento 'DARK CITY' - Estilo Ciberpunk",
+          title: "UNDERGROUND VENUE - CONCRETE STAIRS",
           description:
-            "Cartel con fuerte influencia ciberpunk y estética de ciudad nocturna. Combina tonos oscuros con luces de neón rosa y azul brillante, y una tipografía distorsionada. El diseño es crudo, urbano y futurista, ideal para música alternativa, eventos de gaming o cine noir.",
+            "Flyer depicting a complex, M.C. Escher-like interior of concrete stairs and bridges going in all directions. The infinity symbol floats near the top. The design suggests a labyrinthine underground venue, enhancing the immersive and disorienting nature of the event.",
           image: "/assets/poster/carteles22.jpg",
         },
         {
           id: 21,
-          title: "Feria de Tecnología 'INNOVATECH' - Minimalismo Futurista",
+          title: "VORTEX TUNNEL - 13 DICIEMBRE",
           description:
-            "Cartel para una feria de tecnología moderna, con fondo blanco o plateado, formas geométricas y líneas delgadas en tonos metálicos (azul claro, gris, plata). Tipografía Sans Serif limpia y destellos sutiles que transmiten innovación, tecnología avanzada y profesionalismo.",
+            "Mesmerizing poster featuring a spiraling tunnel of concrete shards and light beams sucking the viewer into a central black hole. The artist names are listed at the bottom. The design is intense and hypnotic, representing the trance-like state of techno music.",
           image: "/assets/poster/carteles23.jpg",
         },
         {
           id: 22,
-          title:
-            "Festival de Cine Indie 'FRAME BY FRAME' - Collage Cinematográfico",
+          title: "ARCHITECTURAL VOID - GLITCH STYLE",
           description:
-            "Diseño con recortes de fotogramas y elementos superpuestos simulando la edición y el arte del cine independiente. Paleta de colores cálidos y textura de papel o grano de película antigua. Transmite creatividad, pasión cinematográfica y autenticidad.",
+            "Poster featuring a complex brutalist structure with stairs and balconies, heavily processed with digital glitch effects and noise. The infinity symbol creates a focal point. The black and white grainy texture gives it a raw, lo-fi, and underground feel.",
           image: "/assets/poster/carteles24.jpg",
         },
         {
           id: 23,
-          title:
-            "Evento Educativo 'LEARN FEST' - Paleta Didáctica y Ilustración",
+          title: "BRUTALIST STRUCTURE - GLITCH AESTHETIC",
           description:
-            "Cartel colorido y amigable con ilustraciones de libros, pizarras, y objetos educativos. Tipografía redondeada y colores brillantes (azul, naranja, amarillo) para estimular el aprendizaje y atraer a jóvenes y familias.",
+            "Poster featuring a complex concrete structure with stairways and beams, heavily processed with digital glitch effects. The infinity symbol floats at the top. The text 'OPEN: 23:00 13/12' and artist names are displayed in a clean sans-serif font, creating a raw, underground techno vibe.",
           image: "/assets/poster/carteles25.jpg",
         },
         {
           id: 24,
-          title: "Concierto de Rock 'VOLTAGE' - Arte Eléctrico/Aggresivo",
+          title: "DIGITAL BRUTALISM - EXPLOSION",
           description:
-            "Cartel oscuro con rayos eléctricos, siluetas de guitarras y tipografía desgarrada. Paleta de colores negro, blanco y amarillo neón, sugiriendo energía, ruido y potencia. El diseño impacta y es ideal para eventos de rock alternativo o metal.",
+            "High-energy poster titled 'DIGITAL BRUTALISM'. Depicts an explosion of concrete shards and bright white light beams radiating from a central core against a dark background. The design captures the intensity and chaotic energy of industrial techno music.",
           image: "/assets/poster/carteles26.png",
         },
         {
           id: 25,
-          title: "Feria de Alimentos 'SABOR LOCAL' - Ilustración Orgánica",
+          title: "CONCRETE LABYRINTH - INFINITY",
           description:
-            "Cartel con ilustraciones de frutas y verduras en estilo acuarela sobre un fondo claro. El diseño transmite frescura, salud y origen natural. Tipografía manuscrita o script, ideal para mercados saludables y eventos de productores locales.",
+            "Poster showing a mesmerizing, Escher-like labyrinth of concrete stairs and structures with a grainy, glitchy texture. The infinity logo is centered at the top. The monochromatic palette and complex geometry evoke a sense of depth and disorientation suited for a deep techno event.",
           image: "/assets/poster/carteles27.jpg",
         },
         {
           id: 26,
-          title: "Noche de Poesía 'VERSOS EN SOMBRA' - Estética Literaria",
+          title: "VORTEX OF CONCRETE - LIGHT CORE",
           description:
-            "Cartel elegante y poético con fondos oscuros, sombras largas y detalles de letras manuscritas o textos superpuestos. Elementos visuales como plumas, libros abiertos y copas de vino sugieren una atmósfera íntima y reflexiva.",
+            "Abstract poster featuring a spiral or vortex of jagged concrete beams converging towards a dark center illuminated by white light. The composition creates a strong sense of movement and depth, drawing the viewer in. Artist names are listed at the bottom.",
           image: "/assets/poster/carteles13.png",
         },
         {
           id: 27,
-          title: "Fiesta de Disfraces 'MASK PARTY' - Estilo Carnaval Moderno",
+          title: "FLOATING BLOCKS - SHARP LINES",
           description:
-            "Cartel vibrante y festivo, con ilustraciones de máscaras coloridas, confeti y luces. Paleta de colores intensos (fucsia, azul, oro), composición dinámica y tipografía divertida, perfecto para capturar la energía y el misterio de una fiesta de disfraces para jóvenes.",
+            "Poster featuring floating concrete blocks and debris in a dark void, cut through by sharp, diagonal white laser lines. The infinity symbol rests on the central structure. The design is minimalist yet aggressive, perfectly representing the 'Digital Brutalism' theme.",
           image: "/assets/poster/carteles12.jpg",
         },
       ],
@@ -668,27 +666,27 @@ export const projectDetails = {
     videos: [
       {
         id: 1,
-        title: "MINIMALIST AI NIGHTCLUB EVENT POSTER",
+        title: "MINIMALIST NIGHTCLUB POSTER DESIGN",
         description:
-          "A minimalist poster designed for a nightclub event, both created and edited using AI technology. The visual features clean lines, modern aesthetics, and a refined atmosphere, perfectly blending digital creativity with a minimalist approach—ideal for promoting exclusive nightlife experiences.",
+          "A minimalist poster designed for a nightclub event, created and edited using AI technology. The visual features clean lines, modern aesthetics, and a refined atmosphere, perfectly blending digital creativity with a minimalist approach—ideal for promoting exclusive nightlife experiences.",
         videoUrl: "https://www.youtube.com/watch?v=vOZjQxlaAPY",
         thumbnail: "/assets/spotlight1.png",
         duration: "00:25",
       },
       {
         id: 2,
-        title: "EDITING VIDEO FOR A POSTER DISCOTECA FOR A SOCIAL MEDIA POST",
+        title: "SOCIAL MEDIA PROMO: NIGHTCLUB POSTER",
         description:
-          "Video editing for a poster discoteca for a social media post using AI technology",
+          "Dynamic video editing transforming a static nightclub poster into engaging social media content using AI technology. This project demonstrates how to bring static graphics to life for maximum engagement on platforms like Instagram and TikTok.",
         videoUrl: "https://www.youtube.com/watch?v=zwHNArb4730",
         thumbnail: "/assets/spotlight2.png",
         duration: "00:16",
       },
       {
         id: 3,
-        title: "VIDEO EDITING",
+        title: "AI FESTIVAL POSTER CREATION",
         description:
-          "A video fully edited and 100% created with Artificial Intelligence, showcasing the creative process behind a music festival poster. This project highlights the power of AI in both visual design and professional video editing.",
+          "A behind-the-scenes look at the creative process for a music festival poster, fully edited and created with Artificial Intelligence. This project highlights the power of AI in both visual design and professional video editing.",
         videoUrl: "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
         thumbnail: "/assets/spotlight3.png",
         duration: "02:57",
@@ -706,10 +704,9 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
       },
       {
         id: 5,
-        title:
-          "EDITING VIDEO FOR A POSTER DISCOTECA VJING AND LIVE VISUALS FOR A SOCIAL MEDIA POST",
+        title: "VJING & LIVE VISUALS PRODUCTION",
         description:
-          "Video editing for a poster discoteca VJing and Live Visuals for a music festival using AI technology. Today we can create any design for any event and cheeper, con un precio muy reducido comparado con hace años",
+          "Showcase of VJing and live visuals for a music festival created using AI technology. This video demonstrates how modern AI tools allow for the creation of high-end event designs and immersive visual experiences at a significantly reduced cost and turnaround time compared to traditional methods.",
         videoUrl: "https://www.youtube.com/watch?v=1LTbk3_hLCU",
         thumbnail: "/assets/spotlight2.png",
         duration: "05:00",
@@ -998,9 +995,7 @@ export const videoSkills = [
     description:
       "AI-powered logo creation, brand identity systems, advanced AI design tools",
     gradient: "from-cyan-500 to-blue-600",
-    icon: "ai-logo",
-    iconComponent: "MdAutoAwesome", // React Icons component name
-    image: "/assets/github.svg",
+    iconComponent: "MdAutoAwesome",
   },
   {
     id: 2,
@@ -1008,9 +1003,7 @@ export const videoSkills = [
     description:
       "Figma, Adobe XD, user research, interaction design, prototyping",
     gradient: "from-purple-500 to-pink-600",
-    icon: "ux-ui",
     iconComponent: "MdDesignServices",
-    image: "/assets/figma.svg",
   },
   {
     id: 3,
@@ -1018,9 +1011,7 @@ export const videoSkills = [
     description:
       "Market research, competitor analysis, brand positioning, target audience definition",
     gradient: "from-blue-500 to-indigo-600",
-    icon: "brand-strategy",
     iconComponent: "MdAnalytics",
-    image: "/assets/Python.svg",
   },
   {
     id: 4,
@@ -1028,9 +1019,7 @@ export const videoSkills = [
     description:
       "Custom font selection, typography systems, visual hierarchy, readability optimization",
     gradient: "from-violet-500 to-purple-600",
-    icon: "typography",
     iconComponent: "MdTextFields",
-    image: "/assets/tailwindcss.png",
   },
   {
     id: 5,
@@ -1038,9 +1027,7 @@ export const videoSkills = [
     description:
       "Color palette creation, brand colors, psychological impact, accessibility compliance",
     gradient: "from-pink-500 to-rose-600",
-    icon: "color-theory",
     iconComponent: "MdColorLens",
-    image: "/assets/notion.svg",
   },
   {
     id: 6,
@@ -1048,9 +1035,7 @@ export const videoSkills = [
     description:
       "AI-generated artwork, psychedelic designs, minimal aesthetics, custom client-inspired creations",
     gradient: "from-purple-600 to-pink-500",
-    icon: "psychedelic-minimal",
     iconComponent: "MdBrush",
-    image: "/assets/react.svg",
   },
   {
     id: 7,
@@ -1058,18 +1043,14 @@ export const videoSkills = [
     description:
       "Real-time video performance, audio-visual sync, Resolume Arena",
     gradient: "from-orange-500 to-red-600",
-    icon: "vj",
     iconComponent: "MdVideocam",
-    image: "/assets/framer.png",
   },
   {
     id: 8,
     title: "Professional Editing",
     description: "Premiere Pro, After Effects, DaVinci Resolve, Color Grading",
     gradient: "from-green-500 to-teal-600",
-    icon: "video",
     iconComponent: "MdMovieEdit",
-    image: "/assets/threejs.svg",
   },
   {
     id: 9,
@@ -1077,8 +1058,6 @@ export const videoSkills = [
     description:
       "Brand asset libraries, style guide creation, brand consistency tools",
     gradient: "from-teal-500 to-cyan-600",
-    icon: "asset-management",
     iconComponent: "MdFolderSpecial",
-    image: "/assets/nextjs.svg",
   },
 ];
