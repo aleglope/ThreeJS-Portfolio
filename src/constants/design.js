@@ -352,33 +352,6 @@ export const projectDetails = {
         thumbnail: "/assets/jewelry_thumbnail.png",
         duration: "1:20",
       },
-      {
-        id: 2,
-        title: "UX/UI System Design",
-        description:
-          "Creating comprehensive user experience and interface design systems",
-        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
-        thumbnail: "/assets/spotlight2.png",
-        duration: "6:30",
-      },
-      {
-        id: 3,
-        title: "Brand Identity Implementation",
-        description:
-          "From logo to full brand system - complete identity rollout",
-        videoUrl: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
-        thumbnail: "/assets/spotlight3.png",
-        duration: "4:15",
-      },
-      {
-        id: 4,
-        title: "AI vs Traditional Design",
-        description:
-          "Balancing AI efficiency with human creativity in brand design",
-        videoUrl: "https://www.youtube.com/watch?v=TtkUrMeI-QE",
-        thumbnail: "/assets/spotlight4.png",
-        duration: "7:20",
-      },
     ],
   },
   "ai-advertising-content": {
