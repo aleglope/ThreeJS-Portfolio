@@ -24,14 +24,22 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
+    name: "Champi Muros",
+    position: "Owner & Streamer — La Parrilla de Champi",
+    img: "assets/LogoChampi.png",
+    review:
+      "Alejandro built the entire website for my restaurant in record time — I couldn't believe how fast it was ready. The best part is the admin panel: I can update the menu, change dishes, prices, and categories instantly without touching any code. My customers now book tables online and everything just works. He understood exactly what I needed and delivered way beyond my expectations.",
+  },
+  {
+    id: 2,
     name: "Imatia",
-    position: "senior developer at Imatia",
+    position: "Senior Developer at Imatia",
     img: "assets/CesarImatia.jpeg",
     review:
       "I had the pleasure of being Alejandro's mentor during the bootcamp. His dedication and quick learning with Angular and Ontimize were impressive. He always showed great interest in learning and improving, effectively applying feedback. An exceptional student!",
   },
   {
-    id: 2,
+    id: 3,
     name: "Groove In Club",
     position: "Event Manager at Groove In Club",
     img: "assets/djbrenlla.png",
@@ -331,6 +339,16 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: "La Parrilla de Champi",
+    pos: "Lead Full-Stack Developer & Designer",
+    duration: "2025",
+    title:
+      "Designed and developed from scratch the complete website for Champi Muros restaurant. Built a fully bilingual (ES/GL) platform with Next.js 14, Supabase, and Three.js, featuring an interactive 3D hero scene, a dynamic digital menu with admin panel for real-time dish and category management, an online reservation system with email confirmations via Resend, SEO optimization with structured data, Vercel Analytics & Speed Insights, GSAP and Framer Motion animations, and a particle effects system. Deployed on Vercel with a custom admin dashboard for full content control.",
+    icon: "/assets/LogoChampi.png",
+    animation: "salute",
+  },
+  {
+    id: 2,
     name: "Rural Hackers 3D Gallery",
     pos: "Creative Full Stack Developer",
     duration: "2025",
@@ -340,7 +358,7 @@ export const workExperiences = [
     animation: "clapping",
   },
   {
-    id: 2,
+    id: 3,
     name: "Imatia Bootcamp - Work Wander",
     pos: "Full-Stack Developer Trainee",
     duration: "2024 - Present",
@@ -350,7 +368,7 @@ export const workExperiences = [
     animation: "victory",
   },
   {
-    id: 3,
+    id: 4,
     name: "Groove In Club",
     pos: "Fulstack Developer",
     duration: "2024",
@@ -360,7 +378,7 @@ export const workExperiences = [
     animation: "clapping",
   },
   {
-    id: 4,
+    id: 5,
     name: "Ipartek Bootcamp - Real Estate Solutions",
     pos: "Full-Stack Developer Trainee",
     duration: "2024",
