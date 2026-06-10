@@ -31,9 +31,10 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I'am Alejandro</p>
               <p className="grid-subtext">
-                With 1 year of experience, I have my skills in front-end and
-                backend development, with a focus on animated 3D websites and
-                cloud services.
+                Full-stack developer shipping production systems end-to-end —
+                most recently an 8-system platform for medical congresses,
+                designed, built and operated solo, with a focus on real-time,
+                AI integrations and animated 3D websites.
               </p>
             </div>
           </div>
@@ -91,6 +92,15 @@ const About = () => {
                 just my profession - it's where my passion for technology,
                 gaming, and innovation converges.
               </p>
+              <a
+                href="https://github.com/aleglope/congress-tech-systems"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid-subtext underline inline-block hover:text-white transition-colors"
+              >
+                Read my production case studies → 8 systems built solo
+                (2025–2026)
+              </a>
             </div>
           </div>
         </div>

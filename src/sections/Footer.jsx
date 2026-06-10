@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <p className="text-white-500">
-        © 2024 Alejandro G.L. All rights reserved.
+        © 2026 Alejandro G.L. All rights reserved.
       </p>
     </footer>
   );
