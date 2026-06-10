@@ -341,9 +341,9 @@ export const workExperiences = [
     id: 6,
     name: "LogiEvents (Data Events Services SL)",
     pos: "Sole Full-Stack Developer",
-    duration: "2025 - 2026",
+    duration: "2026",
     title:
-      "Designed, built and operated solo the entire software ecosystem of LogiEvents, a Spanish medical-congress management company: 8 production systems including online registration with payments (Next.js 16, Supabase, Redsys), real-time multilingual audio translation (LiveKit + Palabra.ai/OpenAI Realtime), badge printing with a 3D kiosk (NestJS, Puppeteer, R3F), BLE attendance over AWS IoT (CDK, Lambda, DynamoDB) and more — 236K+ LOC, ~314 test files, AI-augmented workflow with engineering discipline. Full architecture case studies published on my GitHub (congress-tech-systems).",
+      "Designed, built and operated solo, in five months (Jan–May 2026), the entire software ecosystem of LogiEvents, a Spanish medical-congress management company: 8 production systems including online registration with payments (Next.js 16, Supabase, Redsys), real-time multilingual audio translation (LiveKit + Palabra.ai/OpenAI Realtime), badge printing with a 3D kiosk (NestJS, Puppeteer, R3F), BLE attendance over AWS IoT (CDK, Lambda, DynamoDB) and more — 236K+ LOC, ~314 test files, AI-augmented workflow with engineering discipline. Full architecture case studies published on my GitHub (congress-tech-systems).",
     icon: "/assets/github.svg",
     animation: "victory",
   },

@@ -98,8 +98,8 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="grid-subtext underline inline-block hover:text-white transition-colors"
               >
-                Read my production case studies → 8 systems built solo
-                (2025–2026)
+                Read my production case studies → 8 systems built solo in 5
+                months (Jan–May 2026)
               </a>
             </div>
           </div>
