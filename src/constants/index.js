@@ -50,6 +50,46 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+    title: "Rural Hacker Museum - Immersive 3D Art Gallery",
+    desc: "An immersive 3D art gallery that fuses rural nature, immersive technology and generative art. Visitors explore a virtual museum with a cinematic guided tour, spotlit artworks and four interactive experiences.",
+    subdesc:
+      "Built with React 18, TypeScript and React Three Fiber over Three.js, featuring 13 optimized 3D models and 40,000 GPU particles running at 60 FPS, fully mobile ready.",
+    href: "https://rural-hacker-museum.vercel.app/",
+    texture: "/textures/project/Museum.mp4",
+    logo: "/assets/LogoRHackers.svg",
+    logoStyle: {
+      backgroundColor: "#1B2A20",
+      background:
+        "linear-gradient(0deg, #1B2A2050, #1B2A2050), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(208, 213, 221, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(46, 204, 113, 0.3)",
+    },
+    spotlight: "/assets/spotlight5.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 3,
+        name: "Three.js",
+        path: "/assets/threejs.svg",
+      },
+      {
+        id: 4,
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png",
+      },
+    ],
+    sourceCode: "https://github.com/aleglope/RuralHackerMuseum",
+  },
+  {
     title: "Turtle Race Game",
     desc: "A fun Python-based game using the turtle module where players bet on turtles of specific colors and compete to win coins.",
     subdesc:
