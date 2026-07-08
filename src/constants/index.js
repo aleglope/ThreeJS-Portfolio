@@ -51,9 +51,9 @@ export const clientReviews = [
 export const myProjects = [
   {
     title: "Rural Hacker Museum - Immersive 3D Art Gallery",
-    desc: "An immersive 3D art gallery that fuses rural nature, immersive technology and generative art. Visitors explore a virtual museum with a cinematic guided tour, spotlit artworks and four interactive experiences.",
+    desc: "An immersive 3D art gallery that fuses rural nature, immersive technology and generative art. Visitors explore a virtual museum with a cinematic guided tour, LiDAR-scanned artworks explorable in first person, and four interactive experiences.",
     subdesc:
-      "Built with React 18, TypeScript and React Three Fiber over Three.js, featuring 13 optimized 3D models and 40,000 GPU particles running at 60 FPS, fully mobile ready.",
+      "Built with React 18, TypeScript and React Three Fiber over Three.js, featuring real artworks digitized with LiDAR photogrammetry, 13 optimized 3D models and 40,000 GPU particles at 60 FPS, fully mobile ready.",
     href: "https://rural-hacker-museum.vercel.app/",
     texture: "/textures/project/Museum.mp4",
     logo: "/assets/LogoRHackers.svg",
