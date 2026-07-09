@@ -142,5 +142,37 @@
       "desc": "Una aplicación frontend moderna y atractiva diseñada para un restaurante. La interfaz mejora la experiencia de usuario con secciones bien definidas como la introducción del restaurante, el menú especial, el chef, la galería y más.",
       "subdesc": "Este proyecto aprovecha los componentes de React para garantizar una arquitectura limpia y modular, ofreciendo una solución eficiente y escalable para el desarrollo frontend."
     }
+  },
+  "experienceData": {
+    "6": {
+      "pos": "Desarrollador Full Stack en solitario",
+      "title": "Diseñé, construí y operé en solitario, en cinco meses (ene–may 2026), todo el ecosistema de software de LogiEvents, una empresa española de gestión de congresos médicos: 8 sistemas en producción, entre ellos registro online con pagos (Next.js 16, Supabase, Redsys), traducción de audio multilingüe en tiempo real (LiveKit + Palabra.ai/OpenAI Realtime), impresión de acreditaciones con un kiosco 3D (NestJS, Puppeteer, R3F), control de asistencia por BLE sobre AWS IoT (CDK, Lambda, DynamoDB) y más — 236K+ LOC, ~314 archivos de test, flujo de trabajo aumentado con IA y disciplina de ingeniería. Casos de estudio de arquitectura completos publicados en mi GitHub (congress-tech-systems).",
+      "duration": "2026"
+    },
+    "1": {
+      "pos": "Desarrollador Full Stack principal y diseñador",
+      "title": "Diseñé y desarrollé desde cero la web completa del restaurante de Champi Muros. Construí una plataforma totalmente bilingüe (ES/GL) con Next.js 14, Supabase y Three.js, con una escena hero 3D interactiva, un menú digital dinámico con panel de administración para gestionar platos y categorías en tiempo real, un sistema de reservas online con confirmaciones por email vía Resend, optimización SEO con datos estructurados, Vercel Analytics y Speed Insights, animaciones con GSAP y Framer Motion, y un sistema de efectos de partículas. Desplegada en Vercel con un panel de administración a medida para el control total del contenido.",
+      "duration": "2025"
+    },
+    "2": {
+      "pos": "Desarrollador Full Stack creativo",
+      "title": "Transformé el universo visual de RHackers desde Instagram en una experiencia web inmersiva con Three.js. Diseñé una galería 3D donde cada obra cobra vida, añadí una escena dedicada al perro de la casa y creé un portal de niebla que transporta a los usuarios a un mundo alternativo para descubrir esculturas 3D. Integré storytelling interactivo, optimización de assets, despliegue serverless y un stack tecnológico con React Three Fiber, GSAP, TailwindCSS y Vercel para garantizar un rendimiento fluido en cualquier dispositivo.",
+      "duration": "2025"
+    },
+    "3": {
+      "pos": "Desarrollador Full Stack en prácticas",
+      "title": "Desarrollé una completa aplicación web de gestión de coworking durante un bootcamp intensivo en Imatia. Construí el frontend con Angular y el framework Ontimize, creando componentes modulares con funcionalidades avanzadas como búsqueda dinámica de coworkings, sistema de reservas y etiquetas de servicios. Implementé el backend con Spring Boot y PostgreSQL, siguiendo los principios SOLID y creando APIs RESTful. Integré analítica de datos con gráficas de tendencias de reservas, implementé una paginación eficiente y colaboré usando Git y Jira siguiendo prácticas de desarrollo profesionales.",
+      "duration": "2024 - Presente"
+    },
+    "4": {
+      "pos": "Desarrollador Full Stack",
+      "title": "Diseñé y desarrollé una web inmersiva para Groove In Club usando React Three Fiber para crear experiencias 3D interactivas que destacan los eventos y artistas de la productora. La web mejoró notablemente la interacción de los usuarios y la visibilidad de la marca.",
+      "duration": "2024"
+    },
+    "5": {
+      "pos": "Desarrollador Full Stack en prácticas",
+      "title": "Contribuí al desarrollo de una aplicación de gestión inmobiliaria usando Angular en el frontend, Java Spring Boot en el backend y MySQL como base de datos. Con foco en la escalabilidad, la seguridad y una experiencia de usuario optimizada.",
+      "duration": "2024"
+    }
   }
 }

@@ -353,60 +353,36 @@ export const workExperiences = [
   {
     id: 6,
     name: "LogiEvents (Data Events Services SL)",
-    pos: "Sole Full-Stack Developer",
-    duration: "2026",
-    title:
-      "Designed, built and operated solo, in five months (Jan–May 2026), the entire software ecosystem of LogiEvents, a Spanish medical-congress management company: 8 production systems including online registration with payments (Next.js 16, Supabase, Redsys), real-time multilingual audio translation (LiveKit + Palabra.ai/OpenAI Realtime), badge printing with a 3D kiosk (NestJS, Puppeteer, R3F), BLE attendance over AWS IoT (CDK, Lambda, DynamoDB) and more — 236K+ LOC, ~314 test files, AI-augmented workflow with engineering discipline. Full architecture case studies published on my GitHub (congress-tech-systems).",
     icon: "/assets/github.svg",
     animation: "victory",
   },
   {
     id: 1,
     name: "La Parrilla de Champi",
-    pos: "Lead Full-Stack Developer & Designer",
-    duration: "2025",
-    title:
-      "Designed and developed from scratch the complete website for Champi Muros restaurant. Built a fully bilingual (ES/GL) platform with Next.js 14, Supabase, and Three.js, featuring an interactive 3D hero scene, a dynamic digital menu with admin panel for real-time dish and category management, an online reservation system with email confirmations via Resend, SEO optimization with structured data, Vercel Analytics & Speed Insights, GSAP and Framer Motion animations, and a particle effects system. Deployed on Vercel with a custom admin dashboard for full content control.",
     icon: "/assets/LogoChampi.png",
     animation: "salute",
   },
   {
     id: 2,
     name: "Rural Hackers 3D Gallery",
-    pos: "Creative Full Stack Developer",
-    duration: "2025",
-    title:
-      "Transformed the visual universe of RHackers from Instagram into an immersive web experience with Three.js. Designed a 3D gallery where each artwork comes to life, added a dedicated scene for the house dog, and created a foggy portal transporting users to an alternate world to discover 3D sculptures. Integrated interactive storytelling, asset optimization, serverless deployment, and a tech stack including React Three Fiber, GSAP, TailwindCSS, and Vercel to ensure smooth performance on any device.",
     icon: "/assets/LogoRHackers.svg",
     animation: "clapping",
   },
   {
     id: 3,
     name: "Imatia Bootcamp - Work Wander",
-    pos: "Full-Stack Developer Trainee",
-    duration: "2024 - Present",
-    title:
-      "Developed a comprehensive coworking management web application during an intensive bootcamp at Imatia. Built the frontend using Angular and Ontimize framework, creating modular components with advanced features like dynamic coworking search, booking system, and service tags. Implemented backend with Spring Boot and PostgreSQL, following SOLID principles and creating RESTful APIs. Integrated data analytics with charts for booking trends, implemented efficient pagination, and collaborated using Git and Jira for professional development practices.",
     icon: "/assets/sidenav-opened.png",
     animation: "victory",
   },
   {
     id: 4,
     name: "Groove In Club",
-    pos: "Fulstack Developer",
-    duration: "2024",
-    title:
-      "Designed and developed an immersive website for Groove In Club using React Three Fiber to create interactive 3D experiences highlighting the producer's events and artists. The website significantly improved user engagement and brand visibility.",
     icon: "/assets/LOGO GROOVE.svg",
     animation: "clapping",
   },
   {
     id: 5,
     name: "Ipartek Bootcamp - Real Estate Solutions",
-    pos: "Full-Stack Developer Trainee",
-    duration: "2024",
-    title:
-      "Contributed to the development of a real estate management application using Angular for frontend, Java Spring Boot for backend, and MySQL for database. Focused on scalability, security, and optimized user experience.",
     icon: "/assets/inmobiliaria.png",
     animation: "salute",
   },
