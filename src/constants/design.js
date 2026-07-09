@@ -459,93 +459,54 @@ export const projectDetails = {
         },
         {
           id: 15,
-          title: "GOTHIC BRUTALISM - SHATTERED TOWER",
-          description:
-            "Vertical poster featuring a massive, gothic-style concrete tower splitting apart down the middle, revealing a dark void. Digital glitches and pixelated debris float around the structure. The high contrast and monumental scale suggest a powerful and destructive soundscape.",
           image: "/assets/poster/carteles17.jpg",
         },
         {
           id: 16,
-          title: "ABSTRACT TECHNO - LIGHT TUNNEL",
-          description:
-            "Abstract poster design with long, concrete beams and bright light strips converging towards a central infinity symbol. The perspective creates a tunnel effect, drawing the viewer in. Debris and noise textures add to the raw, industrial techno aesthetic.",
           image: "/assets/poster/carteles18.jpg",
         },
         {
           id: 17,
-          title: "CROSS SHAPE BRUTALISM - 13 DICIEMBRE",
-          description:
-            "Poster featuring a massive, cross-shaped concrete structure illuminated by a vertical beam of light. The surface is rough and weathered. The artist lineup is overlaid on the structure. The symmetry and lighting create a quasi-religious but industrial atmosphere.",
           image: "/assets/poster/carteles19.jpg",
         },
         {
           id: 18,
-          title: "FUTURISTIC RUINS - TRIANGULAR GATE",
-          description:
-            "Poster showing a triangular gateway or structure made of weathered concrete, with white neon lines forming geometric shapes. The infinity symbol floats at the top. The setting looks like ancient ruins modernized with cybernetic elements, fitting for a futuristic techno event.",
           image: "/assets/poster/carteles20.jpg",
         },
         {
           id: 19,
-          title: "ELECTRIC CONCRETE - LIGHTNING STRIKES",
-          description:
-            "Dynamic poster with a chaotic arrangement of concrete beams and blocks. White lightning bolts crackle through the structure, adding energy and movement. The infinity symbol is prominent. The dark, stormy atmosphere suits hard techno or industrial music genres.",
           image: "/assets/poster/carteles21.jpg",
         },
         {
           id: 20,
-          title: "UNDERGROUND VENUE - CONCRETE STAIRS",
-          description:
-            "Flyer depicting a complex, M.C. Escher-like interior of concrete stairs and bridges going in all directions. The infinity symbol floats near the top. The design suggests a labyrinthine underground venue, enhancing the immersive and disorienting nature of the event.",
           image: "/assets/poster/carteles22.jpg",
         },
         {
           id: 21,
-          title: "VORTEX TUNNEL - 13 DICIEMBRE",
-          description:
-            "Mesmerizing poster featuring a spiraling tunnel of concrete shards and light beams sucking the viewer into a central black hole. The artist names are listed at the bottom. The design is intense and hypnotic, representing the trance-like state of techno music.",
           image: "/assets/poster/carteles23.jpg",
         },
         {
           id: 22,
-          title: "ARCHITECTURAL VOID - GLITCH STYLE",
-          description:
-            "Poster featuring a complex brutalist structure with stairs and balconies, heavily processed with digital glitch effects and noise. The infinity symbol creates a focal point. The black and white grainy texture gives it a raw, lo-fi, and underground feel.",
           image: "/assets/poster/carteles24.jpg",
         },
         {
           id: 23,
-          title: "BRUTALIST STRUCTURE - GLITCH AESTHETIC",
-          description:
-            "Poster featuring a complex concrete structure with stairways and beams, heavily processed with digital glitch effects. The infinity symbol floats at the top. The text 'OPEN: 23:00 13/12' and artist names are displayed in a clean sans-serif font, creating a raw, underground techno vibe.",
           image: "/assets/poster/carteles25.jpg",
         },
         {
           id: 24,
-          title: "DIGITAL BRUTALISM - EXPLOSION",
-          description:
-            "High-energy poster titled 'DIGITAL BRUTALISM'. Depicts an explosion of concrete shards and bright white light beams radiating from a central core against a dark background. The design captures the intensity and chaotic energy of industrial techno music.",
           image: "/assets/poster/carteles26.png",
         },
         {
           id: 25,
-          title: "CONCRETE LABYRINTH - INFINITY",
-          description:
-            "Poster showing a mesmerizing, Escher-like labyrinth of concrete stairs and structures with a grainy, glitchy texture. The infinity logo is centered at the top. The monochromatic palette and complex geometry evoke a sense of depth and disorientation suited for a deep techno event.",
           image: "/assets/poster/carteles27.jpg",
         },
         {
           id: 26,
-          title: "VORTEX OF CONCRETE - LIGHT CORE",
-          description:
-            "Abstract poster featuring a spiral or vortex of jagged concrete beams converging towards a dark center illuminated by white light. The composition creates a strong sense of movement and depth, drawing the viewer in. Artist names are listed at the bottom.",
           image: "/assets/poster/carteles13.png",
         },
         {
           id: 27,
-          title: "FLOATING BLOCKS - SHARP LINES",
-          description:
-            "Poster featuring floating concrete blocks and debris in a dark void, cut through by sharp, diagonal white laser lines. The infinity symbol rests on the central structure. The design is minimalist yet aggressive, perfectly representing the 'Digital Brutalism' theme.",
           image: "/assets/poster/carteles12.jpg",
         },
       ],
