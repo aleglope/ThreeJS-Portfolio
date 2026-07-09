@@ -1,24 +1,27 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { designProjects, designCategories } from "../../constants/design.js";
+import { useTranslation } from "react-i18next";
+import { designCategories } from "../../constants/design.js";
+import useLocalizedDesignProjects from "../../hooks/useLocalizedDesignProjects.js";
 
 const DesignProjects = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+  const projects = useLocalizedDesignProjects();
   const [filter, setFilter] = useState("All");
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [, setHoveredProject] = useState(null);
 
   const filteredProjects =
     filter === "All"
-      ? designProjects
-      : designProjects.filter((project) => project.category === filter);
+      ? projects
+      : projects.filter((project) => project.category === filter);
 
   return (
     <section className="c-space my-20" id="design-projects">
       <div className="text-center mb-12">
-        <p className="head-text mb-4">Design & Video Portfolio</p>
+        <p className="head-text mb-4">{t("designProjectsUI.heading")}</p>
         <p className="text-white-600 text-lg max-w-2xl mx-auto">
-          A collection of my creative work in graphic design and video
-          production
+          {t("designProjectsUI.subheading")}
         </p>
       </div>
 
@@ -34,7 +37,7 @@ const DesignProjects = () => {
                 : "bg-black-300 text-white-600 hover:bg-black-200"
             }`}
           >
-            {category}
+            {t("designCategoriesData." + category)}
           </button>
         ))}
       </div>
@@ -61,7 +64,7 @@ const DesignProjects = () => {
 
               {/* Category Badge */}
               <div className="absolute top-4 right-4 px-4 py-2 bg-black/80 backdrop-blur-sm rounded-full text-white text-sm font-semibold">
-                {project.category}
+                {t("designCategoriesData." + project.category)}
               </div>
             </div>
 
@@ -87,7 +90,7 @@ const DesignProjects = () => {
                 ))}
               </div>
 
-              {/* View Project Button */}
+              {/* Project detail button */}
               <button
                 onClick={() => {
                   if (project.hasDetailPage && project.slug) {
@@ -99,7 +102,9 @@ const DesignProjects = () => {
                 }`}
                 disabled={!project.hasDetailPage}
               >
-                {project.hasDetailPage ? "View Project" : "Coming Soon"}
+                {project.hasDetailPage
+                  ? t("designProjectsUI.viewProject")
+                  : t("designProjectsUI.comingSoon")}
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -121,12 +126,12 @@ const DesignProjects = () => {
 
       {/* Call to Action */}
       <div className="mt-16 text-center">
-        <p className="text-white-600 mb-4">Want to see more of my work?</p>
+        <p className="text-white-600 mb-4">{t("designProjectsUI.moreWork")}</p>
         <a
           href="#contact"
           className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 hover:scale-105"
         >
-          Get in Touch
+          {t("designProjectsUI.getInTouch")}
           <svg
             className="w-5 h-5"
             fill="none"
