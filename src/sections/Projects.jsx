@@ -1,20 +1,20 @@
 import { Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { myProjects } from "../constants/index.js";
 import { Center, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import DemoComputer from "../components/DemoComputer.jsx";
-
-const projectCount = myProjects.length;
+import useLocalizedProjects from "../hooks/useLocalizedProjects.js";
 
 const Projects = () => {
   const { t } = useTranslation();
+  const projects = useLocalizedProjects();
+  const projectCount = projects.length;
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
   const [showTooltip, setShowTooltip] = useState(false);
   const [hoveredTech, setHoveredTech] = useState(null);
 
-  const currentProject = myProjects[selectedProjectIndex];
+  const currentProject = projects[selectedProjectIndex];
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
