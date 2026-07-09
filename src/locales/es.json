@@ -381,6 +381,93 @@
     "photographicArt": "Arte Fotográfico"
   },
   "projectDetailsData": {
+    "brand-identity-design": {
+      "title": "Identidad de marca UGC y diseño, de la web al contenido para redes sociales",
+      "category": "Diseño Gráfico",
+      "fullDescription": "Creación revolucionaria de identidad de marca que combina el diseño de logotipos impulsado por IA con sistemas UX/UI integrales y un desarrollo estratégico de marca. Nuestro enfoque integra herramientas de IA de vanguardia para la generación y el refinamiento de logotipos con la excelencia del diseño tradicional en la experiencia de usuario y el diseño de interfaces. Desde el concepto inicial hasta la implementación completa de la marca, creamos sistemas visuales cohesionados que no solo lucen espectaculares, sino que también impulsan la interacción de los usuarios y el crecimiento del negocio. Cada proyecto incluye una investigación exhaustiva, variaciones de logotipos mejoradas con IA, sistemas de diseño UX/UI completos y directrices de marca detalladas que garantizan una aplicación coherente en todos los puntos de contacto digitales y físicos.",
+      "client": "Varias startups tecnológicas y agencias digitales",
+      "duration": "8-12 semanas",
+      "videos": {
+        "1": {
+          "title": "UGC DE JOYERÍA - Muestra de productos de lujo",
+          "description": "Vídeo de contenido generado por el usuario (UGC) simulado que muestra joyería de lujo de alta gama con efectos visuales dinámicos. Primeros planos de un collar con cruz dorada, un anillo de oro con esmeralda, una pulsera trenzada azul con una cuenta brillante y un anillo de compromiso con diamante de talla marquise."
+        }
+      },
+      "gallery": {
+        "UI/UX Designs": {
+          "7": {
+            "title": "Mockups de interfaz web",
+            "description": "Mockups de diseño web de alta fidelidad con integración del flujo de usuario"
+          },
+          "8": {
+            "title": "Pantallas de app móvil",
+            "description": "Diseños de interfaz móvil adaptables"
+          },
+          "9": {
+            "title": "Material impreso",
+            "description": "Tarjetas de visita, membretes y materiales de marketing"
+          }
+        },
+        "Logos": {
+          "1": {
+            "title": "FÊNIX MOTOS - El Renacer",
+            "description": "Logotipo impactante que presenta una representación del Fénix en pleno vuelo, con colores cálidos y ardientes (rojo, naranja, amarillo) y un halo radiante. El nombre 'FÊNIX MOTOS' en una tipografía contundente sugiere renacimiento, velocidad y durabilidad—ideal para una marca de motos, deportiva o de automoción."
+          },
+          "2": {
+            "title": "MONARCH - Mariposa Geométrica",
+            "description": "Logotipo moderno y elegante con una mariposa de una sola ala, diseñado en un estilo poligonal o 'low poly' en tonos cálidos (naranja, rosa, morado). Transmite ligereza, transformación y un toque artístico—adecuado para moda, belleza o tecnología."
+          },
+          "3": {
+            "title": "TERFA TREASURE - Monograma Real",
+            "description": "Diseño lujoso que usa grandes letras mayúsculas en relieve 'TERFA' en dorado, con una corona sutilmente integrada en la parte superior. La palabra 'TREASURE' debajo refuerza el tema del valor y la exclusividad—perfecto para una marca de alta gama, de inversión o de joyería."
+          },
+          "4": {
+            "title": "Iron Will - Alas/Escudo de Velocidad",
+            "description": "Logotipo moderno y dinámico que simula un ala o un escudo con un degradado de color del amarillo al morado. El diseño incluye líneas que sugieren velocidad y fuerza, evocando movimiento y determinación tal como refleja el nombre 'Iron Will'—ideal para marcas de fitness, deporte o tecnología."
+          },
+          "5": {
+            "title": "GOLD PALACE - Icono Ornamental",
+            "description": "Logotipo muy ornamental y simétrico en dorado sobre un fondo oscuro. El icono de la parte superior evoca arquitectura palaciega, cúpulas o un patrón entrelazado de lujo. El nombre 'GOLD PALACE' confirma los temas de realeza, lujo y opulencia."
+          },
+          "6": {
+            "title": "Gloryio - Gota de Llama/G Ardiente",
+            "description": "Logotipo moderno con un símbolo de fuego abstracto o una vibrante gota de llama que forma sutilmente la letra 'G' en su base. El degradado de colores cálidos y el resplandor sugieren energía, éxito o tecnología, junto con el nombre 'Gloryio' en una tipografía clara."
+          },
+          "7": {
+            "title": "GANLO - Cabeza de Leopardo/Jaguar",
+            "description": "Logotipo de inspiración animal que muestra la cabeza de un felino (leopardo o jaguar) con un intrincado patrón tribal. El color dorado sobre un fondo azul/verde oscuro crea un contraste lujoso y poderoso. Sugiere una marca fuerte, rápida o de lujo."
+          },
+          "8": {
+            "title": "Virani - Joyería de Diamantes",
+            "description": "Logotipo de marca de joyería o de lujo. Combina un diseño de diamante estilizado que integra la letra 'V' con una elegante tipografía cursiva con serifa para el nombre 'Virani'. La combinación de dorado sobre negro proyecta riqueza y exclusividad."
+          },
+          "9": {
+            "title": "iillapro - Tipografía de Llama Líquida",
+            "description": "Logotipo que usa un efecto de llama integrado en la tipografía 'iillapro'. El estilo es audaz y 'caliente', con un degradado de naranja a blanco que simula calor y movimiento—ideal para marcas de comida picante, tecnología o deportes extremos."
+          },
+          "10": {
+            "title": "NOVALINE - Estrella Fugaz",
+            "description": "Logotipo limpio y futurista con el nombre 'NOVALINE' y un icono de estrella fugaz o cometa. La brillante estela de estrella en morado sugiere velocidad, innovación y un enfoque espacial o tecnológico—adecuado para servicios de internet, software o transporte."
+          },
+          "11": {
+            "title": "MONT - Paisaje de Montaña",
+            "description": "Logotipo minimalista con la palabra 'MONT' cuyas letras están rellenas con un patrón de cumbres montañosas nevadas en tonos azules. Evoca una sensación de naturaleza, aventura y aire libre—perfecto para ropa, turismo o productos ecológicos."
+          },
+          "12": {
+            "title": "LA CALLE - Estilo Urbano con Llamas",
+            "description": "Logotipo vibrante y audaz que presenta el texto 'LA CALLE' estilizado con un efecto de llama. Usa una paleta de colores cálidos que va del rojo al naranja-amarillo, transmitiendo energía, pasión o un estilo streetwear 'caliente'—ideal para marcas de moda urbana o de comida picante."
+          },
+          "13": {
+            "title": "EKE - Símbolo de Toro Tribal/Minimalista",
+            "description": "Diseño de logotipo minimalista pero intrincado que presenta la cabeza de un toro (o buey) formada por líneas geométricas y patrones tribales, en dorado sobre un fondo azul oscuro texturizado. Transmite fuerza, determinación y un estilo premium o artesanal."
+          },
+          "14": {
+            "title": "ROYAL HOME - Monograma de Lujo",
+            "description": "Logotipo elegante y lujoso con un monograma 'BR' entrelazado en dorado metálico coronado por una corona. El estilo tipográfico es clásico y sofisticado, con el nombre de marca 'ROYAL HOME' debajo, sugiriendo alta calidad y exclusividad para hogar o inmobiliaria."
+          }
+        }
+      }
+    },
     "ai-advertising-content": {
       "title": "Contenido publicitario generado con IA y marketing en redes sociales",
       "category": "Contenido IA",

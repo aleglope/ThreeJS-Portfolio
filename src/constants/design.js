@@ -75,13 +75,7 @@ export const designProjects = [
 export const projectDetails = {
   "brand-identity-design": {
     id: 1,
-    title: "Brand Identity UGC & Design from Website to Social Media Content",
-    category: "Graphic Design",
-    fullDescription:
-      "Revolutionary brand identity creation combining AI-powered logo design with comprehensive UX/UI systems and strategic brand development. Our approach integrates cutting-edge AI tools for logo generation and refinement with traditional design excellence in user experience and interface design. From initial concept to full brand implementation, we create cohesive visual systems that not only look stunning but also drive user engagement and business growth. Each project includes extensive research, AI-enhanced logo variations, complete UX/UI design systems, and detailed brand guidelines that ensure consistent application across all digital and physical touchpoints.",
-    client: "Multiple Tech Startups & Digital Agencies",
     year: "2024",
-    duration: "8-12 weeks",
     tags: [
       "UX/UI Design",
       "AI Logo Creation",
@@ -206,121 +200,72 @@ export const projectDetails = {
       "UI/UX Designs": [
         {
           id: 7,
-          title: "Web Interface Mockups",
-          description:
-            "High-fidelity web design mockups with user flow integration",
           image: "/assets/MatematicGalaxy.jpeg",
         },
         {
           id: 8,
-          title: "Mobile App Screens",
-          description: "Responsive mobile interface designs",
           image: "/assets/MatematicNeon.jpeg",
         },
         {
           id: 9,
-          title: "Print Collateral",
-          description: "Business cards, letterheads, and marketing materials",
           image: "/assets/MatematicAurora.jpeg",
         },
       ],
       Logos: [
         {
           id: 1,
-          title: "FÊNIX MOTOS - The Rebirth",
-          description:
-            "Striking logo featuring a depiction of the Phoenix in full flight, with warm fiery colors (red, orange, yellow) and a radiant halo. The name 'FÊNIX MOTOS' in strong typography suggests rebirth, speed, and durability—ideal for a motorcycle, sports, or automotive brand.",
           image: "/assets/logos/logo1.jpeg",
         },
         {
           id: 2,
-          title: "MONARCH - Geometric Butterfly",
-          description:
-            "Modern and elegant logo with a single-winged butterfly, designed in a polygonal or 'low poly' style in warm tones (orange, pink, purple). Conveys lightness, transformation, and an artistic touch—suitable for fashion, beauty, or technology.",
           image: "/assets/logos/logo2.jpeg",
         },
         {
           id: 3,
-          title: "TERFA TREASURE - Royal Monogram",
-          description:
-            "Luxurious design using large embossed uppercase letters 'TERFA' in gold, with a subtly integrated crown at the top. The word 'TREASURE' underneath reinforces the theme of value and exclusivity—perfect for a high-end, investment, or jewelry brand.",
           image: "/assets/logos/logo8.jpeg",
         },
         {
           id: 4,
-          title: "Iron Will - Wings/Speed Shield",
-          description:
-            "Modern, dynamic logo simulating a wing or a shield with a color gradient from yellow to purple. The design includes lines suggesting speed and strength, evoking movement and determination as reflected in the name 'Iron Will'—ideal for fitness, sports, or technology brands.",
           image: "/assets/logos/logo9.jpeg",
         },
         {
           id: 5,
-          title: "GOLD PALACE - Ornamental Icon",
-          description:
-            "Highly ornamental and symmetrical logo in gold on a dark background. The icon at the top evokes palace architecture, domes, or a luxury interwoven pattern. The name 'GOLD PALACE' confirms the themes of royalty, luxury, and opulence.",
           image: "/assets/logos/logo10.jpeg",
         },
         {
           id: 6,
-          title: "Gloryio - Flame Drop/Blazing G",
-          description:
-            "Modern logo with an abstract fire symbol or a vibrant flame drop that subtly forms the letter 'G' at its base. The gradient of warm colors and the glow suggest energy, success, or technology, together with the name 'Gloryio' in clear typography.",
           image: "/assets/logos/logo11.jpeg",
         },
         {
           id: 7,
-          title: "GANLO - Leopard/Jaguar Head",
-          description:
-            "Animal-inspired logo showing the head of a big cat (leopard or jaguar) with an intricate tribal pattern. Gold color on a dark blue/green background creates a luxurious and powerful contrast. Suggests a strong, fast, or luxury brand.",
           image: "/assets/logos/logo12.jpeg",
         },
         {
           id: 8,
-          title: "Virani - Diamond Jewelry",
-          description:
-            "Jewelry or luxury brand logo. Combines a stylized diamond design integrating the letter 'V' with an elegant, serif cursive type for the name 'Virani'. Gold on black color scheme projects wealth and exclusivity.",
           image: "/assets/logos/logo7.jpeg",
         },
         {
           id: 9,
-          title: "iillapro - Liquid Flame Typography",
-          description:
-            "Logo using a flame effect integrated into the 'iillapro' lettering. The style is bold and 'hot', with an orange-to-white gradient simulating heat and movement—ideal for spicy food, technology, or extreme sports brands.",
           image: "/assets/logos/logo13.jpeg",
         },
         {
           id: 10,
-          title: "NOVALINE - Shooting Star",
-          description:
-            "Clean, futuristic logo with the name 'NOVALINE' and a shooting star or comet icon. The bright purple star streak suggests speed, innovation, and a space or tech-focused approach—suited for internet services, software, or transport.",
           image: "/assets/logos/logo14.jpeg",
         },
         {
           id: 11,
-          title: "MONT - Mountain Landscape",
-          description:
-            "Minimalist logo featuring the word 'MONT' with the letters filled with a snowy mountain peaks pattern in blue tones. Evokes a sense of nature, adventure, and the outdoors—perfect for clothing, tourism, or eco-friendly products.",
           image: "/assets/logos/logo3.jpeg",
         },
         {
           id: 12,
-          title: "LA CALLE - Street Style with Flames",
-          description:
-            "Vibrant and bold logo presenting the text 'LA CALLE' stylized with a flame effect. Uses a warm color palette ranging from red to orange-yellow, conveying energy, passion, or a 'hot' streetwear style—ideal for urban fashion or spicy food brands.",
           image: "/assets/logos/logo4.jpeg",
         },
         {
           id: 13,
-          title: "EKE - Tribal/Minimalist Bull Symbol",
-          description:
-            "Minimalist yet intricate logo design featuring the head of a bull (or ox) formed by geometric lines and tribal patterns, in gold on a textured dark blue background. Conveys strength, determination, and a premium or artisanal style.",
           image: "/assets/logos/logo5.jpeg",
         },
         {
           id: 14,
-          title: "ROYAL HOME - Luxury Monogram",
-          description:
-            "Elegant and luxurious logo with an interwoven 'BR' monogram in metallic gold topped by a crown. The typographic style is classic and sophisticated, with the brand name 'ROYAL HOME' below, suggesting high quality and exclusivity for home or real estate.",
           image: "/assets/logos/logo6.jpeg",
         },
       ],
@@ -328,9 +273,6 @@ export const projectDetails = {
     videos: [
       {
         id: 1,
-        title: "JEWELRY UGC - Luxury Products Showcase",
-        description:
-          "Simulated user-generated content (UGC) video showcasing high-end luxury jewelry with dynamic visual effects. Close-up shots of a golden cross necklace, gold ring with emerald, blue braided bracelet with a sparkling bead, and engagement ring with marquise-cut diamond.",
         videoUrl: "https://www.youtube.com/shorts/bPf5CPI8kGg",
         thumbnail: "/assets/jewelry_thumbnail.png",
         duration: "1:20",
