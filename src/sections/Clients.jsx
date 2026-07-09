@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { clientReviews } from "../constants/index.js";
 
 const Clients = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="c-space my-20">
-      <h3 className="head-text">Hear from My Clients</h3>
+      <h3 className="head-text">{t("clients.heading")}</h3>
 
       <div className="client-container">
         {clientReviews.map((item) => (

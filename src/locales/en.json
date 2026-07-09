@@ -8,5 +8,16 @@
     "greeting": "Hi, I am Alejandro",
     "role": "Full Stack Developer",
     "cta": "Let's Work together"
+  },
+  "experience": {
+    "heading": "My Work Experience"
+  },
+  "clients": {
+    "heading": "Hear from My Clients"
+  },
+  "footer": {
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 Alejandro G.L. All rights reserved."
   }
 }

@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
       <div className="text-white-500 flex gap-2">
-        <p>Terms & Conditions</p>
+        <p>{t("footer.terms")}</p>
         <p>|</p>
-        <p>Privacy Policy</p>
+        <p>{t("footer.privacy")}</p>
       </div>
 
       <div className="flex gap-3">
@@ -26,9 +30,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className="text-white-500">
-        © 2026 Alejandro G.L. All rights reserved.
-      </p>
+      <p className="text-white-500">{t("footer.copyright")}</p>
     </footer>
   );
 };
