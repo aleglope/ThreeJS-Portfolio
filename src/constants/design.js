@@ -93,58 +93,34 @@ export const projectDetails = {
       Brand: [
         {
           id: 1,
-          title: "Luxury Organic Jewelry",
-          description:
-            "We integrated this pearl ring with gold leaf into the website with elegant visuals and interactive product showcases, highlighting its natural elegance and premium quality while creating an immersive experience that builds value and encourages viewers to explore the product further.",
           image: "/assets/brands/marca1.png",
         },
         {
           id: 2,
-          title: "gold ring with emerald gemstone",
-          description:
-            "Elegant gold ring featuring a brilliant-cut emerald gemstone set in a classic four-prong setting. The polished yellow gold band showcases refined craftsmanship, while the vibrant deep green emerald displays exceptional clarity and light refraction. Professional studio photography highlights the ring's luxurious details and premium quality, creating an immersive product showcase that emphasizes sophistication and timeless elegance.",
           image: "/assets/brands/marca2.png",
         },
         {
           id: 3,
-          title: "Luxury Pearl Ring with Gold Leaf Design",
-          description:
-            "Elegant pearl ring featuring a perfectly spherical pearl with iridescent pink, white, and subtle green overtones, set on a rose gold or warm yellow gold band intricately sculpted with organic flowing leaf motifs. The ring is showcased with a sharp, clean background featuring simple yet bold leaf elements that complement the natural botanical aesthetic. This professional studio photography is specifically designed for social media content, presenting the jewelry piece to clients with pristine clarity and sophisticated composition that highlights the ring's natural elegance and premium craftsmanship.",
           image: "/assets/brands/marca3.jpeg",
         },
         {
           id: 4,
-          title: "Wellness & Mystical Beauty",
-          description:
-            "Luxurious cosmetic jar from the QOZALIS brand featuring a vibrant iridescent or holographic finish with shifting hues of purple, blue, green, and hints of yellow-orange. The jar's translucent body displays delicate golden line art with floral and leaf motifs, while the shiny metallic gold lid adds a premium touch. The product is presented in a pristine desert landscape setting with finely textured sandy surfaces sculpted into gentle ripples and dunes. Scattered rough-cut amethyst crystals in varying shades of deep violet to lavender complement the mystical aesthetic. This professional studio photography is expertly crafted for social media content, showcasing the wellness product to clients with sharp, clean composition and simple yet bold natural elements that emphasize spiritual luxury, self-care, and the brand's connection to holistic beauty.",
           image: "/assets/brands/marca4.jpeg",
         },
         {
           id: 5,
-          title: "AI-Generated Jewelry Advertisement",
-          description:
-            "AI-created advertising content featuring an elegant woman showcasing the brilliant-cut emerald ring in a sophisticated lifestyle setting. The portrait captures a woman with natural makeup and dark hair, her right hand gracefully positioned near her cheek to highlight the vibrant deep green emerald set in a classic four-prong yellow gold band. The composition emphasizes luxury and natural beauty, with the woman's calm, direct gaze and refined presentation drawing attention to the jewelry piece. The image is set against a soft, neutral beige background that provides a clean, unobtrusive backdrop, allowing the emerald's vivid green color to stand out prominently. This AI-generated advertisement is expertly designed for social media content, presenting the emerald ring to clients with sharp, clean composition and simple yet bold visual elements that emphasize sophistication, timeless elegance, and the premium quality of the jewelry piece.",
           image: "/assets/brands/marca5.png",
         },
         {
           id: 6,
-          title: "Powerful Volcanic Fragrance",
-          description:
-            "Luxurious rectangular glass perfume bottle with a polished golden cap, dramatically positioned against an intense volcanic landscape. The sleek, modern bottle reflects the fiery orange and red glow of molten lava flowing around its base, creating a striking contrast between refined elegance and raw natural power. The scene features dark, rugged volcanic rock formations with glowing lava rivers and streams, while jagged volcanic mountains in the background emit smoke and display streaks of molten lava. The dramatic dark, smoky sky contrasts with the intense warm glow of the lava, illuminating the perfume bottle's reflective surfaces. This powerful visual composition expertly designed for social media content presents the fragrance to clients with sharp, clean photography and bold, dramatic natural elements that emphasize strength, exclusivity, passion, intensity, and the premium allure of the luxury perfume brand.",
           image: "/assets/brands/marca6.jpeg",
         },
         {
           id: 7,
-          title: "Pure Elegance Skincare",
-          description:
-            "Minimalist cosmetic or skincare bottle featuring a sleek cylindrical design made of frosted, translucent glass in a subtle muted green-grey tone that allows soft light diffusion. The bottle is elegantly topped with a smooth, light-colored wooden cap, likely bamboo or similar natural wood, adding an organic and eco-friendly touch. The product is positioned slightly off-center and tilted at a gentle angle, creating a dynamic yet balanced composition. The bottle is showcased against a lush, dense background of vibrant green moss exhibiting rich textures and varying shades from bright lime green to deeper forest greens, suggesting different natural growth patterns. The soft, natural lighting illuminates the scene from above, creating subtle shadows that enhance both the moss textures and the frosted glass surface. This professional studio photography is expertly designed for social media content, presenting the skincare product to clients with sharp, clean composition and simple yet bold natural elements that emphasize natural purity, serenity, eco-friendliness, and the sophisticated organic beauty of wellness-focused cosmetic brands.",
           image: "/assets/brands/marca7.jpeg",
         },
         {
           id: 8,
-          title: "Vibrant Modern Fragrance",
-          description:
-            "Luxurious contemporary perfume bottle with a sleek design featuring a wider rounded base made of clear glass, containing a rich warm amber-toned liquid with pink and red reflections. The bottle's polished reflective gold neck leads to a clear, multi-faceted glass cap resembling a cut gemstone, adding a premium aesthetic. The product is dramatically positioned on a dark, rugged rock formation with an uneven, textured surface that reflects the ambient neon lighting and the bottle itself. The scene is enveloped in atmospheric purple and yellow neon lighting, with bright purple neon tubes on the left creating diagonal lines and vibrant yellow neon tubes on the right, framing the central subject. Billowing white and purple-tinged smoke or mist surrounds the bottle and rock, creating a soft, diffused effect that enhances the mysterious and luxurious ambiance. The interplay of purple and yellow neon colors creates a dynamic and modern aesthetic, with the bottle reflecting both hues in its liquid and glass surfaces. This professional studio photography is expertly designed for social media content, presenting the fragrance to clients with sharp, clean composition and simple yet bold lighting elements that emphasize modern luxury, sophistication, mystery, and the premium allure of high-end fragrance brands.",
           image: "/assets/brands/marca8.jpeg",
         },
         {
