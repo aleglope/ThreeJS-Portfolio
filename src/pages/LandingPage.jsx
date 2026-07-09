@@ -11,6 +11,7 @@ import Rings from "../components/Rings";
 import ReactLogo from "../components/ReactLogo";
 import Target from "../components/Target";
 import CursorTrail from "../components/CursorTrail";
+import LanguageToggle from "../components/LanguageToggle.jsx";
 
 // Wrapper con hover para ReactLogo
 const InteractiveReactLogo = ({ position, ...props }) => {
@@ -157,6 +158,9 @@ const LandingPage = () => {
       <CursorTrail />
       <SpeedInsights />
       <div className="min-h-screen w-full bg-black relative overflow-hidden">
+        {/* Language toggle overlay */}
+        <LanguageToggle className="fixed top-5 right-5 z-20 pointer-events-auto" />
+
         {/* Background 3D Canvas */}
         <div className="absolute inset-0 z-0">
           <Canvas
