@@ -13,9 +13,10 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const project = useLocalizedProjectDetails(slug);
-  const [selectedVideo, setSelectedVideo] = useState(
-    project?.videos?.[0] || null
+  const [selectedVideoId, setSelectedVideoId] = useState(
+    project?.videos?.[0]?.id ?? null
   );
+  const selectedVideo = project?.videos?.find((v) => v.id === selectedVideoId) ?? project?.videos?.[0] ?? null;
   const [isPlaying, setIsPlaying] = useState(false);
   // Gallery navigation functions
   const galleryCategories = project?.imageGallery
@@ -256,7 +257,7 @@ const ProjectDetail = () => {
                   <button
                     key={video.id}
                     onClick={() => {
-                      setSelectedVideo(video);
+                      setSelectedVideoId(video.id);
                       setIsPlaying(false);
                     }}
                     className={`w-full text-left group transition-all duration-300 ${
