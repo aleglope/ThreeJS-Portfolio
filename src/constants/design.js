@@ -22,10 +22,7 @@ export const designNavLinks = [
 export const designProjects = [
   {
     id: 1,
-    title: "BRAND IDENTITY & UX/UI DESIGN",
     category: "Graphic Design",
-    description:
-      "Complete brand identity with AI-enhanced logo design, UX/UI systems, and comprehensive brand guidelines.",
     image: "/assets/MatematicGalaxy.jpeg",
     tags: [
       "UX/UI Design",
@@ -39,10 +36,7 @@ export const designProjects = [
   },
   {
     id: 2,
-    title: "AI-GENERATED ADVERTISING CONTENT",
     category: "AI Content",
-    description:
-      "Revolutionary advertising solutions using AI-generated videos, avatars, and automated content creation for brands.",
     videoUrl: "/assets/MandalaIA.jpeg",
     tags: [
       "AI Video Generation",
@@ -55,10 +49,7 @@ export const designProjects = [
   },
   {
     id: 3,
-    title: "MUSIC EVENT VISUALS & VJING",
     category: "Music & Events",
-    description:
-      "Psychedelic posters, stunning concert visuals, and immersive VJ performances for DJ events and music festivals.",
     image: "/assets/MatematicNeon.jpeg",
     tags: [
       "VJing",
@@ -72,10 +63,6 @@ export const designProjects = [
   },
   {
     id: 4,
-    title:
-      "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
-    description:
-      "Innovative visual art in photography and video, created and enhanced with artificial intelligence.",
     image: "/assets/MatematicAurora.jpeg",
     tags: ["Video Production", "Color Grading", "Sound Design"],
     hasDetailPage: true,

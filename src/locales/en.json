@@ -224,5 +224,39 @@
   "designHero": {
     "tagline": "Creative Designer & Video Editor",
     "viewWork": "View My Work"
+  },
+  "designProjectsData": {
+    "brand-identity-design": {
+      "title": "BRAND IDENTITY & UX/UI DESIGN",
+      "description": "Complete brand identity with AI-enhanced logo design, UX/UI systems, and comprehensive brand guidelines."
+    },
+    "ai-advertising-content": {
+      "title": "AI-GENERATED ADVERTISING CONTENT",
+      "description": "Revolutionary advertising solutions using AI-generated videos, avatars, and automated content creation for brands."
+    },
+    "music-event-visuals": {
+      "title": "MUSIC EVENT VISUALS & VJING",
+      "description": "Psychedelic posters, stunning concert visuals, and immersive VJ performances for DJ events and music festivals."
+    },
+    "ai-photographic-art": {
+      "title": "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
+      "description": "Innovative visual art in photography and video, created and enhanced with artificial intelligence."
+    }
+  },
+  "designCategoriesData": {
+    "All": "All",
+    "AI Content": "AI Content",
+    "Music & Events": "Music & Events",
+    "Graphic Design": "Graphic Design",
+    "Video Editing": "Video Editing",
+    "AI Photography": "AI Photography"
+  },
+  "designProjectsUI": {
+    "heading": "Design & Video Portfolio",
+    "subheading": "A collection of my creative work in graphic design and video production",
+    "viewProject": "View Project",
+    "comingSoon": "Coming Soon",
+    "moreWork": "Want to see more of my work?",
+    "getInTouch": "Get in Touch"
   }
 }

@@ -224,5 +224,39 @@
   "designHero": {
     "tagline": "Diseñador Creativo y Editor de Vídeo",
     "viewWork": "Ver mi trabajo"
+  },
+  "designProjectsData": {
+    "brand-identity-design": {
+      "title": "IDENTIDAD DE MARCA Y DISEÑO UX/UI",
+      "description": "Identidad de marca completa con diseño de logo mejorado con IA, sistemas UX/UI y guías de marca integrales."
+    },
+    "ai-advertising-content": {
+      "title": "CONTENIDO PUBLICITARIO GENERADO CON IA",
+      "description": "Soluciones publicitarias revolucionarias con vídeos generados con IA, avatares y creación automatizada de contenido para marcas."
+    },
+    "music-event-visuals": {
+      "title": "VISUALES PARA EVENTOS MUSICALES Y VJING",
+      "description": "Pósters psicodélicos, impresionantes visuales de conciertos y actuaciones de VJ inmersivas para eventos de DJ y festivales de música."
+    },
+    "ai-photographic-art": {
+      "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
+      "description": "Arte visual innovador en fotografía y vídeo, creado y mejorado con inteligencia artificial."
+    }
+  },
+  "designCategoriesData": {
+    "All": "Todas",
+    "AI Content": "Contenido IA",
+    "Music & Events": "Música y Eventos",
+    "Graphic Design": "Diseño Gráfico",
+    "Video Editing": "Edición de Vídeo",
+    "AI Photography": "Fotografía IA"
+  },
+  "designProjectsUI": {
+    "heading": "Portfolio de Diseño y Vídeo",
+    "subheading": "Una colección de mi trabajo creativo en diseño gráfico y producción de vídeo",
+    "viewProject": "Ver proyecto",
+    "comingSoon": "Próximamente",
+    "moreWork": "¿Quieres ver más de mi trabajo?",
+    "getInTouch": "Hablemos"
   }
 }
