@@ -22,16 +22,16 @@
   },
   "about": {
     "card1Title": "Hola, soy Alejandro",
-    "card1Text": "Desarrollador full-stack que lleva sistemas a producción de principio a fin — el más reciente, una plataforma de 8 sistemas para congresos médicos, diseñada, construida y operada en solitario, con foco en tiempo real, integraciones de AI y webs 3D animadas.",
-    "card2Title": "Full Stack Developer",
-    "card2Text": "Estoy especializado en JavaScript/TypeScript, con foco en los ecosistemas de React y Next.js y en servicios de AI.",
+    "card1Text": "Desarrollador full-stack que lleva sistemas a producción de principio a fin — el más reciente, una plataforma de 8 sistemas para congresos médicos, diseñada, construida y operada en solitario, con foco en tiempo real, integraciones de IA y webs 3D animadas.",
+    "card2Title": "Desarrollador Full Stack",
+    "card2Text": "Estoy especializado en JavaScript/TypeScript, con foco en los ecosistemas de React y Next.js y en servicios de IA.",
     "card3Title": "Trabajo en remoto en casi cualquier zona horaria.",
     "card3LocationPrefix": "Vivo en",
     "card3Place": "España.",
     "card3Availability": "Con disponibilidad para trabajo remoto.",
     "card3Cta": "Contáctame",
     "card4Title": "Mi pasión por el código",
-    "card4Text": "Me encanta resolver problemas y construir cosas a través del código. Mi pasión va más allá de programar: soy un gamer empedernido que ve los paralelismos entre las estrategias de los videojuegos y las soluciones de código. Adopto herramientas de AI para aprender de forma continua y potenciar mi productividad, lo que me convierte en un desarrollador más eficiente. Programar no es solo mi profesión: es donde convergen mi pasión por la tecnología, los videojuegos y la innovación.",
+    "card4Text": "Me encanta resolver problemas y construir cosas a través del código. Mi pasión va más allá de programar: soy un gamer empedernido que ve los paralelismos entre las estrategias de los videojuegos y las soluciones de código. Adopto herramientas de IA para aprender de forma continua y potenciar mi productividad, lo que me convierte en un desarrollador más eficiente. Programar no es solo mi profesión: es donde convergen mi pasión por la tecnología, los videojuegos y la innovación.",
     "card4Link": "Lee mis casos de estudio en producción → 8 sistemas construidos en solitario en 5 meses (ene–may 2026)",
     "copyLabel": "Contáctame"
   },
@@ -87,7 +87,7 @@
         "detail": "60fps constantes con gestión de memoria"
       },
       {
-        "term": "AI predictiva y físicas en tiempo real",
+        "term": "IA predictiva y físicas en tiempo real",
         "detail": "Algoritmos de machine learning integrados"
       },
       {
@@ -95,5 +95,52 @@
         "detail": "Patrón Observer para sincronización entre lenguajes"
       }
     ]
+  },
+  "projectsData": {
+    "rural-hacker-museum": {
+      "title": "Rural Hacker Museum - Galería de Arte 3D Inmersiva",
+      "desc": "Una galería de arte 3D inmersiva que fusiona la naturaleza rural, la tecnología inmersiva y el arte generativo. Los visitantes exploran un museo virtual con una visita guiada cinematográfica, obras escaneadas con LiDAR explorables en primera persona y cuatro experiencias interactivas.",
+      "subdesc": "Construida con React 18, TypeScript y React Three Fiber sobre Three.js, con obras reales digitalizadas mediante fotogrametría LiDAR, 13 modelos 3D optimizados y 40.000 partículas por GPU a 60 FPS, totalmente adaptada a móvil."
+    },
+    "turtle-race": {
+      "title": "Juego de Carrera de Tortugas",
+      "desc": "Un divertido juego basado en Python que usa el módulo turtle, donde los jugadores apuestan por tortugas de colores concretos y compiten por ganar monedas.",
+      "subdesc": "Este proyecto muestra las habilidades de Alejandro en Python y en el desarrollo de videojuegos usando la librería estándar, poniendo el foco en la lógica y la interacción con el usuario."
+    },
+    "billboard-spotify": {
+      "title": "Playlist de Billboard a Spotify",
+      "desc": "Un programa basado en Python para crear playlists de Spotify a partir de las canciones del Billboard Hot 100 en una fecha concreta. Ideal para amantes de la música y desarrolladores que quieran integrar APIs.",
+      "subdesc": "Desarrollado con Python, este proyecto demuestra soltura en web scraping, integración de APIs y automatización."
+    },
+    "galicia-map-quiz": {
+      "title": "Quiz del Mapa de Galicia",
+      "desc": "Un juego interactivo basado en mapas para poner a prueba el conocimiento de las comarcas de Galicia. Los jugadores pueden adivinar ubicaciones y mejorar sus habilidades geográficas.",
+      "subdesc": "Desarrollado con Python y Tkinter, este proyecto refleja la pasión de Alejandro por la educación y la tecnología."
+    },
+    "coworking-manager": {
+      "title": "Gestor de Coworking",
+      "desc": "Una aplicación completa para gestionar espacios de coworking, que permite a los usuarios reservar plazas, gestionar eventos y buscar por servicios.",
+      "subdesc": "Construida con Angular, Ontimize Web y Spring Boot, incluye filtrado avanzado y operaciones CRUD."
+    },
+    "groove-in-club": {
+      "title": "Web de Groove In Club",
+      "desc": "Una web 3D inmersiva para una productora de DJ, que muestra sus eventos, artistas e identidad de marca en un formato visualmente impactante.",
+      "subdesc": "Construida con React Three Fiber y TailwindCSS, este proyecto demuestra la capacidad de Alejandro para crear experiencias web interactivas y envolventes."
+    },
+    "geojson-tool": {
+      "title": "Herramienta de Conversión y Mapeo GeoJSON",
+      "desc": "Una herramienta diseñada para convertir archivos GML del Catastro español a GeoJSON y visualizarlos en un mapa interactivo usando Folium.",
+      "subdesc": "Este proyecto muestra habilidades avanzadas en el procesamiento de datos espaciales con Python, incluyendo la transformación de coordenadas y la creación de mapas interactivos para el análisis geoespacial."
+    },
+    "real-estate": {
+      "title": "Aplicación de Gestión Inmobiliaria",
+      "desc": "Una solución todo en uno para gestionar operaciones inmobiliarias, construida con Angular, Java Spring Boot y MySQL.",
+      "subdesc": "Este proyecto combina un backend en Spring Boot con una interfaz intuitiva en Angular y una base de datos MySQL para la gestión de datos inmobiliarios."
+    },
+    "restaurant-frontend": {
+      "title": "Frontend de Restaurante en React",
+      "desc": "Una aplicación frontend moderna y atractiva diseñada para un restaurante. La interfaz mejora la experiencia de usuario con secciones bien definidas como la introducción del restaurante, el menú especial, el chef, la galería y más.",
+      "subdesc": "Este proyecto aprovecha los componentes de React para garantizar una arquitectura limpia y modular, ofreciendo una solución eficiente y escalable para el desarrollo frontend."
+    }
   }
 }

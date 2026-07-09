@@ -50,10 +50,7 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: "Rural Hacker Museum - Immersive 3D Art Gallery",
-    desc: "An immersive 3D art gallery that fuses rural nature, immersive technology and generative art. Visitors explore a virtual museum with a cinematic guided tour, LiDAR-scanned artworks explorable in first person, and four interactive experiences.",
-    subdesc:
-      "Built with React 18, TypeScript and React Three Fiber over Three.js, featuring real artworks digitized with LiDAR photogrammetry, 13 optimized 3D models and 40,000 GPU particles at 60 FPS, fully mobile ready.",
+    slug: "rural-hacker-museum",
     href: "https://rural-hacker-museum.vercel.app/",
     texture: "/textures/project/Museum.mp4",
     logo: "/assets/LogoRHackers.svg",
@@ -90,10 +87,7 @@ export const myProjects = [
     sourceCode: "https://github.com/aleglope/RuralHackerMuseum",
   },
   {
-    title: "Turtle Race Game",
-    desc: "A fun Python-based game using the turtle module where players bet on turtles of specific colors and compete to win coins.",
-    subdesc:
-      "This project showcases Alejandro’s skills in Python and game development using the standard library, emphasizing logic and user interaction.",
+    slug: "turtle-race",
     href: "#",
     texture: "/textures/project/TurtleRace.mp4",
     logo: "/assets/turtle.png",
@@ -115,10 +109,7 @@ export const myProjects = [
     sourceCode: "https://github.com/aleglope/Turtle-Race",
   },
   {
-    title: "Billboard to Spotify Playlist",
-    desc: "A Python-based program to create Spotify playlists from Billboard Hot 100 songs for a specific date. Ideal for music enthusiasts and developers looking to integrate APIs.",
-    subdesc:
-      "Developed using Python, this project demonstrates proficiency in web scraping, API integration, and automation.",
+    slug: "billboard-spotify",
     href: "#",
     texture: "/textures/project/SearchSongs.mp4",
     logo: "/assets/spotify.png",
@@ -150,10 +141,7 @@ export const myProjects = [
     sourceCode: "https://github.com/aleglope/Song-Search-Engine",
   },
   {
-    title: "Galicia Map Quiz",
-    desc: "An interactive map-based game to test knowledge of Galicia’s comarcas. Players can guess locations and improve their geographical skills.",
-    subdesc:
-      "Developed using Python and Tkinter, this project highlights Alejandro’s passion for education and technology.",
+    slug: "galicia-map-quiz",
     href: "#",
     texture: "/textures/project/Regions.mp4",
     logo: "/assets/galicia.png",
@@ -175,10 +163,7 @@ export const myProjects = [
     sourceCode: "https://github.com/aleglope/Game-of-Regions",
   },
   {
-    title: "Coworking Manager",
-    desc: "A complete application to manage coworking spaces, allowing users to reserve spots, manage events, and search by services.",
-    subdesc:
-      "Built with Angular, Ontimize Web, and Spring Boot, it features advanced filtering and CRUD operations.",
+    slug: "coworking-manager",
     href: "#",
     texture: "/textures/project/Coworking.mp4",
     logo: "/assets/sidenav-opened.png",
@@ -218,10 +203,7 @@ export const myProjects = [
     sourceCode: "https://github.com/CampusDual/cd2024bfs5g1",
   },
   {
-    title: "Groove In Club Website",
-    desc: "An immersive 3D website for a DJ production house, showcasing their events, artists, and brand identity in a visually stunning format.",
-    subdesc:
-      "Built with React Three Fiber and TailwindCSS, this project demonstrates Alejandro’s ability to create interactive and engaging web experiences.",
+    slug: "groove-in-club",
     href: "https://www.grooveinclub.es/",
     texture: "/textures/project/Groove.mp4",
     logo: "/assets/LOGO GROOVE.svg",
@@ -261,10 +243,7 @@ export const myProjects = [
     sourceCode: "#",
   },
   {
-    title: "GeoJSON Conversion and Mapping Tool",
-    desc: "A tool designed to convert GML files from the Spanish Cadastre to GeoJSON and visualize them on an interactive map using Folium.",
-    subdesc:
-      "This project showcases advanced skills in spatial data processing with Python, including coordinate transformation and the creation of interactive maps for geospatial analysis.",
+    slug: "geojson-tool",
     href: "/assets/mapa_con_geojson.html",
     texture: "/textures/project/GeoJson.mp4",
     logo: "/assets/map.png",
@@ -284,10 +263,7 @@ export const myProjects = [
     sourceCode: "https://github.com/aleglope/Land-Parcel-Mapping",
   },
   {
-    title: "Real Estate Management Application",
-    desc: "An all-in-one solution for managing real estate operations, built with Angular, Java Spring Boot, and MySQL.",
-    subdesc:
-      "This project combines a backend in Spring Boot with an intuitive Angular interface and a MySQL database for real estate data management",
+    slug: "real-estate",
     href: "#",
     texture: "/textures/project/RealState.mp4",
     logo: "/assets/inmobiliaria.png",
@@ -317,10 +293,7 @@ export const myProjects = [
     sourceCode: "https://github.com/aleglope/Real-Estate-Backend",
   },
   {
-    title: "Restaurant Frontend in React",
-    desc: "A modern and attractive frontend application designed for a restaurant. The interface enhances user experience with well-defined sections such as the restaurant introduction, special menu, chef, gallery, and more.",
-    subdesc:
-      "This project leverages React components to ensure a clean, modular architecture, providing an efficient and scalable solution for frontend development.",
+    slug: "restaurant-frontend",
     href: "https://restaurant-phi-six.vercel.app/",
     texture: "/textures/project/RestFront.mp4",
     logo: "/assets/restaurant.png",
