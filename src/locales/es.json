@@ -356,5 +356,28 @@
   "contactDesign": {
     "title": "Creemos algo juntos",
     "description": "¿Buscas diseño creativo o producción de vídeo? Demos vida a tu visión con visuales impactantes y una narrativa cautivadora."
+  },
+  "projectDetailUI": {
+    "projectNotFound": "Proyecto no encontrado",
+    "backToPortfolio": "Volver al portfolio",
+    "backToProjects": "Volver a los proyectos",
+    "client": "Cliente",
+    "year": "Año",
+    "duration": "Duración",
+    "videosLabel": "Vídeos",
+    "videosCount": "vídeos",
+    "gallery": "Galería",
+    "categoriesCount": "categorías",
+    "projectVideos": "Vídeos del proyecto",
+    "allVideos": "Todos los vídeos",
+    "nowPlaying": "Reproduciendo",
+    "projectGallery": "Galería del proyecto"
+  },
+  "designGalleryGroups": {
+    "Brand": "Marca",
+    "UI/UX Designs": "Diseños UI/UX",
+    "Logos": "Logos",
+    "posters": "Carteles",
+    "photographicArt": "Arte Fotográfico"
   }
 }

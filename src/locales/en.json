@@ -356,5 +356,28 @@
   "contactDesign": {
     "title": "Let's Create Together",
     "description": "Looking for creative design or video production? Let's bring your vision to life with stunning visuals and compelling storytelling."
+  },
+  "projectDetailUI": {
+    "projectNotFound": "Project Not Found",
+    "backToPortfolio": "Back to Portfolio",
+    "backToProjects": "Back to Projects",
+    "client": "Client",
+    "year": "Year",
+    "duration": "Duration",
+    "videosLabel": "Videos",
+    "videosCount": "videos",
+    "gallery": "Gallery",
+    "categoriesCount": "categories",
+    "projectVideos": "Project Videos",
+    "allVideos": "All Videos",
+    "nowPlaying": "Now Playing",
+    "projectGallery": "Project Gallery"
+  },
+  "designGalleryGroups": {
+    "Brand": "Brand",
+    "UI/UX Designs": "UI/UX Designs",
+    "Logos": "Logos",
+    "posters": "posters",
+    "photographicArt": "photographicArt"
   }
 }

@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import ReactPlayer from "react-player";
-import { projectDetails } from "../constants/design.js";
+import useLocalizedProjectDetails from "../hooks/useLocalizedProjectDetails.js";
 import DesignNavbar from "../sections/design/DesignNavbar.jsx";
 import Footer from "../sections/Footer.jsx";
 import CursorTrail from "../components/CursorTrail";
@@ -10,7 +11,8 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 const ProjectDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const project = projectDetails[slug];
+  const { t } = useTranslation();
+  const project = useLocalizedProjectDetails(slug);
   const [selectedVideo, setSelectedVideo] = useState(
     project?.videos?.[0] || null
   );
@@ -50,13 +52,13 @@ const ProjectDetail = () => {
         <main className="max-w-7xl mx-auto min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">
-              Project Not Found
+              {t("projectDetailUI.projectNotFound")}
             </h1>
             <button
               onClick={() => navigate("/design")}
               className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
             >
-              Back to Portfolio
+              {t("projectDetailUI.backToPortfolio")}
             </button>
           </div>
         </main>
@@ -89,7 +91,7 @@ const ProjectDetail = () => {
                 d="M10 19l-7-7m0 0l7-7m-7 7h18"
               />
             </svg>
-            Back to Projects
+            {t("projectDetailUI.backToProjects")}
           </button>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -110,27 +112,38 @@ const ProjectDetail = () => {
               {/* Project Details */}
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div>
-                  <p className="text-white-600 text-sm mb-2">Client</p>
+                  <p className="text-white-600 text-sm mb-2">
+                    {t("projectDetailUI.client")}
+                  </p>
                   <p className="text-white font-semibold">{project.client}</p>
                 </div>
                 <div>
-                  <p className="text-white-600 text-sm mb-2">Year</p>
+                  <p className="text-white-600 text-sm mb-2">
+                    {t("projectDetailUI.year")}
+                  </p>
                   <p className="text-white font-semibold">{project.year}</p>
                 </div>
                 <div>
-                  <p className="text-white-600 text-sm mb-2">Duration</p>
+                  <p className="text-white-600 text-sm mb-2">
+                    {t("projectDetailUI.duration")}
+                  </p>
                   <p className="text-white font-semibold">{project.duration}</p>
                 </div>
                 <div>
-                  <p className="text-white-600 text-sm mb-2">Videos</p>
+                  <p className="text-white-600 text-sm mb-2">
+                    {t("projectDetailUI.videosLabel")}
+                  </p>
                   <p className="text-white font-semibold">
-                    {project.videos.length} videos
+                    {project.videos.length} {t("projectDetailUI.videosCount")}
                   </p>
                 </div>
                 <div>
-                  <p className="text-white-600 text-sm mb-2">Gallery</p>
+                  <p className="text-white-600 text-sm mb-2">
+                    {t("projectDetailUI.gallery")}
+                  </p>
                   <p className="text-white font-semibold">
-                    {galleryCategories.length} categories
+                    {galleryCategories.length}{" "}
+                    {t("projectDetailUI.categoriesCount")}
                   </p>
                 </div>
               </div>
@@ -162,7 +175,7 @@ const ProjectDetail = () => {
         {/* Video Player Section */}
         <section className="c-space my-20">
           <h2 className="text-3xl font-bold text-white mb-8 font-generalsans">
-            Project Videos
+            {t("projectDetailUI.projectVideos")}
           </h2>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -236,7 +249,7 @@ const ProjectDetail = () => {
             {/* Video List */}
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white mb-4">
-                All Videos ({project.videos.length})
+                {t("projectDetailUI.allVideos")} ({project.videos.length})
               </h3>
               <div className="space-y-3 max-h-[600px] overflow-y-auto custom-scrollbar">
                 {project.videos.map((video) => (
@@ -279,7 +292,7 @@ const ProjectDetail = () => {
                         {/* Currently Playing Badge */}
                         {selectedVideo.id === video.id && (
                           <div className="absolute top-2 left-2 px-2 py-1 bg-pink-500 rounded text-white text-xs font-semibold">
-                            Now Playing
+                            {t("projectDetailUI.nowPlaying")}
                           </div>
                         )}
                       </div>
@@ -304,7 +317,7 @@ const ProjectDetail = () => {
         {project.imageGallery && galleryCategories.length > 0 && (
           <section className="c-space my-20">
             <h2 className="text-3xl font-bold text-white mb-8 font-generalsans">
-              Project Gallery
+              {t("projectDetailUI.projectGallery")}
             </h2>
 
             {/* Category Tabs */}
@@ -319,7 +332,7 @@ const ProjectDetail = () => {
                       : "bg-black-300 text-white-600 hover:bg-black-200 hover:text-white"
                   }`}
                 >
-                  {category}
+                  {t("designGalleryGroups." + category)}
                   <span className="ml-2 text-xs opacity-75">
                     ({project.imageGallery[category].length})
                   </span>
