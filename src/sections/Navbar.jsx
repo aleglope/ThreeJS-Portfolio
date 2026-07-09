@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { navLinks } from "../constants/index.js";
+import useLocalizedNavLinks from "../hooks/useLocalizedNavLinks.js";
 import LanguageToggle from "../components/LanguageToggle.jsx";
 
 const NavItems = () => {
+  const navLinks = useLocalizedNavLinks();
+
   return (
     <ul className="nav-ul">
       {navLinks.map(({ id, href, name }) => (

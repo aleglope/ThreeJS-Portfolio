@@ -1,15 +1,16 @@
 import { useTranslation } from "react-i18next";
-import { clientReviews } from "../constants/index.js";
+import useLocalizedReviews from "../hooks/useLocalizedReviews.js";
 
 const Clients = () => {
   const { t } = useTranslation();
+  const reviews = useLocalizedReviews();
 
   return (
     <section className="c-space my-20">
       <h3 className="head-text">{t("clients.heading")}</h3>
 
       <div className="client-container">
-        {clientReviews.map((item) => (
+        {reviews.map((item) => (
           <div key={`review-${item.id}`} className="client-review">
             <div>
               <p className="text-white-800 font-light">{item.review}</p>

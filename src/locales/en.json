@@ -174,5 +174,33 @@
       "title": "Contributed to the development of a real estate management application using Angular for frontend, Java Spring Boot for backend, and MySQL for database. Focused on scalability, security, and optimized user experience.",
       "duration": "2024"
     }
+  },
+  "reviewsData": {
+    "1": {
+      "position": "Owner & Streamer — La Parrilla de Champi",
+      "review": "Alejandro built the entire website for my restaurant in record time — I couldn't believe how fast it was ready. The best part is the admin panel: I can update the menu, change dishes, prices, and categories instantly without touching any code. My customers now book tables online and everything just works. He understood exactly what I needed and delivered way beyond my expectations."
+    },
+    "2": {
+      "position": "Senior Developer at Imatia",
+      "review": "I had the pleasure of being Alejandro's mentor during the bootcamp. His dedication and quick learning with Angular and Ontimize were impressive. He always showed great interest in learning and improving, effectively applying feedback. An exceptional student!"
+    },
+    "3": {
+      "position": "Event Manager at Groove In Club",
+      "review": "Alejandro developed a spectacular website for our DJ production house, using 3D technology to highlight our events and artists. His innovative approach and attention to detail took our online presence to a new level. Highly recommended!"
+    }
+  },
+  "navData": {
+    "1": {
+      "name": "Home"
+    },
+    "2": {
+      "name": "Projects"
+    },
+    "3": {
+      "name": "About"
+    },
+    "4": {
+      "name": "Contact"
+    }
   }
 }

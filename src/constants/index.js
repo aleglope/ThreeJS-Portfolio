@@ -1,22 +1,18 @@
 export const navLinks = [
   {
     id: 1,
-    name: "Home",
     href: "#home",
   },
   {
     id: 2,
-    name: "Projects",
     href: "#projects",
   },
   {
     id: 3,
-    name: "About",
     href: "#about",
   },
   {
     id: 4,
-    name: "Contact",
     href: "#contact",
   },
 ];
@@ -25,26 +21,17 @@ export const clientReviews = [
   {
     id: 1,
     name: "Champi Muros",
-    position: "Owner & Streamer — La Parrilla de Champi",
     img: "assets/LogoChampi.png",
-    review:
-      "Alejandro built the entire website for my restaurant in record time — I couldn't believe how fast it was ready. The best part is the admin panel: I can update the menu, change dishes, prices, and categories instantly without touching any code. My customers now book tables online and everything just works. He understood exactly what I needed and delivered way beyond my expectations.",
   },
   {
     id: 2,
     name: "Imatia",
-    position: "Senior Developer at Imatia",
     img: "assets/CesarImatia.jpeg",
-    review:
-      "I had the pleasure of being Alejandro's mentor during the bootcamp. His dedication and quick learning with Angular and Ontimize were impressive. He always showed great interest in learning and improving, effectively applying feedback. An exceptional student!",
   },
   {
     id: 3,
     name: "Groove In Club",
-    position: "Event Manager at Groove In Club",
     img: "assets/djbrenlla.png",
-    review:
-      "Alejandro developed a spectacular website for our DJ production house, using 3D technology to highlight our events and artists. His innovative approach and attention to detail took our online presence to a new level. Highly recommended!",
   },
 ];
 
