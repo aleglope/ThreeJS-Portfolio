@@ -410,6 +410,35 @@
         }
       }
     },
+    "music-event-visuals": {
+      "title": "Visuales para Eventos Musicales y VJing",
+      "category": "Música y Eventos",
+      "fullDescription": "Sumerge al público en experiencias musicales inolvidables mediante arte psicodélico, actuaciones dinámicas de VJ y una narrativa visual de vanguardia. Desde carteles de concierto alucinantes que capturan la esencia de la música electrónica hasta manipulaciones visuales en tiempo real que se sincronizan a la perfección con las sesiones de DJ, nuestro trabajo transforma eventos corrientes en viajes extraordinarios. Combinamos el diseño gráfico tradicional con la actuación de vídeo en directo, creando paisajes visuales que enriquecen la experiencia musical y dejan una huella duradera tanto en los asistentes a festivales como en los del club.",
+      "client": "Varios festivales de música y colectivos de DJ",
+      "duration": "1-2 semanas por proyecto",
+      "videos": {
+        "1": {
+          "title": "DISEÑO DE CARTEL MINIMALISTA PARA DISCOTECA",
+          "description": "Un cartel minimalista diseñado para un evento de discoteca, creado y editado con tecnología de IA. El visual presenta líneas limpias, una estética moderna y un ambiente refinado, combinando a la perfección la creatividad digital con un enfoque minimalista—ideal para promocionar experiencias de ocio nocturno exclusivas."
+        },
+        "2": {
+          "title": "PROMO PARA REDES SOCIALES: CARTEL DE DISCOTECA",
+          "description": "Edición de vídeo dinámica que transforma un cartel estático de discoteca en contenido atractivo para redes sociales con tecnología de IA. Este proyecto demuestra cómo dar vida a gráficas estáticas para lograr la máxima interacción en plataformas como Instagram y TikTok."
+        },
+        "3": {
+          "title": "CREACIÓN DE CARTEL DE FESTIVAL CON IA",
+          "description": "Una mirada entre bastidores al proceso creativo de un cartel para un festival de música, editado y creado por completo con Inteligencia Artificial. Este proyecto destaca el poder de la IA tanto en el diseño visual como en la edición de vídeo profesional."
+        },
+        "4": {
+          "title": "SINERGIA AUDIOVISUAL",
+          "description": "Sumérgete en esta electrizante edición de vídeo, un montaje de gran energía que captura la intensidad y la narrativa del tema original. Este proyecto demuestra una habilidad excepcional para sincronizar efectos visuales dinámicos y transiciones rápidas con una banda sonora que habla de ambición, riesgo y determinación inquebrantable.\n\nLa propia música, la \"Song of Arcane\", también se creó con herramientas de Inteligencia Artificial.\n"
+        },
+        "5": {
+          "title": "PRODUCCIÓN DE VJING Y VISUALES EN DIRECTO",
+          "description": "Muestra de VJing y visuales en directo para un festival de música creados con tecnología de IA. Este vídeo demuestra cómo las herramientas modernas de IA permiten crear diseños de eventos de alta gama y experiencias visuales inmersivas con un coste y un tiempo de entrega considerablemente menores en comparación con los métodos tradicionales."
+        }
+      }
+    },
     "ai-photographic-art": {
       "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
       "category": "Edición de Vídeo",

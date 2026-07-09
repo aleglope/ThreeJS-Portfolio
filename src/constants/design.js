@@ -386,13 +386,7 @@ export const projectDetails = {
   },
   "music-event-visuals": {
     id: 3,
-    title: "Music Event Visuals & VJing",
-    category: "Music & Events",
-    fullDescription:
-      "Immerse audiences in unforgettable music experiences through psychedelic art, dynamic VJ performances, and cutting-edge visual storytelling. From mind-bending concert posters that capture the essence of electronic music to real-time visual manipulations that sync perfectly with DJ sets, our work transforms ordinary events into extraordinary journeys. We blend traditional graphic design with live video performance, creating visual landscapes that enhance the musical experience and leave lasting impressions on festival-goers and club attendees alike.",
-    client: "Various Music Festivals & DJ Collectives",
     year: "2024",
-    duration: "1-2 weeks per project",
     tags: [
       "VJing",
       "Psychedelic Art",
@@ -601,47 +595,30 @@ export const projectDetails = {
     videos: [
       {
         id: 1,
-        title: "MINIMALIST NIGHTCLUB POSTER DESIGN",
-        description:
-          "A minimalist poster designed for a nightclub event, created and edited using AI technology. The visual features clean lines, modern aesthetics, and a refined atmosphere, perfectly blending digital creativity with a minimalist approach—ideal for promoting exclusive nightlife experiences.",
         videoUrl: "https://www.youtube.com/watch?v=vOZjQxlaAPY",
         thumbnail: "/assets/spotlight1.png",
         duration: "00:25",
       },
       {
         id: 2,
-        title: "SOCIAL MEDIA PROMO: NIGHTCLUB POSTER",
-        description:
-          "Dynamic video editing transforming a static nightclub poster into engaging social media content using AI technology. This project demonstrates how to bring static graphics to life for maximum engagement on platforms like Instagram and TikTok.",
         videoUrl: "https://www.youtube.com/watch?v=zwHNArb4730",
         thumbnail: "/assets/spotlight2.png",
         duration: "00:16",
       },
       {
         id: 3,
-        title: "AI FESTIVAL POSTER CREATION",
-        description:
-          "A behind-the-scenes look at the creative process for a music festival poster, fully edited and created with Artificial Intelligence. This project highlights the power of AI in both visual design and professional video editing.",
         videoUrl: "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
         thumbnail: "/assets/spotlight3.png",
         duration: "02:57",
       },
       {
         id: 4,
-        title: "AUDIO-VISUAL SYNERGY",
-        description: `Dive into this electrifying video edit, a high-energy montage that captures the intensity and narrative of the original track. This project demonstrates exceptional skill in synchronizing dynamic visual effects and rapid transitions with a soundtrack that speaks of ambition, risk, and unwavering determination.
-
-The music itself, the "Song of Arcane," was also created using Artificial Intelligence tools.
-`,
         videoUrl: "https://www.youtube.com/watch?v=Pthshy6sEHY",
         thumbnail: "/assets/spotlight4.png",
         duration: "02:15",
       },
       {
         id: 5,
-        title: "VJING & LIVE VISUALS PRODUCTION",
-        description:
-          "Showcase of VJing and live visuals for a music festival created using AI technology. This video demonstrates how modern AI tools allow for the creation of high-end event designs and immersive visual experiences at a significantly reduced cost and turnaround time compared to traditional methods.",
         videoUrl: "https://www.youtube.com/watch?v=1LTbk3_hLCU",
         thumbnail: "/assets/spotlight2.png",
         duration: "05:00",
