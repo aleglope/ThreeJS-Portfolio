@@ -28,10 +28,24 @@ i18n
     },
   });
 
+function applyLocalizedMeta() {
+  document.title = i18n.t("meta.title");
+
+  let description = document.querySelector('meta[name="description"]');
+  if (!description) {
+    description = document.createElement("meta");
+    description.setAttribute("name", "description");
+    document.head.appendChild(description);
+  }
+  description.setAttribute("content", i18n.t("meta.description"));
+}
+
 document.documentElement.lang = i18n.resolvedLanguage || i18n.language;
+applyLocalizedMeta();
 
 i18n.on("languageChanged", (lng) => {
   document.documentElement.lang = lng;
+  applyLocalizedMeta();
 });
 
 export default i18n;

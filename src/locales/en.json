@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "AGonzL Portfolio",
+    "description": "Full Stack developer and 3D web designer — interactive portfolio built with React and Three.js."
+  },
   "languageSwitcher": {
     "ariaLabel": "Change language",
     "es": "ES",
