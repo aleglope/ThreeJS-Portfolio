@@ -258,5 +258,84 @@
     "comingSoon": "Coming Soon",
     "moreWork": "Want to see more of my work?",
     "getInTouch": "Get in Touch"
+  },
+  "videoShowcaseData": {
+    "1": {
+      "title": "AI ADVERTISING MAGIC - ALEWENCES CYBERPUNK",
+      "description": "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it."
+    },
+    "2": {
+      "title": "DIGITAL SOUL - CONSCIOUSNESS & NATURE",
+      "description": "I explore the intersection between human consciousness, the beauty of nature, and the language of technology. 🌀 Each piece in my portfolio is a journey, an emotion captured in pixels and algorithms. This series, 'Digital Soul', visualizes our internal connection with the digital and natural universe."
+    },
+    "3": {
+      "title": "SELFIE TO FANTASY ART TRANSFORMATION",
+      "description": "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized."
+    },
+    "4": {
+      "title": "HALLOWEEN AI HORROR FRIEND",
+      "description": "When you ask Artificial Intelligence for a 'terrifying friend for Halloween' 🎃, but you forget to put in the prompt 'with fresh breath'. Be careful what you wish for! 😂 And that's because even the most fearsome Xenomorph in the universe needs help after lunch."
+    },
+    "5": {
+      "title": "BRAND IDENTITY SHOWCASE",
+      "description": "Complete brand identity transformation using AI-powered design tools. From logo creation to comprehensive brand guidelines, witness how artificial intelligence revolutionizes the branding process while maintaining human creativity and strategic thinking."
+    },
+    "6": {
+      "title": "CORPORATE VIDEO PRODUCTION",
+      "description": "Professional corporate video production enhanced by AI technology. Combining cinematic storytelling with intelligent automation for compelling business narratives that engage audiences and drive results."
+    },
+    "7": {
+      "title": "PROFESSIONAL MOTION GRAPHICS",
+      "description": "High-quality motion graphics created with AI assistance. From data visualization to explainer videos, discover how artificial intelligence accelerates the motion design process while maintaining professional standards."
+    },
+    "8": {
+      "title": "DIGITAL MARKETING SOLUTIONS",
+      "description": "Comprehensive digital marketing solutions powered by AI. From automated content creation to intelligent audience targeting, explore how artificial intelligence transforms marketing strategies and maximizes ROI."
+    }
+  },
+  "videoSkillsData": {
+    "1": {
+      "title": "AI Logo & Brand Design",
+      "description": "AI-powered logo creation, brand identity systems, advanced AI design tools"
+    },
+    "2": {
+      "title": "UX/UI Design Systems",
+      "description": "Figma, Adobe XD, user research, interaction design, prototyping"
+    },
+    "3": {
+      "title": "Brand Strategy & Research",
+      "description": "Market research, competitor analysis, brand positioning, target audience definition"
+    },
+    "4": {
+      "title": "Typography & Visual Hierarchy",
+      "description": "Custom font selection, typography systems, visual hierarchy, readability optimization"
+    },
+    "5": {
+      "title": "Color Theory & Psychology",
+      "description": "Color palette creation, brand colors, psychological impact, accessibility compliance"
+    },
+    "6": {
+      "title": "Psychedelic & Minimal Art",
+      "description": "AI-generated artwork, psychedelic designs, minimal aesthetics, custom client-inspired creations"
+    },
+    "7": {
+      "title": "VJing & Live Visuals",
+      "description": "Real-time video performance, audio-visual sync, Resolume Arena"
+    },
+    "8": {
+      "title": "Professional Editing",
+      "description": "Premiere Pro, After Effects, DaVinci Resolve, Color Grading"
+    },
+    "9": {
+      "title": "Digital Asset Management",
+      "description": "Brand asset libraries, style guide creation, brand consistency tools"
+    }
+  },
+  "videoShowcaseUI": {
+    "heading": "Video Showcase",
+    "subheading": "Professional video editing and motion graphics projects",
+    "emptyTitle": "Select a video below to play",
+    "emptyHint": "Click on any video thumbnail to start watching",
+    "skillsHeading": "Image and Video Production Skills"
   }
 }

@@ -258,5 +258,84 @@
     "comingSoon": "Próximamente",
     "moreWork": "¿Quieres ver más de mi trabajo?",
     "getInTouch": "Hablemos"
+  },
+  "videoShowcaseData": {
+    "1": {
+      "title": "MAGIA PUBLICITARIA CON IA - ALEWENCES CYBERPUNK",
+      "description": "🤯 ¿Crees que esto lo grabó un equipo de rodaje? Piénsalo otra vez. 💡 Esto es lo que ocurre cuando mezclas Inteligencia Artificial con una idea publicitaria brutal. 🎥✨ Hiperrealismo, neón y el gusto premium de ALEWENCES, todo generado en minutos. Olvídate de los límites creativos. Si puedes soñarlo, la IA puede crearlo."
+    },
+    "2": {
+      "title": "ALMA DIGITAL - CONSCIENCIA Y NATURALEZA",
+      "description": "Exploro la intersección entre la consciencia humana, la belleza de la naturaleza y el lenguaje de la tecnología. 🌀 Cada pieza de mi portfolio es un viaje, una emoción capturada en píxeles y algoritmos. Esta serie, 'Alma Digital', visualiza nuestra conexión interna con el universo digital y natural."
+    },
+    "3": {
+      "title": "TRANSFORMACIÓN DE SELFIE A ARTE FANTÁSTICO",
+      "description": "¿Te imaginas convertir tu selfie favorita en una obra de arte única? Olvídate de los filtros genéricos que usa todo el mundo. Mi servicio transforma tus propias fotos en retratos fantásticos de alta costura, realzando tu belleza con un toque dorado mágico. 💫 Cada pieza está 100% personalizada."
+    },
+    "4": {
+      "title": "AMIGO DE TERROR DE HALLOWEEN CON IA",
+      "description": "Cuando le pides a la Inteligencia Artificial un 'amigo terrorífico para Halloween' 🎃, pero se te olvida poner en el prompt 'con el aliento fresco'. ¡Ten cuidado con lo que deseas! 😂 Y es que hasta el Xenomorfo más temible del universo necesita ayuda después de comer."
+    },
+    "5": {
+      "title": "PRESENTACIÓN DE IDENTIDAD DE MARCA",
+      "description": "Transformación completa de identidad de marca con herramientas de diseño impulsadas por IA. Desde la creación del logo hasta guías de marca integrales, descubre cómo la inteligencia artificial revoluciona el proceso de branding manteniendo la creatividad humana y el pensamiento estratégico."
+    },
+    "6": {
+      "title": "PRODUCCIÓN DE VÍDEO CORPORATIVO",
+      "description": "Producción profesional de vídeo corporativo potenciada por tecnología de IA. Combinando la narrativa cinematográfica con la automatización inteligente para crear relatos empresariales cautivadores que enganchan al público y generan resultados."
+    },
+    "7": {
+      "title": "MOTION GRAPHICS PROFESIONALES",
+      "description": "Motion graphics de alta calidad creados con la asistencia de la IA. Desde la visualización de datos hasta vídeos explicativos, descubre cómo la inteligencia artificial acelera el proceso de diseño de movimiento manteniendo los estándares profesionales."
+    },
+    "8": {
+      "title": "SOLUCIONES DE MARKETING DIGITAL",
+      "description": "Soluciones integrales de marketing digital impulsadas por IA. Desde la creación automatizada de contenido hasta la segmentación inteligente de la audiencia, explora cómo la inteligencia artificial transforma las estrategias de marketing y maximiza el ROI."
+    }
+  },
+  "videoSkillsData": {
+    "1": {
+      "title": "Diseño de Logo y Marca con IA",
+      "description": "Creación de logos con IA, sistemas de identidad de marca, herramientas avanzadas de diseño con IA"
+    },
+    "2": {
+      "title": "Sistemas de Diseño UX/UI",
+      "description": "Figma, Adobe XD, investigación de usuarios, diseño de interacción, prototipado"
+    },
+    "3": {
+      "title": "Estrategia de Marca e Investigación",
+      "description": "Investigación de mercado, análisis de la competencia, posicionamiento de marca, definición del público objetivo"
+    },
+    "4": {
+      "title": "Tipografía y Jerarquía Visual",
+      "description": "Selección de fuentes personalizadas, sistemas tipográficos, jerarquía visual, optimización de la legibilidad"
+    },
+    "5": {
+      "title": "Teoría del Color y Psicología",
+      "description": "Creación de paletas de color, colores de marca, impacto psicológico, cumplimiento de accesibilidad"
+    },
+    "6": {
+      "title": "Arte Psicodélico y Minimalista",
+      "description": "Ilustraciones generadas con IA, diseños psicodélicos, estéticas minimalistas, creaciones personalizadas inspiradas en el cliente"
+    },
+    "7": {
+      "title": "VJing y Visuales en Directo",
+      "description": "Actuación de vídeo en tiempo real, sincronización audiovisual, Resolume Arena"
+    },
+    "8": {
+      "title": "Edición Profesional",
+      "description": "Premiere Pro, After Effects, DaVinci Resolve, etalonaje de color"
+    },
+    "9": {
+      "title": "Gestión de Activos Digitales",
+      "description": "Bibliotecas de activos de marca, creación de guías de estilo, herramientas de consistencia de marca"
+    }
+  },
+  "videoShowcaseUI": {
+    "heading": "Vídeos Destacados",
+    "subheading": "Edición de vídeo profesional y proyectos de motion graphics",
+    "emptyTitle": "Selecciona un vídeo abajo para reproducirlo",
+    "emptyHint": "Haz clic en cualquier miniatura de vídeo para empezar a verlo",
+    "skillsHeading": "Habilidades de Producción de Imagen y Vídeo"
   }
 }

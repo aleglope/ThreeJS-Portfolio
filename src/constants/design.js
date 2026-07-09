@@ -844,75 +844,51 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
 export const videoShowcase = [
   {
     id: 1,
-    title: "AI ADVERTISING MAGIC - ALEWENCES CYBERPUNK",
     thumbnail: "/assets/spotlight1.png",
     duration: "00:30",
-    description:
-      "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it.",
     videoUrl: "https://www.youtube.com/shorts/o0IVhvMOUqE",
   },
   {
     id: 2,
-    title: "DIGITAL SOUL - CONSCIOUSNESS & NATURE",
     thumbnail: "/assets/spotlight2.png",
     duration: "00:28",
-    description:
-      "I explore the intersection between human consciousness, the beauty of nature, and the language of technology. 🌀 Each piece in my portfolio is a journey, an emotion captured in pixels and algorithms. This series, 'Digital Soul', visualizes our internal connection with the digital and natural universe.",
     videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
   },
   {
     id: 3,
-    title: "SELFIE TO FANTASY ART TRANSFORMATION",
     thumbnail: "/assets/spotlight3.png",
     duration: "00:41",
-    description:
-      "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized.",
     videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
   },
   {
     id: 4,
-    title: "HALLOWEEN AI HORROR FRIEND",
     thumbnail: "/assets/spotlight4.png",
     duration: "00:25",
-    description:
-      "When you ask Artificial Intelligence for a 'terrifying friend for Halloween' 🎃, but you forget to put in the prompt 'with fresh breath'. Be careful what you wish for! 😂 And that's because even the most fearsome Xenomorph in the universe needs help after lunch.",
     videoUrl: "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
   },
   // Professional/Corporate Content
   {
     id: 5,
-    title: "BRAND IDENTITY SHOWCASE",
     thumbnail: "/assets/spotlight5.png",
     duration: "00:45",
-    description:
-      "Complete brand identity transformation using AI-powered design tools. From logo creation to comprehensive brand guidelines, witness how artificial intelligence revolutionizes the branding process while maintaining human creativity and strategic thinking.",
     videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",
   },
   {
     id: 6,
-    title: "CORPORATE VIDEO PRODUCTION",
     thumbnail: "/assets/spotlight1.png",
     duration: "01:15",
-    description:
-      "Professional corporate video production enhanced by AI technology. Combining cinematic storytelling with intelligent automation for compelling business narratives that engage audiences and drive results.",
     videoUrl: "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
   },
   {
     id: 7,
-    title: "PROFESSIONAL MOTION GRAPHICS",
     thumbnail: "/assets/spotlight2.png",
     duration: "00:35",
-    description:
-      "High-quality motion graphics created with AI assistance. From data visualization to explainer videos, discover how artificial intelligence accelerates the motion design process while maintaining professional standards.",
     videoUrl: "https://www.youtube.com/shorts/-48FW7i6peE",
   },
   {
     id: 8,
-    title: "DIGITAL MARKETING SOLUTIONS",
     thumbnail: "/assets/spotlight3.png",
     duration: "00:55",
-    description:
-      "Comprehensive digital marketing solutions powered by AI. From automated content creation to intelligent audience targeting, explore how artificial intelligence transforms marketing strategies and maximizes ROI.",
     videoUrl: "https://youtube.com/shorts/vOZjQxlaAPY",
   },
 ];
@@ -947,72 +923,46 @@ export const projectTypes = [
 export const videoSkills = [
   {
     id: 1,
-    title: "AI Logo & Brand Design",
-    description:
-      "AI-powered logo creation, brand identity systems, advanced AI design tools",
     gradient: "from-cyan-500 to-blue-600",
     iconComponent: "MdAutoAwesome",
   },
   {
     id: 2,
-    title: "UX/UI Design Systems",
-    description:
-      "Figma, Adobe XD, user research, interaction design, prototyping",
     gradient: "from-purple-500 to-pink-600",
     iconComponent: "MdDesignServices",
   },
   {
     id: 3,
-    title: "Brand Strategy & Research",
-    description:
-      "Market research, competitor analysis, brand positioning, target audience definition",
     gradient: "from-blue-500 to-indigo-600",
     iconComponent: "MdAnalytics",
   },
   {
     id: 4,
-    title: "Typography & Visual Hierarchy",
-    description:
-      "Custom font selection, typography systems, visual hierarchy, readability optimization",
     gradient: "from-violet-500 to-purple-600",
     iconComponent: "MdTextFields",
   },
   {
     id: 5,
-    title: "Color Theory & Psychology",
-    description:
-      "Color palette creation, brand colors, psychological impact, accessibility compliance",
     gradient: "from-pink-500 to-rose-600",
     iconComponent: "MdColorLens",
   },
   {
     id: 6,
-    title: "Psychedelic & Minimal Art",
-    description:
-      "AI-generated artwork, psychedelic designs, minimal aesthetics, custom client-inspired creations",
     gradient: "from-purple-600 to-pink-500",
     iconComponent: "MdBrush",
   },
   {
     id: 7,
-    title: "VJing & Live Visuals",
-    description:
-      "Real-time video performance, audio-visual sync, Resolume Arena",
     gradient: "from-orange-500 to-red-600",
     iconComponent: "MdVideocam",
   },
   {
     id: 8,
-    title: "Professional Editing",
-    description: "Premiere Pro, After Effects, DaVinci Resolve, Color Grading",
     gradient: "from-green-500 to-teal-600",
     iconComponent: "MdMovieEdit",
   },
   {
     id: 9,
-    title: "Digital Asset Management",
-    description:
-      "Brand asset libraries, style guide creation, brand consistency tools",
     gradient: "from-teal-500 to-cyan-600",
     iconComponent: "MdFolderSpecial",
   },
