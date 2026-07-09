@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import useLocalizedNavLinks from "../hooks/useLocalizedNavLinks.js";
 import LanguageToggle from "../components/LanguageToggle.jsx";
 
@@ -20,6 +21,7 @@ const NavItems = () => {
 };
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
@@ -88,7 +90,7 @@ const Navbar = () => {
               onClick={() => navigate("/design")}
               className="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
             >
-              Design Portfolio
+              {t("navbarUI.designPortfolio")}
             </button>
             <LanguageToggle />
           </nav>
@@ -103,7 +105,7 @@ const Navbar = () => {
               onClick={() => navigate("/design")}
               className="w-full px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
             >
-              Design Portfolio
+              {t("navbarUI.designPortfolio")}
             </button>
           </div>
           <div className="mt-4 flex justify-center">

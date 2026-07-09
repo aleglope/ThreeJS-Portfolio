@@ -3,6 +3,9 @@
     "title": "AGonzL Portfolio",
     "description": "Full Stack developer and 3D web designer — interactive portfolio built with React and Three.js."
   },
+  "navbarUI": {
+    "designPortfolio": "Design Portfolio"
+  },
   "languageSwitcher": {
     "ariaLabel": "Change language",
     "es": "ES",

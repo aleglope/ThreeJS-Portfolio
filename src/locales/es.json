@@ -3,6 +3,9 @@
     "title": "AGonzL — Portafolio",
     "description": "Desarrollador Full Stack y diseñador web 3D — portafolio interactivo hecho con React y Three.js."
   },
+  "navbarUI": {
+    "designPortfolio": "Portfolio Diseño"
+  },
   "languageSwitcher": {
     "ariaLabel": "Cambiar idioma",
     "es": "ES",
