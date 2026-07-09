@@ -19,5 +19,20 @@
     "terms": "Términos y condiciones",
     "privacy": "Política de privacidad",
     "copyright": "© 2026 Alejandro G.L. Todos los derechos reservados."
+  },
+  "about": {
+    "card1Title": "Hola, soy Alejandro",
+    "card1Text": "Desarrollador full-stack que lleva sistemas a producción de principio a fin — el más reciente, una plataforma de 8 sistemas para congresos médicos, diseñada, construida y operada en solitario, con foco en tiempo real, integraciones de AI y webs 3D animadas.",
+    "card2Title": "Full Stack Developer",
+    "card2Text": "Estoy especializado en JavaScript/TypeScript, con foco en los ecosistemas de React y Next.js y en servicios de AI.",
+    "card3Title": "Trabajo en remoto en casi cualquier zona horaria.",
+    "card3LocationPrefix": "Vivo en",
+    "card3Place": "España.",
+    "card3Availability": "Con disponibilidad para trabajo remoto.",
+    "card3Cta": "Contáctame",
+    "card4Title": "Mi pasión por el código",
+    "card4Text": "Me encanta resolver problemas y construir cosas a través del código. Mi pasión va más allá de programar: soy un gamer empedernido que ve los paralelismos entre las estrategias de los videojuegos y las soluciones de código. Adopto herramientas de AI para aprender de forma continua y potenciar mi productividad, lo que me convierte en un desarrollador más eficiente. Programar no es solo mi profesión: es donde convergen mi pasión por la tecnología, los videojuegos y la innovación.",
+    "card4Link": "Lee mis casos de estudio en producción → 8 sistemas construidos en solitario en 5 meses (ene–may 2026)",
+    "copyLabel": "Contáctame"
   }
 }

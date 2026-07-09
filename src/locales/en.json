@@ -19,5 +19,20 @@
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy",
     "copyright": "© 2026 Alejandro G.L. All rights reserved."
+  },
+  "about": {
+    "card1Title": "Hi, I'am Alejandro",
+    "card1Text": "Full-stack developer shipping production systems end-to-end — most recently an 8-system platform for medical congresses, designed, built and operated solo, with a focus on real-time, AI integrations and animated 3D websites.",
+    "card2Title": "Full Stack Developer",
+    "card2Text": "I specialize in JavaScript/Typescript with a focus on React and Next.js ecosystems and AI services.",
+    "card3Title": "I work remotely across most timezones.",
+    "card3LocationPrefix": "I'm based in",
+    "card3Place": "Spain.",
+    "card3Availability": "With remote work available.",
+    "card3Cta": "Contact me",
+    "card4Title": "My Passion for Coding",
+    "card4Text": "I love solving problems and building things through code. My passion extends beyond just coding - I'm an avid gamer who sees the parallels between gaming strategies and coding solutions. I embrace AI tools for continuous learning and to enhance my productivity, making me a more efficient developer. Coding isn't just my profession - it's where my passion for technology, gaming, and innovation converges.",
+    "card4Link": "Read my production case studies → 8 systems built solo in 5 months (Jan–May 2026)",
+    "copyLabel": "Contact me"
   }
 }

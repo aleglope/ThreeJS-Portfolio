@@ -1,8 +1,10 @@
 import CustomGlobe from "../components/Globe.jsx";
 import Button from "../components/Button.jsx";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -29,13 +31,8 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Hi, I'am Alejandro</p>
-              <p className="grid-subtext">
-                Full-stack developer shipping production systems end-to-end —
-                most recently an 8-system platform for medical congresses,
-                designed, built and operated solo, with a focus on real-time,
-                AI integrations and animated 3D websites.
-              </p>
+              <p className="grid-headtext">{t("about.card1Title")}</p>
+              <p className="grid-subtext">{t("about.card1Text")}</p>
             </div>
           </div>
         </div>
@@ -48,11 +45,8 @@ const About = () => {
               className="w-full sm:w-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Full Stack Developer</p>
-              <p className="grid-subtext">
-                I specialize in JavaScript/Typescript with a focus on React and
-                Next.js ecosystems and AI services.
-              </p>
+              <p className="grid-headtext">{t("about.card2Title")}</p>
+              <p className="grid-subtext">{t("about.card2Text")}</p>
             </div>
           </div>
         </div>
@@ -63,14 +57,19 @@ const About = () => {
               <CustomGlobe />
             </div>
             <div>
-              <p className="grid-headtext">
-                I work remotely across most timezones.
-              </p>
+              <p className="grid-headtext">{t("about.card3Title")}</p>
               <p className="grid-subtext">
-                I'm based in <span className="text-green-500">Spain.</span>
+                {t("about.card3LocationPrefix")}{" "}
+                <span className="text-green-500">{t("about.card3Place")}</span>
               </p>
-              <p className="grid-subtext mb-10">With remote work available.</p>
-              <Button name="Contact me" isBeam cotainerClass="!w-full mt-10" />
+              <p className="grid-subtext mb-10">
+                {t("about.card3Availability")}
+              </p>
+              <Button
+                name={t("about.card3Cta")}
+                isBeam
+                cotainerClass="!w-full mt-10"
+              />
             </div>
           </div>
         </div>
@@ -82,24 +81,15 @@ const About = () => {
               className="w-full sm:h-[266px] h-fit object-contain"
             />
             <div className="space-y-2">
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code. My
-                passion extends beyond just coding - I'm an avid gamer who sees
-                the parallels between gaming strategies and coding solutions. I
-                embrace AI tools for continuous learning and to enhance my
-                productivity, making me a more efficient developer. Coding isn't
-                just my profession - it's where my passion for technology,
-                gaming, and innovation converges.
-              </p>
+              <p className="grid-headtext">{t("about.card4Title")}</p>
+              <p className="grid-subtext">{t("about.card4Text")}</p>
               <a
                 href="https://github.com/aleglope/congress-tech-systems"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="grid-subtext underline inline-block hover:text-white transition-colors"
               >
-                Read my production case studies → 8 systems built solo in 5
-                months (Jan–May 2026)
+                {t("about.card4Link")}
               </a>
             </div>
           </div>
@@ -112,7 +102,9 @@ const About = () => {
               className="w-full md:h-[126px] sm:h-[276] h-fit object-cover sm:object-top"
             />
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
+              <p className="grid-subtext text-center">
+                {t("about.copyLabel")}
+              </p>
               <div className="copy-container" onClick={handleCopy}>
                 <img
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
