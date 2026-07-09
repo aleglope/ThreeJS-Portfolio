@@ -40,5 +40,24 @@
     "liveSite": "Ver sitio en vivo",
     "sourceCode": "Ver código fuente",
     "privateTooltip": "Este proyecto es privado"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "description": "Tanto si buscas crear una web nueva, mejorar tu plataforma actual o dar vida a un proyecto único, estoy aquí para ayudarte.",
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "ej., Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "ej., juanperez@gmail.com",
+      "projectType": "Tipo de proyecto",
+      "message": "Tu mensaje",
+      "messagePlaceholder": "Comparte tus ideas o consultas...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando..."
+    },
+    "alerts": {
+      "success": "¡Gracias por tu mensaje! 😃",
+      "error": "No recibí tu mensaje 😢"
+    }
   }
 }

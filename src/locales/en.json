@@ -40,5 +40,24 @@
     "liveSite": "Check Live Site",
     "sourceCode": "View Source Code",
     "privateTooltip": "This project is private"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "description": "Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "ex., John Doe",
+      "email": "Email address",
+      "emailPlaceholder": "ex., johndoe@gmail.com",
+      "projectType": "Project Type",
+      "message": "Your message",
+      "messagePlaceholder": "Share your thoughts or inquiries...",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "alerts": {
+      "success": "Thank you for your message 😃",
+      "error": "I didn't receive your message 😢"
+    }
   }
 }

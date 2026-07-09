@@ -1,17 +1,22 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import useAlert from "../hooks/useAlert.js";
 import Alert from "../components/Alert.jsx";
 
 const Contact = ({
-  title = "Let's talk",
-  description = "Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.",
+  title,
+  description,
   showProjectType = false,
   projectTypes = [],
   buttonClassName = "field-btn",
 }) => {
+  const { t } = useTranslation();
   const formRef = useRef();
+
+  const heading = title ?? t("contact.title");
+  const subheading = description ?? t("contact.description");
 
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
@@ -52,7 +57,7 @@ const Contact = ({
           setLoading(false);
           showAlert({
             show: true,
-            text: "Thank you for your message 😃",
+            text: t("contact.alerts.success"),
             type: "success",
           });
 
@@ -74,7 +79,7 @@ const Contact = ({
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: t("contact.alerts.error"),
             type: "danger",
           });
         }
@@ -93,8 +98,8 @@ const Contact = ({
         />
 
         <div className="contact-container">
-          <h3 className="head-text">{title}</h3>
-          <p className="text-lg text-white-600 mt-3">{description}</p>
+          <h3 className="head-text">{heading}</h3>
+          <p className="text-lg text-white-600 mt-3">{subheading}</p>
 
           <form
             ref={formRef}
@@ -102,7 +107,7 @@ const Contact = ({
             className="mt-12 flex flex-col space-y-7"
           >
             <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+              <span className="field-label">{t("contact.form.name")}</span>
               <input
                 type="text"
                 name="name"
@@ -110,12 +115,12 @@ const Contact = ({
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
+                placeholder={t("contact.form.namePlaceholder")}
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Email address</span>
+              <span className="field-label">{t("contact.form.email")}</span>
               <input
                 type="email"
                 name="email"
@@ -123,13 +128,13 @@ const Contact = ({
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder={t("contact.form.emailPlaceholder")}
               />
             </label>
 
             {showProjectType && (
               <label className="space-y-3">
-                <span className="field-label">Project Type</span>
+                <span className="field-label">{t("contact.form.projectType")}</span>
                 <select
                   name="projectType"
                   value={form.projectType}
@@ -146,7 +151,7 @@ const Contact = ({
             )}
 
             <label className="space-y-3">
-              <span className="field-label">Your message</span>
+              <span className="field-label">{t("contact.form.message")}</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -154,7 +159,7 @@ const Contact = ({
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Share your thoughts or inquiries..."
+                placeholder={t("contact.form.messagePlaceholder")}
               />
             </label>
 
@@ -163,7 +168,7 @@ const Contact = ({
               type="submit"
               disabled={loading}
             >
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? t("contact.form.sending") : t("contact.form.send")}
 
               <img
                 src="/assets/arrow-up.png"
