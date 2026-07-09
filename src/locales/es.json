@@ -409,6 +409,99 @@
           "description": "🤯 ¿Crees que esto lo grabó un equipo de rodaje? Piénsalo otra vez. 💡 Esto es lo que ocurre cuando mezclas Inteligencia Artificial con una idea publicitaria brutal. 🎥✨ Hiperrealismo, neón y el gusto premium de ALEWENCES, todo generado en minutos. Olvídate de los límites creativos. Si puedes soñarlo, la IA puede crearlo. 🚀 (¡Para emprendedores y marcas!): ALTO 🛑 Deja de gastar miles en producciones lentas. Este anuncio de calidad Hollywood se creó con IA en una fracción del tiempo (¡y del coste!) 🤯. Una lata hiperrealista en un mundo cyberpunk. La Inteligencia Artificial es la nueva herramienta de marketing. Así es como se ve un anuncio cuando no hay límites."
         }
       }
+    },
+    "ai-photographic-art": {
+      "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
+      "category": "Edición de Vídeo",
+      "fullDescription": "Especializado en la creación de arte fotográfico y producción audiovisual mediante la integración de la inteligencia artificial, mi trabajo combina creatividad, técnica y tecnología avanzada para ofrecer imágenes y vídeos únicos, transformando la visión artística en experiencias visuales innovadoras.",
+      "client": "Proyectos personales",
+      "duration": "N/A",
+      "gallery": {
+        "photographicArt": {
+          "1": {
+            "title": "SERIE ALMA DIGITAL - CONCIENCIA ABSTRACTA",
+            "description": "Exploración de la intersección entre la conciencia humana y los reinos digitales. Esta pieza captura la conexión etérea entre mente, naturaleza y tecnología a través de elementos visuales abstractos potenciados por la inteligencia artificial."
+          },
+          "2": {
+            "title": "EL ABRAZO DIGITAL DE LA NATURALEZA",
+            "description": "Una mezcla armoniosa de belleza natural y realce digital que muestra cómo la tecnología de IA puede amplificar y reinterpretar el mundo orgánico en un arte fotográfico impresionante."
+          },
+          "3": {
+            "title": "EMOCIONES PIXELADAS",
+            "description": "Emociones capturadas y transformadas mediante algoritmos digitales y procesamiento con IA. Cada píxel cuenta una historia de la experiencia humana reimaginada en la era digital a través de una fotografía innovadora."
+          },
+          "4": {
+            "title": "SUEÑOS CIBERNÉTICOS",
+            "description": "Paisajes oníricos donde la realidad se encuentra con la imaginación a través de la fotografía potenciada por IA. Esta pieza representa la fusión del pensamiento consciente y los paisajes digitales subconscientes."
+          },
+          "5": {
+            "title": "ALGORITMO DE LA HORA DORADA",
+            "description": "El momento perfecto capturado y realzado mediante algoritmos de IA. Un homenaje a la magia de la luz natural transformada por el arte digital y el procesamiento fotográfico inteligente."
+          },
+          "6": {
+            "title": "RENACIMIENTO DIGITAL",
+            "description": "Principios artísticos clásicos reinterpretados a través de modernas herramientas digitales de IA. Un puente entre el arte tradicional y la tecnología contemporánea en la expresión fotográfica."
+          },
+          "7": {
+            "title": "VISIONES DE RED NEURONAL",
+            "description": "Representaciones visuales inspiradas en las redes neuronales artificiales. Patrones abstractos que emergen de complejos procesos computacionales en el arte fotográfico generado con IA."
+          },
+          "8": {
+            "title": "ESTÉTICA CUÁNTICA",
+            "description": "Exploración de la belleza de composiciones visuales de inspiración cuántica a través de la fotografía con IA. Donde la física de partículas se encuentra con la expresión artística en la imagen digital."
+          },
+          "9": {
+            "title": "FRAGMENTOS DE MEMORIA",
+            "description": "Reconstrucciones digitales de fragmentos de memoria mediante el realce con IA. Recomponiendo el rompecabezas de la experiencia humana a través de la interpretación algorítmica en la fotografía."
+          },
+          "10": {
+            "title": "SERENIDAD SINTÉTICA",
+            "description": "Tranquilidad artificial creada mediante síntesis digital y procesamiento con IA. Un apacible oasis digital elaborado con técnicas fotográficas innovadoras."
+          },
+          "11": {
+            "title": "LIENZO DE CÓDIGO",
+            "description": "Arte creado a partir de líneas de código y pinceladas algorítmicas. Donde la programación se encuentra con la pintura en la fotografía digital y la creación visual potenciadas por IA."
+          },
+          "12": {
+            "title": "METAMORFOSIS DIGITAL",
+            "description": "Transformación a través de medios digitales y realce con IA. Evolución de la forma y el color guiada por algoritmos inteligentes en el arte fotográfico."
+          },
+          "13": {
+            "title": "CONCIENCIA FRACTAL",
+            "description": "Patrones infinitos de conciencia autosemejante. Exploración de la naturaleza fractal del pensamiento humano a través del arte visual potenciado por la inteligencia artificial."
+          },
+          "14": {
+            "title": "EMOCIONES BINARIAS",
+            "description": "Emociones expresadas mediante código binario e interpretación digital. El lenguaje de los ordenadores hablando el lenguaje de los sentimientos en la fotografía con IA."
+          },
+          "15": {
+            "title": "ARMONÍA ALGORÍTMICA",
+            "description": "Equilibrio perfecto logrado mediante precisión matemática y visión artística. Donde los números crean belleza en composiciones fotográficas potenciadas por IA."
+          },
+          "16": {
+            "title": "GÉNESIS DIGITAL",
+            "description": "El nacimiento de nuevas formas mediante la creación digital y el procesamiento con IA. Presenciando la génesis de ideas visuales en el reino digital a través de una fotografía innovadora."
+          },
+          "17": {
+            "title": "VÍAS NEURONALES",
+            "description": "Representación visual de las conexiones neuronales y los procesos de pensamiento. Cartografiando la compleja red de la cognición humana a través del arte digital y la fotografía potenciados por IA."
+          },
+          "18": {
+            "title": "CÓDIGO CÓSMICO",
+            "description": "Patrones universales descodificados mediante el arte digital y el realce con IA. Conectando el cosmos a través de líneas de código y elementos visuales en la expresión fotográfica."
+          }
+        }
+      },
+      "videos": {
+        "1": {
+          "title": "ALMA DIGITAL - INTERSECCIÓN ENTRE CONCIENCIA Y NATURALEZA",
+          "description": "Exploro la intersección entre la conciencia humana, la belleza de la naturaleza y el lenguaje de la tecnología. 🌀 Cada pieza de mi portfolio es un viaje, una emoción capturada en píxeles y algoritmos. Esta serie, 'Alma Digital', visualiza nuestra conexión interna con el universo digital y natural. Pero el arte no es solo para mirarlo. Es para sentirlo y poseerlo. Comenta qué te transmite esta imagen. Me encantaría leer tu interpretación. 👇 Y si sueñas con tener una pieza única de arte digital que represente tu propia historia o esencia"
+        },
+        "2": {
+          "title": "TRANSFORMACIÓN DE SELFIE A ARTE DE FANTASÍA",
+          "description": "¿Te imaginas convertir tu selfie favorita en una obra de arte única? Olvídate de los filtros genéricos que todo el mundo usa. Mi servicio transforma tus propias fotos en retratos de fantasía de alta costura, realzando tu belleza con un mágico toque dorado. 💫 Cada pieza está 100% personalizada. Es la forma perfecta de: ✔️ Crear una foto de perfil inolvidable. ✔️ Hacer un regalo que sorprenda de verdad. ✔️ Celebrarte con una versión artística que te encantará. Tú me envías tu foto y yo creo la magia. 🌟 ¿Lista para tu transformación?"
+        }
+      }
     }
   }
 }

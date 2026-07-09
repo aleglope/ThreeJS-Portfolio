@@ -650,14 +650,7 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
   },
   "ai-photographic-art": {
     id: 4,
-    title:
-      "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
-    category: "Video Editing",
-    fullDescription:
-      "Specializing in the creation of photographic art and audiovisual production through the integration of artificial intelligence, my work blends creativity, technique, and advanced technology to deliver unique images and videos, transforming artistic vision into innovative visual experiences.",
-    client: "Personal Projects",
     year: "2025",
-    duration: "N/A",
     tags: [
       "artistic photography",
       "digital art",
@@ -670,128 +663,74 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
       photographicArt: [
         {
           id: 1,
-          title: "DIGITAL SOUL SERIES - ABSTRACT CONSCIOUSNESS",
-          description:
-            "Exploring the intersection between human consciousness and digital realms. This piece captures the ethereal connection between mind, nature, and technology through abstract visual elements enhanced by artificial intelligence.",
           image: "/assets/photoart/art1.png",
         },
         {
           id: 2,
-          title: "NATURE'S DIGITAL EMBRACE",
-          description:
-            "A harmonious blend of natural beauty and digital enhancement, showcasing how AI technology can amplify and reinterpret the organic world in stunning photographic art.",
           image: "/assets/photoart/art2.jpeg",
         },
         {
           id: 3,
-          title: "PIXELATED EMOTIONS",
-          description:
-            "Emotions captured and transformed through digital algorithms and AI processing. Each pixel tells a story of human experience reimagined in the digital age through innovative photography.",
           image: "/assets/photoart/art3.png",
         },
         {
           id: 4,
-          title: "CYBERNETIC DREAMS",
-          description:
-            "Dreamscapes where reality meets imagination through AI-enhanced photography. This piece represents the fusion of conscious thought and subconscious digital landscapes.",
           image: "/assets/photoart/art4.jpeg",
         },
         {
           id: 5,
-          title: "GOLDEN HOUR ALGORITHM",
-          description:
-            "The perfect moment captured and enhanced through AI algorithms. A tribute to the magic of natural light transformed by digital artistry and intelligent photographic processing.",
           image: "/assets/photoart/art5.jpeg",
         },
         {
           id: 6,
-          title: "DIGITAL RENAISSANCE",
-          description:
-            "Classical artistic principles reinterpreted through modern AI digital tools. A bridge between traditional art and contemporary technology in photographic expression.",
           image: "/assets/photoart/art6.jpeg",
         },
         {
           id: 7,
-          title: "NEURAL NETWORK VISIONS",
-          description:
-            "Visual representations inspired by artificial neural networks. Abstract patterns that emerge from complex computational processes in AI-generated photographic art.",
           image: "/assets/photoart/art7.jpeg",
         },
         {
           id: 8,
-          title: "QUANTUM AESTHETICS",
-          description:
-            "Exploring the beauty of quantum-inspired visual compositions through AI photography. Where particle physics meets artistic expression in digital imagery.",
           image: "/assets/photoart/art8.jpeg",
         },
         {
           id: 9,
-          title: "MEMORY FRAGMENTS",
-          description:
-            "Digital reconstructions of memory fragments through AI enhancement. Piecing together the puzzle of human experience through algorithmic interpretation in photography.",
           image: "/assets/photoart/art9.jpeg",
         },
         {
           id: 10,
-          title: "SYNTHETIC SERENITY",
-          description:
-            "Artificial tranquility created through digital synthesis and AI processing. A peaceful digital oasis crafted through innovative photographic techniques.",
           image: "/assets/photoart/art10.jpeg",
         },
         {
           id: 11,
-          title: "CODE CANVAS",
-          description:
-            "Art created from lines of code and algorithmic brushstrokes. Where programming meets painting in AI-powered digital photography and visual creation.",
           image: "/assets/photoart/art11.jpeg",
         },
         {
           id: 12,
-          title: "DIGITAL METAMORPHOSIS",
-          description:
-            "Transformation through digital means and AI enhancement. Evolution of form and color guided by intelligent algorithms in photographic art.",
           image: "/assets/photoart/art12.jpeg",
         },
         {
           id: 13,
-          title: "FRACTAL CONSCIOUSNESS",
-          description:
-            "Infinite patterns of self-similar consciousness. Exploring the fractal nature of human thought through visual art enhanced by artificial intelligence.",
           image: "/assets/photoart/art13.jpeg",
         },
         {
           id: 14,
-          title: "BINARY EMOTIONS",
-          description:
-            "Emotions expressed through binary code and digital interpretation. The language of computers speaking the language of feelings in AI photography.",
           image: "/assets/photoart/art14.jpeg",
         },
         {
           id: 15,
-          title: "ALGORITHMIC HARMONY",
-          description:
-            "Perfect balance achieved through mathematical precision and artistic vision. Where numbers create beauty in AI-enhanced photographic compositions.",
           image: "/assets/photoart/art15.jpeg",
         },
         {
           id: 16,
-          title: "DIGITAL GENESIS",
-          description:
-            "The birth of new forms through digital creation and AI processing. Witnessing the genesis of visual ideas in the digital realm through innovative photography.",
           image: "/assets/photoart/art16.jpeg",
         },
         {
           id: 17,
-          title: "NEURAL PATHWAYS",
-          description:
-            "Visual representation of neural connections and thought processes. Mapping the complex web of human cognition through AI-powered digital art and photography.",
           image: "/assets/photoart/art17.png",
         },
         {
           id: 18,
-          title: "COSMIC CODE",
-          description:
-            "Universal patterns decoded through digital artistry and AI enhancement. Connecting the cosmos through lines of code and visual elements in photographic expression.",
           image: "/assets/photoart/art18.png",
         },
       ],
@@ -799,18 +738,12 @@ The music itself, the "Song of Arcane," was also created using Artificial Intell
     videos: [
       {
         id: 1,
-        title: "DIGITAL SOUL - CONSCIOUSNESS & NATURE INTERSECTION",
-        description:
-          "I explore the intersection between human consciousness, the beauty of nature, and the language of technology. 🌀 Each piece in my portfolio is a journey, an emotion captured in pixels and algorithms. This series, 'Digital Soul', visualizes our internal connection with the digital and natural universe. But art is not just for looking at. It's for feeling and owning. Comment what this image conveys to you. I would love to read your interpretation. 👇 And if you dream of having a unique piece of digital art that represents your own story or essence",
         videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
         thumbnail: "/assets/spotlight1.png",
         duration: "00:28",
       },
       {
         id: 2,
-        title: "SELFIE TO FANTASY ART TRANSFORMATION",
-        description:
-          "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized. It's the perfect way to: ✔️ Create an unforgettable profile picture. ✔️ Make a gift that truly surprises. ✔️ Celebrate yourself with an artistic version you'll love. You send me your photo, and I create the magic. 🌟 Ready for your transformation?",
         videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
         thumbnail: "/assets/spotlight2.png",
         duration: "00:41",
