@@ -34,5 +34,11 @@
     "card4Text": "I love solving problems and building things through code. My passion extends beyond just coding - I'm an avid gamer who sees the parallels between gaming strategies and coding solutions. I embrace AI tools for continuous learning and to enhance my productivity, making me a more efficient developer. Coding isn't just my profession - it's where my passion for technology, gaming, and innovation converges.",
     "card4Link": "Read my production case studies → 8 systems built solo in 5 months (Jan–May 2026)",
     "copyLabel": "Contact me"
+  },
+  "projects": {
+    "heading": "My Work",
+    "liveSite": "Check Live Site",
+    "sourceCode": "View Source Code",
+    "privateTooltip": "This project is private"
   }
 }

@@ -1,4 +1,5 @@
 import { Suspense, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { myProjects } from "../constants/index.js";
 import { Center, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -8,6 +9,7 @@ import DemoComputer from "../components/DemoComputer.jsx";
 const projectCount = myProjects.length;
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
   const [showTooltip, setShowTooltip] = useState(false);
   const [hoveredTech, setHoveredTech] = useState(null);
@@ -26,7 +28,7 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20" id="projects">
-      <p className="head-text">My Work</p>
+      <p className="head-text">{t("projects.heading")}</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -84,7 +86,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <p>Check Live Site</p>
+                <p>{t("projects.liveSite")}</p>
                 <img
                   src="/assets/arrow-up.png"
                   alt="arrow"
@@ -98,7 +100,7 @@ const Projects = () => {
                     onMouseEnter={() => setShowTooltip(true)}
                     onMouseLeave={() => setShowTooltip(false)}
                   >
-                    <p>View Source Code</p>
+                    <p>{t("projects.sourceCode")}</p>
                     <img
                       src="/assets/arrow-up.png"
                       alt="github"
@@ -107,7 +109,7 @@ const Projects = () => {
                   </button>
                   {showTooltip && (
                     <div className="absolute top-8 left-0 bg-black-200/30 backdrop-blur-sm text-white-600/90 text-xs px-3 py-1.5 rounded-full transition-all duration-300 ease-in-out border border-white-600/10">
-                      Este proyecto es privado
+                      {t("projects.privateTooltip")}
                     </div>
                   )}
                 </div>
@@ -118,7 +120,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p>View Source Code</p>
+                  <p>{t("projects.sourceCode")}</p>
                   <img
                     src="/assets/arrow-up.png"
                     alt="github"

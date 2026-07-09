@@ -34,5 +34,11 @@
     "card4Text": "Me encanta resolver problemas y construir cosas a través del código. Mi pasión va más allá de programar: soy un gamer empedernido que ve los paralelismos entre las estrategias de los videojuegos y las soluciones de código. Adopto herramientas de AI para aprender de forma continua y potenciar mi productividad, lo que me convierte en un desarrollador más eficiente. Programar no es solo mi profesión: es donde convergen mi pasión por la tecnología, los videojuegos y la innovación.",
     "card4Link": "Lee mis casos de estudio en producción → 8 sistemas construidos en solitario en 5 meses (ene–may 2026)",
     "copyLabel": "Contáctame"
+  },
+  "projects": {
+    "heading": "Mis proyectos",
+    "liveSite": "Ver sitio en vivo",
+    "sourceCode": "Ver código fuente",
+    "privateTooltip": "Este proyecto es privado"
   }
 }
