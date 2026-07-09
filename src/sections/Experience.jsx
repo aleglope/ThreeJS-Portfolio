@@ -5,10 +5,11 @@ import { useTranslation } from "react-i18next";
 
 import Developer from "../components/Developer.jsx";
 import CanvasLoader from "../components/CanvasLoader.jsx";
-import { workExperiences } from "../constants/index.js";
+import useLocalizedExperiences from "../hooks/useLocalizedExperiences.js";
 
 const WorkExperience = () => {
   const { t } = useTranslation();
+  const experiences = useLocalizedExperiences();
   const [animationName, setAnimationName] = useState("idle");
 
   return (
@@ -36,7 +37,7 @@ const WorkExperience = () => {
 
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
-              {workExperiences.map((item, index) => (
+              {experiences.map((item, index) => (
                 <div
                   key={index}
                   onClick={() => setAnimationName(item.animation.toLowerCase())}
