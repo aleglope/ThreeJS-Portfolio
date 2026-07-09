@@ -202,5 +202,27 @@
     "4": {
       "name": "Contact"
     }
+  },
+  "designNavData": {
+    "1": {
+      "name": "Home"
+    },
+    "2": {
+      "name": "Projects"
+    },
+    "3": {
+      "name": "Videos"
+    },
+    "4": {
+      "name": "Contact"
+    }
+  },
+  "designNavbarUI": {
+    "devPortfolio": "Dev Portfolio",
+    "designLabel": "Design"
+  },
+  "designHero": {
+    "tagline": "Creative Designer & Video Editor",
+    "viewWork": "View My Work"
   }
 }

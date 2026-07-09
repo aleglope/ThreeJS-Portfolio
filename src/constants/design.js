@@ -2,22 +2,18 @@
 export const designNavLinks = [
   {
     id: 1,
-    name: "Home",
     href: "#home",
   },
   {
     id: 2,
-    name: "Projects",
     href: "#design-projects",
   },
   {
     id: 3,
-    name: "Videos",
     href: "#video-showcase",
   },
   {
     id: 4,
-    name: "Contact",
     href: "#contact",
   },
 ];
