@@ -3,5 +3,10 @@
     "ariaLabel": "Cambiar idioma",
     "es": "ES",
     "en": "EN"
+  },
+  "hero": {
+    "greeting": "Hola, soy Alejandro",
+    "role": "Desarrollador Full Stack",
+    "cta": "Trabajemos juntos"
   }
 }
