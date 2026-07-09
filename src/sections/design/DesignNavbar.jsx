@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { designNavLinks } from "../../constants/design.js";
+import { useTranslation } from "react-i18next";
+import useLocalizedDesignNav from "../../hooks/useLocalizedDesignNav.js";
 import LanguageToggle from "../../components/LanguageToggle.jsx";
 
 const NavItems = () => {
+  const designNavLinks = useLocalizedDesignNav();
+
   return (
     <ul className="nav-ul">
       {designNavLinks.map(({ id, href, name }) => (
@@ -22,6 +25,7 @@ const DesignNavbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
   useEffect(() => {
@@ -67,7 +71,9 @@ const DesignNavbar = () => {
               AGonzL
             </button>
             <span className="text-neutral-600">|</span>
-            <span className="text-pink-500 font-semibold text-sm">Design</span>
+            <span className="text-pink-500 font-semibold text-sm">
+              {t("designNavbarUI.designLabel")}
+            </span>
           </div>
 
           <button
@@ -88,7 +94,7 @@ const DesignNavbar = () => {
               onClick={() => navigate("/dev")}
               className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
-              Dev Portfolio
+              {t("designNavbarUI.devPortfolio")}
             </button>
             <LanguageToggle />
           </nav>
@@ -103,7 +109,7 @@ const DesignNavbar = () => {
               onClick={() => navigate("/dev")}
               className="w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
-              Dev Portfolio
+              {t("designNavbarUI.devPortfolio")}
             </button>
           </div>
           <div className="mt-4 flex justify-center">

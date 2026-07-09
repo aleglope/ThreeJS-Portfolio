@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, Float } from "@react-three/drei";
+import { useTranslation } from "react-i18next";
 import CanvasLoader from "../../components/CanvasLoader.jsx";
 import { useMediaQuery } from "react-responsive";
 import Cube from "../../components/Cube.jsx";
@@ -9,19 +10,18 @@ import Button from "../../components/Button.jsx";
 import SketchfabModel from "../../components/SketchfabModel.jsx";
 
 const DesignHero = () => {
-  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
       {/* Texto del hero - con z-index alto para estar encima */}
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 relative z-20">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-          Hi, I am Alejandro <span className="waving-hand">👋</span>
+          {t("hero.greeting")} <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-          Creative Designer & Video Editor
+          {t("designHero.tagline")}
         </p>
       </div>
       
@@ -70,7 +70,7 @@ const DesignHero = () => {
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space pointer-events-auto">
         <a href="#design-projects" className="w-fit">
           <Button
-            name="View My Work"
+            name={t("designHero.viewWork")}
             isBeam
             cotainerClass="sm:w-fit w-full sm:min-w-96"
           />
