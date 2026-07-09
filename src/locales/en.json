@@ -379,5 +379,36 @@
     "Logos": "Logos",
     "posters": "posters",
     "photographicArt": "photographicArt"
+  },
+  "projectDetailsData": {
+    "ai-advertising-content": {
+      "title": "AI-Generated Advertising Content and Social Media Marketing",
+      "category": "AI Content",
+      "fullDescription": "Transform your brand's advertising with cutting-edge AI technology. Our AI-generated video solutions create stunning, professional-quality advertisements in record time. From custom AI avatars that represent your brand personality to automated video generation that adapts to your messaging, we deliver cost-effective, scalable advertising solutions that captivate audiences and drive engagement. Experience the future of marketing where creativity meets artificial intelligence.",
+      "client": "Multiple Clients",
+      "duration": "Instant to 72 hours",
+      "videos": {
+        "1": {
+          "title": "Cinematic Experiences Forged with AI",
+          "description": "We demonstrate how artificial intelligence brings complex advertising ideas to life for beverage brands like Alewences. This work captures an aesthetic of luxury and nightlife with vibrant neon colors, high-end vehicles, and dynamic settings—all generated with cinematic precision. We create top-tier advertisements that position your product as the leader in its category, adhering to any specific requirements for color, model, or environment. The future of your beverage campaigns is here."
+        },
+        "2": {
+          "title": "Convert Your Static Graphic into a Viral Ad",
+          "description": "We transform your event’s traditional graphic materials (posters, flyers) into immersive, high-impact promotional videos ready for social media. We use visual effects, animation, and strategic music to bring every detail of the poster to life, ensuring a visual hook that maximizes visibility and engagement across platforms like Instagram, TikTok, and Facebook. The result: An essential tool for your promoters to generate buzz and guarantee attendance at your next party or event."
+        },
+        "3": {
+          "title": "The Future of Fashion Advertising",
+          "description": "Transform your brand's advertising. Our AI Avatar technology seamlessly models your clothing line, creating high-impact, full-production video ads without the need for human models or studio intervention. Save time, reduce costs, and accelerate content creation. Every outfit, every style, instantly visualized."
+        },
+        "4": {
+          "title": "HALLOWEEN AI HORROR FRIEND - XENOMORPH WITH FRESH BREATH",
+          "description": "When you ask Artificial Intelligence for a 'terrifying friend for Halloween' 🎃, but you forget to put in the prompt 'with fresh breath'. Be careful what you wish for! 😂 And that's because even the most fearsome Xenomorph in the universe needs help after lunch. Who would have thought that the real terror wasn't its double jaw, but the astronaut breath? 🤢➡️🍬 This video is just one of the craziness I've been creating with AI for this Halloween. Creativity has no limits!"
+        },
+        "5": {
+          "title": "AI-GENERATED ALEWENCES CYBERPUNK AD - HYPERREALISTIC CAN",
+          "description": "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it. 🚀 (For Entrepreneurs and Brands!): STOP 🛑 Stop spending thousands on slow production. This Hollywood-quality blockbuster ad was created with AI in a fraction of the time (and cost!) 🤯. A hyperrealistic can in a cyberpunk world. Artificial Intelligence is the new marketing tool. This is what an ad looks like when there are no limits."
+        }
+      }
+    }
   }
 }

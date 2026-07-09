@@ -379,5 +379,36 @@
     "Logos": "Logos",
     "posters": "Carteles",
     "photographicArt": "Arte Fotográfico"
+  },
+  "projectDetailsData": {
+    "ai-advertising-content": {
+      "title": "Contenido publicitario generado con IA y marketing en redes sociales",
+      "category": "Contenido IA",
+      "fullDescription": "Transforma la publicidad de tu marca con tecnología de IA de vanguardia. Nuestras soluciones de vídeo generadas con IA crean anuncios espectaculares y de calidad profesional en un tiempo récord. Desde avatares de IA personalizados que representan la personalidad de tu marca hasta la generación automatizada de vídeo que se adapta a tu mensaje, ofrecemos soluciones publicitarias rentables y escalables que cautivan al público y generan interacción. Vive el futuro del marketing donde la creatividad se une a la inteligencia artificial.",
+      "client": "Varios clientes",
+      "duration": "De inmediato a 72 horas",
+      "videos": {
+        "1": {
+          "title": "Experiencias cinematográficas forjadas con IA",
+          "description": "Demostramos cómo la inteligencia artificial da vida a ideas publicitarias complejas para marcas de bebidas como Alewences. Este trabajo captura una estética de lujo y vida nocturna con vibrantes colores de neón, vehículos de alta gama y escenarios dinámicos—todo generado con precisión cinematográfica. Creamos anuncios de primer nivel que posicionan tu producto como líder de su categoría, ajustándonos a cualquier requisito específico de color, modelo o entorno. El futuro de tus campañas de bebidas está aquí."
+        },
+        "2": {
+          "title": "Convierte tu gráfica estática en un anuncio viral",
+          "description": "Transformamos los materiales gráficos tradicionales de tu evento (carteles, flyers) en vídeos promocionales inmersivos y de gran impacto, listos para redes sociales. Usamos efectos visuales, animación y música estratégica para dar vida a cada detalle del cartel, garantizando un gancho visual que maximiza la visibilidad y la interacción en plataformas como Instagram, TikTok y Facebook. El resultado: una herramienta esencial para que tus promotores generen expectación y aseguren la asistencia a tu próxima fiesta o evento."
+        },
+        "3": {
+          "title": "El futuro de la publicidad de moda",
+          "description": "Transforma la publicidad de tu marca. Nuestra tecnología de avatares de IA modela sin esfuerzo tu línea de ropa, creando anuncios de vídeo de gran impacto y producción completa sin necesidad de modelos humanos ni intervención de estudio. Ahorra tiempo, reduce costes y acelera la creación de contenido. Cada conjunto, cada estilo, visualizado al instante."
+        },
+        "4": {
+          "title": "AMIGO DE TERROR DE HALLOWEEN CON IA - XENOMORPH CON ALIENTO FRESCO",
+          "description": "Cuando le pides a la Inteligencia Artificial un 'amigo terrorífico para Halloween' 🎃, pero se te olvida poner en el prompt 'con el aliento fresco'. ¡Ten cuidado con lo que deseas! 😂 Y es que hasta el Xenomorph más temible del universo necesita ayuda después de comer. ¿Quién iba a pensar que el verdadero terror no era su doble mandíbula, sino el aliento de astronauta? 🤢➡️🍬 Este vídeo es solo una de las locuras que he estado creando con IA para este Halloween. ¡La creatividad no tiene límites!"
+        },
+        "5": {
+          "title": "ANUNCIO CYBERPUNK DE ALEWENCES GENERADO CON IA - LATA HIPERREALISTA",
+          "description": "🤯 ¿Crees que esto lo grabó un equipo de rodaje? Piénsalo otra vez. 💡 Esto es lo que ocurre cuando mezclas Inteligencia Artificial con una idea publicitaria brutal. 🎥✨ Hiperrealismo, neón y el gusto premium de ALEWENCES, todo generado en minutos. Olvídate de los límites creativos. Si puedes soñarlo, la IA puede crearlo. 🚀 (¡Para emprendedores y marcas!): ALTO 🛑 Deja de gastar miles en producciones lentas. Este anuncio de calidad Hollywood se creó con IA en una fracción del tiempo (¡y del coste!) 🤯. Una lata hiperrealista en un mundo cyberpunk. La Inteligencia Artificial es la nueva herramienta de marketing. Así es como se ve un anuncio cuando no hay límites."
+        }
+      }
+    }
   }
 }
