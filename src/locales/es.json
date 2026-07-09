@@ -437,6 +437,66 @@
           "title": "PRODUCCIÓN DE VJING Y VISUALES EN DIRECTO",
           "description": "Muestra de VJing y visuales en directo para un festival de música creados con tecnología de IA. Este vídeo demuestra cómo las herramientas modernas de IA permiten crear diseños de eventos de alta gama y experiencias visuales inmersivas con un coste y un tiempo de entrega considerablemente menores en comparación con los métodos tradicionales."
         }
+      },
+      "gallery": {
+        "posters": {
+          "1": {
+            "title": "EVENTO DE TECHNO INDUSTRIAL - ESTÉTICA BRUTALISTA",
+            "description": "Cartel monocromático con una estética industrial y brutalista para un evento de música techno. Presenta una imponente estructura arquitectónica futurista con líneas de luz diagonales que crean profundidad. El diseño destaca por su atmósfera oscura y minimalista, con una tipografía limpia que anuncia a los artistas, transmitiendo una identidad underground y vanguardista."
+          },
+          "2": {
+            "title": "CARTEL RETRO 'BACK TO THE PAST' - ESTILO SYNTHWAVE",
+            "description": "Vibrante cartel de estilo retrowave/synthwave inspirado en la cultura pop de los años 80. Presenta un icónico coche DeLorean volando sobre una autopista de neón hacia una ciudad futurista bajo un cielo estrellado. El título 'BACK TO THE PAST' emplea una tipografía clásica con degradados, evocando nostalgia y ciencia ficción retro."
+          },
+          "3": {
+            "title": "EXPOSICIÓN DE ARTE 'CATEDRAL DAS ALMAS'",
+            "description": "Cartel visualmente impactante con una estética neogótica y oculta. Presenta una catedral con agujas afiladas en negro sobre un fondo claro, con un gran rostro de diablo rojo flotando por encima. Intrincados patrones azules similares al humo rodean la estructura. El título 'Catedral das Almas' emplea una fuente gótica, creando una atmósfera oscura, misteriosa y artística."
+          },
+          "4": {
+            "title": "CARTEL CYBERPUNK 'DARKWEB' - NEÓN Y TECNOLOGÍA",
+            "description": "Cartel de estilo cyberpunk que ilustra el concepto de la 'Darkweb'. Muestra un escritorio abarrotado con múltiples pantallas de ordenador que muestran código y mapas de datos rojos, con una inquietante máscara blanca conectada por cables en primer plano. La iluminación es una mezcla de neón azul frío y rojo amenazante, transmitiendo una sensación de peligro tecnológico y anonimato."
+          },
+          "5": {
+            "title": "ARTE ABSTRACTO 'FRAGMENTO' - ESQUIRLAS DE CRISTAL",
+            "description": "Cartel artístico titulado 'Fragmento' que presenta grandes esquirlas de cristal azul flotantes con bordes afilados sobre un fondo beige similar al pergamino. Líneas delicadas y pequeñas partículas rodean los cristales, sugiriendo fragmentación o suspensión mágica. El título emplea una fuente serif decorativa con motivos de aguja e hilo, añadiendo un toque de misterio artesanal."
+          },
+          "6": {
+            "title": "PORTADA DE ÁLBUM DE METAL 'EYES OF RUIN'",
+            "description": "Espectacular obra de arte en 3D para una banda o portada de álbum de metal. El título 'EYES OF RUIN' está representado con enormes letras de piedra agrietada que se alzan desde un paisaje volcánico en llamas con ríos de lava. Sobre él, un cielo tormentoso y oscuro marca un tono amenazante. El diseño es contundente, impactante y perfectamente adecuado para el género metal."
+          },
+          "7": {
+            "title": "CARTEL DE TERROR 'HORA DO PESADELO'",
+            "description": "Escalofriante diseño de estilo cartel de película de terror titulado 'HORA DO PESADELO' (Hora de la Pesadilla). Presenta una calavera gigante y gritona con una pequeña puerta roja dentro de su boca, sobre un fondo oscuro de color rojo sangre. Encima, un hombre lobo aúlla a una luna llena. La composición crea una atmósfera de terror aterradora y clásica."
+          },
+          "8": {
+            "title": "FANTASÍA OSCURA 'RED EYES IN THE DARK'",
+            "description": "Inquietante cartel de fantasía oscura que presenta una figura humanoide con tejido muscular expuesto y un cerebro visible, mirando fijamente con ojos rojos brillantes. La figura se alza en un bosque oscuro en silueta bajo una luna roja. El título 'RED EYES IN THE DARK' está en rojo intenso, enfatizando el tema inquietante y sobrenatural."
+          },
+          "9": {
+            "title": "PORTADA DE NOVELA DE FANTASÍA 'LEFT UNDEAD'",
+            "description": "Cartel de estilo portada de libro de fantasía titulado 'LEFT UNDEAD - RISE & FALL'. Representa una figura encapuchada que camina hacia la silueta de un castillo o ciudad oscuro y dentado bajo una gigantesca serpiente verde que acecha en el cielo. La paleta de colores es una mezcla de verdes y amarillos enfermizos, sugiriendo un mundo tóxico o maldito."
+          },
+          "10": {
+            "title": "TERROR SURREALISTA 'LEVEL UP BAD'",
+            "description": "Cartel surrealista y grotesco que presenta una calavera colorida en descomposición con grandes ojos y materia cerebral expuesta, apoyada sobre un paisaje con ríos de sangre. Pájaros negros vuelan en el cielo tormentoso. El título 'LEVEL UP BAD' sugiere un juego retorcido o una narrativa de fantasía oscura con un estilo artístico único y perturbador."
+          },
+          "11": {
+            "title": "EVENTO DE TECHNO '13 DICIEMBRE' - RUINAS BRUTALISTAS",
+            "description": "Flyer monocromático para un evento de techno el 13 de diciembre. Presenta un símbolo de infinito de hormigón flotante sobre un paisaje de ruinas de hormigón brutalistas y escombros flotantes. El estilo en blanco y negro de alto contraste crea un ambiente industrial crudo, postapocalíptico y underground."
+          },
+          "12": {
+            "title": "CARTEL DE TECHNO MINIMALISTA - VACÍO NEGRO",
+            "description": "Cartel de techno oscuro y minimalista que presenta un símbolo de infinito de hormigón flotando entre estructuras de hormigón abstractas y en bloques dentro de un vacío negro. Líneas blancas similares a láseres atraviesan la oscuridad. El texto enumera a artistas como Alex Vigo y Manu TRC, manteniendo una estética underground limpia y misteriosa."
+          },
+          "13": {
+            "title": "CARTEL DE EVENTO 'DIGITAL BRUTALISM'",
+            "description": "Cartel de evento de gran energía titulado 'DIGITAL BRUTALISM'. Estalla con una ráfaga central de esquirlas de hormigón y brillantes rayos de luz blanca que irradian hacia afuera sobre un fondo negro. El diseño captura la intensidad y la energía cruda de la música techno industrial."
+          },
+          "14": {
+            "title": "FLYER DE TECHNO - HORMIGÓN FLOTANTE",
+            "description": "Flyer para un evento de techno en 'A Pousada da Galiza Imaxinaria'. Muestra un gran bloque de hormigón agrietado con un símbolo de infinito pintado flotando en un espacio arquitectónico brutalista. La escena es cruda y texturizada, con escombros flotantes que enfatizan un sonido pesado e industrial."
+          }
+        }
       }
     },
     "ai-photographic-art": {

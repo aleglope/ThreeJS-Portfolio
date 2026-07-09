@@ -403,100 +403,58 @@ export const projectDetails = {
       posters: [
         {
           id: 1,
-          title: "INDUSTRIAL TECHNO EVENT - BRUTALIST AESTHETIC",
-          description:
-            "Monochromatic poster with an industrial and brutalist aesthetic for a techno music event. It features an imposing futuristic architectural structure with diagonal light lines creating depth. The design stands out for its dark and minimalist atmosphere, with clean typography announcing the artists, conveying an underground and avant-garde identity.",
           image: "/assets/poster/carteles1.jpg",
         },
         {
           id: 2,
-          title: "RETRO POSTER 'BACK TO THE PAST' - SYNTHWAVE STYLE",
-          description:
-            "Vibrant retrowave/synthwave style poster inspired by 80s pop culture. Features an iconic DeLorean car flying over a neon highway towards a futuristic city under a starry sky. The title 'BACK TO THE PAST' uses classic typography with gradients, evoking nostalgia and retro sci-fi.",
           image: "/assets/poster/carteles2.jpeg",
         },
         {
           id: 3,
-          title: "ART EXHIBITION 'CATEDRAL DAS ALMAS'",
-          description:
-            "Visually striking poster with a neo-gothic and occult aesthetic. Features a cathedral with sharp spires in black against a light background, with a large red devil face hovering above. Intricate blue smoke-like patterns surround the structure. The title 'Catedral das Almas' uses a gothic font, creating a dark, mysterious, and artistic atmosphere.",
           image: "/assets/poster/carteles3.jpeg",
         },
         {
           id: 4,
-          title: "CYBERPUNK POSTER 'DARKWEB' - NEON & TECH",
-          description:
-            "Cyberpunk style poster illustrating the concept of the 'Darkweb'. Shows a cluttered desk with multiple computer screens displaying code and red data maps, with a creepy white mask connected by wires in the foreground. The lighting is a mix of cool blue and ominous red neon, conveying a sense of high-tech danger and anonymity.",
           image: "/assets/poster/carteles4.jpeg",
         },
         {
           id: 5,
-          title: "ABSTRACT ART 'FRAGMENTO' - CRYSTAL SHARDS",
-          description:
-            "Artistic poster titled 'Fragmento' featuring large, floating blue crystal shards with sharp edges against a beige, parchment-like background. Delicate lines and small particles surround the crystals, suggesting shattering or magical suspension. The title uses a decorative serif font with needle-and-thread motifs, adding a touch of handcrafted mystery.",
           image: "/assets/poster/carteles5.jpeg",
         },
         {
           id: 6,
-          title: "METAL ALBUM COVER 'EYES OF RUIN'",
-          description:
-            "Dramatic 3D artwork for a metal band or album cover. The title 'EYES OF RUIN' is rendered in massive, cracked stone letters rising from a fiery, volcanic landscape with lava flows. Above, a stormy, dark sky sets a menacing tone. The design is heavy, impactful, and perfectly suited for the metal genre.",
           image: "/assets/poster/carteles6.jpeg",
         },
         {
           id: 7,
-          title: "HORROR POSTER 'HORA DO PESADELO'",
-          description:
-            "Chilling horror movie poster style design titled 'HORA DO PESADELO' (Nightmare Hour). Features a giant, screaming skull with a smaller red doorway inside its mouth, set against a dark, blood-red background. Above, a werewolf howls at a full moon. The composition creates a terrifying and classic horror atmosphere.",
           image: "/assets/poster/carteles7.jpeg",
         },
         {
           id: 8,
-          title: "DARK FANTASY 'RED EYES IN THE DARK'",
-          description:
-            "Eerie dark fantasy poster featuring a humanoid figure with exposed muscle tissue and a visible brain, staring with glowing red eyes. The figure stands in a dark, silhouetted forest under a red moon. The title 'RED EYES IN THE DARK' is in bold red, emphasizing the creepy and supernatural theme.",
           image: "/assets/poster/carteles8.jpeg",
         },
         {
           id: 9,
-          title: "FANTASY NOVEL COVER 'LEFT UNDEAD'",
-          description:
-            "Fantasy book cover style poster titled 'LEFT UNDEAD - RISE & FALL'. Depicts a cloaked figure walking towards a dark, jagged castle or city silhouette under a giant, looming green snake in the sky. The color palette is a mix of sickly greens and yellows, suggesting a toxic or cursed world.",
           image: "/assets/poster/carteles9.jpeg",
         },
         {
           id: 10,
-          title: "SURREAL HORROR 'LEVEL UP BAD'",
-          description:
-            "Surreal and grotesque poster featuring a decaying, colorful skull with large eyes and exposed brain matter, resting on a landscape with blood rivers. Black birds fly in the stormy sky. The title 'LEVEL UP BAD' suggests a twisted game or dark fantasy narrative with a unique, disturbing art style.",
           image: "/assets/poster/carteles10.jpeg",
         },
         {
           id: 11,
-          title: "TECHNO EVENT '13 DICIEMBRE' - BRUTALIST RUINS",
-          description:
-            "Monochromatic flyer for a techno event on December 13th. Features a floating, concrete infinity symbol above a landscape of brutalist concrete ruins and floating debris. The high-contrast black and white style creates a stark, post-apocalyptic, and underground industrial vibe.",
           image: "/assets/poster/carteles11.jpg",
         },
         {
           id: 12,
-          title: "MINIMALIST TECHNO POSTER - BLACK VOID",
-          description:
-            "Dark and minimalist techno poster featuring a concrete infinity symbol floating amidst abstract, blocky concrete structures in a black void. White laser-like lines cut through the darkness. The text lists artists like Alex Vigo and Manu TRC, maintaining a clean and mysterious underground aesthetic.",
           image: "/assets/poster/carteles14.jpg",
         },
         {
           id: 13,
-          title: "EVENT POSTER 'DIGITAL BRUTALISM'",
-          description:
-            "High-energy event poster titled 'DIGITAL BRUTALISM'. Explodes with a central burst of concrete shards and bright white laser beams radiating outwards against a black background. The design captures the intensity and raw energy of industrial techno music.",
           image: "/assets/poster/carteles15.png",
         },
         {
           id: 14,
-          title: "TECHNO FLYER - FLOATING CONCRETE",
-          description:
-            "Flyer for a techno event at 'A Pousada da Galiza Imaxinaria'. Shows a large, cracked concrete block with a painted infinity symbol floating in a brutalist architectural space. The scene is gritty and textured, with floating debris emphasizing a heavy, industrial sound.",
           image: "/assets/poster/carteles16.jpg",
         },
         {
