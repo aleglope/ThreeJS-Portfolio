@@ -59,5 +59,41 @@
       "success": "¡Gracias por tu mensaje! 😃",
       "error": "No recibí tu mensaje 😢"
     }
+  },
+  "pong": {
+    "arcadeTitle": "PONG ARCADE",
+    "mobileWarning1": "Lo sentimos, el juego Pong está optimizado para jugarse en ordenadores de escritorio.",
+    "mobileWarning2": "Por favor, visita esta página desde un dispositivo con teclado para disfrutar de la experiencia completa.",
+    "instructions": "¡Demuestra tus habilidades! Primer jugador en alcanzar 5 puntos gana. Usa las teclas W/S para mover tu pala.",
+    "description1": "Esta implementación de Pong representa un caso de uso avanzado de integración Python-WebAssembly en aplicaciones modernas. Desarrollado originalmente como una aplicación nativa de Python, se ha portado con éxito al navegador usando Pyodide, demostrando capacidades punteras de desarrollo multiplataforma.",
+    "description2": "La migración preservó el 100% de la lógica de negocio en Python sin concesiones, aprovechando WebAssembly para un rendimiento nativo en el navegador. Este proyecto destaca competencias técnicas clave en el ecosistema actual:",
+    "description3": "Esta solución demuestra cómo modernizar aplicaciones Python legacy hacia plataformas web manteniendo el rendimiento crítico, la escalabilidad cloud-native y la compatibilidad con frameworks modernos: una estrategia esencial para la transformación digital en entornos empresariales.",
+    "startButton": "¡EMPEZAR!",
+    "features": [
+      {
+        "term": "Ejecución nativa de Python vía WebAssembly",
+        "detail": "Sin sobrecarga de compilación"
+      },
+      {
+        "term": "Arquitectura modular con inyección de dependencias",
+        "detail": "Mantenibilidad de nivel empresarial"
+      },
+      {
+        "term": "Programación orientada a eventos con Pyodide FFI",
+        "detail": "Integración fluida entre React y Python"
+      },
+      {
+        "term": "Renderizado optimizado en Canvas HTML5",
+        "detail": "60fps constantes con gestión de memoria"
+      },
+      {
+        "term": "AI predictiva y físicas en tiempo real",
+        "detail": "Algoritmos de machine learning integrados"
+      },
+      {
+        "term": "Gestión de estado reactiva",
+        "detail": "Patrón Observer para sincronización entre lenguajes"
+      }
+    ]
   }
 }

@@ -59,5 +59,41 @@
       "success": "Thank you for your message 😃",
       "error": "I didn't receive your message 😢"
     }
+  },
+  "pong": {
+    "arcadeTitle": "PONG ARCADE",
+    "mobileWarning1": "Sorry, the Pong game is optimized to be played on desktop computers.",
+    "mobileWarning2": "Please visit this page from a device with a keyboard to enjoy the full experience.",
+    "instructions": "Show off your skills! First player to reach 5 points wins. Use the W/S keys to move your paddle.",
+    "description1": "This Pong implementation represents an advanced use case of Python-WebAssembly integration in modern applications. Originally developed as a native Python application, it has been successfully ported to the browser using Pyodide, demonstrating cutting-edge cross-platform development capabilities.",
+    "description2": "The migration preserved 100% of the Python business logic without compromises, leveraging WebAssembly for native browser performance. This project highlights key technical competencies in today's ecosystem:",
+    "description3": "This solution demonstrates how to modernize legacy Python applications towards web platforms while maintaining critical performance, cloud-native scalability and compatibility with modern frameworks - an essential strategy for digital transformation in enterprise environments.",
+    "startButton": "START GAME!",
+    "features": [
+      {
+        "term": "Native Python execution via WebAssembly",
+        "detail": "Zero-compilation overhead"
+      },
+      {
+        "term": "Modular architecture with dependency injection",
+        "detail": "Enterprise-grade maintainability"
+      },
+      {
+        "term": "Event-driven programming with Pyodide FFI",
+        "detail": "Seamless React-Python integration"
+      },
+      {
+        "term": "Optimized HTML5 Canvas rendering",
+        "detail": "Consistent 60fps with memory management"
+      },
+      {
+        "term": "Predictive AI and real-time physics",
+        "detail": "Integrated machine learning algorithms"
+      },
+      {
+        "term": "Reactive state management",
+        "detail": "Observer pattern for cross-language synchronization"
+      }
+    ]
   }
 }

@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Pong() {
+  const { t } = useTranslation();
+
   // Refs for persistent cross-render state management
   const canvasRef = useRef(null);
   const pyodideRef = useRef(null);
@@ -178,18 +181,12 @@ if game:
         <div className="relative min-h-[300px] flex items-center justify-center flex-col text-center px-4">
           <h2 className="text-3xl font-extrabold mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 animate-gradient">
-              PONG ARCADE
+              {t("pong.arcadeTitle")}
             </span>
           </h2>
           <div className="text-gray-400 max-w-md">
-            <p className="mb-4">
-              Sorry, the Pong game is optimized to be played on desktop
-              computers.
-            </p>
-            <p>
-              Please visit this page from a device with a keyboard to enjoy the
-              full experience.
-            </p>
+            <p className="mb-4">{t("pong.mobileWarning1")}</p>
+            <p>{t("pong.mobileWarning2")}</p>
           </div>
         </div>
       </section>
@@ -201,13 +198,12 @@ if game:
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <h2 className="text-5xl font-extrabold mb-8 relative">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 animate-gradient">
-            PONG ARCADE
+            {t("pong.arcadeTitle")}
           </span>
           <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 rounded-full animate-pulse"></div>
         </h2>
         <p className="text-gray-400 mb-8 text-center max-w-md">
-          ¡Demuestra tus habilidades! Primer jugador en alcanzar 5 puntos gana.
-          Usa las teclas W/S para mover tu pala.
+          {t("pong.instructions")}
         </p>
 
         <div className="relative">
@@ -224,56 +220,16 @@ if game:
           {!gameStarted && (
             <div className="absolute inset-0 bg-black bg-opacity-80 rounded-lg flex flex-col items-center justify-center p-8">
               <div className="text-gray-300 text-center space-y-4 max-w-2xl mb-8">
-                <p>
-                  This Pong implementation represents an advanced use case of
-                  Python-WebAssembly integration in modern applications.
-                  Originally developed as a native Python application, it has
-                  been successfully ported to the browser using Pyodide,
-                  demonstrating cutting-edge cross-platform development
-                  capabilities.
-                </p>
-                <p>
-                  The migration preserved 100% of the Python business logic
-                  without compromises, leveraging WebAssembly for native browser
-                  performance. This project highlights key technical
-                  competencies in today's ecosystem:
-                </p>
+                <p>{t("pong.description1")}</p>
+                <p>{t("pong.description2")}</p>
                 <ul className="space-y-2">
-                  <li>
-                    • <strong>Native Python execution via WebAssembly</strong> -
-                    Zero-compilation overhead
-                  </li>
-                  <li>
-                    •{" "}
-                    <strong>
-                      Modular architecture with dependency injection
-                    </strong>{" "}
-                    - Enterprise-grade maintainability
-                  </li>
-                  <li>
-                    • <strong>Event-driven programming with Pyodide FFI</strong>{" "}
-                    - Seamless React-Python integration
-                  </li>
-                  <li>
-                    • <strong>Optimized HTML5 Canvas rendering</strong> -
-                    Consistent 60fps with memory management
-                  </li>
-                  <li>
-                    • <strong>Predictive AI and real-time physics</strong> -
-                    Integrated machine learning algorithms
-                  </li>
-                  <li>
-                    • <strong>Reactive state management</strong> - Observer
-                    pattern for cross-language synchronization
-                  </li>
+                  {t("pong.features", { returnObjects: true }).map((f, i) => (
+                    <li key={i}>
+                      • <strong>{f.term}</strong> - {f.detail}
+                    </li>
+                  ))}
                 </ul>
-                <p className="text-purple-400 mt-4">
-                  This solution demonstrates how to modernize legacy Python
-                  applications towards web platforms while maintaining critical
-                  performance, cloud-native scalability and compatibility with
-                  modern frameworks - an essential strategy for digital
-                  transformation in enterprise environments.
-                </p>
+                <p className="text-purple-400 mt-4">{t("pong.description3")}</p>
               </div>
               <button
                 onClick={handleStartGame}
@@ -283,7 +239,7 @@ if game:
                          transform hover:scale-105 transition-all
                          animate-pulse"
               >
-                START GAME!
+                {t("pong.startButton")}
               </button>
             </div>
           )}
