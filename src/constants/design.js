@@ -904,19 +904,19 @@ export const designCategories = [
 
 // Project types for contact form
 export const projectTypes = [
-  { value: "ai-video", label: "AI Video Generation" },
-  { value: "ai-avatars", label: "AI Avatar Creation" },
-  { value: "automated-ads", label: "Automated Advertising" },
-  { value: "ai-logo-design", label: "AI Logo Design & Branding" },
-  { value: "ux-ui-design", label: "UX/UI Design Systems" },
-  { value: "vj-events", label: "VJing & Live Visuals" },
-  { value: "concert-posters", label: "Concert Posters & Event Graphics" },
-  { value: "music-videos", label: "Music Video Production" },
-  { value: "design", label: "Graphic Design" },
-  { value: "video", label: "Traditional Video Editing" },
-  { value: "motion", label: "Motion Graphics" },
-  { value: "branding", label: "Traditional Branding" },
-  { value: "other", label: "Other" },
+  { value: "ai-video" },
+  { value: "ai-avatars" },
+  { value: "automated-ads" },
+  { value: "ai-logo-design" },
+  { value: "ux-ui-design" },
+  { value: "vj-events" },
+  { value: "concert-posters" },
+  { value: "music-videos" },
+  { value: "design" },
+  { value: "video" },
+  { value: "motion" },
+  { value: "branding" },
+  { value: "other" },
 ];
 
 // Design & Branding skills

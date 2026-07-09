@@ -337,5 +337,24 @@
     "emptyTitle": "Select a video below to play",
     "emptyHint": "Click on any video thumbnail to start watching",
     "skillsHeading": "Image and Video Production Skills"
+  },
+  "projectTypesData": {
+    "ai-video": "AI Video Generation",
+    "ai-avatars": "AI Avatar Creation",
+    "automated-ads": "Automated Advertising",
+    "ai-logo-design": "AI Logo Design & Branding",
+    "ux-ui-design": "UX/UI Design Systems",
+    "vj-events": "VJing & Live Visuals",
+    "concert-posters": "Concert Posters & Event Graphics",
+    "music-videos": "Music Video Production",
+    "design": "Graphic Design",
+    "video": "Traditional Video Editing",
+    "motion": "Motion Graphics",
+    "branding": "Traditional Branding",
+    "other": "Other"
+  },
+  "contactDesign": {
+    "title": "Let's Create Together",
+    "description": "Looking for creative design or video production? Let's bring your vision to life with stunning visuals and compelling storytelling."
   }
 }

@@ -337,5 +337,24 @@
     "emptyTitle": "Selecciona un vídeo abajo para reproducirlo",
     "emptyHint": "Haz clic en cualquier miniatura de vídeo para empezar a verlo",
     "skillsHeading": "Habilidades de Producción de Imagen y Vídeo"
+  },
+  "projectTypesData": {
+    "ai-video": "Generación de Vídeo con IA",
+    "ai-avatars": "Creación de Avatares con IA",
+    "automated-ads": "Publicidad Automatizada",
+    "ai-logo-design": "Diseño de Logos y Branding con IA",
+    "ux-ui-design": "Sistemas de Diseño UX/UI",
+    "vj-events": "VJing y Visuales en Directo",
+    "concert-posters": "Carteles de Conciertos y Gráficas para Eventos",
+    "music-videos": "Producción de Videoclips",
+    "design": "Diseño Gráfico",
+    "video": "Edición de Vídeo Tradicional",
+    "motion": "Motion Graphics",
+    "branding": "Branding Tradicional",
+    "other": "Otro"
+  },
+  "contactDesign": {
+    "title": "Creemos algo juntos",
+    "description": "¿Buscas diseño creativo o producción de vídeo? Demos vida a tu visión con visuales impactantes y una narrativa cautivadora."
   }
 }
