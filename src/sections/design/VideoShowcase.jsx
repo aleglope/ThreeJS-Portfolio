@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import ReactPlayer from "react-player";
 import {
   MdAutoAwesome,
@@ -11,7 +12,8 @@ import {
   MdMovieEdit,
   MdFolderSpecial,
 } from "react-icons/md";
-import { videoShowcase, videoSkills } from "../../constants/design.js";
+import useLocalizedVideoShowcase from "../../hooks/useLocalizedVideoShowcase.js";
+import useLocalizedVideoSkills from "../../hooks/useLocalizedVideoSkills.js";
 
 // Icon mapping for skills
 const iconMap = {
@@ -27,6 +29,9 @@ const iconMap = {
 };
 
 const VideoShowcase = () => {
+  const { t } = useTranslation();
+  const videos = useLocalizedVideoShowcase();
+  const skills = useLocalizedVideoSkills();
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoPlayerRef = useRef(null);
@@ -59,9 +64,9 @@ const VideoShowcase = () => {
   return (
     <section className="c-space my-20 relative" id="video-showcase">
       <div className="text-center mb-12">
-        <p className="head-text mb-4">Video Showcase</p>
+        <p className="head-text mb-4">{t("videoShowcaseUI.heading")}</p>
         <p className="text-white-600 text-lg max-w-2xl mx-auto">
-          Professional video editing and motion graphics projects
+          {t("videoShowcaseUI.subheading")}
         </p>
       </div>
 
@@ -183,10 +188,10 @@ const VideoShowcase = () => {
                   />
                 </svg>
                 <p className="text-white-600 text-lg mb-2">
-                  Select a video below to play
+                  {t("videoShowcaseUI.emptyTitle")}
                 </p>
                 <p className="text-white-600/60 text-sm">
-                  Click on any video thumbnail to start watching
+                  {t("videoShowcaseUI.emptyHint")}
                 </p>
               </div>
             </div>
@@ -196,7 +201,7 @@ const VideoShowcase = () => {
 
       {/* Video Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {videoShowcase.map((video) => (
+        {videos.map((video) => (
           <div
             key={video.id}
             onClick={() => handleVideoSelect(video)}
@@ -245,11 +250,11 @@ const VideoShowcase = () => {
       {/* Skills Section */}
       <div className="mt-20 max-w-4xl mx-auto">
         <h3 className="text-3xl font-bold text-white text-center mb-8 font-generalsans">
-          Image and Video Production Skills
+          {t("videoShowcaseUI.skillsHeading")}
         </h3>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {videoSkills.map((skill) => (
+          {skills.map((skill) => (
             <div
               key={skill.id}
               className="bg-black-200 border border-black-300 rounded-xl p-6 text-center hover:border-pink-500 transition-all duration-300"
