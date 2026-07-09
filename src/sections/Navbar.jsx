@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { navLinks } from "../constants/index.js";
+import LanguageToggle from "../components/LanguageToggle.jsx";
 
 const NavItems = () => {
   return (
@@ -87,6 +88,7 @@ const Navbar = () => {
             >
               Design Portfolio
             </button>
+            <LanguageToggle />
           </nav>
         </div>
       </div>
@@ -101,6 +103,9 @@ const Navbar = () => {
             >
               Design Portfolio
             </button>
+          </div>
+          <div className="mt-4 flex justify-center">
+            <LanguageToggle />
           </div>
         </nav>
       </div>
