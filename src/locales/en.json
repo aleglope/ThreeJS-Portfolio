@@ -12,7 +12,14 @@
     "devDescription": "Full Stack Developer specializing in web applications, 3D experiences, and scalable systems.",
     "designTitle": "Design & Video",
     "designDescription": "Creative visual storytelling through graphic design, video editing, and motion graphics.",
-    "viewPortfolio": "View Portfolio"
+    "viewPortfolio": "View Portfolio",
+    "servicesTitle": "Websites for Your Business",
+    "servicesDescription": "I design, build and promote your business's digital presence: websites that sell, AI chatbots, and ads that bring customers.",
+    "servicesTag1": "Custom Websites",
+    "servicesTag2": "AI Chatbots",
+    "servicesTag3": "Local SEO",
+    "servicesTag4": "Ads",
+    "viewServices": "View Services"
   },
   "languageSwitcher": {
     "ariaLabel": "Change language",
@@ -73,7 +80,8 @@
     "alerts": {
       "success": "Thank you for your message 😃",
       "error": "I didn't receive your message 😢"
-    }
+    },
+    "servicesCta": "Run a business? Check out my web services →"
   },
   "pong": {
     "arcadeTitle": "PONG ARCADE",
@@ -159,11 +167,6 @@
     }
   },
   "experienceData": {
-    "6": {
-      "pos": "Sole Full-Stack Developer",
-      "title": "Designed, built and operated solo, in five months (Jan–May 2026), the entire software ecosystem of LogiEvents, a Spanish medical-congress management company: 8 production systems including online registration with payments (Next.js 16, Supabase, Redsys), real-time multilingual audio translation (LiveKit + Palabra.ai/OpenAI Realtime), badge printing with a 3D kiosk (NestJS, Puppeteer, R3F), BLE attendance over AWS IoT (CDK, Lambda, DynamoDB) and more — 236K+ LOC, ~314 test files, AI-augmented workflow with engineering discipline. Full architecture case studies published on my GitHub (congress-tech-systems).",
-      "duration": "2026"
-    },
     "1": {
       "pos": "Lead Full-Stack Developer & Designer",
       "title": "Designed and developed from scratch the complete website for Champi Muros restaurant. Built a fully bilingual (ES/GL) platform with Next.js 14, Supabase, and Three.js, featuring an interactive 3D hero scene, a dynamic digital menu with admin panel for real-time dish and category management, an online reservation system with email confirmations via Resend, SEO optimization with structured data, Vercel Analytics & Speed Insights, GSAP and Framer Motion animations, and a particle effects system. Deployed on Vercel with a custom admin dashboard for full content control.",
@@ -188,6 +191,11 @@
       "pos": "Full-Stack Developer Trainee",
       "title": "Contributed to the development of a real estate management application using Angular for frontend, Java Spring Boot for backend, and MySQL for database. Focused on scalability, security, and optimized user experience.",
       "duration": "2024"
+    },
+    "6": {
+      "pos": "Sole Full-Stack Developer",
+      "title": "Designed, built and operated solo, in five months (Jan–May 2026), the entire software ecosystem of LogiEvents, a Spanish medical-congress management company: 8 production systems including online registration with payments (Next.js 16, Supabase, Redsys), real-time multilingual audio translation (LiveKit + Palabra.ai/OpenAI Realtime), badge printing with a 3D kiosk (NestJS, Puppeteer, R3F), BLE attendance over AWS IoT (CDK, Lambda, DynamoDB) and more — 236K+ LOC, ~314 test files, AI-augmented workflow with engineering discipline. Full architecture case studies published on my GitHub (congress-tech-systems).",
+      "duration": "2026"
     }
   },
   "reviewsData": {

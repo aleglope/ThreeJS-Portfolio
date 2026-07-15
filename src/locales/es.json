@@ -12,7 +12,14 @@
     "devDescription": "Desarrollador Full Stack especializado en aplicaciones web, experiencias 3D y sistemas escalables.",
     "designTitle": "Diseño y Vídeo",
     "designDescription": "Narrativa visual creativa a través del diseño gráfico, la edición de vídeo y el motion graphics.",
-    "viewPortfolio": "Ver portfolio"
+    "viewPortfolio": "Ver portfolio",
+    "servicesTitle": "Webs para tu Negocio",
+    "servicesDescription": "Diseño, programo y promociono la presencia digital de tu negocio: webs que venden, chatbots con IA y anuncios que traen clientes.",
+    "servicesTag1": "Webs a medida",
+    "servicesTag2": "Chatbots IA",
+    "servicesTag3": "SEO local",
+    "servicesTag4": "Anuncios",
+    "viewServices": "Ver servicios"
   },
   "languageSwitcher": {
     "ariaLabel": "Cambiar idioma",
@@ -73,7 +80,8 @@
     "alerts": {
       "success": "¡Gracias por tu mensaje! 😃",
       "error": "No recibí tu mensaje 😢"
-    }
+    },
+    "servicesCta": "¿Tienes un negocio? Descubre mis servicios web →"
   },
   "pong": {
     "arcadeTitle": "PONG ARCADE",
@@ -159,11 +167,6 @@
     }
   },
   "experienceData": {
-    "6": {
-      "pos": "Desarrollador Full Stack en solitario",
-      "title": "Diseñé, construí y operé en solitario, en cinco meses (ene–may 2026), todo el ecosistema de software de LogiEvents, una empresa española de gestión de congresos médicos: 8 sistemas en producción, entre ellos registro online con pagos (Next.js 16, Supabase, Redsys), traducción de audio multilingüe en tiempo real (LiveKit + Palabra.ai/OpenAI Realtime), impresión de acreditaciones con un kiosco 3D (NestJS, Puppeteer, R3F), control de asistencia por BLE sobre AWS IoT (CDK, Lambda, DynamoDB) y más — 236K+ LOC, ~314 archivos de test, flujo de trabajo aumentado con IA y disciplina de ingeniería. Casos de estudio de arquitectura completos publicados en mi GitHub (congress-tech-systems).",
-      "duration": "2026"
-    },
     "1": {
       "pos": "Desarrollador Full Stack principal y diseñador",
       "title": "Diseñé y desarrollé desde cero la web completa del restaurante de Champi Muros. Construí una plataforma totalmente bilingüe (ES/GL) con Next.js 14, Supabase y Three.js, con una escena hero 3D interactiva, un menú digital dinámico con panel de administración para gestionar platos y categorías en tiempo real, un sistema de reservas online con confirmaciones por email vía Resend, optimización SEO con datos estructurados, Vercel Analytics y Speed Insights, animaciones con GSAP y Framer Motion, y un sistema de efectos de partículas. Desplegada en Vercel con un panel de administración a medida para el control total del contenido.",
@@ -188,6 +191,11 @@
       "pos": "Desarrollador Full Stack en prácticas",
       "title": "Contribuí al desarrollo de una aplicación de gestión inmobiliaria usando Angular en el frontend, Java Spring Boot en el backend y MySQL como base de datos. Con foco en la escalabilidad, la seguridad y una experiencia de usuario optimizada.",
       "duration": "2024"
+    },
+    "6": {
+      "pos": "Desarrollador Full Stack en solitario",
+      "title": "Diseñé, construí y operé en solitario, en cinco meses (ene–may 2026), todo el ecosistema de software de LogiEvents, una empresa española de gestión de congresos médicos: 8 sistemas en producción, entre ellos registro online con pagos (Next.js 16, Supabase, Redsys), traducción de audio multilingüe en tiempo real (LiveKit + Palabra.ai/OpenAI Realtime), impresión de acreditaciones con un kiosco 3D (NestJS, Puppeteer, R3F), control de asistencia por BLE sobre AWS IoT (CDK, Lambda, DynamoDB) y más — 236K+ LOC, ~314 archivos de test, flujo de trabajo aumentado con IA y disciplina de ingeniería. Casos de estudio de arquitectura completos publicados en mi GitHub (congress-tech-systems).",
+      "duration": "2026"
     }
   },
   "reviewsData": {

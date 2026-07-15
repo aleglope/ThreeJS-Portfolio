@@ -229,7 +229,7 @@ const LandingPage = () => {
           </div>
 
           {/* Portfolio Selection Cards */}
-          <div className="grid md:grid-cols-2 gap-8 w-full max-w-6xl px-4 pointer-events-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl px-4 pointer-events-auto">
             {/* Development Portfolio Card */}
             <div
               onClick={() => navigate("/dev")}
@@ -357,6 +357,84 @@ const LandingPage = () => {
                 {/* CTA */}
                 <div className="flex items-center text-pink-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   {t("landing.viewPortfolio")}
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Web Services Card (external) */}
+            <div
+              onClick={() =>
+                window.open(
+                  "https://aglwences-web.vercel.app/",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              className="group relative bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-emerald-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/20 md:col-span-2 lg:col-span-1"
+            >
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative z-10">
+                {/* Icon */}
+                <div className="w-20 h-20 mb-6 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    className="w-12 h-12 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72"
+                    />
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-3xl font-bold text-white mb-4 font-generalsans">
+                  {t("landing.servicesTitle")}
+                </h2>
+
+                {/* Description */}
+                <p className="text-white-600 text-lg mb-6">
+                  {t("landing.servicesDescription")}
+                </p>
+
+                {/* Service badges */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-black-300 text-white-600 rounded-full text-sm">
+                    {t("landing.servicesTag1")}
+                  </span>
+                  <span className="px-3 py-1 bg-black-300 text-white-600 rounded-full text-sm">
+                    {t("landing.servicesTag2")}
+                  </span>
+                  <span className="px-3 py-1 bg-black-300 text-white-600 rounded-full text-sm">
+                    {t("landing.servicesTag3")}
+                  </span>
+                  <span className="px-3 py-1 bg-black-300 text-white-600 rounded-full text-sm">
+                    {t("landing.servicesTag4")}
+                  </span>
+                </div>
+
+                {/* CTA */}
+                <div className="flex items-center text-emerald-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  {t("landing.viewServices")}
                   <svg
                     className="w-5 h-5 ml-2"
                     fill="none"
