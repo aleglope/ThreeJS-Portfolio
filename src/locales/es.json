@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "AGonzL — Portafolio",
-    "description": "Desarrollador Full Stack y diseñador web 3D — portafolio interactivo hecho con React y Three.js."
+    "title": "AGonzL — Portfolio",
+    "description": "Desarrollador Full Stack y diseñador web 3D — portfolio interactivo hecho con React y Three.js."
   },
   "navbarUI": {
     "designPortfolio": "Portfolio Diseño"
@@ -717,7 +717,7 @@
     },
     "ai-photographic-art": {
       "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
-      "category": "Edición de Vídeo",
+      "category": "Fotografía IA",
       "fullDescription": "Especializado en la creación de arte fotográfico y producción audiovisual mediante la integración de la inteligencia artificial, mi trabajo combina creatividad, técnica y tecnología avanzada para ofrecer imágenes y vídeos únicos, transformando la visión artística en experiencias visuales innovadoras.",
       "client": "Proyectos personales",
       "duration": "N/A",

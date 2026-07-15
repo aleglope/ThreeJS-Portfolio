@@ -32,9 +32,14 @@ const VideoShowcase = () => {
   const { t } = useTranslation();
   const videos = useLocalizedVideoShowcase();
   const skills = useLocalizedVideoSkills();
-  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoPlayerRef = useRef(null);
+
+  const selectedVideo =
+    selectedVideoId != null
+      ? videos.find((v) => v.id === selectedVideoId) ?? null
+      : null;
 
   // Function to detect mobile/tablet devices
   const isMobileOrTablet = () => {
@@ -42,7 +47,7 @@ const VideoShowcase = () => {
   };
 
   const handleVideoSelect = (video) => {
-    setSelectedVideo(video);
+    setSelectedVideoId(video.id);
     setIsPlaying(false); // Reset playing state, ReactPlayer will handle autoplay
 
     // Scroll to video player on mobile/tablet devices
@@ -57,7 +62,7 @@ const VideoShowcase = () => {
   };
 
   const handleClose = () => {
-    setSelectedVideo(null);
+    setSelectedVideoId(null);
     setIsPlaying(false);
   };
 
