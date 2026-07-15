@@ -356,7 +356,7 @@ const LandingPage = () => {
 
                 {/* CTA */}
                 <div className="flex items-center text-pink-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  View Portfolio
+                  {t("landing.viewPortfolio")}
                   <svg
                     className="w-5 h-5 ml-2"
                     fill="none"
