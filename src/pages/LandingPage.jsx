@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useState, useRef } from "react";
 import { PerspectiveCamera, Float } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -152,6 +153,7 @@ const InteractiveRings = ({ position, ...props }) => {
 
 const LandingPage = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -222,7 +224,7 @@ const LandingPage = () => {
               Alejandro González López
             </h1>
             <p className="text-2xl md:text-3xl text-gray_gradient font-generalsans">
-              Choose Your Experience
+              {t("landing.subtitle")}
             </p>
           </div>
 
@@ -256,13 +258,12 @@ const LandingPage = () => {
 
                 {/* Title */}
                 <h2 className="text-3xl font-bold text-white mb-4 font-generalsans">
-                  Development
+                  {t("landing.devTitle")}
                 </h2>
 
                 {/* Description */}
                 <p className="text-white-600 text-lg mb-6">
-                  Full Stack Developer specializing in web applications, 3D
-                  experiences, and scalable systems.
+                  {t("landing.devDescription")}
                 </p>
 
                 {/* Tech badges */}
@@ -283,7 +284,7 @@ const LandingPage = () => {
 
                 {/* CTA */}
                 <div className="flex items-center text-blue-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  View Portfolio
+                  {t("landing.viewPortfolio")}
                   <svg
                     className="w-5 h-5 ml-2"
                     fill="none"
@@ -329,13 +330,12 @@ const LandingPage = () => {
 
                 {/* Title */}
                 <h2 className="text-3xl font-bold text-white mb-4 font-generalsans">
-                  Design & Video
+                  {t("landing.designTitle")}
                 </h2>
 
                 {/* Description */}
                 <p className="text-white-600 text-lg mb-6">
-                  Creative visual storytelling through graphic design, video
-                  editing, and motion graphics.
+                  {t("landing.designDescription")}
                 </p>
 
                 {/* Tech badges */}

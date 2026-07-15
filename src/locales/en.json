@@ -6,6 +6,14 @@
   "navbarUI": {
     "designPortfolio": "Design Portfolio"
   },
+  "landing": {
+    "subtitle": "Choose Your Experience",
+    "devTitle": "Development",
+    "devDescription": "Full Stack Developer specializing in web applications, 3D experiences, and scalable systems.",
+    "designTitle": "Design & Video",
+    "designDescription": "Creative visual storytelling through graphic design, video editing, and motion graphics.",
+    "viewPortfolio": "View Portfolio"
+  },
   "languageSwitcher": {
     "ariaLabel": "Change language",
     "es": "ES",

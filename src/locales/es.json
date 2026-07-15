@@ -6,6 +6,14 @@
   "navbarUI": {
     "designPortfolio": "Portfolio Diseño"
   },
+  "landing": {
+    "subtitle": "Elige tu experiencia",
+    "devTitle": "Desarrollo",
+    "devDescription": "Desarrollador Full Stack especializado en aplicaciones web, experiencias 3D y sistemas escalables.",
+    "designTitle": "Diseño y Vídeo",
+    "designDescription": "Narrativa visual creativa a través del diseño gráfico, la edición de vídeo y el motion graphics.",
+    "viewPortfolio": "Ver portfolio"
+  },
   "languageSwitcher": {
     "ariaLabel": "Cambiar idioma",
     "es": "ES",
