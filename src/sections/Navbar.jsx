@@ -66,9 +66,18 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={() => navigate("/")}
-            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
-          >
-            AGonzL
+              className="flex items-center gap-2.5 text-neutral-400 font-bold text-xl hover:text-white transition-colors"
+            >
+              {/* Icono «agl» de la marca: por debajo de 96 px va el icono simplificado */}
+              <img
+                src="/assets/agl-icono-sobre-oscuro.svg"
+                alt=""
+                aria-hidden="true"
+                width="27"
+                height="28"
+                className="h-7 w-auto"
+              />
+              AGonzL
             </button>
             <span className="text-neutral-600">|</span>
             <span className="text-blue-500 font-semibold text-sm">Dev</span>
