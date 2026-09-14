@@ -374,16 +374,14 @@ const LandingPage = () => {
               </div>
             </div>
 
-            {/* Web Services Card (external) */}
-            <div
-              onClick={() =>
-                window.open(
-                  "https://alewences.es/",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-              className="group relative bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-emerald-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/20 md:col-span-2 lg:col-span-1"
+            {/* Web Services Card (external). Es un <a> de verdad y no un div
+                con window.open: así Google cuenta el enlace hacia alewences.es
+                y funciona con teclado, con el botón central y sin JavaScript. */}
+            <a
+              href="https://alewences.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-emerald-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/20 md:col-span-2 lg:col-span-1"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -450,7 +448,7 @@ const LandingPage = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
