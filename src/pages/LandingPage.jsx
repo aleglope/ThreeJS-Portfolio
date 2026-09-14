@@ -378,7 +378,7 @@ const LandingPage = () => {
             <div
               onClick={() =>
                 window.open(
-                  "https://aglwences-web.vercel.app/",
+                  "https://alewences.es/",
                   "_blank",
                   "noopener,noreferrer"
                 )

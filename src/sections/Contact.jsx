@@ -101,7 +101,7 @@ const Contact = ({
           <h3 className="head-text">{heading}</h3>
           <p className="text-lg text-white-600 mt-3">{subheading}</p>
           <a
-            href="https://aglwences-web.vercel.app/"
+            href="https://alewences.es/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-3 text-sm text-emerald-400 underline underline-offset-4 hover:text-emerald-300 transition-colors"
