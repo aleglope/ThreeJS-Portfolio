@@ -1,0 +1,359 @@
+[
+  {
+    "id": "champi-spot",
+    "seconds": 30.016,
+    "width": 1280,
+    "height": 720,
+    "bytes": 9730753,
+    "src": "/media/portfolio/videos/champi-spot.mp4",
+    "poster": "/media/portfolio/posters/champi-spot.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/anuncio-tv/videos/anuncio-tv-champi-16x9.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/champi-spot.mp4",
+      "seekSeconds": 3.9
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "Rótulos de producto, comedor y reservas visibles en el montaje.",
+      "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/champi-promo/anuncio-tv/EDL.md"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "champi-spot",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "champi-promo",
+    "seconds": 20.01,
+    "width": 720,
+    "height": 1280,
+    "bytes": 6052532,
+    "src": "/media/portfolio/videos/champi-promo.mp4",
+    "poster": "/media/portfolio/posters/champi-promo.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/02_VIDEOTECA_HISTORICA/2026-champi-promo-20s/videos/promo-champi-v3.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/champi-promo.mp4",
+      "seekSeconds": 5.4
+    },
+    "captions": {
+      "kind": "selective-burned-in",
+      "subtitleStreams": 0,
+      "evidence": "La pregunta inicial y rótulos selectivos están integrados en el vídeo.",
+      "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/champi-promo/promo-output/composition/index.html"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "champi-promo",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "champi-rotulos",
+    "seconds": 22.916667,
+    "width": 960,
+    "height": 720,
+    "bytes": 2635061,
+    "src": "/media/portfolio/videos/champi-rotulos.mp4",
+    "poster": "/media/portfolio/posters/champi-rotulos.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/OpenMontage/projects/champi-rotulos-3d/renders/champi_rotulos_v3.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/champi-rotulos.mp4",
+      "seekSeconds": 13.292
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "Hay rótulos de contexto y texto de las webs mostradas. La frase hablada se identificó en dos pasadas locales sobre el audio final, una por tramos.",
+      "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/OpenMontage/projects/champi-rotulos-3d/renders/champi_rotulos_v3.mp4"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "champi-rotulos",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "champi-seo",
+    "seconds": 48.0,
+    "width": 720,
+    "height": 1280,
+    "bytes": 3416367,
+    "src": "/media/portfolio/videos/champi-seo.mp4",
+    "poster": "/media/portfolio/posters/champi-seo.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/parrilla-champi-maps-seo-reel/videos/parrilla-champi-maps-seo-reel-FINAL-audio.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/champi-seo.mp4",
+      "seekSeconds": 6.24
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "La explicación es visual. La pista del máster lleva música.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/outputs/parrilla-champi-maps-seo-reel/compositions/seo-story.html"
+    },
+    "transcript": null
+  },
+  {
+    "id": "nova",
+    "seconds": 55.018,
+    "width": 1280,
+    "height": 720,
+    "bytes": 2682806,
+    "src": "/media/portfolio/videos/nova.mp4",
+    "poster": "/media/portfolio/posters/nova.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/nova-ai-recruiter-film/videos/nova-ai-recruiter-film-final.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/nova.mp4",
+      "seekSeconds": 7.15
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "La interfaz y los rótulos transmiten la demo. El montaje tiene pista musical nova-bed.mp3.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/outputs/nova-ai-recruiter-film/index.html"
+    },
+    "transcript": null
+  },
+  {
+    "id": "stock-ia",
+    "seconds": 44.01,
+    "width": 720,
+    "height": 720,
+    "bytes": 2542791,
+    "src": "/media/portfolio/videos/stock-ia.mp4",
+    "poster": "/media/portfolio/posters/stock-ia.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/alewences-stock-ia-square-v3/videos/alewences-stock-ia-square-v3_2026-09-17_15-24-10.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/stock-ia.mp4",
+      "seekSeconds": 5.72
+    },
+    "captions": {
+      "kind": "burned-in",
+      "subtitleStreams": 0,
+      "evidence": "Subtítulos cinéticos integrados en el máster cuadrado. El SRT se contrastó con el audio final.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/outputs/alewences-stock-ia-square-v3/assets/voice/subtitulos.srt"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "stock-ia",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "reformas-materiales",
+    "seconds": 32.106,
+    "width": 720,
+    "height": 1280,
+    "bytes": 1178911,
+    "src": "/media/portfolio/videos/reformas-materiales.mp4",
+    "poster": "/media/portfolio/posters/reformas-materiales.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/2026-10-30-empresas-preparacion-stock/renders/reformas-materiales/reformas-materiales-9x16.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/reformas-materiales.mp4",
+      "seekSeconds": 4.173
+    },
+    "captions": {
+      "kind": "burned-in",
+      "subtitleStreams": 0,
+      "evidence": "Subtítulos integrados visibles, con composición de captions y guion de la voz en el proyecto fuente.",
+      "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/2026-10-30-empresas-preparacion-stock/editable/2026-10-30-empresas-reformas-materiales/VOICEOVER.txt"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "reformas-materiales",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "anuncios-ia",
+    "seconds": 45.013,
+    "width": 720,
+    "height": 900,
+    "bytes": 1821287,
+    "src": "/media/portfolio/videos/anuncios-ia.mp4",
+    "poster": "/media/portfolio/posters/anuncios-ia.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/alewences-ai-video-ads-feed/videos/alewences-ai-video-ads-feed-final.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/anuncios-ia.mp4",
+      "seekSeconds": 1.125
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "Tipografía de las escenas, con música y efectos en el editable.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/outputs/alewences-ai-video-ads-feed/index.html"
+    },
+    "transcript": null
+  },
+  {
+    "id": "asistente-voz",
+    "seconds": 62.016,
+    "width": 1280,
+    "height": 720,
+    "bytes": 4131086,
+    "src": "/media/portfolio/videos/asistente-voz.mp4",
+    "poster": "/media/portfolio/posters/asistente-voz.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/alewences-voice-ai-portfolio-16x9/videos/alewences-voice-ai-portfolio-16x9-final.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/asistente-voz.mp4",
+      "seekSeconds": 16.74
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "La conversación se muestra visualmente. La pista contiene música y efectos en el editable.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/outputs/alewences-voice-ai-portfolio-16x9/index.html"
+    },
+    "transcript": null
+  },
+  {
+    "id": "respuesta-clientes",
+    "seconds": 20.01,
+    "width": 720,
+    "height": 1280,
+    "bytes": 1203837,
+    "src": "/media/portfolio/videos/respuesta-clientes.mp4",
+    "poster": "/media/portfolio/posters/respuesta-clientes.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/alewences-lead-flow-motion/videos/alewences-lead-flow-motion-reel-9x16.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/respuesta-clientes.mp4",
+      "seekSeconds": 2.6
+    },
+    "captions": {
+      "kind": "burned-in",
+      "subtitleStreams": 0,
+      "evidence": "Composición de subtítulos integrada y locución en narration-sts.m4a.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/videos/alewences-lead-flow-motion/compositions/captions.html"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "respuesta-clientes",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "datos-negocio",
+    "seconds": 30.016,
+    "width": 720,
+    "height": 1280,
+    "bytes": 1886017,
+    "src": "/media/portfolio/videos/datos-negocio.mp4",
+    "poster": "/media/portfolio/posters/datos-negocio.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/alewences-business-data-intelligence/videos/alewences-business-data-intelligence-reel-9x16-v2.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/datos-negocio.mp4",
+      "seekSeconds": 17.4
+    },
+    "captions": {
+      "kind": "edited-burned-in",
+      "subtitleStreams": 0,
+      "evidence": "La composición de subtítulos condensa la locución. El máster v2 y la locución del editable coinciden en el cuerpo del audio. El gancho y la llamada a escribir «DATOS» se muestran en pantalla en v2.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/videos/alewences-business-data-intelligence/assets/audio/narration-openai-cedar-immediate-30s.m4a"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "datos-negocio",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "engram",
+    "seconds": 55.018,
+    "width": 1280,
+    "height": 720,
+    "bytes": 1897794,
+    "src": "/media/portfolio/videos/engram.mp4",
+    "poster": "/media/portfolio/posters/engram.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/engram-agents-linkedin/videos/engram-linkedin-16x9.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/engram.mp4",
+      "seekSeconds": 14.85
+    },
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "La explicación se hace con texto y capturas. El editable incorpora música y efectos.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/outputs/engram-agents-linkedin/index.html"
+    },
+    "transcript": null
+  },
+  {
+    "id": "chatbot-307",
+    "seconds": 43.1,
+    "width": 720,
+    "height": 1280,
+    "bytes": 3981584,
+    "src": "/media/portfolio/videos/chatbot-307.mp4",
+    "poster": "/media/portfolio/posters/chatbot-307.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/OpenMontage/projects/anuncio-chatbot-ia/social/chatbot-reel-9x16.mp4",
+    "posterSource": "/Users/agl/Documents/ALEWENCES_PROJECTS/OpenMontage/projects/anuncio-chatbot-ia/social/portada-chatbot-9x16.png",
+    "captions": {
+      "kind": "onscreen-text",
+      "subtitleStreams": 0,
+      "evidence": "La demo de conversación está en pantalla. El editable tiene música y efectos.",
+      "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/OpenMontage/projects/anuncio-chatbot-ia/hyperframes/index.html"
+    },
+    "transcript": null
+  },
+  {
+    "id": "bretema",
+    "seconds": 44.01,
+    "width": 720,
+    "height": 1280,
+    "bytes": 3641090,
+    "src": "/media/portfolio/videos/bretema.mp4",
+    "poster": "/media/portfolio/posters/bretema.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/2026-09-28-bretema-watch-3d-ecommerce-promo/videos/bretema-watch-3d-master-9x16.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/bretema.mp4",
+      "seekSeconds": 18.92
+    },
+    "captions": {
+      "kind": "burned-in",
+      "subtitleStreams": 0,
+      "evidence": "El máster muestra cajas de subtítulo de la locución. Se contrastó el guion de síntesis con el audio final.",
+      "source": "/Users/agl/Documents/Codex/2026-09-10/referenced-chatgpt-conversation-this-is-an/videos/2026-09-28-bretema-watch-3d-ecommerce-promo/tts-request.json"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "bretema",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  },
+  {
+    "id": "color-legibilidad",
+    "seconds": 23.1,
+    "width": 720,
+    "height": 1280,
+    "bytes": 768567,
+    "src": "/media/portfolio/videos/color-legibilidad.mp4",
+    "poster": "/media/portfolio/posters/color-legibilidad.webp",
+    "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/2026-10-27-web-color-legibilidad/videos/color-legibilidad-9x16.mp4",
+    "posterSource": {
+      "src": "/media/portfolio/videos/color-legibilidad.mp4",
+      "seekSeconds": 3.003
+    },
+    "captions": {
+      "kind": "burned-in",
+      "subtitleStreams": 0,
+      "evidence": "Subtítulos integrados visibles y guion de locución en el editable.",
+      "source": "/Users/agl/Documents/ALEWENCES_PROJECTS/ARCHIVO_VIDEOS_ALEWENCES/01_PROYECTOS_DE_VIDEO/2026-10-27-web-color-legibilidad/proyecto/VOICEOVER.txt"
+    },
+    "transcript": {
+      "path": "docs/media-transcripts.json",
+      "id": "color-legibilidad",
+      "lang": "es",
+      "method": "Contrastada con el audio del máster mediante reconocimiento local; puntuación editorial."
+    }
+  }
+]
