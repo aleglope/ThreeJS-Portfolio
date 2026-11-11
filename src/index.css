@@ -377,7 +377,7 @@ button,
   overflow-wrap: anywhere;
 }
 
-.portfolio-anchor {
+.portfolio-anchor, #contact {
   scroll-margin-top: 6rem;
 }
 

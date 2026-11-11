@@ -548,10 +548,11 @@ export const projectDetails = {
 // Project categories for filtering
 export const designCategories = [
   "All",
+  "Client Work",
   "AI Content",
   "Music & Events",
   "Graphic Design",
-  "Video Editing",
+  "AI Photography",
 ];
 
 // Project types for contact form

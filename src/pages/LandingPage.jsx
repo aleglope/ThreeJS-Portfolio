@@ -1,3 +1,4 @@
+import { servicesUrl } from "../constants/services.js";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState, useRef } from "react";
 import { PerspectiveCamera, Float } from "@react-three/drei";
@@ -378,7 +379,7 @@ const LandingPage = () => {
                 con window.open: así Google cuenta el enlace hacia alewences.es
                 y funciona con teclado, con el botón central y sin JavaScript. */}
             <a
-              href="https://alewences.es/"
+              href={servicesUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-emerald-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/20 md:col-span-2 lg:col-span-1"

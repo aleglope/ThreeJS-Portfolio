@@ -65,7 +65,10 @@ const PortfolioVideo = ({ video, onClose, onOpen }) => {
         }}
       >
         {phase === "player" ? (
-          <VideoFrame video={video} onError={() => setPhase("error")} />
+          <VideoFrame video={video} onError={() => {
+            setPhase("error");
+            onClose?.();
+          }} />
         ) : (
           <>
             <img
@@ -83,7 +86,7 @@ const PortfolioVideo = ({ video, onClose, onOpen }) => {
                 setPhase("player");
               }}
               className="absolute inset-0 m-auto flex h-fit min-h-11 w-max max-w-[calc(100%-1rem)] items-center justify-center gap-2 rounded-full border border-white/30 bg-black/90 px-4 py-2.5 text-sm font-semibold text-white hover:border-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
-              aria-label={t("portfolioVideo.openNamed", { title: video.title })}
+              aria-label={t(phase === "error" ? "portfolioVideo.retryNamed" : "portfolioVideo.openNamed", { title: video.title })}
             >
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 shrink-0">
                 <path d="M8 5v14l11-7z" />
@@ -108,7 +111,7 @@ const PortfolioVideo = ({ video, onClose, onOpen }) => {
       {video.transcript && (
         <details className="mt-4 rounded-lg border border-white/10 px-4 py-2 text-neutral-200">
           <summary className="min-h-11 cursor-pointer py-2 font-medium text-pink-200">{t("portfolioVideo.transcript")}</summary>
-          <p lang="es" className="mb-3 whitespace-pre-line leading-relaxed">{video.transcript}</p>
+          <p lang={video.transcript.lang} className="mb-3 whitespace-pre-line leading-relaxed">{video.transcript.text}</p>
         </details>
       )}
     </div>

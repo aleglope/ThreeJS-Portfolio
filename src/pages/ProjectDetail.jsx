@@ -1,23 +1,36 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ReactPlayer from "react-player";
+import { clientProjects } from "../constants/clientProjects.js";
+import ClientProjectDetail from "./ClientProjectDetail.jsx";
 import useLocalizedProjectDetails from "../hooks/useLocalizedProjectDetails.js";
 import DesignNavbar from "../sections/design/DesignNavbar.jsx";
 import Footer from "../sections/Footer.jsx";
 import CursorTrail from "../components/CursorTrail";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
-const ProjectDetail = () => {
-  const { slug } = useParams();
-  const navigate = useNavigate();
+/* eslint-disable react/prop-types -- The legacy route passes its resolved slug. */
+const LegacyProjectDetail = ({ slug }) => {
   const { t } = useTranslation();
   const project = useLocalizedProjectDetails(slug);
   const [selectedVideoId, setSelectedVideoId] = useState(
     project?.videos?.[0]?.id ?? null
   );
   const selectedVideo = project?.videos?.find((v) => v.id === selectedVideoId) ?? project?.videos?.[0] ?? null;
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [videoFailed, setVideoFailed] = useState(false);
+  const openVideo = useRef(null);
+  const closeVideo = useRef(null);
+  const focusAfterClose = useRef(false);
+
+  useLayoutEffect(() => {
+    if (isVideoOpen) closeVideo.current?.focus({ preventScroll: true });
+    else if (focusAfterClose.current) {
+      focusAfterClose.current = false;
+      openVideo.current?.focus({ preventScroll: true });
+    }
+  }, [isVideoOpen]);
   // Gallery navigation functions
   const galleryCategories = project?.imageGallery
     ? Object.keys(project.imageGallery)
@@ -55,12 +68,9 @@ const ProjectDetail = () => {
             <h1 className="text-4xl font-bold text-white mb-4">
               {t("projectDetailUI.projectNotFound")}
             </h1>
-            <button
-              onClick={() => navigate("/design")}
-              className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
-            >
+            <Link to="/design#design-projects" className="portfolio-link">
               {t("projectDetailUI.backToPortfolio")}
-            </button>
+            </Link>
           </div>
         </main>
       </>
@@ -75,10 +85,7 @@ const ProjectDetail = () => {
 
         {/* Project Header */}
         <section className="c-space my-20">
-          <button
-            onClick={() => navigate("/design")}
-            className="flex items-center gap-2 text-white-600 hover:text-pink-400 transition-colors duration-300 mb-8"
-          >
+          <Link to="/design#design-projects" className="portfolio-link mb-8">
             <svg
               className="w-5 h-5"
               fill="none"
@@ -93,7 +100,8 @@ const ProjectDetail = () => {
               />
             </svg>
             {t("projectDetailUI.backToProjects")}
-          </button>
+          </Link>
+          <Link to="/design#video-showcase" className="portfolio-link mb-8 ml-5">{t("clientWork.backToVideo")}</Link>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Project Info */}
@@ -102,7 +110,7 @@ const ProjectDetail = () => {
                 {project.category}
               </div>
 
-              <h1 className="text-5xl font-bold text-white mb-6 font-generalsans">
+              <h1 tabIndex={-1} data-route-focus className="text-4xl sm:text-5xl font-bold text-white mb-6 font-generalsans">
                 {project.title}
               </h1>
 
@@ -183,53 +191,33 @@ const ProjectDetail = () => {
             {/* Main Video Player */}
             <div className="lg:col-span-2">
               <div className="relative bg-black-200 rounded-xl overflow-hidden border border-pink-500/30 shadow-2xl shadow-pink-500/20">
-                {/* Video Player */}
-                <div
-                  className="relative bg-black"
-                  style={{ paddingTop: "56.25%" }}
-                >
-                  <div className="absolute inset-0">
-                    {selectedVideo.videoUrl.includes("youtube.com") ||
-                    selectedVideo.videoUrl.includes("youtu.be") ||
-                    selectedVideo.videoUrl.includes("vimeo.com") ? (
+                <div className={`relative bg-black ${selectedVideo.videoUrl.includes("/shorts/") ? "aspect-[9/16] mx-auto max-w-72" : "aspect-video"}`}>
+                  {isVideoOpen && !videoFailed ? (
+                    selectedVideo.videoUrl.includes("youtube.com") || selectedVideo.videoUrl.includes("youtu.be") || selectedVideo.videoUrl.includes("vimeo.com") ? (
                       <ReactPlayer
+                        key={selectedVideo.id}
                         url={selectedVideo.videoUrl}
                         width="100%"
                         height="100%"
-                        controls={true}
-                        playing={isPlaying}
-                        volume={0.8}
-                        muted={false}
-                        loop={false}
-                        playsinline={true}
-                        pip={false}
-                        stopOnUnmount={true}
-                        light={false}
-                        onPlay={() => setIsPlaying(true)}
-                        onPause={() => setIsPlaying(false)}
-                        config={{
-                          youtube: {
-                            playerVars: {
-                              autoplay: 1,
-                              controls: 1,
-                              modestbranding: 1,
-                              rel: 0,
-                              showinfo: 0,
-                              fs: 1,
-                              playsinline: 1,
-                            },
-                          },
-                        }}
+                        controls
+                        playsinline
+                        stopOnUnmount
+                        onError={() => setVideoFailed(true)}
+                        className="absolute inset-0"
                       />
                     ) : (
-                      <video
-                        src={selectedVideo.videoUrl}
-                        controls
-                        className="w-full h-full object-contain"
-                        playsInline
-                      />
-                    )}
-                  </div>
+                      <video key={selectedVideo.id} src={selectedVideo.videoUrl} controls playsInline preload="none" aria-label={selectedVideo.title} onError={() => setVideoFailed(true)} className="absolute inset-0 h-full w-full object-contain" />
+                    )
+                  ) : (
+                    <>
+                      <img src={selectedVideo.thumbnail || project.coverImage} alt="" className="absolute inset-0 h-full w-full object-contain" />
+                      {!videoFailed && (
+                        <button type="button" ref={openVideo} onClick={() => setIsVideoOpen(true)} className="portfolio-link absolute inset-0 m-auto h-fit rounded-full bg-black/90 px-4" aria-label={t("portfolioVideo.openNamed", { title: selectedVideo.title })}>
+                          {t("portfolioVideo.open")}
+                        </button>
+                      )}
+                    </>
+                  )}
                 </div>
 
                 {/* Video Info */}
@@ -238,6 +226,24 @@ const ProjectDetail = () => {
                     {selectedVideo.title}
                   </h3>
                   <p className="text-white-600">{selectedVideo.description}</p>
+                  {videoFailed && <p role="alert" className="mt-3 text-rose-200">{t("portfolioVideo.error")}</p>}
+                  <div className="mt-3 flex flex-wrap gap-x-4">
+                    {isVideoOpen && (
+                      <button
+                        type="button"
+                        ref={closeVideo}
+                        onClick={() => {
+                          focusAfterClose.current = true;
+                          setIsVideoOpen(false);
+                          setVideoFailed(false);
+                        }}
+                        className="portfolio-link"
+                      >
+                        {t("portfolioVideo.close")}
+                      </button>
+                    )}
+                    <a href={selectedVideo.videoUrl} className="portfolio-link">{t("clientWork.originalVideo")}</a>
+                  </div>
                   <div className="flex items-center gap-4 mt-4">
                     <span className="text-pink-400 font-semibold">
                       {selectedVideo.duration}
@@ -256,9 +262,14 @@ const ProjectDetail = () => {
                 {project.videos.map((video) => (
                   <button
                     key={video.id}
+                    type="button"
+                    aria-pressed={selectedVideo.id === video.id}
                     onClick={() => {
-                      setSelectedVideoId(video.id);
-                      setIsPlaying(false);
+                      if (selectedVideo.id !== video.id) {
+                        setSelectedVideoId(video.id);
+                        setIsVideoOpen(false);
+                        setVideoFailed(false);
+                      }
                     }}
                     className={`w-full text-left group transition-all duration-300 ${
                       selectedVideo.id === video.id
@@ -271,7 +282,8 @@ const ProjectDetail = () => {
                       <div className="relative h-32 overflow-hidden">
                         <img
                           src={video.thumbnail}
-                          alt={video.title}
+                          alt=""
+                          loading="lazy"
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         {/* Play Overlay */}
@@ -293,7 +305,7 @@ const ProjectDetail = () => {
                         {/* Currently Playing Badge */}
                         {selectedVideo.id === video.id && (
                           <div className="absolute top-2 left-2 px-2 py-1 bg-pink-500 rounded text-white text-xs font-semibold">
-                            {t("projectDetailUI.nowPlaying")}
+                            {t("clientWork.selectedVideo")}
                           </div>
                         )}
                       </div>
@@ -326,6 +338,8 @@ const ProjectDetail = () => {
               {galleryCategories.map((category) => (
                 <button
                   key={category}
+                  type="button"
+                  aria-pressed={activeGalleryCategory === category}
                   onClick={() => handleCategoryChange(category)}
                   className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                     activeGalleryCategory === category
@@ -355,12 +369,16 @@ const ProjectDetail = () => {
 
                     {/* Navigation Arrows */}
                     <button
+                      type="button"
+                      aria-label={t("clientWork.previousImage")}
                       onClick={prevImage}
                       className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                     >
                       <MdChevronLeft className="w-6 h-6 text-white" />
                     </button>
                     <button
+                      type="button"
+                      aria-label={t("clientWork.nextImage")}
                       onClick={nextImage}
                       className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                     >
@@ -389,6 +407,8 @@ const ProjectDetail = () => {
                   {currentGalleryImages.map((image, index) => (
                     <button
                       key={image.id}
+                      type="button"
+                      aria-pressed={index === currentImageIndex}
                       onClick={() => setCurrentImageIndex(index)}
                       className={`flex-shrink-0 relative rounded-lg overflow-hidden border-2 transition-all duration-300 ${
                         index === currentImageIndex
@@ -399,6 +419,7 @@ const ProjectDetail = () => {
                       <img
                         src={image.image}
                         alt={image.title}
+                        loading="lazy"
                         className="w-20 h-20 object-cover"
                       />
                       {index === currentImageIndex && (
@@ -426,6 +447,12 @@ const ProjectDetail = () => {
       </main>
     </>
   );
+};
+
+const ProjectDetail = () => {
+  const { slug } = useParams();
+  const project = clientProjects.find(({ id, to }) => id === slug && to);
+  return project ? <ClientProjectDetail key={slug} project={project} /> : <LegacyProjectDetail key={slug} slug={slug} />;
 };
 
 export default ProjectDetail;

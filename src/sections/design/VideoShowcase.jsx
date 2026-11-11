@@ -38,7 +38,7 @@ const projectLinks = {
   alewences: { href: "/automatizacion-ia" },
 };
 
-const VideoShowcase = ({ playerVersion = 0, onPlayerOpen }) => {
+const VideoShowcase = ({ playerVersion = 0, onPlayerOpen, onPlayerClose }) => {
   const { t, i18n } = useTranslation();
   const videos = useLocalizedVideoShowcase();
   const skills = useLocalizedVideoSkills();
@@ -66,6 +66,7 @@ const VideoShowcase = ({ playerVersion = 0, onPlayerOpen }) => {
     }
     selectionFocus.current = true;
     setSelectedVideoId(id);
+    onPlayerClose?.();
   };
 
   return (
@@ -93,7 +94,7 @@ const VideoShowcase = ({ playerVersion = 0, onPlayerOpen }) => {
           )}
         </div>
         <div className="min-w-0 md:col-start-1 md:row-start-1">
-          <PortfolioVideo key={`${playerVersion}:${selectedVideoId}`} video={selectedVideo} onOpen={onPlayerOpen} />
+          <PortfolioVideo key={`${playerVersion}:${selectedVideoId}`} video={selectedVideo} onOpen={onPlayerOpen} onClose={onPlayerClose} />
         </div>
       </div>
 

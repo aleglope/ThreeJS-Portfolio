@@ -242,11 +242,17 @@
   },
   "designNavbarUI": {
     "devPortfolio": "Portfolio Dev",
-    "designLabel": "Diseño"
+    "designLabel": "Diseño",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "navigation": "Navegación de Diseño"
   },
   "designHero": {
     "tagline": "Diseñador Creativo y Editor de Vídeo",
-    "viewWork": "Ver mi trabajo"
+    "viewWork": "Ver mi trabajo",
+    "openScene": "Abrir Reaper Scene en 3D",
+    "closeScene": "Cerrar escena 3D",
+    "sceneSource": "Ver Reaper Scene en Sketchfab"
   },
   "designProjectsData": {
     "brand-identity-design": {
@@ -272,11 +278,12 @@
     "Music & Events": "Música y Eventos",
     "Graphic Design": "Diseño Gráfico",
     "Video Editing": "Edición de Vídeo",
-    "AI Photography": "Fotografía IA"
+    "AI Photography": "Fotografía IA",
+    "Client Work": "Trabajos de cliente"
   },
   "designProjectsUI": {
-    "heading": "Portfolio de Diseño y Vídeo",
-    "subheading": "Una colección de mi trabajo creativo en diseño gráfico y producción de vídeo",
+    "heading": "Proyectos de diseño",
+    "subheading": "Dirección visual, webs, marca y piezas audiovisuales, con el contexto de cada trabajo.",
     "viewProject": "Ver proyecto",
     "comingSoon": "Próximamente",
     "moreWork": "¿Quieres ver más de mi trabajo?",
@@ -339,7 +346,8 @@
     "originalAudio": "Audio original. Cuando hay voz, está en español.",
     "project": "Conocer el proyecto",
     "related": "Ver el trabajo relacionado",
-    "transcript": "Leer transcripción en español"
+    "transcript": "Leer transcripción en español",
+    "retryNamed": "Reintentar la carga de {{title}}"
   },
   "projectTypesData": {
     "ai-video": "Generación de Vídeo con IA",
@@ -794,6 +802,132 @@
           "title": "TRANSFORMACIÓN DE SELFIE A ARTE DE FANTASÍA",
           "description": "¿Te imaginas convertir tu selfie favorita en una obra de arte única? Olvídate de los filtros genéricos que todo el mundo usa. Mi servicio transforma tus propias fotos en retratos de fantasía de alta costura, realzando tu belleza con un mágico toque dorado. 💫 Cada pieza está 100% personalizada. Es la forma perfecta de: ✔️ Crear una foto de perfil inolvidable. ✔️ Hacer un regalo que sorprenda de verdad. ✔️ Celebrarte con una versión artística que te encantará. Tú me envías tu foto y yo creo la magia. 🌟 ¿Lista para tu transformación?"
         }
+      }
+    }
+  },
+  "clientWork": {
+    "real": "Trabajo real",
+    "read": "Ver caso",
+    "readNamed": "Ver caso de {{title}}",
+    "backToVideo": "Ir a vídeo y motion",
+    "commercialCase": "Ver caso en Alewences",
+    "pieces": "Piezas audiovisuales",
+    "filters": "Filtrar proyectos por categoría",
+    "previous": "Otros trabajos de diseño",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "selectedVideo": "Seleccionado",
+    "originalVideo": "Abrir vídeo en su origen",
+    "cases": {
+      "la-parrilla-de-champi": {
+        "title": "La Parrilla de Champi",
+        "summary": "Web bilingüe, rótulos de neón en 3D y piezas de vídeo para un restaurante de Noia.",
+        "intro": "El restaurante de Noia necesitaba una carta y una web que trasladaran el ambiente de la parrilla a la pantalla. La web reúne carta en castellano y gallego, información de visita y acceso a reservas.",
+        "role": "Mi aportación abarca diseño y desarrollo web, aplicación de la identidad, modelado de rótulos y edición de piezas promocionales.",
+        "visit": "Visitar la web de Champi",
+        "coverAlt": "Fotograma del spot de La Parrilla de Champi",
+        "workHeading": "De la parrilla a la web",
+        "chapters": {
+          "brand": {
+            "status": "Identidad aplicada",
+            "title": "La mascota de Champi en la web",
+            "description": "La mascota se adapta a la navegación, al hero y a piezas de temporada. Los rótulos «Churrasco» y «Niveles» trasladan a la carta el lenguaje de neón del restaurante. Su proceso se ve en la selección de vídeos.",
+            "alt": "Versión de la marca de La Parrilla de Champi con su mascota"
+          },
+          "seasonal": {
+            "status": "Ediciones publicadas",
+            "title": "Navidad y Feira Medieval",
+            "description": "La web se vistió para Navidad. Durante la Feira Medieval de Noia, la carta presentó un menú especial sobre el cartel de la feria y recuperó su presentación habitual al acabar."
+          },
+          "vacation": {
+            "status": "Aviso publicado · 27 oct–11 nov 2026",
+            "title": "Aviso de vacaciones",
+            "description": "Ilustración y aviso bilingüe de aquella pausa de temporada. El regreso se anunció para el 12 de noviembre de 2026.",
+            "alt": "Ilustración del aviso de vacaciones con la mascota de Champi"
+          },
+          "halloween": {
+            "status": "Concepto ficticio",
+            "title": "Una noche con mucho fuego",
+            "description": "Concepto de Halloween que explora cómo llevar la mascota y la parrilla a una campaña de temporada. La demostración está alojada en Alewences.",
+            "alt": "Captura de la demostración ficticia de Halloween de Champi",
+            "link": "Ver demostración de Halloween"
+          },
+          "platter": {
+            "status": "Prototipo 3D",
+            "title": "Parrillada · reconstrucción de plato",
+            "description": "Estudio de cómo presentar la parrillada en 3D y realidad aumentada. Apariencia, tamaño, porción y experiencia en dispositivos siguen en validación.",
+            "alt": "Render del prototipo de parrillada con la comida sobre una tabla"
+          },
+          "display": {
+            "status": "Prototipo 3D",
+            "title": "Vitrina · exploración de cortes",
+            "description": "Exploración de una vitrina para consultar cortes de carne. La interacción con el modelo se acompaña de una lista accesible. Las dimensiones y la apariencia se están validando.",
+            "alt": "Render de la vitrina 3D de Champi con cortes en exposición"
+          }
+        }
+      },
+      "velvet-ecosistema": {
+        "title": "Velvet · Tres webs con Diego Hermo",
+        "summary": "Dirección visual y desarrollo de las webs de Velvet Tattoo Studio, El Camino Tattoo y Velvet Academy.",
+        "intro": "Con Diego Hermo y su equipo trabajé en tres recorridos. Velvet ayuda a elegir un artista para un encargo, El Camino acompaña a quien quiere recordar su peregrinación y Academy orienta a quien busca formarse en tatuaje.",
+        "role": "Mi aportación cubrió definición de producto, recorridos, wireframes, dirección visual y desarrollo. Las webs tienen su propia identidad y los estudios comparten herramientas de operación.",
+        "coverAlt": "Captura de la portada de Velvet Tattoo Studio",
+        "workHeading": "Las tres webs y su trabajo de diseño",
+        "chapters": {
+          "velvet": {
+            "status": "Web publicada",
+            "title": "Velvet Tattoo Studio",
+            "description": "Obra, artistas, protocolo y visita para conocer el estudio antes de solicitar una cita.",
+            "alt": "Captura de la web pública de Velvet Tattoo Studio",
+            "link": "Visitar Velvet Tattoo Studio"
+          },
+          "elcamino": {
+            "status": "Web publicada",
+            "title": "El Camino Tattoo",
+            "description": "Catálogo y solicitud de fecha para quien quiere llevarse un tatuaje como recuerdo del Camino de Santiago.",
+            "alt": "Captura de la web pública de El Camino Tattoo",
+            "link": "Visitar El Camino Tattoo"
+          },
+          "academy": {
+            "status": "Web publicada",
+            "title": "Velvet Academy",
+            "description": "Presentación de la formación con Diego Hermo, galería y consulta de información.",
+            "alt": "Captura de la web pública de Velvet Tattoo Academy",
+            "link": "Visitar Velvet Academy"
+          },
+          "velvet-logo": {
+            "status": "Marca del cliente · integración 3D",
+            "title": "Logo de Velvet Tattoo Studio",
+            "description": "Integración de la geometría del cliente y preparación de su versión estática para mostrar la misma marca cuando no se carga la escena.",
+            "alt": "Logo de Velvet con sus seis letras y halos"
+          },
+          "elcamino-logo": {
+            "status": "Marca del cliente · adaptación 3D",
+            "title": "Logo de El Camino Tattoo",
+            "description": "Adaptación e integración del activo del estudio, con una versión estática para su uso en web.",
+            "alt": "Versión web del logo de El Camino Tattoo"
+          },
+          "workflow": {
+            "status": "Esquema público",
+            "title": "Recorridos y decisiones de producto",
+            "description": "Wireframes conceptuales redibujados para explicar cómo alguien conoce el estudio, encuentra el recorrido adecuado y llega a una solicitud.",
+            "alt": "Wireframes conceptuales de Velvet con recorridos y estados de ejemplo"
+          },
+          "diploma": {
+            "status": "Entrega automática · estado del 10 nov 2026",
+            "title": "Pergamino personalizado de El Camino",
+            "description": "El envío automático se activó después de verificar la entrega con una cita ficticia. La firma digital pública seguía cerrada en esa fecha.",
+            "step1": "La solicitud puede incluir un pergamino.",
+            "step2": "El estudio registra la cita realizada y prepara el documento a partir de una ficha válida firmada.",
+            "step3": "El envío automático entrega el acceso al PDF en las citas que cumplen esas condiciones."
+          }
+        }
+      },
+      "beirocor": {
+        "title": "Beirocor",
+        "summary": "Diseño y desarrollo de la web ES/GL para una empresa de reformas de Noia, con trabajos de antes y después.",
+        "coverAlt": "Captura de la web pública de Beirocor",
+        "visit": "Visitar Beirocor"
       }
     }
   }

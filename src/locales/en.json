@@ -242,11 +242,17 @@
   },
   "designNavbarUI": {
     "devPortfolio": "Dev Portfolio",
-    "designLabel": "Design"
+    "designLabel": "Design",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "navigation": "Design navigation"
   },
   "designHero": {
     "tagline": "Creative Designer & Video Editor",
-    "viewWork": "View My Work"
+    "viewWork": "View My Work",
+    "openScene": "Open Reaper Scene in 3D",
+    "closeScene": "Close 3D scene",
+    "sceneSource": "View Reaper Scene on Sketchfab"
   },
   "designProjectsData": {
     "brand-identity-design": {
@@ -272,11 +278,12 @@
     "Music & Events": "Music & Events",
     "Graphic Design": "Graphic Design",
     "Video Editing": "Video Editing",
-    "AI Photography": "AI Photography"
+    "AI Photography": "AI Photography",
+    "Client Work": "Client work"
   },
   "designProjectsUI": {
-    "heading": "Design & Video Portfolio",
-    "subheading": "A collection of my creative work in graphic design and video production",
+    "heading": "Design projects",
+    "subheading": "Visual direction, websites, branding and video work, with the context behind each project.",
     "viewProject": "View Project",
     "comingSoon": "Coming Soon",
     "moreWork": "Want to see more of my work?",
@@ -339,7 +346,8 @@
     "originalAudio": "Original audio. Spoken content is in Spanish.",
     "project": "Explore the project",
     "related": "View related work",
-    "transcript": "Read the Spanish transcript"
+    "transcript": "Read the Spanish transcript",
+    "retryNamed": "Retry loading {{title}}"
   },
   "projectTypesData": {
     "ai-video": "AI Video Generation",
@@ -794,6 +802,132 @@
           "title": "SELFIE TO FANTASY ART TRANSFORMATION",
           "description": "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized. It's the perfect way to: ✔️ Create an unforgettable profile picture. ✔️ Make a gift that truly surprises. ✔️ Celebrate yourself with an artistic version you'll love. You send me your photo, and I create the magic. 🌟 Ready for your transformation?"
         }
+      }
+    }
+  },
+  "clientWork": {
+    "real": "Client work",
+    "read": "View case study",
+    "readNamed": "View the {{title}} case study",
+    "backToVideo": "Go to video and motion",
+    "commercialCase": "View the case on Alewences",
+    "pieces": "Video work",
+    "filters": "Filter projects by category",
+    "previous": "Earlier design work",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "selectedVideo": "Selected",
+    "originalVideo": "Open the original video",
+    "cases": {
+      "la-parrilla-de-champi": {
+        "title": "La Parrilla de Champi",
+        "summary": "A bilingual website, 3D neon signs and films for a restaurant in Noia.",
+        "intro": "This restaurant in Noia needed a menu and website that brought the atmosphere of the grill to the screen. The site brings together a Spanish and Galician menu, visitor information and access to reservations.",
+        "role": "I designed and developed the website, applied the brand, modelled the signs and edited the promotional films.",
+        "visit": "Visit the Champi website",
+        "coverAlt": "Frame from the La Parrilla de Champi TV spot",
+        "workHeading": "From the grill to the website",
+        "chapters": {
+          "brand": {
+            "status": "Brand application",
+            "title": "The Champi mascot on the website",
+            "description": "The mascot adapts to the navigation, hero and seasonal pieces. The ‘Churrasco’ and ‘Niveles’ signs bring the restaurant’s neon lettering to the menu. The video selection shows how they were made.",
+            "alt": "La Parrilla de Champi brand artwork featuring its mascot"
+          },
+          "seasonal": {
+            "status": "Published editions",
+            "title": "Christmas and the Medieval Fair",
+            "description": "The site had a Christmas edition. During Noia’s Medieval Fair, the restaurant presented a special menu over the fair’s poster. The menu returned to its usual presentation afterwards."
+          },
+          "vacation": {
+            "status": "Published notice · 27 Oct–11 Nov 2026",
+            "title": "Holiday notice",
+            "description": "Illustration and bilingual notice for the seasonal break. The restaurant announced its return for 12 November 2026.",
+            "alt": "Illustration from the holiday notice featuring the Champi mascot"
+          },
+          "halloween": {
+            "status": "Fictional concept",
+            "title": "A night with plenty of fire",
+            "description": "A Halloween concept that explores how the mascot and grill could feature in a seasonal campaign. The demonstration is hosted on Alewences.",
+            "alt": "Screenshot of the fictional Champi Halloween demonstration",
+            "link": "View the Halloween demonstration"
+          },
+          "platter": {
+            "status": "3D prototype",
+            "title": "Mixed grill · dish reconstruction",
+            "description": "An exploration of how to present the mixed grill in 3D and augmented reality. Appearance, scale, portion and device experience are still being validated.",
+            "alt": "Render of the mixed grill prototype with food on a board"
+          },
+          "display": {
+            "status": "3D prototype",
+            "title": "Display case · exploring the cuts",
+            "description": "An exploration of a display case for browsing cuts of meat. An accessible list accompanies the model. Dimensions and appearance are still being validated.",
+            "alt": "Render of the Champi 3D display case showing cuts of meat"
+          }
+        }
+      },
+      "velvet-ecosistema": {
+        "title": "Velvet · Three sites with Diego Hermo",
+        "summary": "Visual direction and development for Velvet Tattoo Studio, El Camino Tattoo and Velvet Academy.",
+        "intro": "I worked with Diego Hermo and his team on three journeys. Velvet helps visitors choose an artist for a commission, El Camino serves people marking their pilgrimage and Academy guides people looking to train as tattoo artists.",
+        "role": "I worked on product definition, journeys, wireframes, visual direction and development. The websites each have their own identity, and the studios share operational tools.",
+        "coverAlt": "Screenshot of the Velvet Tattoo Studio homepage",
+        "workHeading": "The three websites and their design work",
+        "chapters": {
+          "velvet": {
+            "status": "Published website",
+            "title": "Velvet Tattoo Studio",
+            "description": "Work, artists, studio protocol and visitor details help people get to know the studio before requesting an appointment.",
+            "alt": "Screenshot of the public Velvet Tattoo Studio website",
+            "link": "Visit Velvet Tattoo Studio"
+          },
+          "elcamino": {
+            "status": "Published website",
+            "title": "El Camino Tattoo",
+            "description": "A catalogue and date request for visitors who want a tattoo to remember the Camino de Santiago.",
+            "alt": "Screenshot of the public El Camino Tattoo website",
+            "link": "Visit El Camino Tattoo"
+          },
+          "academy": {
+            "status": "Published website",
+            "title": "Velvet Academy",
+            "description": "A presentation of Diego Hermo’s training, with a gallery and a way to request information.",
+            "alt": "Screenshot of the public Velvet Tattoo Academy website",
+            "link": "Visit Velvet Academy"
+          },
+          "velvet-logo": {
+            "status": "Client brand · 3D integration",
+            "title": "Velvet Tattoo Studio logo",
+            "description": "Integration of the client’s geometry and preparation of a static version that keeps the same branding when the scene is unloaded.",
+            "alt": "The six letters and halos of the Velvet logo"
+          },
+          "elcamino-logo": {
+            "status": "Client brand · 3D adaptation",
+            "title": "El Camino Tattoo logo",
+            "description": "Adaptation and integration of the studio’s asset, including a static version for the website.",
+            "alt": "Web version of the El Camino Tattoo logo"
+          },
+          "workflow": {
+            "status": "Public diagram",
+            "title": "Journeys and product decisions",
+            "description": "Conceptual wireframes redrawn to show how visitors get to know the studio, find the right journey and reach a request.",
+            "alt": "Conceptual Velvet wireframes with example journeys and states"
+          },
+          "diploma": {
+            "status": "Automatic delivery · as of 10 Nov 2026",
+            "title": "El Camino personalised certificate",
+            "description": "Automatic sending was enabled after delivery was verified with a fictional appointment. Public digital signing remained closed on that date.",
+            "step1": "Visitors can request a certificate when they make a request.",
+            "step2": "The studio records the completed appointment and prepares the document from a valid signed record.",
+            "step3": "Automatic sending provides access to the PDF when the appointment meets these conditions."
+          }
+        }
+      },
+      "beirocor": {
+        "title": "Beirocor",
+        "summary": "Design and development of a Spanish and Galician website for a renovation business in Noia, featuring before-and-after projects.",
+        "coverAlt": "Screenshot of the public Beirocor website",
+        "visit": "Visit Beirocor"
       }
     }
   }
