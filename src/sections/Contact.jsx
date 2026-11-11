@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
 import useAlert from "../hooks/useAlert.js";
@@ -13,8 +14,17 @@ const Contact = ({
   projectTypes = [],
   buttonClassName = "field-btn",
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const formRef = useRef();
+  const sendingRef = useRef(false);
+  const mountedRef = useRef(true);
+  const configured = Boolean(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID && import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID && import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
+  const english = i18n.resolvedLanguage === "en";
+
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => { mountedRef.current = false; };
+  }, []);
 
   const heading = title ?? t("contact.title");
   const subheading = description ?? t("contact.description");
@@ -30,11 +40,15 @@ const Contact = ({
   });
 
   const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
+    hideAlert();
+    setForm((current) => ({ ...current, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (sendingRef.current || !configured) return;
+    sendingRef.current = true;
+    hideAlert();
     setLoading(true);
 
     emailjs
@@ -55,6 +69,8 @@ const Contact = ({
       )
       .then(
         () => {
+          sendingRef.current = false;
+          if (!mountedRef.current) return;
           setLoading(false);
           showAlert({
             show: true,
@@ -62,21 +78,19 @@ const Contact = ({
             type: "success",
           });
 
-          setTimeout(() => {
-            hideAlert(false);
-            setForm({
+          setForm({
               name: "",
               email: "",
               message: "",
               ...(showProjectType && {
                 projectType: projectTypes[0]?.value || "design",
               }),
-            });
-          }, [3000]);
+          });
         },
-        (error) => {
+        () => {
+          sendingRef.current = false;
+          if (!mountedRef.current) return;
           setLoading(false);
-          console.error(error);
 
           showAlert({
             show: true,
@@ -89,17 +103,16 @@ const Contact = ({
 
   return (
     <section className="c-space my-20" id="contact">
-      {alert.show && <Alert {...alert} />}
-
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
           src="/assets/terminal.png"
-          alt="terminal-bg"
-          className="absolute inset-0 min-h-screen"
+          alt=""
+          loading="lazy"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover"
         />
 
         <div className="contact-container">
-          <h3 className="head-text">{heading}</h3>
+          <h2 className="head-text">{heading}</h2>
           <p className="text-lg text-white-600 mt-3">{subheading}</p>
           <a
             href={servicesUrl()}
@@ -110,15 +123,24 @@ const Contact = ({
             {t("contact.servicesCta")}
           </a>
 
-          <form
+          {!configured ? (
+            <p className="mt-8 leading-relaxed text-white-600">
+              {english ? "Tell me about your project by email." : "Cuéntame tu proyecto por correo."}{" "}
+              <a className="portfolio-link break-all" href="mailto:agonzlopez.11@gmail.com">agonzlopez.11@gmail.com</a>
+            </p>
+          ) : <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="mt-12 flex flex-col space-y-7"
+            aria-busy={loading}
           >
             <label className="space-y-3">
               <span className="field-label">{t("contact.form.name")}</span>
               <input
                 type="text"
+                disabled={loading}
+                autoComplete="name"
+                maxLength={120}
                 name="name"
                 value={form.name}
                 onChange={handleChange}
@@ -132,6 +154,9 @@ const Contact = ({
               <span className="field-label">{t("contact.form.email")}</span>
               <input
                 type="email"
+                disabled={loading}
+                autoComplete="email"
+                maxLength={254}
                 name="email"
                 value={form.email}
                 onChange={handleChange}
@@ -145,6 +170,7 @@ const Contact = ({
               <label className="space-y-3">
                 <span className="field-label">{t("contact.form.projectType")}</span>
                 <select
+                  disabled={loading}
                   name="projectType"
                   value={form.projectType}
                   onChange={handleChange}
@@ -162,6 +188,8 @@ const Contact = ({
             <label className="space-y-3">
               <span className="field-label">{t("contact.form.message")}</span>
               <textarea
+                disabled={loading}
+                maxLength={5000}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
@@ -181,15 +209,26 @@ const Contact = ({
 
               <img
                 src="/assets/arrow-up.png"
-                alt="arrow-up"
+                alt=""
                 className="field-btn_arrow"
               />
             </button>
-          </form>
+            <p className="text-sm text-white-600">
+              <a href={servicesUrl('/privacidad')} className="portfolio-link">{t('footer.privacy')}</a>
+            </p>
+            {alert.show && <Alert {...alert} />}
+          </form>}
         </div>
       </div>
     </section>
   );
 };
 
+Contact.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  showProjectType: PropTypes.bool,
+  projectTypes: PropTypes.arrayOf(PropTypes.shape({ value: PropTypes.string.isRequired, label: PropTypes.string.isRequired })),
+  buttonClassName: PropTypes.string,
+};
 export default Contact;

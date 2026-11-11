@@ -1,37 +1,26 @@
-/* eslint-disable react/prop-types -- The parent coordinates the scene and video player. */
-import { Component, Suspense } from "react";
+import { lazy, Suspense, useRef } from "react";
+import PropTypes from "prop-types";
+import RenderBoundary from "../../components/RenderBoundary.jsx";
+import useVisibleMotion from "../../hooks/useVisibleMotion.js";
 import { Link } from "react-router-dom";
-import { Canvas } from "@react-three/fiber";
-import { PerspectiveCamera, Float } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
-import CanvasLoader from "../../components/CanvasLoader.jsx";
 import { useMediaQuery } from "react-responsive";
-import Cube from "../../components/Cube.jsx";
-import Rings from "../../components/Rings.jsx";
 import SketchfabModel from "../../components/SketchfabModel.jsx";
 
 const reaperScene = "31eb7468dce246538fc15edf25f97ef8";
 
-class DecorationBoundary extends Component {
-  state = { unavailable: false };
-
-  static getDerivedStateFromError() {
-    return { unavailable: true };
-  }
-
-  render() {
-    return this.state.unavailable ? null : this.props.children;
-  }
-}
+const DesignDecoration = lazy(() => import("./DesignDecoration.jsx"));
 
 const DesignHero = ({ activeMedia, onSceneToggle }) => {
   const { t } = useTranslation();
+  const heroRef = useRef(null);
+  const motionVisible = useVisibleMotion(heroRef);
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
   const sceneOpen = activeMedia === "scene";
 
   return (
-    <section className="portfolio-anchor relative flex min-h-screen w-full flex-col" id="home" tabIndex={-1} aria-labelledby="design-hero-title">
+    <section ref={heroRef} className="portfolio-anchor relative flex min-h-screen w-full flex-col" id="home" tabIndex={-1} aria-labelledby="design-hero-title">
       <div className="c-space relative z-10 mx-auto mt-24 w-full sm:mt-36">
         <p className="text-center text-2xl font-medium text-white sm:text-3xl">
           {t("hero.greeting")} <span className="portfolio-motion waving-hand" aria-hidden="true">👋</span>
@@ -41,32 +30,19 @@ const DesignHero = ({ activeMedia, onSceneToggle }) => {
         </h1>
       </div>
 
-      {!activeMedia && !reducedMotion && (
+      {!activeMedia && !reducedMotion && !isMobile && motionVisible && (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          <DecorationBoundary>
-            <Canvas className="h-full w-full">
-              <Suspense fallback={<CanvasLoader />}>
-                <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-                <group>
-                  <Float speed={1.5} rotationIntensity={1.2} floatIntensity={2}>
-                    <Cube position={isMobile ? [5, -3, 0] : [9, -4, 0]} scale={isMobile ? 0.8 : 1} />
-                  </Float>
-                  <Float speed={1.2} rotationIntensity={0.8} floatIntensity={1.5}>
-                    <Cube position={isMobile ? [-5, 3, 0] : [-9, 4, 0]} scale={isMobile ? 0.8 : 1} />
-                  </Float>
-                  <Rings position={isMobile ? [0, 0, -5] : [-15, 8, -5]} />
-                </group>
-                <ambientLight intensity={1.2} />
-                <directionalLight position={[10, 10, 10]} intensity={0.7} />
-                <pointLight position={[-10, -10, -5]} intensity={0.5} color="#ff00ff" />
-                <pointLight position={[10, 10, 5]} intensity={0.5} color="#00ffff" />
-              </Suspense>
-            </Canvas>
-          </DecorationBoundary>
+          <RenderBoundary><Suspense fallback={null}><DesignDecoration /></Suspense></RenderBoundary>
         </div>
       )}
 
-      <div className="c-space relative z-10 mx-auto flex w-full max-w-2xl flex-1 flex-col justify-end pb-5 pt-8">
+      <div className="c-space relative z-10 mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center gap-5 pb-5 pt-8">
+        {!sceneOpen && <Link to="/design?video=champi-rotulos#video-showcase" className="group block overflow-hidden rounded-2xl border border-white/15 bg-black/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300">
+          <img src="/media/portfolio/posters/champi-rotulos.webp" alt="" width="960" height="720" fetchPriority="high" className="aspect-video w-full object-cover object-top" />
+          <span className="flex flex-wrap items-center justify-between gap-2 px-5 py-3 text-sm text-white">
+            <span>{t("designHero.featuredWork")}</span><span className="text-pink-200 underline underline-offset-4">{t("designHero.featuredCta")} →</span>
+          </span>
+        </Link>}
         <div id="model-3d-showcase" tabIndex={-1} className="portfolio-anchor flex w-full flex-col items-center gap-3">
           <button
             type="button"
@@ -97,4 +73,5 @@ const DesignHero = ({ activeMedia, onSceneToggle }) => {
   );
 };
 
+DesignHero.propTypes = { activeMedia: PropTypes.string, onSceneToggle: PropTypes.func.isRequired };
 export default DesignHero;

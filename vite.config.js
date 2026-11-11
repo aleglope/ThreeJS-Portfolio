@@ -10,16 +10,19 @@ export default defineConfig({
     strictPort: true,
   },
   build: {
-    chunkSizeWarningLimit: 1000, // Aumenta el límite a 1MB
+    manifest: true,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Separa Three.js en su propio chunk
-          three: ["three", "@react-three/fiber", "@react-three/drei"],
-          // Separa react-player en su propio chunk
-          player: ["react-player"],
-          // Separa GSAP en su propio chunk
-          gsap: ["gsap", "@gsap/react"],
+        // Keep React out of the optional 3D chunks so Design can load without WebGL.
+        onlyExplicitManualChunks: true,
+        manualChunks(id) {
+          if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) return "react-vendor";
+          if (id.includes("node_modules/three/")) return "three-core";
+          if (id.includes("node_modules/@react-three/")) return "three-react";
+          if (/node_modules\/(react-globe.gl|globe.gl|three-globe|three-render-objects)\//.test(id)) return "globe";
+          if (/node_modules\/(gsap|@gsap\/react)\//.test(id)) return "gsap";
+          if (id.includes("node_modules/react-player/")) return "player";
         },
       },
     },

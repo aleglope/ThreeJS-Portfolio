@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+import { useMediaQuery } from "react-responsive";
 import { servicesUrl } from "../constants/services.js";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState, useRef } from "react";
@@ -152,7 +154,11 @@ const InteractiveRings = ({ position, ...props }) => {
   );
 };
 
+InteractiveReactLogo.propTypes = { position: PropTypes.arrayOf(PropTypes.number) };
+InteractiveRings.propTypes = { position: PropTypes.arrayOf(PropTypes.number) };
+
 const LandingPage = () => {
+  const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
   const { t } = useTranslation();
 
   return (
@@ -164,7 +170,7 @@ const LandingPage = () => {
         <LanguageToggle className="fixed top-5 right-5 z-20 pointer-events-auto" />
 
         {/* Background 3D Canvas */}
-        <div className="absolute inset-0 z-0">
+        {!reducedMotion && <div className="absolute inset-0 z-0">
           <Canvas
             gl={{ antialias: true }}
             camera={{ position: [0, 0, 20], fov: 75 }}
@@ -214,7 +220,7 @@ const LandingPage = () => {
               </Float>
             </Suspense>
           </Canvas>
-        </div>
+        </div>}
 
         {/* Content */}
         <div className="relative z-10 min-h-screen flex flex-col items-center justify-center c-space pointer-events-none">

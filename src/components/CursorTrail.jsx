@@ -1,8 +1,9 @@
+import { useMediaQuery } from "react-responsive";
 import { useEffect, useState, useCallback, useRef } from "react";
 
 const CursorTrail = () => {
   const [trails, setTrails] = useState([]);
-  const [isHoveringInteractive, setIsHoveringInteractive] = useState(false);
+  const enabled = useMediaQuery({ query: "(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)" });
   const maxTrails = 12;
   const trailLifetime = 1000;
   const trailIdCounter = useRef(0);
@@ -17,6 +18,7 @@ const CursorTrail = () => {
   }, []);
 
   useEffect(() => {
+    if (!enabled) return;
     const handleMouseMove = (e) => {
       const now = Date.now();
       mousePositionRef.current = { x: e.clientX, y: e.clientY };
@@ -33,7 +35,6 @@ const CursorTrail = () => {
         target.closest('a') ||
         target.closest('button')
       );
-      setIsHoveringInteractive(isInteractive);
 
       // Throttle updates to prevent too frequent state changes
       if (now - lastUpdateRef.current > 50) { // ~20fps instead of 60fps
@@ -66,7 +67,9 @@ const CursorTrail = () => {
       window.removeEventListener("mousemove", handleMouseMove);
       clearInterval(cleanupInterval);
     };
-  }, [cleanupTrails]);
+  }, [cleanupTrails, enabled]);
+
+  if (!enabled) return null;
 
   return (
     <>

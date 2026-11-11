@@ -153,6 +153,16 @@ button,
     @apply bg-black-500 px-5 py-2 min-h-12 rounded-lg shadow-black-200 shadow-2xl flex justify-center items-center text-lg text-white gap-3;
   }
 
+  .field-input:focus-visible, .field-btn:focus-visible {
+    outline: 2px solid #f9a8d4;
+    outline-offset: 4px;
+  }
+
+  .field-input:disabled, .field-btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+  }
+
   .field-btn_arrow {
     @apply w-2.5 h-2.5 object-contain invert brightness-0;
   }

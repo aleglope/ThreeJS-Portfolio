@@ -25,7 +25,10 @@ function Pong() {
   }, [isMobile, stopSession]);
 
   useEffect(() => {
-    if (phase === "playing") canvasRef.current?.focus({ preventScroll: true });
+    if (phase === "playing") {
+      canvasRef.current?.scrollIntoView({ block: "center", behavior: "instant" });
+      canvasRef.current?.focus({ preventScroll: true });
+    }
     if (phase === "error") errorMessage.current?.focus({ preventScroll: true });
     if (phase === "idle" && restoreFocus.current) {
       restoreFocus.current = false;
