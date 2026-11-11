@@ -11,11 +11,11 @@ const visit = (key) => {
   for (const imported of manifest[key].imports || []) visit(imported);
 };
 visit('index.html');
-visit('src/pages/DesignPortfolio.jsx');
+
 const files = [...new Set([...visited].map(key => manifest[key].file))];
-assert.ok(files.every(file => !/(three-core|three-react|globe-|DevPortfolio|hls-)/.test(file)), 'Design statically imports an optional 3D, game or streaming engine');
+assert.ok(files.every(file => !/(three-core|three-react|globe-|DevPortfolio|hls-)/.test(file)), 'The app entry statically imports a route-specific engine');
 const bytes = (await Promise.all(files.map(file => stat(new URL(file, root))))).reduce((sum, file) => sum + file.size, 0);
-assert.ok(bytes <= 600_000, `Initial Design JavaScript exceeds 600 kB: ${bytes}`);
+assert.ok(bytes <= 600_000, `Initial app JavaScript exceeds 600 kB: ${bytes}`);
 const html = await readFile(new URL('index.html', root), 'utf8');
 assert.ok(!html.includes('pyodide'), 'Python runtime must only load after Start game');
-console.log(`Design startup: ${files.length} JS files, ${bytes} bytes before compression; optional engines excluded.`);
+console.log(`App entry: ${files.length} JS files, ${bytes} bytes before compression; route-specific engines excluded.`);

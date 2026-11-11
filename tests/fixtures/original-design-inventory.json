@@ -1,0 +1,256 @@
+{
+  "baseline": "2292e2ef3954c0aac9788d6be14783d6faf80061",
+  "inventory": {
+    "categories": [
+      "All",
+      "AI Content",
+      "Music & Events",
+      "Graphic Design",
+      "Video Editing"
+    ],
+    "projects": [
+      {
+        "slug": "brand-identity-design",
+        "category": "Graphic Design",
+        "image": "/assets/MatematicGalaxy.jpeg"
+      },
+      {
+        "slug": "ai-advertising-content",
+        "category": "AI Content",
+        "videoUrl": "/assets/MandalaIA.jpeg"
+      },
+      {
+        "slug": "music-event-visuals",
+        "category": "Music & Events",
+        "image": "/assets/MatematicNeon.jpeg"
+      },
+      {
+        "slug": "ai-photographic-art",
+        "category": "AI Photography",
+        "image": "/assets/MatematicAurora.jpeg"
+      }
+    ],
+    "showcase": [
+      {
+        "id": 1,
+        "videoUrl": "https://www.youtube.com/shorts/o0IVhvMOUqE",
+        "thumbnail": "/assets/spotlight1.png"
+      },
+      {
+        "id": 2,
+        "videoUrl": "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
+        "thumbnail": "/assets/spotlight2.png"
+      },
+      {
+        "id": 3,
+        "videoUrl": "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
+        "thumbnail": "/assets/spotlight3.png"
+      },
+      {
+        "id": 4,
+        "videoUrl": "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
+        "thumbnail": "/assets/spotlight4.png"
+      },
+      {
+        "id": 5,
+        "videoUrl": "https://www.youtube.com/shorts/W5W5vN9W628",
+        "thumbnail": "/assets/spotlight5.png"
+      },
+      {
+        "id": 6,
+        "videoUrl": "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
+        "thumbnail": "/assets/spotlight1.png"
+      },
+      {
+        "id": 7,
+        "videoUrl": "https://www.youtube.com/shorts/-48FW7i6peE",
+        "thumbnail": "/assets/spotlight2.png"
+      },
+      {
+        "id": 8,
+        "videoUrl": "https://youtube.com/shorts/vOZjQxlaAPY",
+        "thumbnail": "/assets/spotlight3.png"
+      }
+    ],
+    "details": {
+      "brand-identity-design": {
+        "videos": [
+          {
+            "id": 1,
+            "videoUrl": "https://www.youtube.com/shorts/bPf5CPI8kGg",
+            "thumbnail": "https://i.ytimg.com/vi/bPf5CPI8kGg/hqdefault.jpg"
+          }
+        ],
+        "galleries": {
+          "Brand": [
+            "/assets/brands/marca1.png",
+            "/assets/brands/marca2.png",
+            "/assets/brands/marca3.jpeg",
+            "/assets/brands/marca4.jpeg",
+            "/assets/brands/marca5.png",
+            "/assets/brands/marca6.jpeg",
+            "/assets/brands/marca7.jpeg",
+            "/assets/brands/marca8.jpeg",
+            "/assets/brands/marca9.png",
+            "/assets/brands/marca10.png",
+            "/assets/brands/marca11.jpeg",
+            "/assets/brands/marca12.jpeg",
+            "/assets/brands/marca13.png",
+            "/assets/brands/marca14.jpeg",
+            "/assets/brands/marca15.png"
+          ],
+          "UI/UX Designs": [
+            "/assets/MatematicGalaxy.jpeg",
+            "/assets/MatematicNeon.jpeg",
+            "/assets/MatematicAurora.jpeg"
+          ],
+          "Logos": [
+            "/assets/logos/logo1.jpeg",
+            "/assets/logos/logo2.jpeg",
+            "/assets/logos/logo8.jpeg",
+            "/assets/logos/logo9.jpeg",
+            "/assets/logos/logo10.jpeg",
+            "/assets/logos/logo11.jpeg",
+            "/assets/logos/logo12.jpeg",
+            "/assets/logos/logo7.jpeg",
+            "/assets/logos/logo13.jpeg",
+            "/assets/logos/logo14.jpeg",
+            "/assets/logos/logo3.jpeg",
+            "/assets/logos/logo4.jpeg",
+            "/assets/logos/logo5.jpeg",
+            "/assets/logos/logo6.jpeg"
+          ]
+        }
+      },
+      "ai-advertising-content": {
+        "videos": [
+          {
+            "id": 1,
+            "videoUrl": "https://www.youtube.com/shorts/W5W5vN9W628",
+            "thumbnail": "/assets/spotlight1.png"
+          },
+          {
+            "id": 2,
+            "videoUrl": "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
+            "thumbnail": "/assets/spotlight2.png"
+          },
+          {
+            "id": 3,
+            "videoUrl": "https://www.youtube.com/shorts/-48FW7i6peE",
+            "thumbnail": "/assets/spotlight3.png"
+          },
+          {
+            "id": 4,
+            "videoUrl": "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
+            "thumbnail": "/assets/spotlight4.png"
+          },
+          {
+            "id": 5,
+            "videoUrl": "https://www.youtube.com/shorts/o0IVhvMOUqE",
+            "thumbnail": "/assets/spotlight5.png"
+          }
+        ],
+        "galleries": {}
+      },
+      "music-event-visuals": {
+        "videos": [
+          {
+            "id": 1,
+            "videoUrl": "https://www.youtube.com/watch?v=vOZjQxlaAPY",
+            "thumbnail": "/assets/spotlight1.png"
+          },
+          {
+            "id": 2,
+            "videoUrl": "https://www.youtube.com/watch?v=zwHNArb4730",
+            "thumbnail": "/assets/spotlight2.png"
+          },
+          {
+            "id": 3,
+            "videoUrl": "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
+            "thumbnail": "/assets/spotlight3.png"
+          },
+          {
+            "id": 4,
+            "videoUrl": "https://www.youtube.com/watch?v=Pthshy6sEHY",
+            "thumbnail": "/assets/spotlight4.png"
+          },
+          {
+            "id": 5,
+            "videoUrl": "https://www.youtube.com/watch?v=1LTbk3_hLCU",
+            "thumbnail": "/assets/spotlight2.png"
+          }
+        ],
+        "galleries": {
+          "posters": [
+            "/assets/poster/carteles1.jpg",
+            "/assets/poster/carteles2.jpeg",
+            "/assets/poster/carteles3.jpeg",
+            "/assets/poster/carteles4.jpeg",
+            "/assets/poster/carteles5.jpeg",
+            "/assets/poster/carteles6.jpeg",
+            "/assets/poster/carteles7.jpeg",
+            "/assets/poster/carteles8.jpeg",
+            "/assets/poster/carteles9.jpeg",
+            "/assets/poster/carteles10.jpeg",
+            "/assets/poster/carteles11.jpg",
+            "/assets/poster/carteles14.jpg",
+            "/assets/poster/carteles15.png",
+            "/assets/poster/carteles16.jpg",
+            "/assets/poster/carteles17.jpg",
+            "/assets/poster/carteles18.jpg",
+            "/assets/poster/carteles19.jpg",
+            "/assets/poster/carteles20.jpg",
+            "/assets/poster/carteles21.jpg",
+            "/assets/poster/carteles22.jpg",
+            "/assets/poster/carteles23.jpg",
+            "/assets/poster/carteles24.jpg",
+            "/assets/poster/carteles25.jpg",
+            "/assets/poster/carteles26.png",
+            "/assets/poster/carteles27.jpg",
+            "/assets/poster/carteles13.png",
+            "/assets/poster/carteles12.jpg"
+          ]
+        }
+      },
+      "ai-photographic-art": {
+        "videos": [
+          {
+            "id": 1,
+            "videoUrl": "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
+            "thumbnail": "/assets/spotlight1.png"
+          },
+          {
+            "id": 2,
+            "videoUrl": "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
+            "thumbnail": "/assets/spotlight2.png"
+          }
+        ],
+        "galleries": {
+          "photographicArt": [
+            "/assets/photoart/art1.png",
+            "/assets/photoart/art2.jpeg",
+            "/assets/photoart/art3.png",
+            "/assets/photoart/art4.jpeg",
+            "/assets/photoart/art5.jpeg",
+            "/assets/photoart/art6.jpeg",
+            "/assets/photoart/art7.jpeg",
+            "/assets/photoart/art8.jpeg",
+            "/assets/photoart/art9.jpeg",
+            "/assets/photoart/art10.jpeg",
+            "/assets/photoart/art11.jpeg",
+            "/assets/photoart/art12.jpeg",
+            "/assets/photoart/art13.jpeg",
+            "/assets/photoart/art14.jpeg",
+            "/assets/photoart/art15.jpeg",
+            "/assets/photoart/art16.jpeg",
+            "/assets/photoart/art17.png",
+            "/assets/photoart/art18.png"
+          ]
+        }
+      }
+    }
+  },
+  "compatibilityNotes": [
+    "The original jewelry thumbnail path never existed. Its thumbnail uses the same original YouTube video, bPf5CPI8kGg."
+  ]
+}

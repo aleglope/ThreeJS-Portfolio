@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
 import DesignNavbar from "../sections/design/DesignNavbar.jsx";
 import DesignHero from "../sections/design/DesignHero.jsx";
 import DesignProjects from "../sections/design/DesignProjects.jsx";
 import VideoShowcase from "../sections/design/VideoShowcase.jsx";
 import Contact from "../sections/Contact.jsx";
-import Footer from "../sections/Footer.jsx";
+import Footer from "../sections/DesignFooter.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import CursorTrail from "../components/CursorTrail";
@@ -15,31 +13,15 @@ import useLocalizedProjectTypes from "../hooks/useLocalizedProjectTypes.js";
 const DesignPortfolio = () => {
   const { t } = useTranslation();
   const projectTypes = useLocalizedProjectTypes();
-  const [activeMedia, setActiveMedia] = useState(null);
-  const [playerVersion, setPlayerVersion] = useState(0);
-  const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
-
-  const toggleScene = () => {
-    if (activeMedia === "scene") {
-      setActiveMedia(null);
-    } else {
-      setPlayerVersion((version) => version + 1);
-      setActiveMedia("scene");
-    }
-  };
 
   return (
     <>
-      {!reducedMotion && <CursorTrail />}
+      <CursorTrail />
       <main className="max-w-7xl mx-auto">
         <DesignNavbar />
-        <DesignHero activeMedia={activeMedia} onSceneToggle={toggleScene} />
+        <DesignHero />
         <DesignProjects />
-        <VideoShowcase
-          playerVersion={playerVersion}
-          onPlayerOpen={() => setActiveMedia("video")}
-          onPlayerClose={() => setActiveMedia((current) => current === "video" ? null : current)}
-        />
+        <VideoShowcase />
         <Contact
           title={t("contactDesign.title")}
           description={t("contactDesign.description")}

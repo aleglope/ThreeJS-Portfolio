@@ -1,5 +1,5 @@
 import { lazy, Suspense, useLayoutEffect, useRef } from "react";
-import { BrowserRouter as Router, Link, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Link, Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RenderBoundary from "./components/RenderBoundary.jsx";
 const LandingPage = lazy(() => import("./pages/LandingPage.jsx"));
@@ -68,6 +68,8 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/dev" element={<DevPortfolio />} />
         <Route path="/design" element={<DesignPortfolio />} />
+        <Route path="/design/project/la-parrilla-de-champi" element={<Navigate to="/design" replace />} />
+        <Route path="/design/project/velvet-ecosistema" element={<Navigate to="/design" replace />} />
         <Route path="/design/project/:slug" element={<ProjectDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

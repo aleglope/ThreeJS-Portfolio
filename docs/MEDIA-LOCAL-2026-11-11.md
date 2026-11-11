@@ -1,3 +1,5 @@
+> Registro histórico: la ampliación de Diseño descrita aquí fue rechazada por Ale y se revierte en [RESTORE-DESIGN-2026-11-11.md](RESTORE-DESIGN-2026-11-11.md). Las comprobaciones técnicas no acreditan autorización del material ni aceptación visual.
+
 # Medios de portfolio en local
 
 Entrega local para AGonzL del 11 de noviembre de 2026. Incluye 15 MP4 con 15 portadas propias, ocho imágenes compartidas y 9 transcripciones en castellano. Los MP4 suman 47.57 MB. Los másteres quedan en sus archivos de origen.

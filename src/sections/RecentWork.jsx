@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { MdArrowOutward } from "react-icons/md";
-import { clientProjects } from "../constants/clientProjects.js";
+import { servicesUrl } from "../constants/services.js";
 import { professionalArchive, professionalCases, recentWork } from "../constants/recentWork.js";
 
-const velvet = clientProjects.find(({ id }) => id === "velvet-ecosistema");
-const velvetWebsites = velvet.chapters.filter(({ href }) => href);
+const velvetWebsites = [
+  { id: "velvet", title: "Velvet Tattoo Studio", href: "https://velvetatto.com/es" },
+  { id: "elcamino", title: "El Camino Tattoo", href: "https://elcaminotattoo.es/" },
+  { id: "academy", title: "Velvet Tattoo Academy", href: "https://velvettattooacademy.es/" },
+];
 
 const RecentWork = () => {
   const { t, i18n } = useTranslation();
@@ -30,11 +32,11 @@ const RecentWork = () => {
                 <p className="mt-2 max-w-prose leading-relaxed text-neutral-300">{t(`${entry}.description`)}</p>
                 {id === "velvet" && (
                   <ul className="mt-2 flex flex-wrap gap-x-4">
-                    <li><Link to={velvet.to} className="portfolio-link text-blue-300 hover:text-blue-200">{t("recentWork.velvetCase")}</Link></li>
+                    <li><a href={servicesUrl("/casos/velvet")} className="portfolio-link text-blue-300 hover:text-blue-200">{t("recentWork.velvetCase")}</a></li>
                     {velvetWebsites.map((website) => (
                       <li key={website.id}>
                         <a href={website.href} className="portfolio-link text-blue-300 hover:text-blue-200">
-                          {t(`clientWork.cases.velvet-ecosistema.chapters.${website.id}.title`)} <MdArrowOutward aria-hidden="true" />
+                          {website.title} <MdArrowOutward aria-hidden="true" />
                         </a>
                       </li>
                     ))}

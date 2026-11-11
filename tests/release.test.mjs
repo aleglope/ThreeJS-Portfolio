@@ -1,16 +1,14 @@
 import assert from "node:assert/strict";
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { extname, join, resolve, sep } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { clientProjects } from "../src/constants/clientProjects.js";
-import { designProjects, projectDetails } from "../src/constants/design.js";
+import { designProjects, projectDetails, videoShowcase, designCategories } from "../src/constants/design.js";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const publicRoot = join(root, "public");
 const readJson = (path) => JSON.parse(readFileSync(join(root, path), "utf8"));
-const manifest = readJson("docs/portfolio-media-manifest.json");
-const transcripts = readJson("docs/media-transcripts.json");
+const originalDesign = readJson("tests/fixtures/original-design-inventory.json");
 const locales = { es: readJson("src/locales/es.json"), en: readJson("src/locales/en.json") };
 
 function publicAsset(reference) {
@@ -52,43 +50,24 @@ test("literal media, model and texture references resolve to nonempty files", ()
   assert.deepEqual(failures, []);
 });
 
-test("video inventory matches shipped MP4s, posters and spoken-text alternatives", () => {
-  assert.ok(manifest.length > 0);
-  assert.equal(new Set(manifest.map((entry) => entry.id)).size, manifest.length, "Duplicate media IDs");
-  for (const entry of manifest) {
-    const video = publicAsset(entry.src);
-    const poster = publicAsset(entry.poster);
-    assert.equal(statSync(video).size, entry.bytes, entry.id + ": update the inventory after changing a video");
-    assert.equal(readFileSync(video).toString("ascii", 4, 8), "ftyp", entry.id + ": invalid MP4 header");
-    const posterHeader = readFileSync(poster);
-    assert.equal(posterHeader.toString("ascii", 0, 4), "RIFF", entry.id);
-    assert.equal(posterHeader.toString("ascii", 8, 12), "WEBP", entry.id);
-    assert.ok(entry.width > 0 && entry.height > 0 && entry.seconds > 0, entry.id);
-    if (entry.transcript) {
-      const transcript = transcripts[entry.transcript.id];
-      assert.ok(transcript?.text?.trim(), entry.id + ": missing spoken-text alternative");
-      assert.equal(transcript.lang, entry.transcript.lang, entry.id);
-    }
+test("Design keeps the original categories, project routes, videos and gallery assets", () => {
+  const actual = {
+    categories: designCategories,
+    projects: designProjects.map(({slug, category, image, videoUrl}) => ({slug, category, image, videoUrl})),
+    showcase: videoShowcase.map(({id, videoUrl, thumbnail}) => ({id, videoUrl, thumbnail})),
+    details: Object.fromEntries(Object.entries(projectDetails).map(([slug, project]) => [slug, {
+      videos: project.videos.map(({id, videoUrl, thumbnail}) => ({id, videoUrl, thumbnail})),
+      galleries: Object.fromEntries(Object.entries(project.imageGallery || {}).map(([key, images]) => [key, images.map(({image}) => image)])),
+    }])),
+  };
+  assert.deepEqual(JSON.parse(JSON.stringify(actual)), originalDesign.inventory);
+  for (const locale of Object.values(locales)) {
+    for (const { id } of videoShowcase) assert.ok(locale.videoShowcaseData[id]?.title?.trim(), `Missing original video title: ${id}`);
   }
 });
 
-test("client cases resolve covers, chapters, videos and both translations", () => {
-  assert.equal(new Set(clientProjects.map((project) => project.id)).size, clientProjects.length);
-  const videoIds = new Set(manifest.map((entry) => entry.id));
-  for (const project of clientProjects) {
-    publicAsset(project.cover.src);
-    if (project.to) assert.equal(project.to, "/design/project/" + project.id);
-    if (project.href) assert.equal(new URL(project.href).protocol, "https:");
-    for (const language of Object.keys(locales)) {
-      const translation = locales[language].clientWork.cases[project.id];
-      assert.ok(translation?.title?.trim(), project.id + ": missing " + language + " title");
-      assert.ok(translation?.coverAlt?.trim(), project.id + ": missing " + language + " cover description");
-    }
-    for (const chapter of project.chapters || []) {
-      if (chapter.image) publicAsset(chapter.image.src);
-    }
-    for (const id of project.videoIds || []) assert.ok(videoIds.has(id), project.id + ": unknown video " + id);
-  }
+test("withdrawn portfolio media is not shipped in public", () => {
+  assert.equal(existsSync(join(publicRoot, "media/portfolio")), false);
 });
 
 test("design detail routes have data and translated content", () => {
@@ -104,7 +83,7 @@ test("design detail routes have data and translated content", () => {
 });
 
 test("portfolio and case content keeps Spanish and English keys and required text in sync", () => {
-  for (const section of ["clientWork", "recentWork", "designProjectsData", "projectDetailsData"]) {
+  for (const section of ["recentWork", "designProjectsData", "projectDetailsData", "videoShowcaseData"]) {
     assert.deepEqual(leaves(locales.es[section], section).sort(), leaves(locales.en[section], section).sort(), section);
   }
 });
