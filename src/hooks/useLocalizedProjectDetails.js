@@ -16,6 +16,7 @@ const useLocalizedProjectDetails = (slug) => {
     fullDescription: t(base + ".fullDescription"),
     client: t(base + ".client"),
     duration: t(base + ".duration"),
+    tags: t(base + ".tags", { returnObjects: true }),
   };
 
   if (project.videos) {

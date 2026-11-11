@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types -- Parent passes the shared media coordinator callbacks. */
 import { useLayoutEffect, useRef, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   MdAutoAwesome,
@@ -42,24 +42,30 @@ const VideoShowcase = ({ playerVersion = 0, onPlayerOpen, onPlayerClose }) => {
   const { t, i18n } = useTranslation();
   const videos = useLocalizedVideoShowcase();
   const skills = useLocalizedVideoSkills();
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const linkedVideo = videos.find(({ id }) => id === searchParams.get("video"));
-  const [selectedVideoId, setSelectedVideoId] = useState(linkedVideo?.id ?? videos[0].id);
+  const selectedVideo = linkedVideo ?? videos[0];
+  const selectedVideoId = selectedVideo.id;
   const [expanded, setExpanded] = useState(Boolean(linkedVideo && !linkedVideo.featured));
   const titleRef = useRef(null);
   const selectionFocus = useRef(false);
+  const previousSelection = useRef(selectedVideoId);
 
-  const selectedVideo = videos.find(({ id }) => id === selectedVideoId);
   const projectLink = projectLinks[selectedVideo.projectId];
   const displayedVideos = expanded ? videos : videos.filter(({ featured }) => featured);
   const locale = mediaLocale(i18n.resolvedLanguage);
 
   useLayoutEffect(() => {
+    if (previousSelection.current === selectedVideoId) return;
+    previousSelection.current = selectedVideoId;
+    onPlayerClose?.();
+    if (!selectedVideo.featured) setExpanded(true);
     if (selectionFocus.current) {
       selectionFocus.current = false;
       titleRef.current?.focus();
     }
-  }, [selectedVideoId]);
+  }, [selectedVideoId, selectedVideo.featured, onPlayerClose]);
 
   const choose = (id) => {
     if (id === selectedVideoId) {
@@ -67,8 +73,9 @@ const VideoShowcase = ({ playerVersion = 0, onPlayerOpen, onPlayerClose }) => {
       return;
     }
     selectionFocus.current = true;
-    setSelectedVideoId(id);
-    onPlayerClose?.();
+    const nextParams = new URLSearchParams(searchParams);
+    nextParams.set("video", id);
+    navigate({ pathname: "/design", search: `?${nextParams}`, hash: "#video-showcase" });
   };
 
   return (

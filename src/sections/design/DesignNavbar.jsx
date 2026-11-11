@@ -86,7 +86,7 @@ const DesignNavbar = () => {
         </nav>
       </div>
 
-      <div id="design-mobile-menu" hidden={!isOpen} className="border-t border-white/10 bg-[#09090c] min-[880px]:hidden">
+      <div id="design-mobile-menu" hidden={!isOpen} className="max-h-[calc(100dvh-4.25rem)] overflow-y-auto overscroll-contain border-t border-white/10 bg-[#09090c] min-[880px]:hidden">
         {isOpen && (
           <nav aria-label={t("designNavbarUI.navigation")} className="c-space pb-4">
             <NavItems onNavigate={closeMenu} />

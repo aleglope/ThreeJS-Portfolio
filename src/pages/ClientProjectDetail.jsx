@@ -9,9 +9,11 @@ import Footer from "../sections/Footer.jsx";
 import useLocalizedVideoShowcase from "../hooks/useLocalizedVideoShowcase.js";
 import { servicesUrl } from "../constants/services.js";
 
-const CaseImage = ({ image, alt, contain = false }) => (
-  <img
-    src={image.src}
+const CaseImage = ({ image, alt, contain = false }) => {
+  const { i18n } = useTranslation();
+
+  return <img
+    src={image.srcByLocale?.[i18n.resolvedLanguage] ?? image.src}
     width={image.width}
     height={image.height}
     alt={alt}
@@ -20,8 +22,8 @@ const CaseImage = ({ image, alt, contain = false }) => (
     className={contain
       ? "h-auto w-full rounded-xl bg-black-200 p-4"
       : "h-auto w-full rounded-xl border border-white/10"}
-  />
-);
+  />;
+};
 
 const CaseVideos = ({ videoIds }) => {
   const { t } = useTranslation();

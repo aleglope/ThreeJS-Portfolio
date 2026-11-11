@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
 import ReactPlayer from "react-player";
 import { clientProjects } from "../constants/clientProjects.js";
 import ClientProjectDetail from "./ClientProjectDetail.jsx";
@@ -13,6 +14,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 /* eslint-disable react/prop-types -- The legacy route passes its resolved slug. */
 const LegacyProjectDetail = ({ slug }) => {
   const { t } = useTranslation();
+  const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
   const project = useLocalizedProjectDetails(slug);
   const [selectedVideoId, setSelectedVideoId] = useState(
     project?.videos?.[0]?.id ?? null
@@ -21,16 +23,27 @@ const LegacyProjectDetail = ({ slug }) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [videoFailed, setVideoFailed] = useState(false);
   const openVideo = useRef(null);
-  const closeVideo = useRef(null);
+  const playerRegion = useRef(null);
+  const videoError = useRef(null);
+  const videoHeading = useRef(null);
+  const focusAfterSelection = useRef(false);
   const focusAfterClose = useRef(false);
 
   useLayoutEffect(() => {
-    if (isVideoOpen) closeVideo.current?.focus({ preventScroll: true });
+    if (videoFailed) videoError.current?.focus({ preventScroll: true });
+    else if (isVideoOpen) playerRegion.current?.focus({ preventScroll: true });
     else if (focusAfterClose.current) {
       focusAfterClose.current = false;
       openVideo.current?.focus({ preventScroll: true });
     }
-  }, [isVideoOpen]);
+  }, [isVideoOpen, videoFailed]);
+
+  useLayoutEffect(() => {
+    if (focusAfterSelection.current) {
+      focusAfterSelection.current = false;
+      videoHeading.current?.focus();
+    }
+  }, [selectedVideoId]);
   // Gallery navigation functions
   const galleryCategories = project?.imageGallery
     ? Object.keys(project.imageGallery)
@@ -62,7 +75,7 @@ const LegacyProjectDetail = ({ slug }) => {
   if (!project) {
     return (
       <>
-        <CursorTrail />
+        {!reducedMotion && <CursorTrail />}
         <main className="max-w-7xl mx-auto min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">
@@ -79,7 +92,7 @@ const LegacyProjectDetail = ({ slug }) => {
 
   return (
     <>
-      <CursorTrail />
+      {!reducedMotion && <CursorTrail />}
       <main className="max-w-7xl mx-auto">
         <DesignNavbar />
 
@@ -120,24 +133,24 @@ const LegacyProjectDetail = ({ slug }) => {
 
               {/* Project Details */}
               <div className="grid grid-cols-2 gap-6 mb-8">
-                <div>
+                {project.client && <div>
                   <p className="text-white-600 text-sm mb-2">
                     {t("projectDetailUI.client")}
                   </p>
                   <p className="text-white font-semibold">{project.client}</p>
-                </div>
-                <div>
+                </div>}
+                {project.year && <div>
                   <p className="text-white-600 text-sm mb-2">
                     {t("projectDetailUI.year")}
                   </p>
                   <p className="text-white font-semibold">{project.year}</p>
-                </div>
-                <div>
+                </div>}
+                {project.duration && <div>
                   <p className="text-white-600 text-sm mb-2">
                     {t("projectDetailUI.duration")}
                   </p>
                   <p className="text-white font-semibold">{project.duration}</p>
-                </div>
+                </div>}
                 <div>
                   <p className="text-white-600 text-sm mb-2">
                     {t("projectDetailUI.videosLabel")}
@@ -191,7 +204,17 @@ const LegacyProjectDetail = ({ slug }) => {
             {/* Main Video Player */}
             <div className="lg:col-span-2">
               <div className="relative bg-black-200 rounded-xl overflow-hidden border border-pink-500/30 shadow-2xl shadow-pink-500/20">
-                <div className={`relative bg-black ${selectedVideo.videoUrl.includes("/shorts/") ? "aspect-[9/16] mx-auto max-w-72" : "aspect-video"}`}>
+                <div
+                  ref={playerRegion}
+                  role="region"
+                  tabIndex={-1}
+                  aria-label={selectedVideo.title}
+                  className="relative mx-auto bg-black"
+                  style={{
+                    aspectRatio: `${selectedVideo.width ?? 16} / ${selectedVideo.height ?? 9}`,
+                    width: `min(100%, ${Math.round(540 * (selectedVideo.width ?? 16) / (selectedVideo.height ?? 9))}px)`,
+                  }}
+                >
                   {isVideoOpen && !videoFailed ? (
                     selectedVideo.videoUrl.includes("youtube.com") || selectedVideo.videoUrl.includes("youtu.be") || selectedVideo.videoUrl.includes("vimeo.com") ? (
                       <ReactPlayer
@@ -222,16 +245,20 @@ const LegacyProjectDetail = ({ slug }) => {
 
                 {/* Video Info */}
                 <div className="p-6 bg-black-200">
-                  <h3 className="text-2xl font-bold text-white mb-2">
+                  <h3 ref={videoHeading} tabIndex={-1} className="portfolio-anchor text-2xl font-bold text-white mb-2">
                     {selectedVideo.title}
                   </h3>
                   <p className="text-white-600">{selectedVideo.description}</p>
-                  {videoFailed && <p role="alert" className="mt-3 text-rose-200">{t("portfolioVideo.error")}</p>}
+                  {videoFailed && <p ref={videoError} tabIndex={-1} role="alert" className="mt-3 text-rose-200">{t("portfolioVideo.error")}</p>}
                   <div className="mt-3 flex flex-wrap gap-x-4">
+                    {videoFailed && (
+                      <button type="button" onClick={() => setVideoFailed(false)} className="portfolio-link">
+                        {t("portfolioVideo.retry")}
+                      </button>
+                    )}
                     {isVideoOpen && (
                       <button
                         type="button"
-                        ref={closeVideo}
                         onClick={() => {
                           focusAfterClose.current = true;
                           setIsVideoOpen(false);
@@ -266,6 +293,7 @@ const LegacyProjectDetail = ({ slug }) => {
                     aria-pressed={selectedVideo.id === video.id}
                     onClick={() => {
                       if (selectedVideo.id !== video.id) {
+                        focusAfterSelection.current = true;
                         setSelectedVideoId(video.id);
                         setIsVideoOpen(false);
                         setVideoFailed(false);
@@ -358,6 +386,13 @@ const LegacyProjectDetail = ({ slug }) => {
             {/* Gallery Carousel */}
             {currentGalleryImages.length > 0 && (
               <div className="relative max-w-6xl mx-auto">
+                <p className="sr-only" aria-live="polite" aria-atomic="true">
+                  {t("clientWork.imagePosition", {
+                    current: currentImageIndex + 1,
+                    total: currentGalleryImages.length,
+                    title: currentGalleryImages[currentImageIndex].title,
+                  })}
+                </p>
                 {/* Main Image Display */}
                 <div className="relative rounded-xl overflow-hidden border border-pink-500/30 shadow-2xl shadow-pink-500/20 mb-6">
                   <div className="relative w-full bg-black-300 flex items-center justify-center min-h-[400px]">
