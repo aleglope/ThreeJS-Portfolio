@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import Globe from "react-globe.gl";
 import * as THREE from "three";
 
@@ -6,6 +7,7 @@ const CustomGlobe = () => {
     const globeEl = useRef();
     const container = useRef(null);
     const [size, setSize] = useState(326);
+    const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
 
     useEffect(() => {
         const observer = new ResizeObserver(([entry]) => {
@@ -17,29 +19,50 @@ const CustomGlobe = () => {
 
     useEffect(() => {
         const globe = globeEl.current;
+        if (!globe) return;
+        let disposed = false;
+        let animationFrame = 0;
+        let clouds;
 
         // Auto-rotate
-        globe.controls().autoRotate = true;
+        globe.controls().autoRotate = !reducedMotion;
         globe.controls().autoRotateSpeed = 0.35;
 
         // Add clouds sphere
-        const CLOUDS_IMG_URL = "textures/globe/clouds.png";
+        const CLOUDS_IMG_URL = "/textures/globe/clouds.png";
         const CLOUDS_ALT = 0.004;
         const CLOUDS_ROTATION_SPEED = -0.006; // deg/frame
 
         new THREE.TextureLoader().load(CLOUDS_IMG_URL, cloudsTexture => {
-            const clouds = new THREE.Mesh(
+            if (disposed) {
+                cloudsTexture.dispose();
+                return;
+            }
+            clouds = new THREE.Mesh(
                 new THREE.SphereGeometry(globe.getGlobeRadius() * (1 + CLOUDS_ALT), 75, 75),
                 new THREE.MeshPhongMaterial({ map: cloudsTexture, transparent: true })
             );
             globe.scene().add(clouds);
 
-            (function rotateClouds() {
+            function rotateClouds() {
                 clouds.rotation.y += CLOUDS_ROTATION_SPEED * Math.PI / 180;
-                requestAnimationFrame(rotateClouds);
-            })();
+                animationFrame = requestAnimationFrame(rotateClouds);
+            }
+            if (!reducedMotion) animationFrame = requestAnimationFrame(rotateClouds);
         });
-    }, []);
+
+        return () => {
+            disposed = true;
+            cancelAnimationFrame(animationFrame);
+            globe.controls().autoRotate = false;
+            if (clouds) {
+                globe.scene().remove(clouds);
+                clouds.geometry.dispose();
+                clouds.material.map.dispose();
+                clouds.material.dispose();
+            }
+        };
+    }, [reducedMotion]);
 
     // GeoJSON data for Spain
     const spainGeoJson = {

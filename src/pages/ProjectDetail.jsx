@@ -156,7 +156,7 @@ const LegacyProjectDetail = ({ slug }) => {
                     {t("projectDetailUI.videosLabel")}
                   </p>
                   <p className="text-white font-semibold">
-                    {project.videos.length} {t("projectDetailUI.videosCount")}
+                    {project.videos.length} {t("projectDetailUI.videosCount", { count: project.videos.length })}
                   </p>
                 </div>
                 <div>
@@ -165,7 +165,7 @@ const LegacyProjectDetail = ({ slug }) => {
                   </p>
                   <p className="text-white font-semibold">
                     {galleryCategories.length}{" "}
-                    {t("projectDetailUI.categoriesCount")}
+                    {t("projectDetailUI.categoriesCount", { count: galleryCategories.length })}
                   </p>
                 </div>
               </div>
@@ -233,7 +233,7 @@ const LegacyProjectDetail = ({ slug }) => {
                     )
                   ) : (
                     <>
-                      <img src={selectedVideo.thumbnail || project.coverImage} alt="" className="absolute inset-0 h-full w-full object-contain" />
+                      <img src={selectedVideo.thumbnail || project.coverImage} width={480} height={360} loading="lazy" decoding="async" alt="" className="absolute inset-0 h-full w-full object-cover" />
                       {!videoFailed && (
                         <button type="button" ref={openVideo} onClick={() => setIsVideoOpen(true)} className="portfolio-link absolute inset-0 m-auto h-fit rounded-full bg-black/90 px-4" aria-label={t("portfolioVideo.openNamed", { title: selectedVideo.title })}>
                           {t("portfolioVideo.open")}
