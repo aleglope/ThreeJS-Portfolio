@@ -1,0 +1,1893 @@
+{
+  "baseline": [
+    {
+      "height": 900,
+      "model": {
+        "bottom": 804,
+        "height": 540,
+        "left": 495,
+        "right": 945,
+        "top": 264,
+        "width": 450
+      },
+      "overflow": [],
+      "overlap": 18,
+      "scrollWidth": 1440,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 120,
+        "right": 1320,
+        "top": 192,
+        "width": 1200
+      },
+      "width": 1440
+    },
+    {
+      "height": 844,
+      "model": {
+        "bottom": 706,
+        "height": 280,
+        "left": 90,
+        "right": 300,
+        "top": 426,
+        "width": 210
+      },
+      "overflow": [],
+      "overlap": -212,
+      "scrollWidth": 390,
+      "title": {
+        "bottom": 214,
+        "height": 90,
+        "left": 20,
+        "right": 370,
+        "top": 124,
+        "width": 350
+      },
+      "width": 390
+    },
+    {
+      "height": 568,
+      "model": {
+        "bottom": 430,
+        "height": 280,
+        "left": 55,
+        "right": 265,
+        "top": 150,
+        "width": 210
+      },
+      "overflow": [],
+      "overlap": 109,
+      "scrollWidth": 320,
+      "title": {
+        "bottom": 259,
+        "height": 135,
+        "left": 20,
+        "right": 300,
+        "top": 124,
+        "width": 280
+      },
+      "width": 320
+    },
+    {
+      "height": 1024,
+      "model": {
+        "bottom": 918,
+        "height": 280,
+        "left": 279,
+        "right": 489,
+        "top": 638,
+        "width": 210
+      },
+      "overflow": [],
+      "overlap": -302,
+      "scrollWidth": 768,
+      "title": {
+        "bottom": 336,
+        "height": 144,
+        "left": 40,
+        "right": 728,
+        "top": 192,
+        "width": 688
+      },
+      "width": 768
+    },
+    {
+      "height": 390,
+      "model": {
+        "bottom": 299,
+        "height": 450,
+        "left": 242,
+        "right": 602,
+        "top": -151,
+        "width": 360
+      },
+      "overflow": [],
+      "overlap": 107,
+      "scrollWidth": 844,
+      "title": {
+        "bottom": 336,
+        "height": 144,
+        "left": 40,
+        "right": 804,
+        "top": 192,
+        "width": 764
+      },
+      "width": 844
+    }
+  ],
+  "home": [
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 667,
+        "height": 48,
+        "left": 84.1640625,
+        "right": 235.828125,
+        "top": 619,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 4767,
+        "height": 256,
+        "left": 20,
+        "right": 300,
+        "top": 4511,
+        "width": 280
+      },
+      "emptyText": {
+        "bottom": 4739,
+        "height": 200,
+        "left": 20,
+        "right": 300,
+        "top": 4539,
+        "width": 280
+      },
+      "height": 568,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 595,
+        "height": 280,
+        "left": 55,
+        "right": 265,
+        "top": 315,
+        "width": 210
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 320,
+      "title": {
+        "bottom": 291,
+        "height": 135,
+        "left": 20,
+        "right": 300,
+        "top": 156,
+        "width": 280
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 320
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 622,
+        "height": 48,
+        "left": 104.1640625,
+        "right": 255.828125,
+        "top": 574,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 4458,
+        "height": 256,
+        "left": 20,
+        "right": 340,
+        "top": 4202,
+        "width": 320
+      },
+      "emptyText": {
+        "bottom": 4430,
+        "height": 200,
+        "left": 20,
+        "right": 340,
+        "top": 4230,
+        "width": 320
+      },
+      "height": 640,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 550,
+        "height": 280,
+        "left": 75,
+        "right": 285,
+        "top": 270,
+        "width": 210
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 360,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 340,
+        "top": 156,
+        "width": 320
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 360
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 816,
+        "height": 48,
+        "left": 119.1640625,
+        "right": 270.828125,
+        "top": 768,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 4620,
+        "height": 256,
+        "left": 20,
+        "right": 370,
+        "top": 4364,
+        "width": 350
+      },
+      "emptyText": {
+        "bottom": 4592,
+        "height": 200,
+        "left": 20,
+        "right": 370,
+        "top": 4392,
+        "width": 350
+      },
+      "height": 844,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 647,
+        "height": 280,
+        "left": 90,
+        "right": 300,
+        "top": 367,
+        "width": 210
+      },
+      "modelCtaGap": 121,
+      "scrollWidth": 390,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 370,
+        "top": 156,
+        "width": 350
+      },
+      "titleModelGap": 121,
+      "visibleHeaderOverflow": [],
+      "width": 390
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 904,
+        "height": 48,
+        "left": 139.1640625,
+        "right": 290.828125,
+        "top": 856,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 4440,
+        "height": 256,
+        "left": 20,
+        "right": 410,
+        "top": 4184,
+        "width": 390
+      },
+      "emptyText": {
+        "bottom": 4388,
+        "height": 152,
+        "left": 25.0703125,
+        "right": 404.921875,
+        "top": 4236,
+        "width": 379.8515625
+      },
+      "height": 932,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 691,
+        "height": 280,
+        "left": 110,
+        "right": 320,
+        "top": 411,
+        "width": 210
+      },
+      "modelCtaGap": 165,
+      "scrollWidth": 430,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 410,
+        "top": 156,
+        "width": 390
+      },
+      "titleModelGap": 165,
+      "visibleHeaderOverflow": [],
+      "width": 430
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 488.6640625,
+        "height": 48,
+        "left": 208.1640625,
+        "right": 359.828125,
+        "top": 440.6640625,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3837.6640625,
+        "height": 297,
+        "left": 20,
+        "right": 548,
+        "top": 3540.6640625,
+        "width": 528
+      },
+      "emptyText": {
+        "bottom": 3765.1640625,
+        "height": 152,
+        "left": 94.0703125,
+        "right": 473.921875,
+        "top": 3613.1640625,
+        "width": 379.8515625
+      },
+      "height": 320,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 424.6640625,
+        "height": 170.6640625,
+        "left": 220,
+        "right": 348,
+        "top": 254,
+        "width": 128
+      },
+      "modelCtaGap": 16,
+      "scrollWidth": 568,
+      "title": {
+        "bottom": 238,
+        "height": 90,
+        "left": 20,
+        "right": 548,
+        "top": 148,
+        "width": 528
+      },
+      "titleModelGap": 16,
+      "visibleHeaderOverflow": [],
+      "width": 568
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 772,
+        "height": 48,
+        "left": 243.6640625,
+        "right": 395.328125,
+        "top": 724,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 4124.9375,
+        "height": 336.9375,
+        "left": 20,
+        "right": 619,
+        "top": 3788,
+        "width": 599
+      },
+      "emptyText": {
+        "bottom": 4032.46875,
+        "height": 152,
+        "left": 129.5703125,
+        "right": 509.421875,
+        "top": 3880.46875,
+        "width": 379.8515625
+      },
+      "height": 800,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 602.5,
+        "height": 280,
+        "left": 214.5,
+        "right": 424.5,
+        "top": 322.5,
+        "width": 210
+      },
+      "modelCtaGap": 121.5,
+      "scrollWidth": 639,
+      "title": {
+        "bottom": 201,
+        "height": 45,
+        "left": 20,
+        "right": 619,
+        "top": 156,
+        "width": 599
+      },
+      "titleModelGap": 121.5,
+      "visibleHeaderOverflow": [],
+      "width": 639
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 772,
+        "height": 48,
+        "left": 244.1640625,
+        "right": 395.828125,
+        "top": 724,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 4147,
+        "height": 315,
+        "left": 40,
+        "right": 600,
+        "top": 3832,
+        "width": 560
+      },
+      "emptyText": {
+        "bottom": 4065.5,
+        "height": 152,
+        "left": 130.0703125,
+        "right": 509.921875,
+        "top": 3913.5,
+        "width": 379.8515625
+      },
+      "height": 800,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 652,
+        "height": 280,
+        "left": 215,
+        "right": 425,
+        "top": 372,
+        "width": 210
+      },
+      "modelCtaGap": 72,
+      "scrollWidth": 640,
+      "title": {
+        "bottom": 300,
+        "height": 108,
+        "left": 40,
+        "right": 600,
+        "top": 192,
+        "width": 560
+      },
+      "titleModelGap": 72,
+      "visibleHeaderOverflow": [],
+      "width": 640
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 996,
+        "height": 48,
+        "left": 308.1640625,
+        "right": 459.828125,
+        "top": 948,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3451,
+        "height": 387,
+        "left": 40,
+        "right": 728,
+        "top": 3064,
+        "width": 688
+      },
+      "emptyText": {
+        "bottom": 3333.5,
+        "height": 152,
+        "left": 194.0703125,
+        "right": 573.921875,
+        "top": 3181.5,
+        "width": 379.8515625
+      },
+      "height": 1024,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 782,
+        "height": 280,
+        "left": 279,
+        "right": 489,
+        "top": 502,
+        "width": 210
+      },
+      "modelCtaGap": 166,
+      "scrollWidth": 768,
+      "title": {
+        "bottom": 336,
+        "height": 144,
+        "left": 40,
+        "right": 728,
+        "top": 192,
+        "width": 688
+      },
+      "titleModelGap": 166,
+      "visibleHeaderOverflow": [],
+      "width": 768
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 1152,
+        "height": 48,
+        "left": 334.1640625,
+        "right": 485.828125,
+        "top": 1104,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3636.25,
+        "height": 416.25,
+        "left": 40,
+        "right": 780,
+        "top": 3220,
+        "width": 740
+      },
+      "emptyText": {
+        "bottom": 3504.125,
+        "height": 152,
+        "left": 220.0703125,
+        "right": 599.921875,
+        "top": 3352.125,
+        "width": 379.8515625
+      },
+      "height": 1180,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 945,
+        "height": 450,
+        "left": 230,
+        "right": 590,
+        "top": 495,
+        "width": 360
+      },
+      "modelCtaGap": 159,
+      "scrollWidth": 820,
+      "title": {
+        "bottom": 336,
+        "height": 144,
+        "left": 40,
+        "right": 780,
+        "top": 192,
+        "width": 740
+      },
+      "titleModelGap": 159,
+      "visibleHeaderOverflow": [],
+      "width": 820
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 571,
+        "height": 48,
+        "left": 346.1640625,
+        "right": 497.828125,
+        "top": 523,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3036.75,
+        "height": 429.75,
+        "left": 40,
+        "right": 804,
+        "top": 2607,
+        "width": 764
+      },
+      "emptyText": {
+        "bottom": 2897.875,
+        "height": 152,
+        "left": 232.0703125,
+        "right": 611.921875,
+        "top": 2745.875,
+        "width": 379.8515625
+      },
+      "height": 390,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 507,
+        "height": 195,
+        "left": 344,
+        "right": 500,
+        "top": 312,
+        "width": 156
+      },
+      "modelCtaGap": 16,
+      "scrollWidth": 844,
+      "title": {
+        "bottom": 296,
+        "height": 144,
+        "left": 40,
+        "right": 804,
+        "top": 152,
+        "width": 764
+      },
+      "titleModelGap": 16,
+      "visibleHeaderOverflow": [],
+      "width": 844
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 810,
+        "height": 48,
+        "left": 435.6640625,
+        "right": 587.328125,
+        "top": 762,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3180.4375,
+        "height": 530.4375,
+        "left": 40,
+        "right": 983,
+        "top": 2650,
+        "width": 943
+      },
+      "emptyText": {
+        "bottom": 2991.21875,
+        "height": 152,
+        "left": 321.5703125,
+        "right": 701.421875,
+        "top": 2839.21875,
+        "width": 379.8515625
+      },
+      "height": 768,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 738,
+        "height": 450,
+        "left": 331.5,
+        "right": 691.5,
+        "top": 288,
+        "width": 360
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1023,
+      "title": {
+        "bottom": 264,
+        "height": 72,
+        "left": 40,
+        "right": 983,
+        "top": 192,
+        "width": 943
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1023
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 810,
+        "height": 48,
+        "left": 436.1640625,
+        "right": 587.828125,
+        "top": 762,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3181,
+        "height": 531,
+        "left": 40,
+        "right": 984,
+        "top": 2650,
+        "width": 944
+      },
+      "emptyText": {
+        "bottom": 2991.5,
+        "height": 152,
+        "left": 322.0703125,
+        "right": 701.921875,
+        "top": 2839.5,
+        "width": 379.8515625
+      },
+      "height": 768,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 738,
+        "height": 450,
+        "left": 332,
+        "right": 692,
+        "top": 288,
+        "width": 360
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1024,
+      "title": {
+        "bottom": 264,
+        "height": 72,
+        "left": 40,
+        "right": 984,
+        "top": 192,
+        "width": 944
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1024
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 918,
+        "height": 48,
+        "left": 564.1640625,
+        "right": 715.828125,
+        "top": 870,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3334,
+        "height": 576,
+        "left": 128,
+        "right": 1152,
+        "top": 2758,
+        "width": 1024
+      },
+      "emptyText": {
+        "bottom": 3122,
+        "height": 152,
+        "left": 450.0703125,
+        "right": 829.921875,
+        "top": 2970,
+        "width": 379.8515625
+      },
+      "height": 720,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 846,
+        "height": 540,
+        "left": 415,
+        "right": 865,
+        "top": 306,
+        "width": 450
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1280,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 40,
+        "right": 1240,
+        "top": 192,
+        "width": 1200
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1280
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 918,
+        "height": 48,
+        "left": 644.1640625,
+        "right": 795.828125,
+        "top": 870,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3334,
+        "height": 576,
+        "left": 208,
+        "right": 1232,
+        "top": 2758,
+        "width": 1024
+      },
+      "emptyText": {
+        "bottom": 3122,
+        "height": 152,
+        "left": 530.0703125,
+        "right": 909.921875,
+        "top": 2970,
+        "width": 379.8515625
+      },
+      "height": 900,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 846,
+        "height": 540,
+        "left": 495,
+        "right": 945,
+        "top": 306,
+        "width": 450
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1440,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 120,
+        "right": 1320,
+        "top": 192,
+        "width": 1200
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1440
+    },
+    {
+      "language": "ES",
+      "actualTitle": "Diseñador Creativo y Editor de Vídeo",
+      "cta": {
+        "bottom": 1052,
+        "height": 48,
+        "left": 884.1640625,
+        "right": 1035.828125,
+        "top": 1004,
+        "width": 151.6640625
+      },
+      "emptyPlayer": {
+        "bottom": 3468,
+        "height": 576,
+        "left": 448,
+        "right": 1472,
+        "top": 2892,
+        "width": 1024
+      },
+      "emptyText": {
+        "bottom": 3256,
+        "height": 152,
+        "left": 770.0703125,
+        "right": 1149.921875,
+        "top": 3104,
+        "width": 379.8515625
+      },
+      "height": 1080,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 913,
+        "height": 540,
+        "left": 735,
+        "right": 1185,
+        "top": 373,
+        "width": 450
+      },
+      "modelCtaGap": 91,
+      "scrollWidth": 1920,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 360,
+        "right": 1560,
+        "top": 192,
+        "width": 1200
+      },
+      "titleModelGap": 91,
+      "visibleHeaderOverflow": [],
+      "width": 1920
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 622,
+        "height": 48,
+        "left": 83.6875,
+        "right": 236.3125,
+        "top": 574,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 4562,
+        "height": 256,
+        "left": 20,
+        "right": 300,
+        "top": 4306,
+        "width": 280
+      },
+      "emptyText": {
+        "bottom": 4520,
+        "height": 172,
+        "left": 20,
+        "right": 300,
+        "top": 4348,
+        "width": 280
+      },
+      "height": 568,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 550,
+        "height": 280,
+        "left": 55,
+        "right": 265,
+        "top": 270,
+        "width": 210
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 320,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 300,
+        "top": 156,
+        "width": 280
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 320
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 622,
+        "height": 48,
+        "left": 103.6875,
+        "right": 256.3125,
+        "top": 574,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 4394,
+        "height": 256,
+        "left": 20,
+        "right": 340,
+        "top": 4138,
+        "width": 320
+      },
+      "emptyText": {
+        "bottom": 4342,
+        "height": 152,
+        "left": 35.453125,
+        "right": 324.5390625,
+        "top": 4190,
+        "width": 289.0859375
+      },
+      "height": 640,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 550,
+        "height": 280,
+        "left": 75,
+        "right": 285,
+        "top": 270,
+        "width": 210
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 360,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 340,
+        "top": 156,
+        "width": 320
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 360
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 816,
+        "height": 48,
+        "left": 118.6875,
+        "right": 271.3125,
+        "top": 768,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 4456,
+        "height": 256,
+        "left": 20,
+        "right": 370,
+        "top": 4200,
+        "width": 350
+      },
+      "emptyText": {
+        "bottom": 4404,
+        "height": 152,
+        "left": 50.453125,
+        "right": 339.5390625,
+        "top": 4252,
+        "width": 289.0859375
+      },
+      "height": 844,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 647,
+        "height": 280,
+        "left": 90,
+        "right": 300,
+        "top": 367,
+        "width": 210
+      },
+      "modelCtaGap": 121,
+      "scrollWidth": 390,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 370,
+        "top": 156,
+        "width": 350
+      },
+      "titleModelGap": 121,
+      "visibleHeaderOverflow": [],
+      "width": 390
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 904,
+        "height": 48,
+        "left": 138.6875,
+        "right": 291.3125,
+        "top": 856,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 4440,
+        "height": 256,
+        "left": 20,
+        "right": 410,
+        "top": 4184,
+        "width": 390
+      },
+      "emptyText": {
+        "bottom": 4388,
+        "height": 152,
+        "left": 70.453125,
+        "right": 359.5390625,
+        "top": 4236,
+        "width": 289.0859375
+      },
+      "height": 932,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 691,
+        "height": 280,
+        "left": 110,
+        "right": 320,
+        "top": 411,
+        "width": 210
+      },
+      "modelCtaGap": 165,
+      "scrollWidth": 430,
+      "title": {
+        "bottom": 246,
+        "height": 90,
+        "left": 20,
+        "right": 410,
+        "top": 156,
+        "width": 390
+      },
+      "titleModelGap": 165,
+      "visibleHeaderOverflow": [],
+      "width": 430
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 443.6640625,
+        "height": 48,
+        "left": 207.6875,
+        "right": 360.3125,
+        "top": 395.6640625,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3760.6640625,
+        "height": 297,
+        "left": 20,
+        "right": 548,
+        "top": 3463.6640625,
+        "width": 528
+      },
+      "emptyText": {
+        "bottom": 3688.1640625,
+        "height": 152,
+        "left": 139.453125,
+        "right": 428.5390625,
+        "top": 3536.1640625,
+        "width": 289.0859375
+      },
+      "height": 320,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 379.6640625,
+        "height": 170.6640625,
+        "left": 220,
+        "right": 348,
+        "top": 209,
+        "width": 128
+      },
+      "modelCtaGap": 16,
+      "scrollWidth": 568,
+      "title": {
+        "bottom": 193,
+        "height": 45,
+        "left": 20,
+        "right": 548,
+        "top": 148,
+        "width": 528
+      },
+      "titleModelGap": 16,
+      "visibleHeaderOverflow": [],
+      "width": 568
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 772,
+        "height": 48,
+        "left": 243.1875,
+        "right": 395.8125,
+        "top": 724,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 4000.9375,
+        "height": 336.9375,
+        "left": 20,
+        "right": 619,
+        "top": 3664,
+        "width": 599
+      },
+      "emptyText": {
+        "bottom": 3908.46875,
+        "height": 152,
+        "left": 174.953125,
+        "right": 464.0390625,
+        "top": 3756.46875,
+        "width": 289.0859375
+      },
+      "height": 800,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 602.5,
+        "height": 280,
+        "left": 214.5,
+        "right": 424.5,
+        "top": 322.5,
+        "width": 210
+      },
+      "modelCtaGap": 121.5,
+      "scrollWidth": 639,
+      "title": {
+        "bottom": 201,
+        "height": 45,
+        "left": 20,
+        "right": 619,
+        "top": 156,
+        "width": 599
+      },
+      "titleModelGap": 121.5,
+      "visibleHeaderOverflow": [],
+      "width": 639
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 772,
+        "height": 48,
+        "left": 243.6875,
+        "right": 396.3125,
+        "top": 724,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 4051,
+        "height": 315,
+        "left": 40,
+        "right": 600,
+        "top": 3736,
+        "width": 560
+      },
+      "emptyText": {
+        "bottom": 3969.5,
+        "height": 152,
+        "left": 175.453125,
+        "right": 464.5390625,
+        "top": 3817.5,
+        "width": 289.0859375
+      },
+      "height": 800,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 652,
+        "height": 280,
+        "left": 215,
+        "right": 425,
+        "top": 372,
+        "width": 210
+      },
+      "modelCtaGap": 72,
+      "scrollWidth": 640,
+      "title": {
+        "bottom": 300,
+        "height": 108,
+        "left": 40,
+        "right": 600,
+        "top": 192,
+        "width": 560
+      },
+      "titleModelGap": 72,
+      "visibleHeaderOverflow": [],
+      "width": 640
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 996,
+        "height": 48,
+        "left": 307.6875,
+        "right": 460.3125,
+        "top": 948,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3451,
+        "height": 387,
+        "left": 40,
+        "right": 728,
+        "top": 3064,
+        "width": 688
+      },
+      "emptyText": {
+        "bottom": 3333.5,
+        "height": 152,
+        "left": 239.453125,
+        "right": 528.5390625,
+        "top": 3181.5,
+        "width": 289.0859375
+      },
+      "height": 1024,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 782,
+        "height": 280,
+        "left": 279,
+        "right": 489,
+        "top": 502,
+        "width": 210
+      },
+      "modelCtaGap": 166,
+      "scrollWidth": 768,
+      "title": {
+        "bottom": 336,
+        "height": 144,
+        "left": 40,
+        "right": 728,
+        "top": 192,
+        "width": 688
+      },
+      "titleModelGap": 166,
+      "visibleHeaderOverflow": [],
+      "width": 768
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 1152,
+        "height": 48,
+        "left": 333.6875,
+        "right": 486.3125,
+        "top": 1104,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3604.25,
+        "height": 416.25,
+        "left": 40,
+        "right": 780,
+        "top": 3188,
+        "width": 740
+      },
+      "emptyText": {
+        "bottom": 3472.125,
+        "height": 152,
+        "left": 265.453125,
+        "right": 554.5390625,
+        "top": 3320.125,
+        "width": 289.0859375
+      },
+      "height": 1180,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 945,
+        "height": 450,
+        "left": 230,
+        "right": 590,
+        "top": 495,
+        "width": 360
+      },
+      "modelCtaGap": 159,
+      "scrollWidth": 820,
+      "title": {
+        "bottom": 336,
+        "height": 144,
+        "left": 40,
+        "right": 780,
+        "top": 192,
+        "width": 740
+      },
+      "titleModelGap": 159,
+      "visibleHeaderOverflow": [],
+      "width": 820
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 571,
+        "height": 48,
+        "left": 345.6875,
+        "right": 498.3125,
+        "top": 523,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 2972.75,
+        "height": 429.75,
+        "left": 40,
+        "right": 804,
+        "top": 2543,
+        "width": 764
+      },
+      "emptyText": {
+        "bottom": 2833.875,
+        "height": 152,
+        "left": 277.453125,
+        "right": 566.5390625,
+        "top": 2681.875,
+        "width": 289.0859375
+      },
+      "height": 390,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 507,
+        "height": 195,
+        "left": 344,
+        "right": 500,
+        "top": 312,
+        "width": 156
+      },
+      "modelCtaGap": 16,
+      "scrollWidth": 844,
+      "title": {
+        "bottom": 296,
+        "height": 144,
+        "left": 40,
+        "right": 804,
+        "top": 152,
+        "width": 764
+      },
+      "titleModelGap": 16,
+      "visibleHeaderOverflow": [],
+      "width": 844
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 810,
+        "height": 48,
+        "left": 435.1875,
+        "right": 587.8125,
+        "top": 762,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3176.4375,
+        "height": 530.4375,
+        "left": 40,
+        "right": 983,
+        "top": 2646,
+        "width": 943
+      },
+      "emptyText": {
+        "bottom": 2987.21875,
+        "height": 152,
+        "left": 366.953125,
+        "right": 656.0390625,
+        "top": 2835.21875,
+        "width": 289.0859375
+      },
+      "height": 768,
+      "imageErrors": [],
+      "menu": true,
+      "model": {
+        "bottom": 738,
+        "height": 450,
+        "left": 331.5,
+        "right": 691.5,
+        "top": 288,
+        "width": 360
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1023,
+      "title": {
+        "bottom": 264,
+        "height": 72,
+        "left": 40,
+        "right": 983,
+        "top": 192,
+        "width": 943
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1023
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 810,
+        "height": 48,
+        "left": 435.6875,
+        "right": 588.3125,
+        "top": 762,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3177,
+        "height": 531,
+        "left": 40,
+        "right": 984,
+        "top": 2646,
+        "width": 944
+      },
+      "emptyText": {
+        "bottom": 2987.5,
+        "height": 152,
+        "left": 367.453125,
+        "right": 656.5390625,
+        "top": 2835.5,
+        "width": 289.0859375
+      },
+      "height": 768,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 738,
+        "height": 450,
+        "left": 332,
+        "right": 692,
+        "top": 288,
+        "width": 360
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1024,
+      "title": {
+        "bottom": 264,
+        "height": 72,
+        "left": 40,
+        "right": 984,
+        "top": 192,
+        "width": 944
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1024
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 918,
+        "height": 48,
+        "left": 563.6875,
+        "right": 716.3125,
+        "top": 870,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3270,
+        "height": 576,
+        "left": 128,
+        "right": 1152,
+        "top": 2694,
+        "width": 1024
+      },
+      "emptyText": {
+        "bottom": 3058,
+        "height": 152,
+        "left": 495.453125,
+        "right": 784.5390625,
+        "top": 2906,
+        "width": 289.0859375
+      },
+      "height": 720,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 846,
+        "height": 540,
+        "left": 415,
+        "right": 865,
+        "top": 306,
+        "width": 450
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1280,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 40,
+        "right": 1240,
+        "top": 192,
+        "width": 1200
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1280
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 918,
+        "height": 48,
+        "left": 643.6875,
+        "right": 796.3125,
+        "top": 870,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3270,
+        "height": 576,
+        "left": 208,
+        "right": 1232,
+        "top": 2694,
+        "width": 1024
+      },
+      "emptyText": {
+        "bottom": 3058,
+        "height": 152,
+        "left": 575.453125,
+        "right": 864.5390625,
+        "top": 2906,
+        "width": 289.0859375
+      },
+      "height": 900,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 846,
+        "height": 540,
+        "left": 495,
+        "right": 945,
+        "top": 306,
+        "width": 450
+      },
+      "modelCtaGap": 24,
+      "scrollWidth": 1440,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 120,
+        "right": 1320,
+        "top": 192,
+        "width": 1200
+      },
+      "titleModelGap": 24,
+      "visibleHeaderOverflow": [],
+      "width": 1440
+    },
+    {
+      "language": "EN",
+      "actualTitle": "Creative Designer & Video Editor",
+      "cta": {
+        "bottom": 1052,
+        "height": 48,
+        "left": 883.6875,
+        "right": 1036.3125,
+        "top": 1004,
+        "width": 152.625
+      },
+      "emptyPlayer": {
+        "bottom": 3404,
+        "height": 576,
+        "left": 448,
+        "right": 1472,
+        "top": 2828,
+        "width": 1024
+      },
+      "emptyText": {
+        "bottom": 3192,
+        "height": 152,
+        "left": 815.453125,
+        "right": 1104.5390625,
+        "top": 3040,
+        "width": 289.0859375
+      },
+      "height": 1080,
+      "imageErrors": [],
+      "menu": false,
+      "model": {
+        "bottom": 913,
+        "height": 540,
+        "left": 735,
+        "right": 1185,
+        "top": 373,
+        "width": 450
+      },
+      "modelCtaGap": 91,
+      "scrollWidth": 1920,
+      "title": {
+        "bottom": 282,
+        "height": 90,
+        "left": 360,
+        "right": 1560,
+        "top": 192,
+        "width": 1200
+      },
+      "titleModelGap": 91,
+      "visibleHeaderOverflow": [],
+      "width": 1920
+    }
+  ],
+  "details": [
+    {
+      "language": "ES",
+      "slug": "brand-identity-design",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "Identidad de marca UGC y diseño, de la web al contenido para redes sociales",
+      "titleHeight": 180,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "ES",
+      "slug": "brand-identity-design",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "Identidad de marca UGC y diseño, de la web al contenido para redes sociales",
+      "titleHeight": 80,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "ES",
+      "slug": "ai-advertising-content",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "Contenido publicitario generado con IA y marketing en redes sociales",
+      "titleHeight": 180,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "ES",
+      "slug": "ai-advertising-content",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "Contenido publicitario generado con IA y marketing en redes sociales",
+      "titleHeight": 80,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "ES",
+      "slug": "music-event-visuals",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "Visuales para Eventos Musicales y VJing",
+      "titleHeight": 108,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "ES",
+      "slug": "music-event-visuals",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "Visuales para Eventos Musicales y VJing",
+      "titleHeight": 80,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "ES",
+      "slug": "ai-photographic-art",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
+      "titleHeight": 252,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "ES",
+      "slug": "ai-photographic-art",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
+      "titleHeight": 120,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "EN",
+      "slug": "brand-identity-design",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "Brand Identity UGC & Design from Website to Social Media Content",
+      "titleHeight": 180,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "EN",
+      "slug": "brand-identity-design",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "Brand Identity UGC & Design from Website to Social Media Content",
+      "titleHeight": 80,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "EN",
+      "slug": "ai-advertising-content",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "AI-Generated Advertising Content and Social Media Marketing",
+      "titleHeight": 144,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "EN",
+      "slug": "ai-advertising-content",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "AI-Generated Advertising Content and Social Media Marketing",
+      "titleHeight": 80,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "EN",
+      "slug": "music-event-visuals",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "Music Event Visuals & VJing",
+      "titleHeight": 72,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "EN",
+      "slug": "music-event-visuals",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "Music Event Visuals & VJing",
+      "titleHeight": 40,
+      "videoFrames": 1,
+      "width": 768
+    },
+    {
+      "language": "EN",
+      "slug": "ai-photographic-art",
+      "imagesFailed": [],
+      "scroll": 320,
+      "title": "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
+      "titleHeight": 216,
+      "videoFrames": 1,
+      "width": 320
+    },
+    {
+      "language": "EN",
+      "slug": "ai-photographic-art",
+      "imagesFailed": [],
+      "scroll": 768,
+      "title": "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
+      "titleHeight": 120,
+      "videoFrames": 1,
+      "width": 768
+    }
+  ],
+  "desktop": {
+    "cta": {
+      "bottom": 972,
+      "height": 48,
+      "left": 644.1640625,
+      "right": 795.828125,
+      "top": 924,
+      "width": 151.6640625
+    },
+    "emptyPlayer": {
+      "bottom": 3388,
+      "height": 576,
+      "left": 208,
+      "right": 1232,
+      "top": 2812,
+      "width": 1024
+    },
+    "emptyText": {
+      "bottom": 3176,
+      "height": 152,
+      "left": 530.0703125,
+      "right": 909.921875,
+      "top": 3024,
+      "width": 379.8515625
+    },
+    "height": 1000,
+    "imageErrors": [],
+    "menu": false,
+    "model": {
+      "bottom": 873,
+      "height": 540,
+      "left": 495,
+      "right": 945,
+      "top": 333,
+      "width": 450
+    },
+    "modelCtaGap": 51,
+    "scrollWidth": 1440,
+    "title": {
+      "bottom": 282,
+      "height": 90,
+      "left": 120,
+      "right": 1320,
+      "top": 192,
+      "width": 1200
+    },
+    "titleModelGap": 51,
+    "visibleHeaderOverflow": [],
+    "width": 1440
+  }
+}

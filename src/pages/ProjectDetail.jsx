@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import ReactPlayer from "react-player/lazy";
 import useLocalizedProjectDetails from "../hooks/useLocalizedProjectDetails.js";
@@ -7,6 +7,7 @@ import DesignNavbar from "../sections/design/DesignNavbar.jsx";
 import Footer from "../sections/DesignFooter.jsx";
 import CursorTrail from "../components/CursorTrail";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import "../styles/design.css";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -18,6 +19,7 @@ const ProjectDetail = () => {
   );
   const selectedVideo = project?.videos?.find((v) => v.id === selectedVideoId) ?? project?.videos?.[0] ?? null;
   const [isPlaying, setIsPlaying] = useState(false);
+  const videoPlayerRef = useRef(null);
   // Gallery navigation functions
   const galleryCategories = project?.imageGallery
     ? Object.keys(project.imageGallery)
@@ -70,14 +72,14 @@ const ProjectDetail = () => {
   return (
     <>
       <CursorTrail />
-      <main className="max-w-7xl mx-auto">
+      <main className="design-detail max-w-7xl mx-auto">
         <DesignNavbar />
 
         {/* Project Header */}
-        <section className="c-space my-20">
+        <section className="c-space pt-28 mb-20">
           <button
             onClick={() => navigate("/design")}
-            className="flex items-center gap-2 text-white-600 hover:text-pink-400 transition-colors duration-300 mb-8"
+            className="flex min-h-11 items-center gap-2 text-white-600 hover:text-pink-400 transition-colors duration-300 mb-8"
           >
             <svg
               className="w-5 h-5"
@@ -97,12 +99,12 @@ const ProjectDetail = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Project Info */}
-            <div>
+            <div className="min-w-0">
               <div className="inline-block px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full text-white text-sm font-semibold mb-4">
                 {project.category}
               </div>
 
-              <h1 className="text-5xl font-bold text-white mb-6 font-generalsans">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl break-words font-bold text-white mb-6 font-generalsans">
                 {project.title}
               </h1>
 
@@ -181,7 +183,7 @@ const ProjectDetail = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Main Video Player */}
-            <div className="lg:col-span-2">
+            <div ref={videoPlayerRef} className="design-video-player min-w-0 lg:col-span-2">
               <div className="relative bg-black-200 rounded-xl overflow-hidden border border-pink-500/30 shadow-2xl shadow-pink-500/20">
                 {/* Video Player */}
                 <div
@@ -259,6 +261,9 @@ const ProjectDetail = () => {
                     onClick={() => {
                       setSelectedVideoId(video.id);
                       setIsPlaying(false);
+                      if (window.innerWidth < 1024) {
+                        videoPlayerRef.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
+                      }
                     }}
                     className={`w-full text-left group transition-all duration-300 ${
                       selectedVideo.id === video.id
@@ -356,12 +361,14 @@ const ProjectDetail = () => {
                     {/* Navigation Arrows */}
                     <button
                       onClick={prevImage}
+                      aria-label={t("projectDetailUI.previousImage")}
                       className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                     >
                       <MdChevronLeft className="w-6 h-6 text-white" />
                     </button>
                     <button
                       onClick={nextImage}
+                      aria-label={t("projectDetailUI.nextImage")}
                       className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
                     >
                       <MdChevronRight className="w-6 h-6 text-white" />

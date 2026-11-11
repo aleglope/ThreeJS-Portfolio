@@ -1,32 +1,8 @@
 import PropTypes from "prop-types";
-import { useMediaQuery } from "react-responsive";
-
-const SketchfabModel = ({ modelId, title, scale = 1, position = [0, 0, 0] }) => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
-
-  // Calcular tamaño responsivo
-  const getModelSize = () => {
-    if (isMobile) {
-      return { width: "300px", height: "400px" };
-    }
-    if (isTablet) {
-      return { width: "400px", height: "500px" };
-    }
-    return { width: "500px", height: "600px" };
-  };
-
-  const size = getModelSize();
-
+const SketchfabModel = ({ modelId, title, className = "w-full aspect-[5/6]" }) => {
   return (
     <div
-      className="absolute pointer-events-auto"
-      style={{
-        width: size.width,
-        height: size.height,
-        transform: `translate(${position[0]}px, ${position[1]}px) scale(${scale})`,
-        transformOrigin: "center center",
-      }}
+      className={`relative pointer-events-auto ${className}`}
     >
       <iframe
         title={title}
@@ -40,7 +16,7 @@ const SketchfabModel = ({ modelId, title, scale = 1, position = [0, 0, 0] }) => 
         execution-while-not-rendered="true"
         web-share="true"
         src={`https://sketchfab.com/models/${modelId}/embed?autostart=1&ui_hint=0&ui_infos=0&ui_controls=0&ui_stop=0`}
-        className="w-full h-full rounded-lg shadow-2xl"
+        className="block w-full h-full rounded-lg shadow-2xl"
         style={{
           border: "none",
         }}
@@ -49,5 +25,5 @@ const SketchfabModel = ({ modelId, title, scale = 1, position = [0, 0, 0] }) => 
   );
 };
 
-SketchfabModel.propTypes = { modelId: PropTypes.string.isRequired, title: PropTypes.string.isRequired, scale: PropTypes.number, position: PropTypes.arrayOf(PropTypes.number) };
+SketchfabModel.propTypes = { modelId: PropTypes.string.isRequired, title: PropTypes.string.isRequired, className: PropTypes.string };
 export default SketchfabModel;

@@ -1,0 +1,50 @@
+/* Design-only layout: preserve the artwork and original sections. */
+.design-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100svh;
+  padding-block: 7rem 1.75rem;
+}
+
+.design-hero__scene {
+  display: grid;
+  flex: 1;
+  place-items: center;
+  min-width: 0;
+}
+
+.design-hero__model {
+  width: min(100%, 13.125rem);
+  aspect-ratio: 3 / 4;
+}
+
+.design-portfolio section[id],
+.design-detail section[id],
+.design-video-player {
+  scroll-margin-top: 6.5rem;
+}
+
+.design-portfolio :is(a, button, [role="button"]):focus-visible,
+.design-detail :is(a, button, [role="button"]):focus-visible {
+  outline: 2px solid #f9a8d4;
+  outline-offset: 4px;
+}
+
+@media (min-width: 640px) {
+  .design-hero { padding-top: 9rem; }
+}
+
+@media (min-width: 769px) {
+  .design-hero__model { width: min(100%, 22.5rem); aspect-ratio: 4 / 5; }
+}
+
+@media (min-width: 1025px) {
+  .design-hero__model { width: min(100%, 28.125rem); aspect-ratio: 5 / 6; }
+}
+
+/* Short landscape screens can scroll without the title covering the viewer. */
+@media (max-height: 500px) {
+  .design-hero { padding-top: 6.5rem; gap: 1rem; }
+  .design-hero__model { width: min(100%, 40svh); }
+}

@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import CursorTrail from "../components/CursorTrail";
 import { useTranslation } from "react-i18next";
 import useLocalizedProjectTypes from "../hooks/useLocalizedProjectTypes.js";
+import "../styles/design.css";
 
 const DesignPortfolio = () => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ const DesignPortfolio = () => {
   return (
     <>
       <CursorTrail />
-      <main className="max-w-7xl mx-auto">
+      <main className="design-portfolio max-w-7xl mx-auto">
         <DesignNavbar />
         <DesignHero />
         <DesignProjects />

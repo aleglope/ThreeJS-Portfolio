@@ -35,6 +35,7 @@ const VideoShowcase = () => {
   const [selectedVideoId, setSelectedVideoId] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoPlayerRef = useRef(null);
+  const videoTriggerRef = useRef(null);
 
   const selectedVideo =
     selectedVideoId != null
@@ -46,7 +47,8 @@ const VideoShowcase = () => {
     return window.innerWidth < 1024; // lg breakpoint in Tailwind
   };
 
-  const handleVideoSelect = (video) => {
+  const handleVideoSelect = (video, trigger) => {
+    videoTriggerRef.current = trigger;
     setSelectedVideoId(video.id);
     setIsPlaying(false); // Reset playing state, ReactPlayer will handle autoplay
 
@@ -64,6 +66,7 @@ const VideoShowcase = () => {
   const handleClose = () => {
     setSelectedVideoId(null);
     setIsPlaying(false);
+    videoTriggerRef.current?.focus();
   };
 
   return (
@@ -76,8 +79,8 @@ const VideoShowcase = () => {
       </div>
 
       {/* Featured Video Player */}
-      <div ref={videoPlayerRef} className="mb-16 max-w-5xl mx-auto">
-        <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+      <div ref={videoPlayerRef} className="design-video-player mb-16 max-w-5xl mx-auto">
+        <div className={`relative w-full ${selectedVideo ? "" : "min-h-64"}`} style={{ paddingTop: "56.25%" }}>
           {selectedVideo ? (
             <div className="absolute inset-0 bg-black rounded-2xl border border-black-200 shadow-2xl">
               {/* Video Player Container */}
@@ -106,6 +109,7 @@ const VideoShowcase = () => {
                     }}
                     onPlay={() => setIsPlaying(true)}
                     onPause={() => setIsPlaying(false)}
+                    onEnded={() => setIsPlaying(false)}
                     onError={(error) => {
                       console.error("Error playing video:", error);
                       setIsPlaying(false);
@@ -132,6 +136,7 @@ const VideoShowcase = () => {
                     className="w-full h-full object-contain"
                     onPlay={() => setIsPlaying(true)}
                     onPause={() => setIsPlaying(false)}
+                    onEnded={() => setIsPlaying(false)}
                     preload="auto"
                     playsInline
                   >
@@ -142,8 +147,10 @@ const VideoShowcase = () => {
 
               {/* Close Button */}
               <button
+                type="button"
+                aria-label={t("videoShowcaseUI.closeVideo")}
                 onClick={handleClose}
-                className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+                className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 w-11 h-11 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
               >
                 <svg
                   className="w-6 h-6 text-white"
@@ -162,11 +169,11 @@ const VideoShowcase = () => {
 
               {/* Video Info Overlay */}
               {!isPlaying && (
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pointer-events-none">
-                  <h3 className="text-white text-2xl font-bold mb-2">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-3 sm:p-6 pointer-events-none">
+                  <h3 className="text-white text-sm sm:text-2xl font-bold mb-1 sm:mb-2 line-clamp-2">
                     {selectedVideo.title}
                   </h3>
-                  <p className="text-white-600">{selectedVideo.description}</p>
+                  <p className="text-white-600 text-xs sm:text-base line-clamp-2 sm:line-clamp-none">{selectedVideo.description}</p>
                 </div>
               )}
             </div>
@@ -209,7 +216,17 @@ const VideoShowcase = () => {
         {videos.map((video) => (
           <div
             key={video.id}
-            onClick={() => handleVideoSelect(video)}
+            role="button"
+            tabIndex={0}
+            aria-label={video.title}
+            aria-pressed={selectedVideoId === video.id}
+            onClick={(event) => handleVideoSelect(video, event.currentTarget)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                handleVideoSelect(video, event.currentTarget);
+              }
+            }}
             className="group relative bg-black-200 border border-black-300 rounded-xl overflow-hidden cursor-pointer hover:border-pink-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/20"
           >
             {/* Thumbnail */}
