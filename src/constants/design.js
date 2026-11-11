@@ -229,7 +229,6 @@ export const projectDetails = {
       {
         id: 1,
         videoUrl: "https://www.youtube.com/shorts/bPf5CPI8kGg",
-        thumbnail: "/assets/jewelry_thumbnail.png",
         duration: "1:20",
       },
     ],

@@ -70,7 +70,7 @@ export const portfolioVideos = [
     seconds: 44.01, width: 720, height: 720,
   }),
   localVideo({
-    id: "anuncios-ia", projectId: studio, status: demo,
+    id: "anuncios-ia", projectId: studio, status: demo, servicesPath: "/#casos",
     title: bilingual("Anuncios con IA", "Advertising with AI"),
     description: bilingual("Motion de presentación para un servicio de producción de anuncios con IA.", "Motion graphics introducing an AI-assisted ad production service."),
     seconds: 45.013, width: 720, height: 900,
@@ -106,7 +106,7 @@ export const portfolioVideos = [
     seconds: 43.1, width: 720, height: 1280,
   }),
   localVideo({
-    id: "color-legibilidad", projectId: studio, status: editorial,
+    id: "color-legibilidad", projectId: studio, status: editorial, servicesPath: "/diseno-web-empresas",
     title: bilingual("Color web · Legibilidad", "Web colour · Readability"),
     description: bilingual("Pieza educativa sobre cómo el color y la tipografía afectan a la lectura de una interfaz.", "An educational piece on how colour and typography affect the readability of an interface."),
     seconds: 23.1, width: 720, height: 1280,

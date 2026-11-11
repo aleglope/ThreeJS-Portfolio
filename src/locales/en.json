@@ -930,5 +930,68 @@
         "visit": "Visit Beirocor"
       }
     }
+  },
+  "recentWork": {
+    "heading": "Recent work and engineering cases",
+    "intro": "Projects in progress, experiments and engineering cases, with their status and available documentation.",
+    "velvetCase": "View the Velvet case",
+    "read": "Read case study",
+    "readNamed": "Read the {{title}} case study",
+    "repository": "View on GitHub",
+    "repositoryNamed": "View the {{title}} repository on GitHub",
+    "archiveTitle": "Professional archive",
+    "archiveIntro": "Case studies from previous work with my contribution and the scope of each delivery. Floor Planner documents my technical mentorship and the intern’s implementation.",
+    "archiveLink": "Browse the index of all eight cases",
+    "status": {
+      "client": "Client work",
+      "prototype": "Local prototype",
+      "experimental": "Experimental project",
+      "development": "In development",
+      "documented": "Documented project"
+    },
+    "projects": {
+      "velvet": {
+        "title": "Velvet ecosystem",
+        "description": "Product definition, UX and development for three websites with Diego Hermo and his team, alongside shared tools for the studios."
+      },
+      "rastro": {
+        "title": "Rastro",
+        "description": "AI-assisted product and supplier research with source-linked findings and recoverable searches. Commercial accuracy and large-scale searches are still being validated."
+      },
+      "combivideo": {
+        "title": "combivideo",
+        "description": "A manifest of alternative segments, reproducible selection and web playback. Validation with real media and different browsers is ongoing."
+      },
+      "palermo": {
+        "title": "Palermo Estilistas appointment diary",
+        "description": "A salon diary in local development, with appointment review and dictation being validated."
+      },
+      "virusinvaders": {
+        "title": "VirusInvaders LTS",
+        "description": "An arcade game built in Unity and C#, with modular enemy behaviour, ScriptableObjects and HLSL shaders."
+      },
+      "music-ia": {
+        "title": "Music IA",
+        "description": "Local TypeScript tooling for music generation with interchangeable providers and resumable jobs. The music video and publishing workflow remains in development."
+      },
+      "wentwit": {
+        "title": "Wentwit",
+        "description": "A prototype for preparing thank-you images for a Twitch community, with review before publishing. Integration and publishing are still being validated."
+      }
+    },
+    "professional": {
+      "audionow": {
+        "title": "AudioNow",
+        "description": "Real-time multilingual audio and session management. The case distinguishes documented live-session use of Palabra from an OpenAI integration in a canary environment."
+      },
+      "online-registration": {
+        "title": "Online Registration",
+        "description": "A registration and payments core with idempotency and coexistence with the legacy system. The case describes the delivered scope."
+      },
+      "printflow": {
+        "title": "PrintFlow",
+        "description": "An on-demand printing workflow connecting the web, an Electron desktop app and printers, with an offline mode."
+      }
+    }
   }
 }

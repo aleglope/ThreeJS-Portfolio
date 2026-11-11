@@ -372,9 +372,11 @@ button,
 }
 
 /* Shared controls for portfolio case pages and media. */
-.portfolio-link {
-  @apply inline-flex min-h-11 w-fit max-w-full items-center gap-2 rounded-sm py-2 font-semibold text-pink-300 underline underline-offset-4 hover:text-pink-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300;
-  overflow-wrap: anywhere;
+@layer components {
+  .portfolio-link {
+    @apply inline-flex min-h-11 w-fit max-w-full items-center gap-2 rounded-sm py-2 font-semibold text-pink-300 underline underline-offset-4 hover:text-pink-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300;
+    overflow-wrap: anywhere;
+  }
 }
 
 .portfolio-anchor, #contact {

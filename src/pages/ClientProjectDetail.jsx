@@ -30,7 +30,7 @@ const CaseVideos = ({ videoIds }) => {
   const video = videos.find(({ id }) => id === videoId);
 
   return (
-    <section className="mb-16 border-t border-white/10 pt-10" aria-labelledby="case-videos-title">
+    <section id="videos" tabIndex={-1} className="portfolio-anchor mb-16 border-t border-white/10 pt-10" aria-labelledby="case-videos-title">
       <h2 id="case-videos-title" className="head-text mb-5">{t("clientWork.pieces")}</h2>
       <ul className="mb-5 grid gap-2 sm:grid-cols-2">
         {videoIds.map((id) => {

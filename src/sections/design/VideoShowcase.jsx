@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types -- Parent passes the shared media coordinator callbacks. */
 import { useLayoutEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   MdAutoAwesome,
@@ -33,7 +33,7 @@ const iconMap = {
 
 const projectLinks = {
   "la-parrilla-de-champi": { to: "/design/project/la-parrilla-de-champi" },
-  bretema: { href: "/muestras/reloj-bretema" },
+  bretema: { href: "/estilos#experiencia-3d" },
   nova: { href: "/#maquetas" },
   alewences: { href: "/automatizacion-ia" },
 };
@@ -42,8 +42,10 @@ const VideoShowcase = ({ playerVersion = 0, onPlayerOpen, onPlayerClose }) => {
   const { t, i18n } = useTranslation();
   const videos = useLocalizedVideoShowcase();
   const skills = useLocalizedVideoSkills();
-  const [selectedVideoId, setSelectedVideoId] = useState(videos[0].id);
-  const [expanded, setExpanded] = useState(false);
+  const [searchParams] = useSearchParams();
+  const linkedVideo = videos.find(({ id }) => id === searchParams.get("video"));
+  const [selectedVideoId, setSelectedVideoId] = useState(linkedVideo?.id ?? videos[0].id);
+  const [expanded, setExpanded] = useState(Boolean(linkedVideo && !linkedVideo.featured));
   const titleRef = useRef(null);
   const selectionFocus = useRef(false);
 
@@ -90,7 +92,7 @@ const VideoShowcase = ({ playerVersion = 0, onPlayerOpen, onPlayerClose }) => {
           {projectLink.to ? (
             <Link to={projectLink.to} className="portfolio-link mt-2">{t("portfolioVideo.project")}</Link>
           ) : (
-            <a href={servicesUrl(projectLink.href)} className="portfolio-link mt-2">{t("portfolioVideo.related")}</a>
+            <a href={servicesUrl(selectedVideo.servicesPath ?? projectLink.href)} className="portfolio-link mt-2">{t("portfolioVideo.related")}</a>
           )}
         </div>
         <div className="min-w-0 md:col-start-1 md:row-start-1">

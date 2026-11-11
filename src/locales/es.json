@@ -930,5 +930,68 @@
         "visit": "Visitar Beirocor"
       }
     }
+  },
+  "recentWork": {
+    "heading": "Trabajo reciente y casos técnicos",
+    "intro": "Proyectos en curso, experimentos y casos de ingeniería con su estado y documentación disponible.",
+    "velvetCase": "Ver caso Velvet",
+    "read": "Leer caso",
+    "readNamed": "Leer el caso de {{title}}",
+    "repository": "Ver en GitHub",
+    "repositoryNamed": "Ver el repositorio de {{title}} en GitHub",
+    "archiveTitle": "Archivo profesional",
+    "archiveIntro": "Casos documentados de trabajo anterior, con mi contribución y el alcance de cada entrega. Floor Planner documenta mi labor de mentoría técnica y la implementación de la persona en prácticas.",
+    "archiveLink": "Ver el índice de los ocho casos",
+    "status": {
+      "client": "Trabajo real",
+      "prototype": "Prototipo local",
+      "experimental": "Proyecto experimental",
+      "development": "En desarrollo",
+      "documented": "Proyecto documentado"
+    },
+    "projects": {
+      "velvet": {
+        "title": "Ecosistema Velvet",
+        "description": "Definición de producto, UX y desarrollo de las tres webs con Diego Hermo y su equipo, además de herramientas compartidas para los estudios."
+      },
+      "rastro": {
+        "title": "Rastro",
+        "description": "Investigación de productos y proveedores con IA, resultados vinculados a fuentes y búsquedas recuperables. La precisión comercial y las búsquedas a gran escala siguen en validación."
+      },
+      "combivideo": {
+        "title": "combivideo",
+        "description": "Manifiesto de segmentos alternativos, selección reproducible y reproducción web. La validación con medios reales y distintos navegadores sigue en curso."
+      },
+      "palermo": {
+        "title": "Agenda de Palermo Estilistas",
+        "description": "Agenda de trabajo del salón en desarrollo local, con revisión de citas y dictado en validación."
+      },
+      "virusinvaders": {
+        "title": "VirusInvaders LTS",
+        "description": "Videojuego arcade en Unity y C#, con comportamiento modular de enemigos, ScriptableObjects y shaders HLSL."
+      },
+      "music-ia": {
+        "title": "Music IA",
+        "description": "Herramientas locales en TypeScript para generar música con proveedores intercambiables y trabajos reanudables. El flujo de vídeo musical y publicación sigue en desarrollo."
+      },
+      "wentwit": {
+        "title": "Wentwit",
+        "description": "Prototipo para preparar imágenes de agradecimiento a la comunidad de Twitch con revisión previa. La integración y el flujo de publicación se están validando."
+      }
+    },
+    "professional": {
+      "audionow": {
+        "title": "AudioNow",
+        "description": "Audio multilingüe en tiempo real y gestión de sesiones. El caso distingue el uso documentado de Palabra en sesiones en directo de la integración de OpenAI en entorno canario."
+      },
+      "online-registration": {
+        "title": "Online Registration",
+        "description": "Núcleo de registro y pagos con idempotencia y convivencia con el sistema anterior. El caso detalla el alcance entregado."
+      },
+      "printflow": {
+        "title": "PrintFlow",
+        "description": "Flujo de impresión bajo demanda que conecta la web, un escritorio Electron y las impresoras, con un modo para operar sin conexión."
+      }
+    }
   }
 }

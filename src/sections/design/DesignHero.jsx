@@ -66,20 +66,22 @@ const DesignHero = ({ activeMedia, onSceneToggle }) => {
         </div>
       )}
 
-      <div className="c-space relative z-10 mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-end gap-3 pb-5 pt-8">
-        <button
-          type="button"
-          onClick={onSceneToggle}
-          aria-expanded={sceneOpen}
-          aria-controls="design-scene-region"
-          className="min-h-11 rounded-full border border-white/20 bg-black/90 px-5 py-2 font-semibold text-white hover:border-pink-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
-        >
-          {t(sceneOpen ? "designHero.closeScene" : "designHero.openScene")}
-        </button>
-        <div id="design-scene-region" hidden={!sceneOpen} className="w-full">
-          {sceneOpen && <SketchfabModel modelId={reaperScene} title="Reaper Scene" />}
+      <div className="c-space relative z-10 mx-auto flex w-full max-w-2xl flex-1 flex-col justify-end pb-5 pt-8">
+        <div id="model-3d-showcase" tabIndex={-1} className="portfolio-anchor flex w-full flex-col items-center gap-3">
+          <button
+            type="button"
+            onClick={onSceneToggle}
+            aria-expanded={sceneOpen}
+            aria-controls="design-scene-region"
+            className="min-h-11 rounded-full border border-white/20 bg-black/90 px-5 py-2 font-semibold text-white hover:border-pink-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
+          >
+            {t(sceneOpen ? "designHero.closeScene" : "designHero.openScene")}
+          </button>
+          <div id="design-scene-region" hidden={!sceneOpen} className="w-full">
+            {sceneOpen && <SketchfabModel modelId={reaperScene} title="Reaper Scene" />}
+          </div>
+          <a href={`https://sketchfab.com/models/${reaperScene}`} className="portfolio-link text-sm">{t("designHero.sceneSource")}</a>
         </div>
-        <a href={`https://sketchfab.com/models/${reaperScene}`} className="portfolio-link text-sm">{t("designHero.sceneSource")}</a>
       </div>
 
       <div className="c-space relative z-10 mx-auto w-full pb-7 text-center">

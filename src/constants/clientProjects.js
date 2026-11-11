@@ -11,7 +11,7 @@ export const clientProjects = [
       { id: "brand", image: image("champi-marca.webp", 3508, 3508) },
       { id: "seasonal" },
       { id: "vacation", image: image("champi-vacaciones.webp", 1400, 1120) },
-      { id: "halloween", image: image("champi-halloween-web.webp", 1280, 800), servicesPath: "/muestras/champi-halloween" },
+      { id: "halloween", image: image("champi-halloween-web.webp", 1440, 810), servicesPath: "/muestras/champi-halloween" },
       { id: "platter", image: image("champi-parrillada.webp", 1000, 1000) },
       { id: "display", image: image("champi-vitrina.webp", 1000, 1000) },
     ],
