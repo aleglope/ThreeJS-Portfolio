@@ -1,9 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
 import * as THREE from "three";
 
 const CustomGlobe = () => {
     const globeEl = useRef();
+    const container = useRef(null);
+    const [size, setSize] = useState(326);
+
+    useEffect(() => {
+        const observer = new ResizeObserver(([entry]) => {
+            setSize(Math.max(1, Math.min(326, Math.floor(entry.contentRect.width))));
+        });
+        observer.observe(container.current);
+        return () => observer.disconnect();
+    }, []);
 
     useEffect(() => {
         const globe = globeEl.current;
@@ -90,13 +100,14 @@ const CustomGlobe = () => {
     };
 
     return (
+        <div ref={container} className="w-full max-w-[326px] overflow-hidden rounded-3xl">
         <Globe
             ref={globeEl}
             animateIn={false}
             globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
             bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-            height={326}
-            width={326}
+            height={size}
+            width={size}
             backgroundColor="rgba(0, 0, 0, 0)"
             backgroundImageOpacity={0.5}
 
@@ -135,6 +146,7 @@ const CustomGlobe = () => {
             hexPolygonGeoJsonGeometry={(feature) => feature.geometry}
 
         />
+        </div>
     );
 };
 

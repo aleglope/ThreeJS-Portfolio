@@ -1,0 +1,1585 @@
+{
+  "date": "2026-11-11",
+  "scope": "Local browser emulation; no deployment or campaign activation",
+  "viewportChecks": [
+    {
+      "label": "ads-390",
+      "brokenImages": [],
+      "headings": [
+        "Anuncios que traen clientes, no «me gusta»"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/anuncios#publicidad-ia",
+      "width": 390
+    },
+    {
+      "label": "home-390",
+      "brokenImages": [],
+      "headings": [
+        "Webs que conviertenvisitas en clientes."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/",
+      "width": 390
+    },
+    {
+      "label": "webviva-navidad-playing-390",
+      "brokenImages": [],
+      "headings": [
+        "Webs que conviertenvisitas en clientes."
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 13.375011,
+          "height": 1274,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:3016/media/champi-navidad.mp4",
+          "time": 0.019015,
+          "width": 716
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/",
+      "width": 390
+    },
+    {
+      "label": "webviva-feria-playing-390",
+      "brokenImages": [],
+      "headings": [
+        "Webs que conviertenvisitas en clientes."
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 11,
+          "height": 1274,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:3016/media/champi-feria.mp4",
+          "time": 0.030716,
+          "width": 716
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/",
+      "width": 390
+    },
+    {
+      "label": "portfolio-design-390",
+      "brokenImages": [],
+      "headings": [
+        "Diseñador Creativo y Editor de Vídeo"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:5178/design#video-showcase",
+      "width": 390
+    },
+    {
+      "label": "portfolio-spot-playing-390",
+      "brokenImages": [],
+      "headings": [
+        "Diseñador Creativo y Editor de Vídeo"
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 30.016,
+          "height": 720,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:5178/media/portfolio/videos/champi-spot.mp4",
+          "time": 0.014226,
+          "width": 1280
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:5178/design#video-showcase",
+      "width": 390
+    },
+    {
+      "label": "portfolio-en-390",
+      "brokenImages": [],
+      "headings": [
+        "Creative Designer & Video Editor"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:5178/design#video-showcase",
+      "width": 390
+    },
+    {
+      "label": "portfolio-en-320",
+      "brokenImages": [],
+      "headings": [
+        "Creative Designer & Video Editor"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design#video-showcase",
+      "width": 320
+    },
+    {
+      "label": "portfolio-champi-320",
+      "brokenImages": [],
+      "headings": [
+        "La Parrilla de Champi"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/la-parrilla-de-champi",
+      "width": 320
+    },
+    {
+      "label": "portfolio-champi-case-player-320",
+      "brokenImages": [],
+      "headings": [
+        "La Parrilla de Champi"
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 20.01,
+          "height": 1280,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:5178/media/portfolio/videos/champi-promo.mp4",
+          "time": 0.005133,
+          "width": 720
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/la-parrilla-de-champi",
+      "width": 320
+    },
+    {
+      "label": "portfolio-velvet-320",
+      "brokenImages": [],
+      "headings": [
+        "Velvet · Tres webs con Diego Hermo"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/velvet-ecosistema",
+      "width": 320
+    },
+    {
+      "label": "portfolio-dev-320",
+      "brokenImages": [],
+      "headings": [],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 323,
+      "url": "http://127.0.0.1:5178/dev",
+      "width": 320
+    },
+    {
+      "label": "business-ai-390",
+      "brokenImages": [],
+      "headings": [
+        "Menos tiempo pasando información.Más claridad para trabajar."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/automatizacion-ia",
+      "width": 390
+    },
+    {
+      "label": "business-ai-playing-Salir a la obra con lo necesario",
+      "brokenImages": [],
+      "headings": [
+        "Menos tiempo pasando información.Más claridad para trabajar."
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 32.106,
+          "height": 1280,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:3016/media/portfolio/videos/reformas-materiales.mp4",
+          "time": 0.005504,
+          "width": 720
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/automatizacion-ia",
+      "width": 390
+    },
+    {
+      "label": "business-ai-playing-Un inventario que puedes consultar",
+      "brokenImages": [],
+      "headings": [
+        "Menos tiempo pasando información.Más claridad para trabajar."
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 44.01,
+          "height": 720,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:3016/media/portfolio/videos/stock-ia.mp4",
+          "time": 0.015269,
+          "width": 720
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/automatizacion-ia",
+      "width": 390
+    },
+    {
+      "label": "business-ai-playing-La información, en un mismo lugar",
+      "brokenImages": [],
+      "headings": [
+        "Menos tiempo pasando información.Más claridad para trabajar."
+      ],
+      "iframes": 0,
+      "media": [
+        {
+          "duration": 30.016,
+          "height": 1280,
+          "paused": false,
+          "ready": 4,
+          "src": "http://127.0.0.1:3016/media/portfolio/videos/datos-negocio.mp4",
+          "time": 0.017861,
+          "width": 720
+        }
+      ],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/automatizacion-ia",
+      "width": 390
+    },
+    {
+      "label": "ads-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "Anuncios que traen clientes, no «me gusta»"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/anuncios#publicidad-ia",
+      "width": 320
+    },
+    {
+      "label": "/-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "Webs que conviertenvisitas en clientes."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/",
+      "width": 320
+    },
+    {
+      "label": "/estilos-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "No te lo cuento: te lo enseño"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/estilos",
+      "width": 320
+    },
+    {
+      "label": "/casos/velvet-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "Tres marcas.Una visión compartida."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/casos/velvet",
+      "width": 320
+    },
+    {
+      "label": "/casos/la-parrilla-de-champi-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "La Parrilla de Champi: una web que su dueño lleva desde el móvil"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/casos/la-parrilla-de-champi",
+      "width": 320
+    },
+    {
+      "label": "/muestras/champi-halloween-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "Una nochecon muchofuego."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 342,
+      "url": "http://127.0.0.1:3016/muestras/champi-halloween",
+      "width": 342
+    },
+    {
+      "label": "/automatizacion-ia-320-verified",
+      "brokenImages": [],
+      "headings": [
+        "Menos tiempo pasando información.Más claridad para trabajar."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/automatizacion-ia",
+      "width": 320
+    },
+    {
+      "label": "halloween-320-corrected",
+      "brokenImages": [],
+      "headings": [
+        "Una nochecon muchofuego."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:3016/muestras/champi-halloween",
+      "width": 320
+    },
+    {
+      "label": "halloween-390-corrected",
+      "brokenImages": [],
+      "headings": [
+        "Una nochecon muchofuego."
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/muestras/champi-halloween#ambiente",
+      "width": 390
+    },
+    {
+      "label": "dev-320-globe-corrected",
+      "brokenImages": [],
+      "headings": [],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/dev",
+      "width": 320
+    },
+    {
+      "label": "recent-work-320",
+      "brokenImages": [],
+      "headings": [],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/dev#recent-work",
+      "width": 320
+    },
+    {
+      "label": "legacy-brand-320",
+      "brokenImages": [],
+      "headings": [
+        "Identidad de marca UGC y diseño, de la web al contenido para redes sociales"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [
+        {
+          "left": 320,
+          "right": 404,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 322,
+          "right": 402,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 420,
+          "right": 504,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 422,
+          "right": 502,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 520,
+          "right": 604,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 522,
+          "right": 602,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 620,
+          "right": 704,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 622,
+          "right": 702,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 720,
+          "right": 804,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 722,
+          "right": 802,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 820,
+          "right": 904,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 822,
+          "right": 902,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 920,
+          "right": 1004,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 922,
+          "right": 1002,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 1020,
+          "right": 1104,
+          "tag": "BUTTON",
+          "text": ""
+        }
+      ],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/brand-identity-design",
+      "width": 320
+    },
+    {
+      "label": "legacy-ads-320",
+      "brokenImages": [],
+      "headings": [
+        "Contenido publicitario generado con IA y marketing en redes sociales"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/ai-advertising-content",
+      "width": 320
+    },
+    {
+      "label": "legacy-music-320",
+      "brokenImages": [],
+      "headings": [
+        "Visuales para Eventos Musicales y VJing"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [
+        {
+          "left": 320,
+          "right": 404,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 322,
+          "right": 402,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 420,
+          "right": 504,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 422,
+          "right": 502,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 520,
+          "right": 604,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 522,
+          "right": 602,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 620,
+          "right": 704,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 622,
+          "right": 702,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 720,
+          "right": 804,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 722,
+          "right": 802,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 820,
+          "right": 904,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 822,
+          "right": 902,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 920,
+          "right": 1004,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 922,
+          "right": 1002,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 1020,
+          "right": 1104,
+          "tag": "BUTTON",
+          "text": ""
+        }
+      ],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/music-event-visuals",
+      "width": 320
+    },
+    {
+      "label": "legacy-photographic-320",
+      "brokenImages": [],
+      "headings": [
+        "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [
+        {
+          "left": 320,
+          "right": 404,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 322,
+          "right": 402,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 420,
+          "right": 504,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 422,
+          "right": 502,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 520,
+          "right": 604,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 522,
+          "right": 602,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 620,
+          "right": 704,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 622,
+          "right": 702,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 720,
+          "right": 804,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 722,
+          "right": 802,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 820,
+          "right": 904,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 822,
+          "right": 902,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 920,
+          "right": 1004,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "left": 922,
+          "right": 1002,
+          "tag": "IMG",
+          "text": ""
+        },
+        {
+          "left": 1020,
+          "right": 1104,
+          "tag": "BUTTON",
+          "text": ""
+        }
+      ],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/design/project/ai-photographic-art",
+      "width": 320
+    },
+    {
+      "label": "portfolio-landing-320",
+      "brokenImages": [],
+      "headings": [
+        "Alejandro González López"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 320,
+      "url": "http://127.0.0.1:5178/",
+      "width": 320
+    },
+    {
+      "label": "portfolio-design-768",
+      "brokenImages": [],
+      "headings": [
+        "Diseñador Creativo y Editor de Vídeo"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 768,
+      "url": "http://127.0.0.1:5178/design",
+      "width": 768
+    },
+    {
+      "label": "ads-1024",
+      "brokenImages": [],
+      "headings": [
+        "Anuncios que traen clientes, no «me gusta»"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 1024,
+      "url": "http://127.0.0.1:3016/anuncios#publicidad-ia",
+      "width": 1024
+    },
+    {
+      "label": "portfolio-video-direct-390",
+      "brokenImages": [],
+      "headings": [
+        "Diseñador Creativo y Editor de Vídeo"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:5178/design?video=champi-seo#video-showcase",
+      "width": 390
+    },
+    {
+      "label": "ads-final-390",
+      "brokenImages": [],
+      "headings": [
+        "Anuncios que traen clientes, no «me gusta»"
+      ],
+      "iframes": 0,
+      "media": [],
+      "overflow": [],
+      "scrollWidth": 390,
+      "url": "http://127.0.0.1:3016/anuncios#publicidad-ia",
+      "width": 390
+    }
+  ],
+  "portfolioNative": [
+    {
+      "title": "La Parrilla de Champi · Spot",
+      "duration": 30.016,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/champi-spot.mp4",
+      "time": 0.014226,
+      "width": 1280
+    },
+    {
+      "title": "Abrir reproductor de Champi · De Maps a la web",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/champi-seo.mp4",
+      "time": 0.222775,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Champi · Rótulos de neón en 3D",
+      "count": 1,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/champi-rotulos.mp4",
+      "time": 0.010311,
+      "width": 960
+    },
+    {
+      "title": "Abrir reproductor de Brétema · Fareiro 39",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/bretema.mp4",
+      "time": 0.085218,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de NOVA · Asistente para barbería",
+      "count": 1,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/nova.mp4",
+      "time": 0.019144,
+      "width": 1280
+    },
+    {
+      "title": "Abrir reproductor de Reformas · Previsión de materiales",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/reformas-materiales.mp4",
+      "time": 0.04519,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Champi · Promoción vertical",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/champi-promo.mp4",
+      "time": 0.035472,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Control de stock con IA",
+      "count": 1,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/stock-ia.mp4",
+      "time": 0.021183,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Anuncios con IA",
+      "count": 1,
+      "height": 900,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/anuncios-ia.mp4",
+      "time": 0.008893,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Asistente de voz con IA",
+      "count": 1,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/asistente-voz.mp4",
+      "time": 0.010472,
+      "width": 1280
+    },
+    {
+      "title": "Abrir reproductor de ¿Respondes tarde?",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/respuesta-clientes.mp4",
+      "time": 0.013805,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Datos de negocio",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/datos-negocio.mp4",
+      "time": 0.004832,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Engram · Agentes con memoria",
+      "count": 1,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/engram.mp4",
+      "time": 0.009963,
+      "width": 1280
+    },
+    {
+      "title": "Abrir reproductor de Chatbots con IA · 3:07 AM",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/chatbot-307.mp4",
+      "time": 0.000432,
+      "width": 720
+    },
+    {
+      "title": "Abrir reproductor de Color web · Legibilidad",
+      "count": 1,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:5178/media/portfolio/videos/color-legibilidad.mp4",
+      "time": 0.069488,
+      "width": 720
+    }
+  ],
+  "commercialNative": [
+    {
+      "duration": 13.375011,
+      "height": 1274,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:3016/media/champi-navidad.mp4",
+      "time": 0.019015,
+      "width": 716
+    },
+    {
+      "duration": 11,
+      "height": 1274,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:3016/media/champi-feria.mp4",
+      "time": 0.030716,
+      "width": 716
+    },
+    {
+      "duration": 32.106,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:3016/media/portfolio/videos/reformas-materiales.mp4",
+      "time": 0.005504,
+      "width": 720
+    },
+    {
+      "duration": 44.01,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:3016/media/portfolio/videos/stock-ia.mp4",
+      "time": 0.015269,
+      "width": 720
+    },
+    {
+      "duration": 30.016,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:3016/media/portfolio/videos/datos-negocio.mp4",
+      "time": 0.017861,
+      "width": 720
+    }
+  ],
+  "legacyYouTube": [
+    {
+      "url": "https://www.youtube.com/shorts/bPf5CPI8kGg",
+      "time": 6.927,
+      "ready": 4,
+      "paused": false,
+      "width": 720,
+      "height": 720
+    },
+    {
+      "url": "https://www.youtube.com/shorts/W5W5vN9W628",
+      "duration": 61.861,
+      "ended": false,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "time": 27.0344,
+      "width": 720
+    },
+    {
+      "url": "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
+      "duration": 22.201,
+      "ended": false,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "time": 0.095572,
+      "width": 720
+    },
+    {
+      "url": "https://www.youtube.com/shorts/-48FW7i6peE",
+      "duration": 51.481,
+      "ended": false,
+      "height": 820,
+      "paused": false,
+      "ready": 4,
+      "time": 0.129619,
+      "width": 720
+    },
+    {
+      "url": "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
+      "duration": 13.121,
+      "ended": false,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "time": 0.030371,
+      "width": 720
+    },
+    {
+      "url": "https://www.youtube.com/shorts/o0IVhvMOUqE",
+      "duration": 11.921,
+      "ended": false,
+      "height": 1072,
+      "paused": false,
+      "ready": 4,
+      "time": 0.031883,
+      "width": 592
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vOZjQxlaAPY",
+      "duration": 24.301,
+      "ended": false,
+      "height": 480,
+      "paused": false,
+      "ready": 4,
+      "time": 0.092685,
+      "width": 480
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zwHNArb4730",
+      "duration": 16.061,
+      "ended": false,
+      "height": 480,
+      "paused": false,
+      "ready": 4,
+      "time": 0.106748,
+      "width": 854
+    },
+    {
+      "url": "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
+      "duration": 176.767,
+      "ended": false,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "time": 0.062446,
+      "width": 720
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Pthshy6sEHY",
+      "duration": 134.221,
+      "ended": false,
+      "height": 360,
+      "paused": false,
+      "ready": 4,
+      "time": 0.045367,
+      "width": 640
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1LTbk3_hLCU",
+      "duration": 301.041,
+      "ended": false,
+      "height": 640,
+      "paused": false,
+      "ready": 4,
+      "time": 0.028639,
+      "width": 356
+    },
+    {
+      "url": "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
+      "duration": 27.541,
+      "ended": false,
+      "height": 720,
+      "paused": false,
+      "ready": 4,
+      "time": 0.153911,
+      "width": 720
+    },
+    {
+      "url": "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
+      "duration": 40.041,
+      "ended": false,
+      "height": 1280,
+      "paused": false,
+      "ready": 4,
+      "time": 0.021203,
+      "width": 720
+    }
+  ],
+  "http": {
+    "total": 84,
+    "ok": 83,
+    "missingNextAnchors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:3016/",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/"
+      },
+      {
+        "url": "http://127.0.0.1:3016/anuncios",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/anuncios"
+      },
+      {
+        "url": "http://127.0.0.1:3016/automatizacion-ia",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/automatizacion-ia"
+      },
+      {
+        "url": "http://127.0.0.1:3016/aviso-legal",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/aviso-legal"
+      },
+      {
+        "url": "http://127.0.0.1:3016/casos/la-parrilla-de-champi",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/casos/la-parrilla-de-champi"
+      },
+      {
+        "url": "http://127.0.0.1:3016/casos/velvet",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/casos/velvet"
+      },
+      {
+        "url": "http://127.0.0.1:3016/chatbots-ia",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/chatbots-ia"
+      },
+      {
+        "url": "http://127.0.0.1:3016/cookies",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/cookies"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web-empresas",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web-empresas"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web/a-coruna",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web/a-coruna"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web/noia",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web/noia"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web/pontevedra",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web/pontevedra"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web/ribeira",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web/ribeira"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web/santiago-de-compostela",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web/santiago-de-compostela"
+      },
+      {
+        "url": "http://127.0.0.1:3016/diseno-web/vigo",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/diseno-web/vigo"
+      },
+      {
+        "url": "http://127.0.0.1:3016/estilos",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/estilos"
+      },
+      {
+        "url": "http://127.0.0.1:3016/muestras/champi-halloween",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/muestras/champi-halloween"
+      },
+      {
+        "url": "http://127.0.0.1:3016/privacidad",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/privacidad"
+      },
+      {
+        "url": "http://127.0.0.1:3016/seo-local",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/seo-local"
+      },
+      {
+        "url": "http://127.0.0.1:3016/sobre-mi",
+        "status": 200,
+        "final": "http://127.0.0.1:3016/sobre-mi"
+      },
+      {
+        "url": "http://127.0.0.1:5178/",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design/project/ai-advertising-content",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design/project/ai-advertising-content"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design/project/ai-photographic-art",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design/project/ai-photographic-art"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design/project/brand-identity-design",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design/project/brand-identity-design"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design/project/la-parrilla-de-champi",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design/project/la-parrilla-de-champi"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design/project/music-event-visuals",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design/project/music-event-visuals"
+      },
+      {
+        "url": "http://127.0.0.1:5178/design/project/velvet-ecosistema",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/design/project/velvet-ecosistema"
+      },
+      {
+        "url": "http://127.0.0.1:5178/dev",
+        "status": 200,
+        "final": "http://127.0.0.1:5178/dev"
+      },
+      {
+        "url": "https://about.ads.microsoft.com/en/blog/post/august-2026/reimagining-search-campaigns-for-the-ai-era-with-ai-max",
+        "status": 200,
+        "final": "https://about.ads.microsoft.com/en/blog/post/august-2026/reimagining-search-campaigns-for-the-ai-era-with-ai-max"
+      },
+      {
+        "url": "https://alewences.es/",
+        "status": 200,
+        "final": "https://alewences.es/"
+      },
+      {
+        "url": "https://beirocor.es/",
+        "status": 200,
+        "final": "https://beirocor.es/es/"
+      },
+      {
+        "url": "https://elcaminotattoo.es/",
+        "status": 200,
+        "final": "https://elcaminotattoo.es/en"
+      },
+      {
+        "url": "https://github.com/aleglope",
+        "status": 200,
+        "final": "https://github.com/aleglope"
+      },
+      {
+        "url": "https://github.com/aleglope/RuralHackerMuseum",
+        "status": 200,
+        "final": "https://github.com/aleglope/RuralHackerMuseum"
+      },
+      {
+        "url": "https://github.com/aleglope/VirusInvaders",
+        "status": 200,
+        "final": "https://github.com/aleglope/VirusInvaders"
+      },
+      {
+        "url": "https://github.com/aleglope/aleglope/blob/main/case-studies/combivideo.es.md",
+        "status": 200,
+        "final": "https://github.com/aleglope/aleglope/blob/main/case-studies/combivideo.es.md"
+      },
+      {
+        "url": "https://github.com/aleglope/aleglope/blob/main/case-studies/rastro.es.md",
+        "status": 200,
+        "final": "https://github.com/aleglope/aleglope/blob/main/case-studies/rastro.es.md"
+      },
+      {
+        "url": "https://github.com/aleglope/congress-tech-systems",
+        "status": 200,
+        "final": "https://github.com/aleglope/production-systems-case-studies"
+      },
+      {
+        "url": "https://github.com/aleglope/production-systems-case-studies",
+        "status": 200,
+        "final": "https://github.com/aleglope/production-systems-case-studies"
+      },
+      {
+        "url": "https://github.com/aleglope/production-systems-case-studies/blob/main/projects/audionow.md",
+        "status": 200,
+        "final": "https://github.com/aleglope/production-systems-case-studies/blob/main/projects/audionow.md"
+      },
+      {
+        "url": "https://github.com/aleglope/production-systems-case-studies/blob/main/projects/online-registration.md",
+        "status": 200,
+        "final": "https://github.com/aleglope/production-systems-case-studies/blob/main/projects/online-registration.md"
+      },
+      {
+        "url": "https://github.com/aleglope/production-systems-case-studies/blob/main/projects/printflow.md",
+        "status": 200,
+        "final": "https://github.com/aleglope/production-systems-case-studies/blob/main/projects/printflow.md"
+      },
+      {
+        "url": "https://help.openai.com/en/articles/20001047-ads-in-chatgpt",
+        "status": 200,
+        "final": "https://help.openai.com/en/articles/20001047-ads-in-chatgpt"
+      },
+      {
+        "url": "https://help.openai.com/en/articles/20001245-ads-manager-availability",
+        "status": 200,
+        "final": "https://help.openai.com/en/articles/20001245-ads-manager-availability"
+      },
+      {
+        "url": "https://help.openai.com/en/articles/20001534-troubleshooting-common-onboarding-and-policy-issues",
+        "status": 200,
+        "final": "https://help.openai.com/en/articles/20001534-troubleshooting-common-onboarding-and-policy-issues"
+      },
+      {
+        "url": "https://laparrilladechampi.es/es",
+        "status": 200,
+        "final": "https://laparrilladechampi.es/es"
+      },
+      {
+        "url": "https://muestras.alewences.es/ano-do-castineiro/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/ano-do-castineiro/"
+      },
+      {
+        "url": "https://muestras.alewences.es/chanto-construcion/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/chanto-construcion/"
+      },
+      {
+        "url": "https://muestras.alewences.es/faro-costa-da-morte/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/faro-costa-da-morte/"
+      },
+      {
+        "url": "https://muestras.alewences.es/manifiesto-ollo/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/manifiesto-ollo/"
+      },
+      {
+        "url": "https://muestras.alewences.es/reloj-bretema/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/reloj-bretema/"
+      },
+      {
+        "url": "https://muestras.alewences.es/restaurante/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/restaurante/"
+      },
+      {
+        "url": "https://muestras.alewences.es/rocha-fonda/",
+        "status": 200,
+        "final": "https://muestras.alewences.es/rocha-fonda/"
+      },
+      {
+        "url": "https://nova-barber-studio.vercel.app/",
+        "status": 200,
+        "final": "https://nova-barber-studio.vercel.app/"
+      },
+      {
+        "url": "https://nova-barber-studio.vercel.app/v3",
+        "status": 200,
+        "final": "https://nova-barber-studio.vercel.app/v3"
+      },
+      {
+        "url": "https://rural-hacker-museum.vercel.app/",
+        "status": 200,
+        "final": "https://rural-hacker-museum.vercel.app/"
+      },
+      {
+        "url": "https://sketchfab.com/models/31eb7468dce246538fc15edf25f97ef8",
+        "status": 200,
+        "final": "https://sketchfab.com/3d-models/reaper-scene-31eb7468dce246538fc15edf25f97ef8"
+      },
+      {
+        "url": "https://support.google.com/google-ads/answer/18826097?hl=en",
+        "status": 200,
+        "final": "https://support.google.com/google-ads/answer/18826097?hl=en"
+      },
+      {
+        "url": "https://velvetatto.com/es",
+        "status": 200,
+        "final": "https://velvetatto.com/es"
+      },
+      {
+        "url": "https://velvettattooacademy.es/",
+        "status": 200,
+        "final": "https://velvettattooacademy.es/"
+      },
+      {
+        "url": "https://www.facebook.com/alejandro.alewences",
+        "status": 200,
+        "final": "https://www.facebook.com/alejandro.alewences"
+      },
+      {
+        "url": "https://www.instagram.com/alewences.artia",
+        "status": 200,
+        "final": "https://www.instagram.com/alewences.artia"
+      },
+      {
+        "url": "https://www.laparrilladechampi.es/",
+        "status": 200,
+        "final": "https://laparrilladechampi.es/es"
+      },
+      {
+        "url": "https://www.laparrilladechampi.es/es/menu",
+        "status": 200,
+        "final": "https://laparrilladechampi.es/es/menu"
+      },
+      {
+        "url": "https://www.linkedin.com/in/alejandrogonzlopez",
+        "status": 999,
+        "error": "HTTP Error 999: <none>"
+      },
+      {
+        "url": "https://www.tiktok.com/@nextworldai",
+        "status": 200,
+        "final": "https://www.tiktok.com/@nextworldai"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/7UwD7YRqOLg",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/7UwD7YRqOLg?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/P_b8DT46CHM",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/P_b8DT46CHM?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/jrcoY_lo0Nw",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/jrcoY_lo0Nw?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/o0IVhvMOUqE",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/o0IVhvMOUqE?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/-48FW7i6peE",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/-48FW7i6peE?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/W5W5vN9W628",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/W5W5vN9W628?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/shorts/bPf5CPI8kGg",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/bPf5CPI8kGg?cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=1LTbk3_hLCU",
+        "status": 200,
+        "final": "https://www.youtube.com/watch?v=1LTbk3_hLCU"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Pthshy6sEHY",
+        "status": 200,
+        "final": "https://www.youtube.com/watch?v=Pthshy6sEHY"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=vOZjQxlaAPY",
+        "status": 200,
+        "final": "https://www.youtube.com/watch?v=vOZjQxlaAPY"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=zwHNArb4730",
+        "status": 200,
+        "final": "https://www.youtube.com/watch?v=zwHNArb4730"
+      },
+      {
+        "url": "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/7UwD7YRqOLg?feature=share&cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/H7lUU5mzyio?feature=share&cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/P_b8DT46CHM?feature=share&cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/d0cXdWOA9TA?feature=share&cbrd=1&ucbcb=1"
+      },
+      {
+        "url": "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
+        "status": 200,
+        "final": "https://www.youtube.com/shorts/jrcoY_lo0Nw?feature=share&cbrd=1&ucbcb=1"
+      }
+    ]
+  },
+  "interactions": {
+    "videoCloseRestoresFocus": true,
+    "selectionReplacesPlayer": true,
+    "videoAndSketchfabMutuallyExclusive": true,
+    "menusEscapeRestoresFocus": true,
+    "devMenuClosesOnAnchor": true,
+    "landingKeyboardLinks": true,
+    "faqChatgptOpens": true,
+    "esEn": true,
+    "reducedMotionHeaderTransition": "0s",
+    "reducedMotionScroll": "auto"
+  },
+  "limits": [
+    "Desktop Chromium viewport and coarse pointer emulation; no physical iOS or Android test. Native touch dispatch unsupported by this browser provider.",
+    "Playback verified by controls, advancing currentTime, readyState=4 and decoded dimensions; not complete audiovisual listening of every clip.",
+    "LinkedIn returned HTTP 999, so that external destination is not certified. Contact links inspected without sending forms/messages.",
+    "Legacy 3D console warnings and 27 pre-existing global ESLint errors remain outside this change."
+  ]
+}

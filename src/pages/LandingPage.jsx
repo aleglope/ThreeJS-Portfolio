@@ -2,7 +2,7 @@ import { servicesUrl } from "../constants/services.js";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState, useRef } from "react";
 import { PerspectiveCamera, Float } from "@react-three/drei";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -153,7 +153,6 @@ const InteractiveRings = ({ position, ...props }) => {
 };
 
 const LandingPage = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
 
   return (
@@ -232,9 +231,9 @@ const LandingPage = () => {
           {/* Portfolio Selection Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl px-4 pointer-events-auto">
             {/* Development Portfolio Card */}
-            <div
-              onClick={() => navigate("/dev")}
-              className="group relative bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-blue-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20"
+            <Link
+              to="/dev"
+              className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-blue-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-300"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -301,12 +300,12 @@ const LandingPage = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Design & Video Portfolio Card */}
-            <div
-              onClick={() => navigate("/design")}
-              className="group relative bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-pink-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20"
+            <Link
+              to="/design"
+              className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-pink-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-pink-300"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -373,7 +372,7 @@ const LandingPage = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Web Services Card (external). Es un <a> de verdad y no un div
                 con window.open: así Google cuenta el enlace hacia alewences.es
