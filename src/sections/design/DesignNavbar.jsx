@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import useLocalizedDesignNav from "../../hooks/useLocalizedDesignNav.js";
 import LanguageToggle from "../../components/LanguageToggle.jsx";
+import { servicesUrl } from "../../constants/services.js";
 
 const NavItems = ({ onNavigate }) => {
   const designNavLinks = useLocalizedDesignNav();
@@ -125,6 +126,14 @@ const DesignNavbar = () => {
             >
               {t("designNavbarUI.devPortfolio")}
             </button>
+            <a
+              href={servicesUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-full border border-emerald-400/40 bg-black-200 px-4 py-2 text-sm font-semibold text-emerald-300 transition-colors hover:border-emerald-300 hover:bg-emerald-400/10"
+            >
+              {t("designNavbarUI.servicesPortfolio")} <span aria-hidden="true">↗</span>
+            </a>
             <LanguageToggle />
           </nav>
         </div>
@@ -133,13 +142,22 @@ const DesignNavbar = () => {
       {isOpen && <div id="design-mobile-menu" className="absolute inset-x-0 top-full max-h-[calc(100dvh-84px)] overflow-y-auto overscroll-contain bg-black-200 backdrop-blur-sm lg:hidden">
         <nav className="p-5">
           <NavItems onNavigate={() => setIsOpen(false)} />
-          <div className="mt-4">
+          <div className="mt-4 grid gap-3">
             <button
               onClick={() => { setIsOpen(false); navigate("/dev"); }}
               className="w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
               {t("designNavbarUI.devPortfolio")}
             </button>
+            <a
+              href={servicesUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-emerald-400/40 bg-black-200 px-4 py-2 text-sm font-semibold text-emerald-300 transition-colors hover:border-emerald-300 hover:bg-emerald-400/10"
+            >
+              {t("designNavbarUI.servicesPortfolio")} <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <div className="mt-4 flex justify-center">
             <LanguageToggle className="[&_button]:min-h-11 [&_button]:min-w-11" />

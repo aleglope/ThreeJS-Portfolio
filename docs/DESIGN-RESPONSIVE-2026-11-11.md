@@ -42,3 +42,9 @@ Validación del formulario completo con transporte simulado **exclusivamente en 
 - Repetidos `npm run check:release` (14/14 tests y lint) y `npm run build`; entrada sin incremento: 402.934 bytes. Se mantienen los avisos previos de deepmerge bajo y chunk 3D. El inventario de medios original permanece intacto.
 
 Revisión local del formulario completo: `http://127.0.0.1:5181/design#contact`. El servidor y sustituto de EmailJS viven en `/tmp/design-contact-qa-20261111/`, fuera del repositorio; no contienen credenciales ni pueden enviar correo. Un aviso visible identifica la prueba. No se incluyen en el build ni en el despliegue. El build habitual en `http://127.0.0.1:5180/design` conserva la alternativa de correo al no haber claves locales. Esta prueba acredita presentación y estados del cliente, **no entrega real de EmailJS**.
+
+## Acceso a Servicios desde la navegación
+
+Petición posterior de Ale: añadir acceso al portfolio de servicios. El botón «Servicios» / «Services» aparece junto a Portfolio Dev en escritorio y debajo en el menú móvil. Reutiliza `servicesUrl()`, abre `https://alewences.es/` en otra pestaña y cierra el menú móvil al activarlo. No cambia la web de servicios.
+
+Comprobado en el build local: 1024×768 ES/EN, 1440×900 EN, 525×827, 320×568 y 844×390 ES; sin overflow horizontal ni controles fuera del ancho disponible. El menú horizontal dispone de scroll (530 px de contenido en 306 px), admite tabulación hasta ES y Escape devuelve el foco al botón. El enlace abrió la portada real de Alewences. Captura `services-menu-mobile.jpg` y medidas `services-menu-layout.json`. `check:release` y build correctos; 14 tests y entrada de 402.992 bytes. Cambios incluidos en el mismo PR de revisión, sin publicar a producción.

@@ -246,6 +246,7 @@
   },
   "designNavbarUI": {
     "devPortfolio": "Dev Portfolio",
+    "servicesPortfolio": "Services",
     "designLabel": "Design",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
