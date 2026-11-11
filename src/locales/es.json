@@ -246,6 +246,7 @@
   },
   "designNavbarUI": {
     "devPortfolio": "Portfolio Dev",
+    "servicesPortfolio": "Servicios",
     "designLabel": "Diseño",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
@@ -331,7 +332,8 @@
     "subheading": "Edición de vídeo profesional y proyectos de motion graphics",
     "emptyTitle": "Selecciona un vídeo abajo para reproducirlo",
     "emptyHint": "Haz clic en cualquier miniatura de vídeo para empezar a verlo",
-    "skillsHeading": "Habilidades de Producción de Imagen y Vídeo"
+    "skillsHeading": "Habilidades de Producción de Imagen y Vídeo",
+    "closeVideo": "Cerrar vídeo"
   },
   "projectTypesData": {
     "ai-video": "Generación de Vídeo con IA",
@@ -366,7 +368,9 @@
     "projectVideos": "Vídeos del proyecto",
     "allVideos": "Todos los vídeos",
     "nowPlaying": "Reproduciendo",
-    "projectGallery": "Galería del proyecto"
+    "projectGallery": "Galería del proyecto",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente"
   },
   "designGalleryGroups": {
     "Brand": "Marca",

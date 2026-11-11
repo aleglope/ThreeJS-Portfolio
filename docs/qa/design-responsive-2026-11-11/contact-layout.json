@@ -1,0 +1,3631 @@
+{
+  "source": "Local QA server with a network-free EmailJS mock; actual Contact component and styles",
+  "cases": [
+    {
+      "boxes": [
+        {
+          "h": 67.1875,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 238,
+          "x": 21,
+          "y": 21
+        },
+        {
+          "h": 148.4765625,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 238,
+          "x": 21,
+          "y": 100.1875
+        },
+        {
+          "h": 44.796875,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 238,
+          "x": 21,
+          "y": 260.6640625
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 337.4609375
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 238,
+          "x": 21,
+          "y": 377.4609375
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 457.4609375
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 238,
+          "x": 21,
+          "y": 497.4609375
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 577.4609375
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 238,
+          "x": 21,
+          "y": 617.4609375
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 697.4609375
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 238,
+          "x": 21,
+          "y": 737.4609375
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 238,
+          "x": 21,
+          "y": 917.4609375
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 238,
+          "x": 21,
+          "y": 989.4609375
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 21,
+          "y": 989.4609375
+        }
+      ],
+      "documentWidth": 320,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "238px",
+      "heading": "Creemos algo juntos",
+      "height": 568,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 1054.4609375,
+        "width": 280
+      },
+      "width": 320
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 278,
+          "x": 21,
+          "y": 21
+        },
+        {
+          "h": 148.4765625,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 278,
+          "x": 21,
+          "y": 66.59375
+        },
+        {
+          "h": 44.796875,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 278,
+          "x": 21,
+          "y": 227.0703125
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 303.8671875
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 278,
+          "x": 21,
+          "y": 343.8671875
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 423.8671875
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 278,
+          "x": 21,
+          "y": 463.8671875
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 543.8671875
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 278,
+          "x": 21,
+          "y": 583.8671875
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 663.8671875
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 278,
+          "x": 21,
+          "y": 703.8671875
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 278,
+          "x": 21,
+          "y": 883.8671875
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 278,
+          "x": 21,
+          "y": 955.8671875
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 21,
+          "y": 955.8671875
+        }
+      ],
+      "documentWidth": 360,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "278px",
+      "heading": "Creemos algo juntos",
+      "height": 800,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 1020.8671875,
+        "width": 320
+      },
+      "width": 360
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 308,
+          "x": 21,
+          "y": 21
+        },
+        {
+          "h": 118.78125,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 308,
+          "x": 21,
+          "y": 66.59375
+        },
+        {
+          "h": 44.796875,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 308,
+          "x": 21,
+          "y": 197.375
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 274.171875
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 308,
+          "x": 21,
+          "y": 314.171875
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 394.171875
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 308,
+          "x": 21,
+          "y": 434.171875
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 514.171875
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 308,
+          "x": 21,
+          "y": 554.171875
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 634.171875
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 308,
+          "x": 21,
+          "y": 674.171875
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 308,
+          "x": 21,
+          "y": 854.171875
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 308,
+          "x": 21,
+          "y": 926.171875
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 21,
+          "y": 926.171875
+        }
+      ],
+      "documentWidth": 390,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "308px",
+      "heading": "Creemos algo juntos",
+      "height": 844,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 991.171875,
+        "width": 350
+      },
+      "width": 390
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 441,
+          "x": 22,
+          "y": 22
+        },
+        {
+          "h": 89.0859375,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 441,
+          "x": 22,
+          "y": 67.59375
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 22,
+          "y": 168.6796875
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 223.078125
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 441,
+          "x": 22,
+          "y": 263.078125
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 343.078125
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 441,
+          "x": 22,
+          "y": 383.078125
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 463.078125
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 441,
+          "x": 22,
+          "y": 503.078125
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 583.078125
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 441,
+          "x": 22,
+          "y": 623.078125
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 441,
+          "x": 22,
+          "y": 803.078125
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 441,
+          "x": 22,
+          "y": 875.078125
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 22,
+          "y": 875.078125
+        }
+      ],
+      "documentWidth": 525,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "441px",
+      "heading": "Creemos algo juntos",
+      "height": 827,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 941.078125,
+        "width": 485
+      },
+      "width": 525
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 26.59375
+        },
+        {
+          "h": 59.390625,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 72.1875
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 26.59375,
+          "y": 143.578125
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 241.40625,
+          "x": 26.59375,
+          "y": 197.9765625
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 241.40625,
+          "x": 26.59375,
+          "y": 237.9765625
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 241.40625,
+          "x": 292,
+          "y": 197.9765625
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 241.40625,
+          "x": 292,
+          "y": 237.9765625
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 317.9765625
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 357.9765625
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 437.9765625
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 477.9765625
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 657.9765625
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 729.9765625
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 26.59375,
+          "y": 729.9765625
+        }
+      ],
+      "documentWidth": 640,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "241.406px 241.406px",
+      "heading": "Creemos algo juntos",
+      "height": 800,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 800.5703125,
+        "width": 560
+      },
+      "width": 640
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 31.71875
+        },
+        {
+          "h": 59.390625,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 77.3125
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 31.71875,
+          "y": 148.703125
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 300.28125,
+          "x": 31.71875,
+          "y": 203.1015625
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 300.28125,
+          "x": 31.71875,
+          "y": 243.1015625
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 300.28125,
+          "x": 356,
+          "y": 203.1015625
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 300.28125,
+          "x": 356,
+          "y": 243.1015625
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 323.1015625
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 363.1015625
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 443.1015625
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 483.1015625
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 663.1015625
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 735.1015625
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 31.71875,
+          "y": 735.1015625
+        }
+      ],
+      "documentWidth": 768,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "300.281px 300.281px",
+      "heading": "Creemos algo juntos",
+      "height": 1024,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 810.8203125,
+        "width": 688
+      },
+      "width": 768
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 34.7578125
+        },
+        {
+          "h": 59.390625,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 80.3515625
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 34.7578125,
+          "y": 151.7421875
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 335.2421875,
+          "x": 34.7578125,
+          "y": 206.140625
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 335.2421875,
+          "x": 34.7578125,
+          "y": 246.140625
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 335.2421875,
+          "x": 394,
+          "y": 206.140625
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 335.2421875,
+          "x": 394,
+          "y": 246.140625
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 326.140625
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 366.140625
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 446.140625
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 486.140625
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 666.140625
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 738.140625
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 34.7578125,
+          "y": 738.140625
+        }
+      ],
+      "documentWidth": 844,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "335.242px 335.242px",
+      "heading": "Creemos algo juntos",
+      "height": 390,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 816.8984375,
+        "width": 764
+      },
+      "width": 844
+    },
+    {
+      "boxes": [
+        {
+          "h": 36.859375,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 327.65625,
+          "x": 41.953125,
+          "y": 41.953125
+        },
+        {
+          "h": 118.78125,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 327.65625,
+          "x": 41.953125,
+          "y": 90.8125
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 41.953125,
+          "y": 221.59375
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 233.7421875,
+          "x": 410.5625,
+          "y": 41.953125
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 233.7421875,
+          "x": 410.5625,
+          "y": 81.953125
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 233.7421875,
+          "x": 668.3046875,
+          "y": 41.953125
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 233.7421875,
+          "x": 668.3046875,
+          "y": 81.953125
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 161.953125
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 201.953125
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 281.953125
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 321.953125
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 501.953125
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 573.953125
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 410.5625,
+          "y": 573.953125
+        }
+      ],
+      "documentWidth": 1024,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "233.742px 233.742px",
+      "heading": "Creemos algo juntos",
+      "height": 768,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 659.90625,
+        "width": 944
+      },
+      "width": 1024
+    },
+    {
+      "boxes": [
+        {
+          "h": 48,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 417.7578125,
+          "x": 49,
+          "y": 49
+        },
+        {
+          "h": 89.0859375,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 417.7578125,
+          "x": 49,
+          "y": 109
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 49,
+          "y": 210.0859375
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 301.3203125,
+          "x": 524.3515625,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 301.3203125,
+          "x": 524.3515625,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 301.328125,
+          "x": 849.671875,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 301.328125,
+          "x": 849.671875,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 169
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 209
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 289
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 329
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 509
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 581
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 524.3515625,
+          "y": 581
+        }
+      ],
+      "documentWidth": 1440,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "301.32px 301.328px",
+      "heading": "Creemos algo juntos",
+      "height": 900,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 674,
+        "width": 1200
+      },
+      "width": 1440
+    },
+    {
+      "boxes": [
+        {
+          "h": 48,
+          "name": "Creemos algo juntos",
+          "outside": false,
+          "tag": "H2",
+          "w": 415.1953125,
+          "x": 49,
+          "y": 49
+        },
+        {
+          "h": 89.0859375,
+          "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+          "outside": false,
+          "tag": "P",
+          "w": 415.1953125,
+          "x": 49,
+          "y": 109
+        },
+        {
+          "h": 22.3984375,
+          "name": "¿Tienes un negocio? Descubre mis servicios web →",
+          "outside": false,
+          "tag": "A",
+          "w": 320.8984375,
+          "x": 49,
+          "y": 210.0859375
+        },
+        {
+          "h": 96,
+          "name": "Nombre completo",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 299.3984375,
+          "x": 528.1953125,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 299.3984375,
+          "x": 528.1953125,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Correo electrónico",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 299.40625,
+          "x": 851.59375,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 299.40625,
+          "x": 851.59375,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 169
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 209
+        },
+        {
+          "h": 196,
+          "name": "Tu mensaje",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 289
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 329
+        },
+        {
+          "h": 48,
+          "name": "Enviar mensaje",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 509
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "P",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 581
+        },
+        {
+          "h": 44,
+          "name": "Política de privacidad",
+          "outside": false,
+          "tag": "A",
+          "w": 142.765625,
+          "x": 528.1953125,
+          "y": 581
+        }
+      ],
+      "documentWidth": 1920,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "299.398px 299.406px",
+      "heading": "Creemos algo juntos",
+      "height": 1080,
+      "language": "es",
+      "overlap": false,
+      "panel": {
+        "height": 674,
+        "width": 1200
+      },
+      "width": 1920
+    },
+    {
+      "boxes": [
+        {
+          "h": 67.1875,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 238,
+          "x": 21,
+          "y": 21
+        },
+        {
+          "h": 148.4765625,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 238,
+          "x": 21,
+          "y": 100.1875
+        },
+        {
+          "h": 44.796875,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 238,
+          "x": 21,
+          "y": 260.6640625
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 337.4609375
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 238,
+          "x": 21,
+          "y": 377.4609375
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 457.4609375
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 238,
+          "x": 21,
+          "y": 497.4609375
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 577.4609375
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 238,
+          "x": 21,
+          "y": 617.4609375
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 238,
+          "x": 21,
+          "y": 697.4609375
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 238,
+          "x": 21,
+          "y": 737.4609375
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 238,
+          "x": 21,
+          "y": 917.4609375
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 238,
+          "x": 21,
+          "y": 989.4609375
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 21,
+          "y": 989.4609375
+        }
+      ],
+      "documentWidth": 320,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "238px",
+      "heading": "Let's Create Together",
+      "height": 568,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 1054.4609375,
+        "width": 280
+      },
+      "width": 320
+    },
+    {
+      "boxes": [
+        {
+          "h": 67.1875,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 278,
+          "x": 21,
+          "y": 21
+        },
+        {
+          "h": 118.78125,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 278,
+          "x": 21,
+          "y": 100.1875
+        },
+        {
+          "h": 44.796875,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 278,
+          "x": 21,
+          "y": 230.96875
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 307.765625
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 278,
+          "x": 21,
+          "y": 347.765625
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 427.765625
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 278,
+          "x": 21,
+          "y": 467.765625
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 547.765625
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 278,
+          "x": 21,
+          "y": 587.765625
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 278,
+          "x": 21,
+          "y": 667.765625
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 278,
+          "x": 21,
+          "y": 707.765625
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 278,
+          "x": 21,
+          "y": 887.765625
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 278,
+          "x": 21,
+          "y": 959.765625
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 21,
+          "y": 959.765625
+        }
+      ],
+      "documentWidth": 360,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "278px",
+      "heading": "Let's Create Together",
+      "height": 800,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 1024.765625,
+        "width": 320
+      },
+      "width": 360
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 308,
+          "x": 21,
+          "y": 21
+        },
+        {
+          "h": 118.78125,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 308,
+          "x": 21,
+          "y": 66.59375
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 21,
+          "y": 197.375
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 251.7734375
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 308,
+          "x": 21,
+          "y": 291.7734375
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 371.7734375
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 308,
+          "x": 21,
+          "y": 411.7734375
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 491.7734375
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 308,
+          "x": 21,
+          "y": 531.7734375
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 308,
+          "x": 21,
+          "y": 611.7734375
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 308,
+          "x": 21,
+          "y": 651.7734375
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 308,
+          "x": 21,
+          "y": 831.7734375
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 308,
+          "x": 21,
+          "y": 903.7734375
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 21,
+          "y": 903.7734375
+        }
+      ],
+      "documentWidth": 390,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "308px",
+      "heading": "Let's Create Together",
+      "height": 844,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 968.7734375,
+        "width": 350
+      },
+      "width": 390
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 441,
+          "x": 22,
+          "y": 22
+        },
+        {
+          "h": 89.0859375,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 441,
+          "x": 22,
+          "y": 67.59375
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 22,
+          "y": 168.6796875
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 223.078125
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 441,
+          "x": 22,
+          "y": 263.078125
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 343.078125
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 441,
+          "x": 22,
+          "y": 383.078125
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 463.078125
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 441,
+          "x": 22,
+          "y": 503.078125
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 441,
+          "x": 22,
+          "y": 583.078125
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 441,
+          "x": 22,
+          "y": 623.078125
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 441,
+          "x": 22,
+          "y": 803.078125
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 441,
+          "x": 22,
+          "y": 875.078125
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 22,
+          "y": 875.078125
+        }
+      ],
+      "documentWidth": 525,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "441px",
+      "heading": "Let's Create Together",
+      "height": 827,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 941.078125,
+        "width": 485
+      },
+      "width": 525
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 26.59375
+        },
+        {
+          "h": 89.0859375,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 72.1875
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 26.59375,
+          "y": 173.2734375
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 241.40625,
+          "x": 26.59375,
+          "y": 227.671875
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 241.40625,
+          "x": 26.59375,
+          "y": 267.671875
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 241.40625,
+          "x": 292,
+          "y": 227.671875
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 241.40625,
+          "x": 292,
+          "y": 267.671875
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 347.671875
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 387.671875
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 467.671875
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 507.671875
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 687.671875
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 506.8125,
+          "x": 26.59375,
+          "y": 759.671875
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 26.59375,
+          "y": 759.671875
+        }
+      ],
+      "documentWidth": 640,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "241.406px 241.406px",
+      "heading": "Let's Create Together",
+      "height": 800,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 830.265625,
+        "width": 560
+      },
+      "width": 640
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 31.71875
+        },
+        {
+          "h": 59.390625,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 77.3125
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 31.71875,
+          "y": 148.703125
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 300.28125,
+          "x": 31.71875,
+          "y": 203.1015625
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 300.28125,
+          "x": 31.71875,
+          "y": 243.1015625
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 300.28125,
+          "x": 356,
+          "y": 203.1015625
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 300.28125,
+          "x": 356,
+          "y": 243.1015625
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 323.1015625
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 363.1015625
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 443.1015625
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 483.1015625
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 663.1015625
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 624.5625,
+          "x": 31.71875,
+          "y": 735.1015625
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 31.71875,
+          "y": 735.1015625
+        }
+      ],
+      "documentWidth": 768,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "300.281px 300.281px",
+      "heading": "Let's Create Together",
+      "height": 1024,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 810.8203125,
+        "width": 688
+      },
+      "width": 768
+    },
+    {
+      "boxes": [
+        {
+          "h": 33.59375,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 34.7578125
+        },
+        {
+          "h": 59.390625,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 80.3515625
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 34.7578125,
+          "y": 151.7421875
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 335.2421875,
+          "x": 34.7578125,
+          "y": 206.140625
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 335.2421875,
+          "x": 34.7578125,
+          "y": 246.140625
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 335.2421875,
+          "x": 394,
+          "y": 206.140625
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 335.2421875,
+          "x": 394,
+          "y": 246.140625
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 326.140625
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 366.140625
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 446.140625
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 486.140625
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 666.140625
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 694.484375,
+          "x": 34.7578125,
+          "y": 738.140625
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 34.7578125,
+          "y": 738.140625
+        }
+      ],
+      "documentWidth": 844,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "335.242px 335.242px",
+      "heading": "Let's Create Together",
+      "height": 390,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 816.8984375,
+        "width": 764
+      },
+      "width": 844
+    },
+    {
+      "boxes": [
+        {
+          "h": 36.859375,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 327.65625,
+          "x": 41.953125,
+          "y": 41.953125
+        },
+        {
+          "h": 118.78125,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 327.65625,
+          "x": 41.953125,
+          "y": 90.8125
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 41.953125,
+          "y": 221.59375
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 233.7421875,
+          "x": 410.5625,
+          "y": 41.953125
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 233.7421875,
+          "x": 410.5625,
+          "y": 81.953125
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 233.7421875,
+          "x": 668.3046875,
+          "y": 41.953125
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 233.7421875,
+          "x": 668.3046875,
+          "y": 81.953125
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 161.953125
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 201.953125
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 281.953125
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 321.953125
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 501.953125
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 491.484375,
+          "x": 410.5625,
+          "y": 573.953125
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 410.5625,
+          "y": 573.953125
+        }
+      ],
+      "documentWidth": 1024,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "233.742px 233.742px",
+      "heading": "Let's Create Together",
+      "height": 768,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 659.90625,
+        "width": 944
+      },
+      "width": 1024
+    },
+    {
+      "boxes": [
+        {
+          "h": 48,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 417.7578125,
+          "x": 49,
+          "y": 49
+        },
+        {
+          "h": 89.0859375,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 417.7578125,
+          "x": 49,
+          "y": 109
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 49,
+          "y": 210.0859375
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 301.3203125,
+          "x": 524.3515625,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 301.3203125,
+          "x": 524.3515625,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 301.328125,
+          "x": 849.671875,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 301.328125,
+          "x": 849.671875,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 169
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 209
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 289
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 329
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 509
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 626.6484375,
+          "x": 524.3515625,
+          "y": 581
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 524.3515625,
+          "y": 581
+        }
+      ],
+      "documentWidth": 1440,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "301.32px 301.328px",
+      "heading": "Let's Create Together",
+      "height": 900,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 674,
+        "width": 1200
+      },
+      "width": 1440
+    },
+    {
+      "boxes": [
+        {
+          "h": 96,
+          "name": "Let's Create Together",
+          "outside": false,
+          "tag": "H2",
+          "w": 415.1953125,
+          "x": 49,
+          "y": 49
+        },
+        {
+          "h": 89.0859375,
+          "name": "Looking for creative design or video production? L",
+          "outside": false,
+          "tag": "P",
+          "w": 415.1953125,
+          "x": 49,
+          "y": 157
+        },
+        {
+          "h": 22.3984375,
+          "name": "Run a business? Check out my web services →",
+          "outside": false,
+          "tag": "A",
+          "w": 292.8125,
+          "x": 49,
+          "y": 258.0859375
+        },
+        {
+          "h": 96,
+          "name": "Full Name",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 299.3984375,
+          "x": 528.1953125,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "name",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 299.3984375,
+          "x": 528.1953125,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Email address",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 299.40625,
+          "x": 851.59375,
+          "y": 49
+        },
+        {
+          "h": 56,
+          "name": "email",
+          "outside": false,
+          "tag": "INPUT",
+          "w": 299.40625,
+          "x": 851.59375,
+          "y": 89
+        },
+        {
+          "h": 96,
+          "name": "Project TypeAI Video GenerationAI Avatar CreationA",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 169
+        },
+        {
+          "h": 56,
+          "name": "projectType",
+          "outside": false,
+          "tag": "SELECT",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 209
+        },
+        {
+          "h": 196,
+          "name": "Your message",
+          "outside": false,
+          "tag": "LABEL",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 289
+        },
+        {
+          "h": 156,
+          "name": "message",
+          "outside": false,
+          "tag": "TEXTAREA",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 329
+        },
+        {
+          "h": 48,
+          "name": "Send Message",
+          "outside": false,
+          "tag": "BUTTON",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 509
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "P",
+          "w": 622.8046875,
+          "x": 528.1953125,
+          "y": 581
+        },
+        {
+          "h": 44,
+          "name": "Privacy Policy",
+          "outside": false,
+          "tag": "A",
+          "w": 91.9453125,
+          "x": 528.1953125,
+          "y": 581
+        }
+      ],
+      "documentWidth": 1920,
+      "footer": [
+        {
+          "height": 48,
+          "href": "https://github.com/aleglope",
+          "label": "GitHub: aleglope",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.tiktok.com/@alewencesai",
+          "label": "TikTok: @alewencesai",
+          "outside": false,
+          "width": 48
+        },
+        {
+          "height": 48,
+          "href": "https://www.instagram.com/alewences.artia/",
+          "label": "Instagram: @alewences.artia",
+          "outside": false,
+          "width": 48
+        }
+      ],
+      "formColumns": "299.398px 299.406px",
+      "heading": "Let's Create Together",
+      "height": 1080,
+      "language": "en",
+      "overlap": false,
+      "panel": {
+        "height": 674,
+        "width": 1200
+      },
+      "width": 1920
+    }
+  ],
+  "error": {
+    "boxes": [
+      {
+        "h": 33.59375,
+        "name": "Creemos algo juntos",
+        "outside": false,
+        "tag": "H2",
+        "w": 308,
+        "x": 21,
+        "y": 21
+      },
+      {
+        "h": 118.78125,
+        "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+        "outside": false,
+        "tag": "P",
+        "w": 308,
+        "x": 21,
+        "y": 66.59375
+      },
+      {
+        "h": 44.796875,
+        "name": "¿Tienes un negocio? Descubre mis servicios web →",
+        "outside": false,
+        "tag": "A",
+        "w": 308,
+        "x": 21,
+        "y": 197.375
+      },
+      {
+        "h": 96,
+        "name": "Nombre completo",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 308,
+        "x": 21,
+        "y": 274.171875
+      },
+      {
+        "h": 56,
+        "name": "name",
+        "outside": false,
+        "tag": "INPUT",
+        "w": 308,
+        "x": 21,
+        "y": 314.171875
+      },
+      {
+        "h": 96,
+        "name": "Correo electrónico",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 308,
+        "x": 21,
+        "y": 394.171875
+      },
+      {
+        "h": 56,
+        "name": "email",
+        "outside": false,
+        "tag": "INPUT",
+        "w": 308,
+        "x": 21,
+        "y": 434.171875
+      },
+      {
+        "h": 96,
+        "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 308,
+        "x": 21,
+        "y": 514.171875
+      },
+      {
+        "h": 56,
+        "name": "projectType",
+        "outside": false,
+        "tag": "SELECT",
+        "w": 308,
+        "x": 21,
+        "y": 554.171875
+      },
+      {
+        "h": 196,
+        "name": "Tu mensajeERROR · Comprobación local de contacto.",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 308,
+        "x": 21,
+        "y": 634.171875
+      },
+      {
+        "h": 156,
+        "name": "message",
+        "outside": false,
+        "tag": "TEXTAREA",
+        "w": 308,
+        "x": 21,
+        "y": 674.171875
+      },
+      {
+        "h": 48,
+        "name": "Enviar mensaje",
+        "outside": false,
+        "tag": "BUTTON",
+        "w": 308,
+        "x": 21,
+        "y": 854.171875
+      },
+      {
+        "h": 44,
+        "name": "Política de privacidad",
+        "outside": false,
+        "tag": "P",
+        "w": 308,
+        "x": 21,
+        "y": 926.171875
+      },
+      {
+        "h": 44,
+        "name": "Política de privacidad",
+        "outside": false,
+        "tag": "A",
+        "w": 142.765625,
+        "x": 21,
+        "y": 926.171875
+      },
+      {
+        "h": 60,
+        "name": "No recibí tu mensaje 😢",
+        "outside": false,
+        "tag": "DIV",
+        "w": 308,
+        "x": 21,
+        "y": 994.171875
+      }
+    ],
+    "documentWidth": 390,
+    "footer": [
+      {
+        "height": 48,
+        "href": "https://github.com/aleglope",
+        "label": "GitHub: aleglope",
+        "outside": false,
+        "width": 48
+      },
+      {
+        "height": 48,
+        "href": "https://www.tiktok.com/@alewencesai",
+        "label": "TikTok: @alewencesai",
+        "outside": false,
+        "width": 48
+      },
+      {
+        "height": 48,
+        "href": "https://www.instagram.com/alewences.artia/",
+        "label": "Instagram: @alewences.artia",
+        "outside": false,
+        "width": 48
+      }
+    ],
+    "formColumns": "308px",
+    "heading": "Creemos algo juntos",
+    "height": 844,
+    "language": "es",
+    "overlap": false,
+    "panel": {
+      "height": 1075.171875,
+      "width": 350
+    },
+    "width": 390
+  },
+  "success": {
+    "boxes": [
+      {
+        "h": 33.59375,
+        "name": "Creemos algo juntos",
+        "outside": false,
+        "tag": "H2",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 34.7578125
+      },
+      {
+        "h": 59.390625,
+        "name": "¿Buscas diseño creativo o producción de vídeo? Dem",
+        "outside": false,
+        "tag": "P",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 80.3515625
+      },
+      {
+        "h": 22.3984375,
+        "name": "¿Tienes un negocio? Descubre mis servicios web →",
+        "outside": false,
+        "tag": "A",
+        "w": 320.8984375,
+        "x": 34.7578125,
+        "y": 151.7421875
+      },
+      {
+        "h": 96,
+        "name": "Nombre completo",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 335.2421875,
+        "x": 34.7578125,
+        "y": 206.140625
+      },
+      {
+        "h": 56,
+        "name": "name",
+        "outside": false,
+        "tag": "INPUT",
+        "w": 335.2421875,
+        "x": 34.7578125,
+        "y": 246.140625
+      },
+      {
+        "h": 96,
+        "name": "Correo electrónico",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 335.2421875,
+        "x": 394,
+        "y": 206.140625
+      },
+      {
+        "h": 56,
+        "name": "email",
+        "outside": false,
+        "tag": "INPUT",
+        "w": 335.2421875,
+        "x": 394,
+        "y": 246.140625
+      },
+      {
+        "h": 96,
+        "name": "Tipo de proyectoGeneración de Vídeo con IACreación",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 326.140625
+      },
+      {
+        "h": 56,
+        "name": "projectType",
+        "outside": false,
+        "tag": "SELECT",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 366.140625
+      },
+      {
+        "h": 196,
+        "name": "Tu mensaje",
+        "outside": false,
+        "tag": "LABEL",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 446.140625
+      },
+      {
+        "h": 156,
+        "name": "message",
+        "outside": false,
+        "tag": "TEXTAREA",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 486.140625
+      },
+      {
+        "h": 48,
+        "name": "Enviar mensaje",
+        "outside": false,
+        "tag": "BUTTON",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 666.140625
+      },
+      {
+        "h": 44,
+        "name": "Política de privacidad",
+        "outside": false,
+        "tag": "P",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 738.140625
+      },
+      {
+        "h": 44,
+        "name": "Política de privacidad",
+        "outside": false,
+        "tag": "A",
+        "w": 142.765625,
+        "x": 34.7578125,
+        "y": 738.140625
+      },
+      {
+        "h": 60,
+        "name": "¡Gracias por tu mensaje! 😃",
+        "outside": false,
+        "tag": "DIV",
+        "w": 694.484375,
+        "x": 34.7578125,
+        "y": 806.140625
+      }
+    ],
+    "documentWidth": 844,
+    "footer": [
+      {
+        "height": 48,
+        "href": "https://github.com/aleglope",
+        "label": "GitHub: aleglope",
+        "outside": false,
+        "width": 48
+      },
+      {
+        "height": 48,
+        "href": "https://www.tiktok.com/@alewencesai",
+        "label": "TikTok: @alewencesai",
+        "outside": false,
+        "width": 48
+      },
+      {
+        "height": 48,
+        "href": "https://www.instagram.com/alewences.artia/",
+        "label": "Instagram: @alewences.artia",
+        "outside": false,
+        "width": 48
+      }
+    ],
+    "formColumns": "335.242px 335.242px",
+    "heading": "Creemos algo juntos",
+    "height": 390,
+    "language": "es",
+    "overlap": false,
+    "panel": {
+      "height": 900.8984375,
+      "width": 764
+    },
+    "width": 844
+  }
+}

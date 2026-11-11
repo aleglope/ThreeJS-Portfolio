@@ -246,6 +246,7 @@
   },
   "designNavbarUI": {
     "devPortfolio": "Dev Portfolio",
+    "servicesPortfolio": "Services",
     "designLabel": "Design",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -331,7 +332,8 @@
     "subheading": "Professional video editing and motion graphics projects",
     "emptyTitle": "Select a video below to play",
     "emptyHint": "Click on any video thumbnail to start watching",
-    "skillsHeading": "Image and Video Production Skills"
+    "skillsHeading": "Image and Video Production Skills",
+    "closeVideo": "Close video"
   },
   "projectTypesData": {
     "ai-video": "AI Video Generation",
@@ -366,7 +368,9 @@
     "projectVideos": "Project Videos",
     "allVideos": "All Videos",
     "nowPlaying": "Now Playing",
-    "projectGallery": "Project Gallery"
+    "projectGallery": "Project Gallery",
+    "previousImage": "Previous image",
+    "nextImage": "Next image"
   },
   "designGalleryGroups": {
     "Brand": "Brand",

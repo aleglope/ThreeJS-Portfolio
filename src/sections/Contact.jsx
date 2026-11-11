@@ -13,6 +13,7 @@ const Contact = ({
   showProjectType = false,
   projectTypes = [],
   buttonClassName = "field-btn",
+  variant = "terminal",
 }) => {
   const { t, i18n } = useTranslation();
   const formRef = useRef();
@@ -20,6 +21,7 @@ const Contact = ({
   const mountedRef = useRef(true);
   const configured = Boolean(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID && import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID && import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
   const english = i18n.resolvedLanguage === "en";
+  const isPanel = variant === "panel";
 
   useEffect(() => {
     mountedRef.current = true;
@@ -101,37 +103,43 @@ const Contact = ({
       );
   };
 
+  const introduction = (
+    <>
+      <h2 className="head-text" id="contact-heading">{heading}</h2>
+      <p className="text-lg text-white-600 mt-3">{subheading}</p>
+      <a
+        href={servicesUrl()}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-3 text-sm text-emerald-400 underline underline-offset-4 hover:text-emerald-300 transition-colors"
+      >
+        {t("contact.servicesCta")}
+      </a>
+    </>
+  );
+
   return (
-    <section className="c-space my-20" id="contact">
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img
+    <section className={`c-space my-20 ${isPanel ? "design-contact" : ""}`} id="contact" aria-labelledby="contact-heading">
+      <div className={isPanel ? "design-contact__panel" : "relative min-h-screen flex items-center justify-center flex-col"}>
+        {!isPanel && <img
           src="/assets/terminal.png"
           alt=""
           loading="lazy"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover"
-        />
+        />}
 
-        <div className="contact-container">
-          <h2 className="head-text">{heading}</h2>
-          <p className="text-lg text-white-600 mt-3">{subheading}</p>
-          <a
-            href={servicesUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-3 text-sm text-emerald-400 underline underline-offset-4 hover:text-emerald-300 transition-colors"
-          >
-            {t("contact.servicesCta")}
-          </a>
+        <div className={isPanel ? "design-contact__layout" : "contact-container"}>
+          {isPanel ? <div className="design-contact__intro">{introduction}</div> : introduction}
 
           {!configured ? (
-            <p className="mt-8 leading-relaxed text-white-600">
+            <p className={`${isPanel ? "design-contact__email" : "mt-8"} leading-relaxed text-white-600`}>
               {english ? "Tell me about your project by email." : "Cuéntame tu proyecto por correo."}{" "}
               <a className="portfolio-link break-all" href="mailto:agonzlopez.11@gmail.com">agonzlopez.11@gmail.com</a>
             </p>
           ) : <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col space-y-7"
+            className={isPanel ? "design-contact__form" : "mt-12 flex flex-col space-y-7"}
             aria-busy={loading}
           >
             <label className="space-y-3">
@@ -167,7 +175,7 @@ const Contact = ({
             </label>
 
             {showProjectType && (
-              <label className="space-y-3">
+              <label className={`space-y-3 ${isPanel ? "design-contact__wide" : ""}`}>
                 <span className="field-label">{t("contact.form.projectType")}</span>
                 <select
                   disabled={loading}
@@ -185,7 +193,7 @@ const Contact = ({
               </label>
             )}
 
-            <label className="space-y-3">
+            <label className={`space-y-3 ${isPanel ? "design-contact__wide" : ""}`}>
               <span className="field-label">{t("contact.form.message")}</span>
               <textarea
                 disabled={loading}
@@ -201,7 +209,7 @@ const Contact = ({
             </label>
 
             <button
-              className={buttonClassName}
+              className={`${buttonClassName} ${isPanel ? "design-contact__wide" : ""}`}
               type="submit"
               disabled={loading}
             >
@@ -213,7 +221,7 @@ const Contact = ({
                 className="field-btn_arrow"
               />
             </button>
-            <p className="text-sm text-white-600">
+            <p className={`text-sm text-white-600 ${isPanel ? "design-contact__wide" : ""}`}>
               <a href={servicesUrl('/privacidad')} className="portfolio-link">{t('footer.privacy')}</a>
             </p>
             {alert.show && <Alert {...alert} />}
@@ -230,5 +238,6 @@ Contact.propTypes = {
   showProjectType: PropTypes.bool,
   projectTypes: PropTypes.arrayOf(PropTypes.shape({ value: PropTypes.string.isRequired, label: PropTypes.string.isRequired })),
   buttonClassName: PropTypes.string,
+  variant: PropTypes.oneOf(["terminal", "panel"]),
 };
 export default Contact;
