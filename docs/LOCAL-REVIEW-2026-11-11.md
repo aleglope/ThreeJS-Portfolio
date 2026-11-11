@@ -36,3 +36,7 @@ Los commits de código y los activos de los demás responsables están separados
 - Revisión independiente de fuentes y HTTP concluida sin bloqueos nuevos abiertos. Se corrigió el enlace de Brétema a `/estilos#experiencia-3d` para que respete el origen local y llegue a una ruta existente.
 - Captura local de Halloween incorporada; el encuadre debe revisarse junto con la aceptación visual pendiente.
 - La implementación y sus commits permanecen en el worktree y la rama locales. No se ha publicado.
+
+## Ajuste solicitado por Ale · 11 nov 2026
+
+Se retira el aviso «ejemplo ficticio» de Halloween y sus referencias visibles. Se mantiene la presentación como diseño de temporada, sin afirmar una campaña celebrada. El navegador vuelve a estar disponible: se abrieron las cuatro rutas locales y se verificó la retirada del aviso en la página. Nueva captura de portada sin el texto anterior, compartida por ambas webs. La revisión completa de interacción continúa pendiente.
