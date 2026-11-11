@@ -24,6 +24,7 @@ const DesignPortfolio = () => {
         <DesignProjects />
         <VideoShowcase />
         <Contact
+          variant="panel"
           title={t("contactDesign.title")}
           description={t("contactDesign.description")}
           showProjectType={true}
