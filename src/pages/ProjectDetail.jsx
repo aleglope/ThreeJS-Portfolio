@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import { clientProjects } from "../constants/clientProjects.js";
 import ClientProjectDetail from "./ClientProjectDetail.jsx";
 import useLocalizedProjectDetails from "../hooks/useLocalizedProjectDetails.js";

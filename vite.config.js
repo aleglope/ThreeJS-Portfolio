@@ -22,7 +22,6 @@ export default defineConfig({
           if (id.includes("node_modules/@react-three/")) return "three-react";
           if (/node_modules\/(react-globe.gl|globe.gl|three-globe|three-render-objects)\//.test(id)) return "globe";
           if (/node_modules\/(gsap|@gsap\/react)\//.test(id)) return "gsap";
-          if (id.includes("node_modules/react-player/")) return "player";
         },
       },
     },
