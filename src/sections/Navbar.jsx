@@ -1,17 +1,18 @@
+/* eslint-disable react/prop-types -- NavItems receives the menu's local close callback. */
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useLocalizedNavLinks from "../hooks/useLocalizedNavLinks.js";
 import LanguageToggle from "../components/LanguageToggle.jsx";
 
-const NavItems = () => {
+const NavItems = ({ onNavigate }) => {
   const navLinks = useLocalizedNavLinks();
 
   return (
-    <ul className="nav-ul">
+    <ul className="nav-ul max-[879px]:flex-col">
       {navLinks.map(({ id, href, name }) => (
         <li key={id} className="nav-li">
-          <a href={href} className="nav-li_a" onClick={() => {}}>
+          <a href={href} className="nav-li_a inline-flex min-h-11 items-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-300" onClick={onNavigate}>
             {name}
           </a>
         </li>
@@ -25,6 +26,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
+  const menuButton = useRef(null);
   const navigate = useNavigate();
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
@@ -57,8 +59,14 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-black-90 transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && isOpen) {
+          setIsOpen(false);
+          menuButton.current?.focus();
+        }
+      }}
+      className={`portfolio-motion fixed top-0 left-0 right-0 z-50 bg-black-90 transition-transform duration-300 focus-within:translate-y-0 ${
+        isVisible || isOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="max-w-7xl mx-auto">
@@ -83,17 +91,21 @@ const Navbar = () => {
             <span className="text-blue-500 font-semibold text-sm">Dev</span>
           </div>
           <button
+            ref={menuButton}
+            type="button"
             onClick={toggleMenu}
-            className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
-            aria-label="Toggle menu"
+            className="grid min-h-11 min-w-11 place-items-center rounded-sm text-neutral-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-300 min-[880px]:hidden"
+            aria-label={t(isOpen ? "designNavbarUI.closeMenu" : "designNavbarUI.openMenu")}
+            aria-expanded={isOpen}
+            aria-controls="dev-mobile-menu"
           >
             <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              alt="toggle"
+              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
+              alt=""
               className="w-6 h-6"
             />
           </button>
-          <nav className="sm:flex hidden items-center gap-6">
+          <nav className="min-[880px]:flex hidden items-center gap-6">
             <NavItems />
             <button
               onClick={() => navigate("/design")}
@@ -106,12 +118,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+      {isOpen && <div id="dev-mobile-menu" className="absolute inset-x-0 top-full max-h-[calc(100dvh-84px)] overflow-y-auto overscroll-contain bg-black-200 backdrop-blur-sm min-[880px]:hidden">
         <nav className="p-5">
-          <NavItems />
+          <NavItems onNavigate={() => setIsOpen(false)} />
           <div className="mt-4">
             <button
-              onClick={() => navigate("/design")}
+              onClick={() => { setIsOpen(false); navigate("/design"); }}
               className="w-full px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300"
             >
               {t("navbarUI.designPortfolio")}
@@ -121,7 +133,7 @@ const Navbar = () => {
             <LanguageToggle />
           </div>
         </nav>
-      </div>
+      </div>}
     </header>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from "prop-types";
 
 const Button = ({ name, isBeam = false, containerClass }) => {
     return (
@@ -14,4 +14,5 @@ const Button = ({ name, isBeam = false, containerClass }) => {
     );
 };
 
+Button.propTypes = { name: PropTypes.string.isRequired, isBeam: PropTypes.bool, containerClass: PropTypes.string };
 export default Button;

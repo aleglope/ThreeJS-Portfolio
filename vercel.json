@@ -1,8 +1,11 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm ci --no-audit --no-fund",
+  "buildCommand": "node scripts/check-release.mjs && npm run build",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

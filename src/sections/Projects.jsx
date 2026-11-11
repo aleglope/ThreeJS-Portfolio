@@ -1,5 +1,6 @@
 import { Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { Center, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../components/CanvasLoader.jsx";
@@ -28,7 +29,10 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20" id="projects">
-      <p className="head-text">{t("projects.heading")}</p>
+      <div className="flex flex-wrap items-baseline justify-between gap-x-5">
+        <h2 className="head-text">{t("projects.heading")}</h2>
+        <Link to="/dev#recent-work" className="portfolio-link text-blue-300 hover:text-blue-200">{t("recentWork.heading")}</Link>
+      </div>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">

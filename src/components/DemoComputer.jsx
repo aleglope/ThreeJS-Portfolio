@@ -1,18 +1,18 @@
+import PropTypes from "prop-types";
 import { useRef, useEffect, useMemo, useState, useCallback } from "react";
-import { useGLTF, useAnimations, useVideoTexture } from "@react-three/drei";
+import { useGLTF, useVideoTexture } from "@react-three/drei";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const DemoComputer = (props) => {
   const group = useRef();
   const screenRef = useRef();
-  const { nodes, materials, animations } = useGLTF("/models/computer.glb");
-  const { actions } = useAnimations(animations, group);
+  const { nodes, materials } = useGLTF("/models/computer.glb");
   const [isScreenHovered, setIsScreenHovered] = useState(false);
 
   // Memoize the texture path to prevent unnecessary re-creation
   const texturePath = useMemo(() =>
-    props.texture ? props.texture : "/textures/project/project1.mp4",
+    props.texture ? props.texture : "/textures/project/Museum.mp4",
     [props.texture]
   );
 
@@ -1055,4 +1055,5 @@ const DemoComputer = (props) => {
 
 useGLTF.preload("/models/computer.glb");
 
+DemoComputer.propTypes = { texture: PropTypes.string };
 export default DemoComputer;

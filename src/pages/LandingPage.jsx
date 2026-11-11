@@ -1,7 +1,10 @@
+import PropTypes from "prop-types";
+import { useMediaQuery } from "react-responsive";
+import { servicesUrl } from "../constants/services.js";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState, useRef } from "react";
 import { PerspectiveCamera, Float } from "@react-three/drei";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -151,8 +154,11 @@ const InteractiveRings = ({ position, ...props }) => {
   );
 };
 
+InteractiveReactLogo.propTypes = { position: PropTypes.arrayOf(PropTypes.number) };
+InteractiveRings.propTypes = { position: PropTypes.arrayOf(PropTypes.number) };
+
 const LandingPage = () => {
-  const navigate = useNavigate();
+  const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
   const { t } = useTranslation();
 
   return (
@@ -164,7 +170,7 @@ const LandingPage = () => {
         <LanguageToggle className="fixed top-5 right-5 z-20 pointer-events-auto" />
 
         {/* Background 3D Canvas */}
-        <div className="absolute inset-0 z-0">
+        {!reducedMotion && <div className="absolute inset-0 z-0">
           <Canvas
             gl={{ antialias: true }}
             camera={{ position: [0, 0, 20], fov: 75 }}
@@ -214,7 +220,7 @@ const LandingPage = () => {
               </Float>
             </Suspense>
           </Canvas>
-        </div>
+        </div>}
 
         {/* Content */}
         <div className="relative z-10 min-h-screen flex flex-col items-center justify-center c-space pointer-events-none">
@@ -231,9 +237,9 @@ const LandingPage = () => {
           {/* Portfolio Selection Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl px-4 pointer-events-auto">
             {/* Development Portfolio Card */}
-            <div
-              onClick={() => navigate("/dev")}
-              className="group relative bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-blue-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20"
+            <Link
+              to="/dev"
+              className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-blue-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-300"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -300,12 +306,12 @@ const LandingPage = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Design & Video Portfolio Card */}
-            <div
-              onClick={() => navigate("/design")}
-              className="group relative bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-pink-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20"
+            <Link
+              to="/design"
+              className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-pink-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-pink-300"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -372,13 +378,13 @@ const LandingPage = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Web Services Card (external). Es un <a> de verdad y no un div
                 con window.open: así Google cuenta el enlace hacia alewences.es
                 y funciona con teclado, con el botón central y sin JavaScript. */}
             <a
-              href="https://alewences.es/"
+              href={servicesUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative block bg-black-200 border border-black-300 rounded-2xl p-8 hover:border-emerald-500 transition-all duration-500 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/20 md:col-span-2 lg:col-span-1"

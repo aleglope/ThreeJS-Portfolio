@@ -6,7 +6,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.aleglopez.tech)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.aglwences.dev)
 [![GitHub](https://img.shields.io/badge/Source_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aleglope/threejs-portfolio)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
@@ -572,7 +572,7 @@ The project is deployed on **Vercel** with:
 
 [![Email](https://img.shields.io/badge/Email-agonzlopez.11@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:agonzlopez.11@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-aleglope-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aleglope)
-[![Portfolio](https://img.shields.io/badge/Portfolio-aleglopez.tech-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.aleglopez.tech)
+[![Portfolio](https://img.shields.io/badge/Portfolio-aglwences.dev-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.aglwences.dev)
 [![TikTok](https://img.shields.io/badge/TikTok-@nextworldai-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@nextworldai)
 
 <br/>

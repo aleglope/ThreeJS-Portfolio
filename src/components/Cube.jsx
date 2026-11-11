@@ -1,11 +1,12 @@
+import PropTypes from "prop-types";
 import React from "react";
 import gsap from "gsap";
 import { useEffect, useRef, useState, useCallback, useMemo } from "react";
 import { Float, useGLTF, useTexture } from "@react-three/drei";
 
-const Cube = React.memo(({ position, ...props }) => {
-  const { nodes } = useGLTF("models/cube.glb");
-  const texture = useTexture("textures/cube.png");
+const Cube = React.memo(function Cube({ position, ...props }) {
+  const { nodes } = useGLTF("/models/cube.glb");
+  const texture = useTexture("/textures/cube.png");
   const cubeRef = useRef();
   const [hovered, setHovered] = useState(false);
 
@@ -65,6 +66,7 @@ const Cube = React.memo(({ position, ...props }) => {
   );
 });
 
-useGLTF.preload("models/cube.glb");
+useGLTF.preload("/models/cube.glb");
 
+Cube.propTypes = { position: PropTypes.arrayOf(PropTypes.number) };
 export default Cube;

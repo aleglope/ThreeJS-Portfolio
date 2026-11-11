@@ -1,13 +1,16 @@
 import { useTranslation } from "react-i18next";
-import { videoShowcase } from "../constants/design.js";
+import { mediaLocale, portfolioVideos, videoDuration } from "../constants/portfolioMedia.js";
 
 const useLocalizedVideoShowcase = () => {
-  const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const locale = mediaLocale(i18n.resolvedLanguage);
 
-  return videoShowcase.map((video) => ({
+  return portfolioVideos.map((video) => ({
     ...video,
-    title: t("videoShowcaseData." + video.id + ".title"),
-    description: t("videoShowcaseData." + video.id + ".description"),
+    title: video.title[locale],
+    description: video.description[locale],
+    status: video.status[locale],
+    duration: videoDuration(video.seconds),
   }));
 };
 

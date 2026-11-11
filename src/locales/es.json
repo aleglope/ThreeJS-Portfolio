@@ -117,7 +117,11 @@
         "term": "Gestión de estado reactiva",
         "detail": "Patrón Observer para sincronización entre lenguajes"
       }
-    ]
+    ],
+    "loading": "Preparando el juego…",
+    "loadError": "No se ha podido cargar el juego. Puedes volver a intentarlo.",
+    "retry": "Reintentar",
+    "stop": "Cerrar juego"
   },
   "projectsData": {
     "rural-hacker-museum": {
@@ -242,79 +246,54 @@
   },
   "designNavbarUI": {
     "devPortfolio": "Portfolio Dev",
-    "designLabel": "Diseño"
+    "designLabel": "Diseño",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "navigation": "Navegación de Diseño"
   },
   "designHero": {
     "tagline": "Diseñador Creativo y Editor de Vídeo",
-    "viewWork": "Ver mi trabajo"
+    "viewWork": "Ver mi trabajo",
+    "openScene": "Abrir Reaper Scene en 3D",
+    "closeScene": "Cerrar escena 3D",
+    "sceneSource": "Reaper Scene, de Grell · Sketchfab",
+    "featuredWork": "Champi · Rótulos de neón en 3D",
+    "featuredCta": "Ver el proceso"
   },
   "designProjectsData": {
     "brand-identity-design": {
-      "title": "IDENTIDAD DE MARCA Y DISEÑO UX/UI",
-      "description": "Identidad de marca completa con diseño de logo mejorado con IA, sistemas UX/UI y guías de marca integrales."
+      "title": "Diseño gráfico y estudios visuales",
+      "description": "Estudios de logotipo, composiciones de producto y exploraciones de forma, color y materiales."
     },
     "ai-advertising-content": {
-      "title": "CONTENIDO PUBLICITARIO GENERADO CON IA",
-      "description": "Soluciones publicitarias revolucionarias con vídeos generados con IA, avatares y creación automatizada de contenido para marcas."
+      "title": "Conceptos publicitarios y motion con IA",
+      "description": "Anuncios de concepto, carteles animados y escenas creadas con herramientas de IA."
     },
     "music-event-visuals": {
-      "title": "VISUALES PARA EVENTOS MUSICALES Y VJING",
-      "description": "Pósters psicodélicos, impresionantes visuales de conciertos y actuaciones de VJ inmersivas para eventos de DJ y festivales de música."
+      "title": "Carteles, visuales y montaje musical",
+      "description": "Piezas gráficas y audiovisuales que exploran la música y la estética de club."
     },
     "ai-photographic-art": {
-      "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
-      "description": "Arte visual innovador en fotografía y vídeo, creado y mejorado con inteligencia artificial."
+      "title": "Arte visual y retrato con IA",
+      "description": "Retrato, naturaleza, fantasía y abstracción en una colección de imágenes y vídeos."
     }
   },
   "designCategoriesData": {
     "All": "Todas",
     "AI Content": "Contenido IA",
-    "Music & Events": "Música y Eventos",
+    "Music & Events": "Música y visuales",
     "Graphic Design": "Diseño Gráfico",
     "Video Editing": "Edición de Vídeo",
-    "AI Photography": "Fotografía IA"
+    "AI Photography": "Arte visual con IA",
+    "Client Work": "Trabajos de cliente"
   },
   "designProjectsUI": {
-    "heading": "Portfolio de Diseño y Vídeo",
-    "subheading": "Una colección de mi trabajo creativo en diseño gráfico y producción de vídeo",
+    "heading": "Proyectos de diseño",
+    "subheading": "Dirección visual, webs, marca y piezas audiovisuales, con el contexto de cada trabajo.",
     "viewProject": "Ver proyecto",
     "comingSoon": "Próximamente",
     "moreWork": "¿Quieres ver más de mi trabajo?",
     "getInTouch": "Hablemos"
-  },
-  "videoShowcaseData": {
-    "1": {
-      "title": "MAGIA PUBLICITARIA CON IA - ALEWENCES CYBERPUNK",
-      "description": "🤯 ¿Crees que esto lo grabó un equipo de rodaje? Piénsalo otra vez. 💡 Esto es lo que ocurre cuando mezclas Inteligencia Artificial con una idea publicitaria brutal. 🎥✨ Hiperrealismo, neón y el gusto premium de ALEWENCES, todo generado en minutos. Olvídate de los límites creativos. Si puedes soñarlo, la IA puede crearlo."
-    },
-    "2": {
-      "title": "ALMA DIGITAL - CONSCIENCIA Y NATURALEZA",
-      "description": "Exploro la intersección entre la consciencia humana, la belleza de la naturaleza y el lenguaje de la tecnología. 🌀 Cada pieza de mi portfolio es un viaje, una emoción capturada en píxeles y algoritmos. Esta serie, 'Alma Digital', visualiza nuestra conexión interna con el universo digital y natural."
-    },
-    "3": {
-      "title": "TRANSFORMACIÓN DE SELFIE A ARTE FANTÁSTICO",
-      "description": "¿Te imaginas convertir tu selfie favorita en una obra de arte única? Olvídate de los filtros genéricos que usa todo el mundo. Mi servicio transforma tus propias fotos en retratos fantásticos de alta costura, realzando tu belleza con un toque dorado mágico. 💫 Cada pieza está 100% personalizada."
-    },
-    "4": {
-      "title": "AMIGO DE TERROR DE HALLOWEEN CON IA",
-      "description": "Cuando le pides a la Inteligencia Artificial un 'amigo terrorífico para Halloween' 🎃, pero se te olvida poner en el prompt 'con el aliento fresco'. ¡Ten cuidado con lo que deseas! 😂 Y es que hasta el Xenomorfo más temible del universo necesita ayuda después de comer."
-    },
-    "5": {
-      "title": "PRESENTACIÓN DE IDENTIDAD DE MARCA",
-      "description": "Transformación completa de identidad de marca con herramientas de diseño impulsadas por IA. Desde la creación del logo hasta guías de marca integrales, descubre cómo la inteligencia artificial revoluciona el proceso de branding manteniendo la creatividad humana y el pensamiento estratégico."
-    },
-    "6": {
-      "title": "PRODUCCIÓN DE VÍDEO CORPORATIVO",
-      "description": "Producción profesional de vídeo corporativo potenciada por tecnología de IA. Combinando la narrativa cinematográfica con la automatización inteligente para crear relatos empresariales cautivadores que enganchan al público y generan resultados."
-    },
-    "7": {
-      "title": "MOTION GRAPHICS PROFESIONALES",
-      "description": "Motion graphics de alta calidad creados con la asistencia de la IA. Desde la visualización de datos hasta vídeos explicativos, descubre cómo la inteligencia artificial acelera el proceso de diseño de movimiento manteniendo los estándares profesionales."
-    },
-    "8": {
-      "title": "SOLUCIONES DE MARKETING DIGITAL",
-      "description": "Soluciones integrales de marketing digital impulsadas por IA. Desde la creación automatizada de contenido hasta la segmentación inteligente de la audiencia, explora cómo la inteligencia artificial transforma las estrategias de marketing y maximiza el ROI."
-    }
   },
   "videoSkillsData": {
     "1": {
@@ -355,11 +334,26 @@
     }
   },
   "videoShowcaseUI": {
-    "heading": "Vídeos Destacados",
-    "subheading": "Edición de vídeo profesional y proyectos de motion graphics",
-    "emptyTitle": "Selecciona un vídeo abajo para reproducirlo",
-    "emptyHint": "Haz clic en cualquier miniatura de vídeo para empezar a verlo",
+    "heading": "Vídeo y motion",
+    "subheading": "Spots, procesos en 3D y demostraciones, reunidos en una colección de quince piezas.",
+    "featured": "Selección destacada",
+    "collection": "Colección completa",
+    "showAll": "Ver los {{count}} vídeos",
+    "showFeatured": "Ver solo destacados",
+    "archive": "Piezas de la colección anterior",
     "skillsHeading": "Habilidades de Producción de Imagen y Vídeo"
+  },
+  "portfolioVideo": {
+    "open": "Abrir reproductor",
+    "openNamed": "Abrir reproductor de {{title}}",
+    "close": "Cerrar reproductor",
+    "retry": "Reintentar",
+    "error": "El vídeo no se ha podido cargar. Puedes reintentar o consultar el proyecto.",
+    "originalAudio": "Audio original. Cuando hay voz, está en español.",
+    "project": "Conocer el proyecto",
+    "related": "Ver el trabajo relacionado",
+    "transcript": "Leer transcripción en español",
+    "retryNamed": "Reintentar la carga de {{title}}"
   },
   "projectTypesData": {
     "ai-video": "Generación de Vídeo con IA",
@@ -394,220 +388,237 @@
     "projectVideos": "Vídeos del proyecto",
     "allVideos": "Todos los vídeos",
     "nowPlaying": "Reproduciendo",
-    "projectGallery": "Galería del proyecto"
+    "projectGallery": "Galería del proyecto",
+    "videosCount_one": "vídeo",
+    "videosCount_other": "vídeos",
+    "categoriesCount_one": "categoría",
+    "categoriesCount_other": "categorías"
   },
   "designGalleryGroups": {
-    "Brand": "Marca",
-    "UI/UX Designs": "Diseños UI/UX",
-    "Logos": "Logos",
+    "Brand": "Composiciones de producto",
+    "Logos": "Estudios de logotipo",
     "posters": "Carteles",
-    "photographicArt": "Arte Fotográfico"
+    "photographicArt": "Arte Fotográfico",
+    "Visual Studies": "Estudios visuales"
   },
   "projectDetailsData": {
     "brand-identity-design": {
-      "title": "Identidad de marca UGC y diseño, de la web al contenido para redes sociales",
-      "category": "Diseño Gráfico",
-      "fullDescription": "Creación revolucionaria de identidad de marca que combina el diseño de logotipos impulsado por IA con sistemas UX/UI integrales y un desarrollo estratégico de marca. Nuestro enfoque integra herramientas de IA de vanguardia para la generación y el refinamiento de logotipos con la excelencia del diseño tradicional en la experiencia de usuario y el diseño de interfaces. Desde el concepto inicial hasta la implementación completa de la marca, creamos sistemas visuales cohesionados que no solo lucen espectaculares, sino que también impulsan la interacción de los usuarios y el crecimiento del negocio. Cada proyecto incluye una investigación exhaustiva, variaciones de logotipos mejoradas con IA, sistemas de diseño UX/UI completos y directrices de marca detalladas que garantizan una aplicación coherente en todos los puntos de contacto digitales y físicos.",
-      "client": "Varias startups tecnológicas y agencias digitales",
-      "duration": "8-12 semanas",
+      "title": "Diseño gráfico y estudios visuales",
+      "category": "Diseño gráfico",
+      "fullDescription": "Colección de estudios de logotipo, composiciones de producto y exploraciones visuales con IA. Las piezas muestran tratamientos de forma, color, materiales y composición; el vídeo reúne una demostración de contenido de joyería.",
+      "client": "",
+      "duration": "",
       "videos": {
         "1": {
-          "title": "UGC DE JOYERÍA - Muestra de productos de lujo",
-          "description": "Vídeo de contenido generado por el usuario (UGC) simulado que muestra joyería de lujo de alta gama con efectos visuales dinámicos. Primeros planos de un collar con cruz dorada, un anillo de oro con esmeralda, una pulsera trenzada azul con una cuenta brillante y un anillo de compromiso con diamante de talla marquise."
+          "title": "Joyería · demostración de contenido UGC",
+          "description": "Demostración de contenido UGC simulado con primeros planos de joyas y transiciones entre distintas piezas."
         }
       },
       "gallery": {
         "Brand": {
           "1": {
-            "title": "Joyería Orgánica de Lujo",
-            "description": "Integramos este anillo de perla con hoja de oro en la web con imágenes elegantes y muestras de producto interactivas, destacando su elegancia natural y su calidad premium mientras creamos una experiencia inmersiva que genera valor y anima a los visitantes a explorar más el producto."
+            "title": "Joyería · perla y hoja",
+            "description": "Estudio visual de un anillo de perla y hojas doradas sobre un pergamino, junto a una pluma, una llave y un sello."
           },
           "2": {
-            "title": "anillo de oro con gema de esmeralda",
-            "description": "Elegante anillo de oro que presenta una gema de esmeralda de talla brillante engastada en un clásico engaste de cuatro garras. La pulida banda de oro amarillo muestra una artesanía refinada, mientras que la vibrante esmeralda de un verde intenso exhibe una claridad y una refracción de la luz excepcionales. La fotografía de estudio profesional resalta los lujosos detalles del anillo y su calidad premium, creando una muestra de producto inmersiva que enfatiza la sofisticación y la elegancia atemporal."
+            "title": "Joyería · gema verde",
+            "description": "Composición de producto centrada en una gema verde y un anillo dorado, con atención a los reflejos y el contraste."
           },
           "3": {
-            "title": "Anillo de Perla de Lujo con Diseño de Hoja de Oro",
-            "description": "Elegante anillo de perla que presenta una perla perfectamente esférica con matices iridiscentes rosados, blancos y verdes sutiles, engastada en una banda de oro rosa o cálido oro amarillo intrincadamente esculpida con motivos orgánicos de hojas fluidas. El anillo se muestra con un fondo nítido y limpio con elementos de hoja sencillos pero llamativos que complementan la estética botánica natural. Esta fotografía de estudio profesional está diseñada específicamente para contenido de redes sociales, presentando la pieza de joyería a los clientes con una claridad impecable y una composición sofisticada que resalta la elegancia natural del anillo y su artesanía premium."
+            "title": "Joyería · formas orgánicas",
+            "description": "Estudio de un anillo de perla con formas de hoja. La composición combina metal, reflejos y un entorno vegetal."
           },
           "4": {
-            "title": "Bienestar y Belleza Mística",
-            "description": "Lujoso tarro cosmético de la marca QOZALIS que presenta un vibrante acabado iridiscente u holográfico con tonos cambiantes de morado, azul, verde y toques de amarillo-naranja. El cuerpo translúcido del tarro muestra delicados dibujos lineales dorados con motivos florales y de hojas, mientras que la brillante tapa dorada metálica añade un toque premium. El producto se presenta en un prístino paisaje desértico con superficies arenosas de textura fina esculpidas en suaves ondulaciones y dunas. Cristales de amatista de talla en bruto dispersos, en tonos variados que van del violeta intenso al lavanda, complementan la estética mística. Esta fotografía de estudio profesional está elaborada con maestría para contenido de redes sociales, mostrando el producto de bienestar a los clientes con una composición nítida y limpia y elementos naturales sencillos pero llamativos que enfatizan el lujo espiritual, el autocuidado y la conexión de la marca con la belleza holística."
+            "title": "Cosmética · paisaje mineral",
+            "description": "Composición de un envase iridiscente entre arena y cristales, con iluminación y detalles dorados."
           },
           "5": {
-            "title": "Anuncio de Joyería Generado con IA",
-            "description": "Contenido publicitario creado con IA que presenta a una mujer elegante mostrando el anillo de esmeralda de talla brillante en un sofisticado entorno de estilo de vida. El retrato capta a una mujer con maquillaje natural y cabello oscuro, con su mano derecha colocada con gracia cerca de la mejilla para resaltar la vibrante esmeralda de un verde intenso engastada en una clásica banda de oro amarillo de cuatro garras. La composición enfatiza el lujo y la belleza natural, con la mirada serena y directa de la mujer y su presentación refinada atrayendo la atención hacia la pieza de joyería. La imagen se sitúa sobre un fondo beige suave y neutro que proporciona un telón de fondo limpio y discreto, permitiendo que el vívido color verde de la esmeralda destaque de forma prominente. Este anuncio generado con IA está diseñado con maestría para contenido de redes sociales, presentando el anillo de esmeralda a los clientes con una composición nítida y limpia y elementos visuales sencillos pero llamativos que enfatizan la sofisticación, la elegancia atemporal y la calidad premium de la pieza de joyería."
+            "title": "Retrato con joyería",
+            "description": "Imagen con IA que combina un retrato y un anillo de gema verde. El encuadre dirige la atención hacia la mano y la joya."
           },
           "6": {
-            "title": "Fragancia Volcánica Poderosa",
-            "description": "Lujoso frasco de perfume de vidrio rectangular con un pulido tapón dorado, dramáticamente situado ante un intenso paisaje volcánico. El frasco elegante y moderno refleja el ardiente resplandor naranja y rojo de la lava fundida que fluye alrededor de su base, creando un contraste sorprendente entre la elegancia refinada y el poder natural en estado puro. La escena presenta formaciones rocosas volcánicas oscuras y escarpadas con ríos y arroyos de lava incandescente, mientras que montañas volcánicas dentadas al fondo emiten humo y muestran vetas de lava fundida. El dramático cielo oscuro y humeante contrasta con el intenso resplandor cálido de la lava, iluminando las superficies reflectantes del frasco de perfume. Esta poderosa composición visual, diseñada con maestría para contenido de redes sociales, presenta la fragancia a los clientes con una fotografía nítida y limpia y elementos naturales audaces y dramáticos que enfatizan la fuerza, la exclusividad, la pasión, la intensidad y el atractivo premium de la marca de perfumería de lujo."
+            "title": "Perfume · paisaje volcánico",
+            "description": "Composición de un frasco de perfume frente a roca y lava. El contraste entre cristal y paisaje define la imagen."
           },
           "7": {
-            "title": "Cuidado de la Piel de Pura Elegancia",
-            "description": "Frasco cosmético o de cuidado de la piel minimalista que presenta un elegante diseño cilíndrico hecho de vidrio esmerilado y translúcido en un sutil tono verde-gris apagado que permite una suave difusión de la luz. El frasco está elegantemente rematado con un tapón de madera liso y de color claro, probablemente de bambú o una madera natural similar, que añade un toque orgánico y ecológico. El producto está situado ligeramente descentrado e inclinado en un ángulo suave, creando una composición dinámica pero equilibrada. El frasco se muestra sobre un fondo exuberante y denso de vibrante musgo verde que exhibe ricas texturas y tonos variados que van del verde lima brillante a verdes bosque más profundos, sugiriendo diferentes patrones de crecimiento natural. La iluminación suave y natural ilumina la escena desde arriba, creando sutiles sombras que realzan tanto las texturas del musgo como la superficie de vidrio esmerilado. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando el producto de cuidado de la piel a los clientes con una composición nítida y limpia y elementos naturales sencillos pero llamativos que enfatizan la pureza natural, la serenidad, el respeto por el medio ambiente y la sofisticada belleza orgánica de las marcas cosméticas centradas en el bienestar."
+            "title": "Cosmética · vidrio y musgo",
+            "description": "Estudio de un envase de vidrio esmerilado sobre musgo. La textura vegetal contrasta con la superficie del producto."
           },
           "8": {
-            "title": "Fragancia Moderna Vibrante",
-            "description": "Lujoso frasco de perfume contemporáneo con un diseño elegante que presenta una base redondeada más ancha hecha de vidrio transparente, que contiene un líquido rico de cálido tono ámbar con reflejos rosados y rojos. El pulido cuello dorado reflectante del frasco da paso a un tapón de vidrio transparente y multifacetado que se asemeja a una gema tallada, añadiendo una estética premium. El producto está dramáticamente situado sobre una formación rocosa oscura y escarpada con una superficie irregular y texturizada que refleja la iluminación de neón ambiental y el propio frasco. La escena está envuelta en una atmosférica iluminación de neón morada y amarilla, con brillantes tubos de neón morados a la izquierda que crean líneas diagonales y vibrantes tubos de neón amarillos a la derecha, enmarcando el sujeto central. Un humo o neblina ondulante de tonos blancos y morados rodea el frasco y la roca, creando un efecto suave y difuso que realza el ambiente misterioso y lujoso. La interacción de los colores neón morado y amarillo crea una estética dinámica y moderna, con el frasco reflejando ambos tonos en su líquido y en sus superficies de vidrio. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando la fragancia a los clientes con una composición nítida y limpia y elementos de iluminación sencillos pero llamativos que enfatizan el lujo moderno, la sofisticación, el misterio y el atractivo premium de las marcas de fragancias de alta gama."
+            "title": "Perfume · luz de neón",
+            "description": "Composición de producto con luz violeta y amarilla, humo y una base rocosa."
           },
           "9": {
-            "title": "Anuncio de Moda Surrealista de Lujo",
-            "description": "Anuncio surrealista y lujoso que presenta a una modelo de moda elegantemente posada abrazando un colosal frasco de perfume Chanel Nº 5 de vidrio transparente en un vibrante campo de flores silvestres. El icónico frasco rectangular, considerablemente más grande que la modelo, presenta un tapón facetado transparente y una etiqueta blanca que muestra de forma prominente 'Nº 5' y 'CHANEL' en letras negras, conteniendo un líquido de tono ámbar claro visible a través del vidrio transparente. La modelo viste una voluminosa prenda naranja texturizada con grandes mangas de volantes, ricamente adornada con numerosas pequeñas perlas o cuentas blancas esparcidas por su superficie. Su conjunto incluye medias naranjas a juego con un delicado estampado de encaje o damasco, tacones altos de punta afilada adornados con hilos de perlas que envuelven sus tobillos, y un delicado tocado o tiara de perlas sobre su frente. La escena se sitúa en un denso y colorido campo de flores silvestres que incluye tonos de azul, morado, rosa, rojo, naranja, amarillo y blanco, creando una rica y texturizada alfombra de flores bajo un cielo azul sereno y despejado con una sutil bruma cerca del horizonte. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando la marca de fragancias de lujo a los clientes con una composición nítida y limpia y elementos naturales sencillos pero llamativos que fusionan la alta costura, el branding de lujo y la belleza natural, enfatizando la sofisticación, la elegancia onírica y el atractivo premium de las icónicas marcas de fragancias."
+            "title": "Perfume · escala y flores",
+            "description": "Exploración visual de una figura y un frasco sobredimensionado entre flores. El envase incorpora la marca Chanel Nº 5."
           },
           "10": {
-            "title": "Muestra de Accesorios de Moda de Lujo",
-            "description": "Sofisticada fotografía de moda que capta un primer plano en contrapicado de elegantes piernas y pies, enfatizando lujosos accesorios de moda y un estilismo opulento. El sujeto viste un voluminoso y mullido abrigo de piel predominantemente gris plateado con matices más oscuros, cayendo sobre la parte superior de los muslos y las caderas. Los pies están adornados con elegantes sandalias de tacón alto con tiras en un rico color marrón o bronce, con intrincadas tiras entrecruzadas que se extienden sobre los pies y los tobillos. El tobillo izquierdo presenta múltiples y delicadas cadenas de tono plateado con pequeños dijes brillantes que cuelgan con gracia, mientras que el tobillo derecho muestra una única cadena de tono dorado más gruesa. Las uñas de los pies están pintadas con un esmalte rosa claro y sutil, y el dedo anular izquierdo luce un prominente y gran anillo de diamante rectangular. Un sofisticado reloj plateado con esfera oscura adorna la muñeca izquierda. Tatuajes visibles con un intrincado trazo oscuro aparecen en el pie izquierdo cerca del tobillo y tenuemente en la parte interior del muslo derecho, añadiendo un toque artístico a la estética lujosa. La escena se sitúa sobre un fondo oscuro y desenfocado que sugiere un entorno interior con iluminación tenue, con el suelo debajo presentando baldosas o ladrillos oscuros y texturizados. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando los accesorios de moda de lujo a los clientes con una composición nítida y limpia y elementos visuales sencillos pero llamativos que enfatizan la opulencia, el estilo sofisticado, la atención al detalle y el atractivo premium de las marcas de moda de alta gama."
+            "title": "Moda · detalles y accesorios",
+            "description": "Composición de moda centrada en calzado, joyas y texturas, con un encuadre próximo y fondo oscuro."
           },
           "11": {
-            "title": "Perfume Natural Fresco",
-            "description": "Elegante frasco de perfume cilíndrico de color gris oscuro con un acabado mate, de pie sobre una superficie rocosa húmeda y texturizada en un entorno natural y agreste cerca de una cascada o arroyo. La superficie del frasco está cubierta de numerosas pequeñas gotas de agua, sugiriendo un tema fresco, natural o acuático, mientras que la tapa de color gris oscuro presenta un sutil e intrincado patrón en relieve, posiblemente floral o abstracto, añadiendo un toque elegante. En la parte frontal del frasco es visible un texto alineado verticalmente que muestra el nombre de la marca 'VOJNOVIC' y 'DREAMLANDS' debajo, ligeramente en relieve o rehundido, y también cubierto de gotas de agua. La roca oscura e irregular sobre la que descansa el frasco parece húmeda y reluciente, con pequeños charcos de agua que reflejan la luz. El agua cae activamente desde arriba y a la derecha del frasco, creando corrientes y gotas individuales captadas en el aire, algunas salpicando sobre el frasco y la roca. Al fondo, es visible una cascada desenfocada, creando un suave telón de fondo brumoso de tonos blancos y grises contra formaciones rocosas más oscuras. La iluminación general es tenue pero resalta las gotas de agua y las superficies húmedas, dando a la escena un ambiente fresco, refrescante y algo dramático. El enfoque es nítido sobre el frasco y la superficie rocosa inmediata, con el fondo suavemente desenfocado para resaltar el producto. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando la fragancia a los clientes con una composición nítida y limpia y elementos naturales sencillos pero llamativos que enfatizan la pureza natural, la fuerza, el lujo y la esencia refrescante de la marca de perfumería premium."
+            "title": "Perfume · agua y roca",
+            "description": "Estudio visual de un frasco oscuro sobre roca húmeda, rodeado de agua y reflejos."
           },
           "12": {
-            "title": "Cosmética Verde Innovadora",
-            "description": "Elegante tubo dosificador de color verde oliva mate, probablemente un producto cosmético o de cuidado de la piel, de pie sobre una superficie húmeda y altamente reflectante con sutiles gotas de agua adheridas a su superficie, sugiriendo frescura o hidratación. El texto vertical 'GEGNEPMC' se muestra de forma prominente en el lado derecho del tubo, con un texto más pequeño debajo. Alrededor de la base del tubo, hay dispersos tres objetos esféricos y transparentes que se asemejan a orbes de vidrio o gel. Dos de estas esferas contienen numerosas pequeñas partículas verdes vibrantes, similares a hojas o algas, suspendidas en su interior, enfatizando un tema de ingrediente natural o botánico, siendo la esfera más prominente a la derecha del tubo más grande y mostrando claramente las partículas verdes. La superficie reflectante bajo los productos es de un verde claro y luminoso o verde amarillento, con ondulaciones visibles y pequeñas salpicaduras de agua, creando reflejos dinámicos del tubo y las esferas. El fondo es suave y desenfocado, caracterizado por patrones fluidos y ondulados en tonos variados de verde claro y verde amarillento, que recuerdan a una tela drapeada o a una luz suave filtrándose a través de las hojas. Varias luces de bokeh que aparecen como suaves círculos luminosos están dispersas en la parte superior derecha del fondo, añadiendo un ambiente onírico y lujoso. La iluminación general es suave y difusa, resaltando las texturas y la translucidez de los objetos. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando el producto de cuidado de la piel a los clientes con una composición nítida y limpia y elementos naturales sencillos pero llamativos que enfatizan la pureza natural, el bienestar botánico, la innovación científica, los activos naturales y la sofisticada belleza orgánica de las marcas de cosmética verde."
+            "title": "Cosmética · verde y transparencia",
+            "description": "Composición de un envase verde junto a esferas translúcidas sobre una superficie húmeda."
           },
           "13": {
-            "title": "Expresión de Marca Artística y Surrealista",
-            "description": "Impactante retrato surrealista y lujoso generado con IA que presenta una figura antropomórfica con cabeza de perro, demostrando las posibilidades creativas ilimitadas de los modelos generados con IA que pueden satisfacer cualquier expectativa del cliente, desde lo hiperrealista hasta lo más artístico y poco convencional. La sofisticada figura, con una gran cabeza de perro musculosa (probablemente de tipo Cane Corso o mastín) de pelaje gris oscuro, orejas recortadas y una mancha blanca en el pecho, lleva unas elegantes gafas de sol de aviador negras y va vestida completamente de negro con una camiseta ajustada de manga corta y pantalones entallados. La figura se sienta de manera informal sobre el asfalto de la calle, recostándose ligeramente contra un reluciente Lamborghini Urus negro, con el icónico emblema del toro dorado exhibido de forma prominente en el capó y los faros LED iluminados proyectando un brillante resplandor blanco. La escena se desarrolla en una vibrante zona metropolitana de noche, que recuerda intensamente a Times Square en la ciudad de Nueva York, con edificios altos adornados con numerosas vallas publicitarias digitales grandes y brillantemente iluminadas y letreros de neón en varios colores, predominantemente azules, rojos y blancos, creando un resplandor urbano dinámico y enérgico. La figura lleva un llamativo reloj de pulsera de tono plateado con esfera oscura y unos zapatos de vestir negros y pulidos. Esta imagen generada con IA muestra cómo las expectativas del cliente pueden satisfacerse con enfoques artísticos, surrealistas o no realistas, rompiendo los límites convencionales de la fotografía tradicional. La composición profesional está diseñada con maestría para contenido de redes sociales, presentando conceptos de marca de lujo a los clientes con una composición nítida y limpia y elementos surrealistas sencillos pero llamativos que enfatizan el lujo urbano, el poder, la sofisticación, la frialdad enigmática, la expresión artística y el atractivo premium de las marcas dispuestas a superar los límites creativos a través de contenido generado con IA."
+            "title": "Retrato surrealista · escena urbana",
+            "description": "Imagen con IA de una figura con cabeza de perro junto a un vehículo en una escena urbana nocturna."
           },
           "14": {
-            "title": "Belleza de Arte Líquido Sensorial",
-            "description": "Lujoso frasco cosmético o de cuidado de la piel colocado en posición central y ligeramente inclinado, que presenta un elegante diseño cilíndrico con un efecto degradado. La mitad inferior es de un rojo oscuro translúcido y esmerilado, que asciende hacia una tapa más opaca de color oro metálico o bronce hecha de material reflectante, cubierta de numerosas pequeñas gotas de agua que sugieren frescura o un efecto refrescante. El frasco contiene un líquido de color rojo oscuro visible a través de su mitad inferior translúcida, con una sutil y elegante inscripción o marca visible en la parte dorada. Un vibrante y espeso chorro de líquido rojo intenso, que recuerda al zumo de granada o a un sérum rico, se arremolina dramáticamente alrededor del frasco, formando un arco que se origina en la parte superior izquierda y barre hacia abajo y hacia la derecha, envolviendo parcialmente el frasco. La salpicadura es sumamente dinámica, con ondulaciones, olas y gotas más pequeñas visibles que se desprenden del chorro principal, transmitiendo movimiento y energía. Varias semillas de granada individuales y relucientes, con su característico color rojo rubí y sus formas irregulares, están suspendidas en el aire alrededor del frasco y dentro de la salpicadura de líquido, añadiendo un elemento natural, fresco y vibrante. Numerosas gotas de agua transparentes están dispersas por toda la escena, algunas adheridas al frasco y otras flotando libremente, realzando la sensación de frescura y humedad. El fondo presenta un degradado suave y delicado que pasa de un cálido tono naranja melocotón en la parte inferior a un rosado más claro en la parte superior, creando una estética armoniosa y acogedora. La iluminación es suave y difusa, resaltando las texturas del líquido, los reflejos en el frasco y la translucidez de las semillas de granada. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando el producto de cuidado de la piel a los clientes con una composición nítida y limpia y elementos visuales sencillos pero llamativos que enfatizan la vitalidad, el lujo, la eficacia natural, los ingredientes activos, la experiencia refrescante y la calidad premium de las sofisticadas marcas de belleza."
+            "title": "Cosmética · salpicadura roja",
+            "description": "Estudio visual de un envase rodeado de líquido rojo y semillas de granada. La composición explora movimiento y transparencia."
           },
           "15": {
-            "title": "Producto Minimalista para el Peinado del Cabello",
-            "description": "Toma de producto minimalista y serena de un elegante tarro cosmético cilíndrico de color negro mate con un perfil bajo y una tapa plana a juego, probablemente para el peinado del cabello de la marca TAPERED. El tarro presenta una etiqueta blanca en la parte frontal que muestra el nombre de la marca 'TAPERED.' en una tipografía limpia sans-serif en la parte superior, con el nombre del producto 'Cloudpaste' escrito en una fuente más grande y en negrita debajo, y la descripción 'soft matte, weightless hold' impresa en un texto más pequeño debajo, indicando su función. El tarro está hecho de un material liso y no reflectante, posiblemente plástico o cerámica. El producto descansa sobre un pedestal cilíndrico hecho de piedra de color claro y textura rugosa que se asemeja a la arenisca o al hormigón, con una parte superior plana y una base ligeramente más ancha que muestra su textura natural y sin refinar con imperfecciones visibles y variaciones de tono, posicionado de forma central en la mitad inferior del encuadre. El fondo consiste en una esquina sin costuras donde una pared de color beige claro o tostado se encuentra con un suelo a juego, teniendo ambas superficies un acabado sutil y texturizado que les da una apariencia orgánica, similar al yeso. Extendiéndose horizontalmente a través del plano medio detrás del producto y el pedestal hay una nube o neblina blanca, suave y voluminosa, que añade una cualidad onírica y etérea que hace referencia directa al nombre del producto 'Cloudpaste' y sugiere una sensación ligera y aireada. La escena está iluminada por una luz suave y difusa que parece provenir de la parte superior izquierda, creando sombras tenues pero definidas, con el pedestal proyectando una sombra notable hacia su derecha y ligeramente hacia adelante sobre el suelo, mientras que el propio producto proyecta una sombra más pequeña y suave sobre el pedestal. La nube también crea sutiles variaciones de luz y sombra en la pared del fondo, realzando la profundidad de la escena. Esta fotografía de estudio profesional está diseñada con maestría para contenido de redes sociales, presentando el producto para el peinado del cabello a los clientes con una composición nítida y limpia y elementos visuales sencillos pero llamativos que enfatizan la elegancia natural, la modernidad, la tranquilidad, los atributos suaves y ligeros, y la calidad premium de las sofisticadas marcas de cuidado personal."
-          }
-        },
-        "UI/UX Designs": {
-          "7": {
-            "title": "Mockups de interfaz web",
-            "description": "Mockups de diseño web de alta fidelidad con integración del flujo de usuario"
-          },
-          "8": {
-            "title": "Pantallas de app móvil",
-            "description": "Diseños de interfaz móvil adaptables"
-          },
-          "9": {
-            "title": "Material impreso",
-            "description": "Tarjetas de visita, membretes y materiales de marketing"
+            "title": "Producto capilar · composición mínima",
+            "description": "Estudio de un envase oscuro sobre un pedestal de piedra, con una nube en el fondo y luz lateral."
           }
         },
         "Logos": {
           "1": {
             "title": "FÊNIX MOTOS - El Renacer",
-            "description": "Logotipo impactante que presenta una representación del Fénix en pleno vuelo, con colores cálidos y ardientes (rojo, naranja, amarillo) y un halo radiante. El nombre 'FÊNIX MOTOS' en una tipografía contundente sugiere renacimiento, velocidad y durabilidad—ideal para una marca de motos, deportiva o de automoción."
+            "description": "Estudio de logotipo con un fénix en vuelo, colores cálidos y tipografía de trazo grueso."
           },
           "2": {
             "title": "MONARCH - Mariposa Geométrica",
-            "description": "Logotipo moderno y elegante con una mariposa de una sola ala, diseñado en un estilo poligonal o 'low poly' en tonos cálidos (naranja, rosa, morado). Transmite ligereza, transformación y un toque artístico—adecuado para moda, belleza o tecnología."
+            "description": "Estudio de una mariposa geométrica con facetas y una paleta de naranja, rosa y morado."
           },
           "3": {
             "title": "TERFA TREASURE - Monograma Real",
-            "description": "Diseño lujoso que usa grandes letras mayúsculas en relieve 'TERFA' en dorado, con una corona sutilmente integrada en la parte superior. La palabra 'TREASURE' debajo refuerza el tema del valor y la exclusividad—perfecto para una marca de alta gama, de inversión o de joyería."
+            "description": "Estudio de letras doradas en relieve y un detalle de corona para una composición de marca."
           },
           "4": {
             "title": "Iron Will - Alas/Escudo de Velocidad",
-            "description": "Logotipo moderno y dinámico que simula un ala o un escudo con un degradado de color del amarillo al morado. El diseño incluye líneas que sugieren velocidad y fuerza, evocando movimiento y determinación tal como refleja el nombre 'Iron Will'—ideal para marcas de fitness, deporte o tecnología."
+            "description": "Estudio de un símbolo de ala o escudo, con líneas diagonales y un degradado de color."
           },
           "5": {
             "title": "GOLD PALACE - Icono Ornamental",
-            "description": "Logotipo muy ornamental y simétrico en dorado sobre un fondo oscuro. El icono de la parte superior evoca arquitectura palaciega, cúpulas o un patrón entrelazado de lujo. El nombre 'GOLD PALACE' confirma los temas de realeza, lujo y opulencia."
+            "description": "Estudio de un icono ornamental simétrico en dorado sobre un fondo oscuro."
           },
           "6": {
             "title": "Gloryio - Gota de Llama/G Ardiente",
-            "description": "Logotipo moderno con un símbolo de fuego abstracto o una vibrante gota de llama que forma sutilmente la letra 'G' en su base. El degradado de colores cálidos y el resplandor sugieren energía, éxito o tecnología, junto con el nombre 'Gloryio' en una tipografía clara."
+            "description": "Estudio de un símbolo de llama que sugiere una letra G, acompañado de un nombre tipográfico."
           },
           "7": {
             "title": "GANLO - Cabeza de Leopardo/Jaguar",
-            "description": "Logotipo de inspiración animal que muestra la cabeza de un felino (leopardo o jaguar) con un intrincado patrón tribal. El color dorado sobre un fondo azul/verde oscuro crea un contraste lujoso y poderoso. Sugiere una marca fuerte, rápida o de lujo."
+            "description": "Estudio de una cabeza de felino con trazos ornamentales y contraste de dorado sobre fondo oscuro."
           },
           "8": {
             "title": "Virani - Joyería de Diamantes",
-            "description": "Logotipo de marca de joyería o de lujo. Combina un diseño de diamante estilizado que integra la letra 'V' con una elegante tipografía cursiva con serifa para el nombre 'Virani'. La combinación de dorado sobre negro proyecta riqueza y exclusividad."
+            "description": "Estudio de un diamante estilizado integrado con una V y un nombre de trazo caligráfico."
           },
           "9": {
             "title": "iillapro - Tipografía de Llama Líquida",
-            "description": "Logotipo que usa un efecto de llama integrado en la tipografía 'iillapro'. El estilo es audaz y 'caliente', con un degradado de naranja a blanco que simula calor y movimiento—ideal para marcas de comida picante, tecnología o deportes extremos."
+            "description": "Exploración tipográfica con un efecto de llama en tonos de naranja y blanco."
           },
           "10": {
             "title": "NOVALINE - Estrella Fugaz",
-            "description": "Logotipo limpio y futurista con el nombre 'NOVALINE' y un icono de estrella fugaz o cometa. La brillante estela de estrella en morado sugiere velocidad, innovación y un enfoque espacial o tecnológico—adecuado para servicios de internet, software o transporte."
+            "description": "Estudio de una estrella fugaz o cometa junto a un nombre de trazo geométrico."
           },
           "11": {
             "title": "MONT - Paisaje de Montaña",
-            "description": "Logotipo minimalista con la palabra 'MONT' cuyas letras están rellenas con un patrón de cumbres montañosas nevadas en tonos azules. Evoca una sensación de naturaleza, aventura y aire libre—perfecto para ropa, turismo o productos ecológicos."
+            "description": "Exploración de una palabra con un paisaje de montañas integrado en las letras."
           },
           "12": {
             "title": "LA CALLE - Estilo Urbano con Llamas",
-            "description": "Logotipo vibrante y audaz que presenta el texto 'LA CALLE' estilizado con un efecto de llama. Usa una paleta de colores cálidos que va del rojo al naranja-amarillo, transmitiendo energía, pasión o un estilo streetwear 'caliente'—ideal para marcas de moda urbana o de comida picante."
+            "description": "Exploración de letras con llamas y una paleta cálida de rojo, naranja y amarillo."
           },
           "13": {
             "title": "EKE - Símbolo de Toro Tribal/Minimalista",
-            "description": "Diseño de logotipo minimalista pero intrincado que presenta la cabeza de un toro (o buey) formada por líneas geométricas y patrones tribales, en dorado sobre un fondo azul oscuro texturizado. Transmite fuerza, determinación y un estilo premium o artesanal."
+            "description": "Estudio de una cabeza de toro construida con líneas geométricas y ornamentales."
           },
           "14": {
             "title": "ROYAL HOME - Monograma de Lujo",
-            "description": "Logotipo elegante y lujoso con un monograma 'BR' entrelazado en dorado metálico coronado por una corona. El estilo tipográfico es clásico y sofisticado, con el nombre de marca 'ROYAL HOME' debajo, sugiriendo alta calidad y exclusividad para hogar o inmobiliaria."
+            "description": "Estudio de un monograma entrelazado y una corona, con acabado dorado sobre fondo oscuro."
+          }
+        },
+        "Visual Studies": {
+          "7": {
+            "title": "Galaxia y órbitas",
+            "description": "Exploración visual de una galaxia en espiral atravesada por órbitas y puntos de luz."
+          },
+          "8": {
+            "title": "Espirales de neón",
+            "description": "Estudio abstracto de curvas luminosas, profundidad y color sobre un fondo oscuro."
+          },
+          "9": {
+            "title": "Forma fractal",
+            "description": "Composición abstracta de filamentos y formas concéntricas en tonos claros y dorados."
           }
         }
-      }
+      },
+      "tags": [
+        "Diseño gráfico",
+        "Estudios de logotipo",
+        "Imagen de producto",
+        "Composición visual",
+        "IA"
+      ]
     },
     "ai-advertising-content": {
-      "title": "Contenido publicitario generado con IA y marketing en redes sociales",
-      "category": "Contenido IA",
-      "fullDescription": "Transforma la publicidad de tu marca con tecnología de IA de vanguardia. Nuestras soluciones de vídeo generadas con IA crean anuncios espectaculares y de calidad profesional en un tiempo récord. Desde avatares de IA personalizados que representan la personalidad de tu marca hasta la generación automatizada de vídeo que se adapta a tu mensaje, ofrecemos soluciones publicitarias rentables y escalables que cautivan al público y generan interacción. Vive el futuro del marketing donde la creatividad se une a la inteligencia artificial.",
-      "client": "Varios clientes",
-      "duration": "De inmediato a 72 horas",
+      "title": "Conceptos publicitarios y motion con IA",
+      "category": "Contenido con IA",
+      "fullDescription": "Selección de anuncios de concepto, animaciones de carteles y escenas generadas con IA. El trabajo se centra en la dirección de imagen, el montaje y la adaptación a formatos de redes sociales.",
+      "client": "",
+      "duration": "",
       "videos": {
         "1": {
-          "title": "Experiencias cinematográficas forjadas con IA",
-          "description": "Demostramos cómo la inteligencia artificial da vida a ideas publicitarias complejas para marcas de bebidas como Alewences. Este trabajo captura una estética de lujo y vida nocturna con vibrantes colores de neón, vehículos de alta gama y escenarios dinámicos—todo generado con precisión cinematográfica. Creamos anuncios de primer nivel que posicionan tu producto como líder de su categoría, ajustándonos a cualquier requisito específico de color, modelo o entorno. El futuro de tus campañas de bebidas está aquí."
+          "title": "Bebida Alewences · concepto nocturno",
+          "description": "Concepto publicitario con una bebida de marca Alewences, luces de neón, vehículos y escenas nocturnas generadas con IA."
         },
         "2": {
-          "title": "Convierte tu gráfica estática en un anuncio viral",
-          "description": "Transformamos los materiales gráficos tradicionales de tu evento (carteles, flyers) en vídeos promocionales inmersivos y de gran impacto, listos para redes sociales. Usamos efectos visuales, animación y música estratégica para dar vida a cada detalle del cartel, garantizando un gancho visual que maximiza la visibilidad y la interacción en plataformas como Instagram, TikTok y Facebook. El resultado: una herramienta esencial para que tus promotores generen expectación y aseguren la asistencia a tu próxima fiesta o evento."
+          "title": "Del cartel al vídeo",
+          "description": "Animación y montaje de un cartel para convertir una pieza gráfica estática en un vídeo promocional."
         },
         "3": {
-          "title": "El futuro de la publicidad de moda",
-          "description": "Transforma la publicidad de tu marca. Nuestra tecnología de avatares de IA modela sin esfuerzo tu línea de ropa, creando anuncios de vídeo de gran impacto y producción completa sin necesidad de modelos humanos ni intervención de estudio. Ahorra tiempo, reduce costes y acelera la creación de contenido. Cada conjunto, cada estilo, visualizado al instante."
+          "title": "Moda · demostración con avatar IA",
+          "description": "Demostración visual de prendas presentadas mediante un personaje generado con IA."
         },
         "4": {
-          "title": "AMIGO DE TERROR DE HALLOWEEN CON IA - XENOMORFO CON ALIENTO FRESCO",
-          "description": "Cuando le pides a la Inteligencia Artificial un 'amigo terrorífico para Halloween' 🎃, pero se te olvida poner en el prompt 'con el aliento fresco'. ¡Ten cuidado con lo que deseas! 😂 Y es que hasta el Xenomorfo más temible del universo necesita ayuda después de comer. ¿Quién iba a pensar que el verdadero terror no era su doble mandíbula, sino el aliento de astronauta? 🤢➡️🍬 Este vídeo es solo una de las locuras que he estado creando con IA para este Halloween. ¡La creatividad no tiene límites!"
+          "title": "Halloween · humor con IA",
+          "description": "Escena de humor creada con IA que juega con un personaje de terror y una situación cotidiana."
         },
         "5": {
-          "title": "ANUNCIO CYBERPUNK DE ALEWENCES GENERADO CON IA - LATA HIPERREALISTA",
-          "description": "🤯 ¿Crees que esto lo grabó un equipo de rodaje? Piénsalo otra vez. 💡 Esto es lo que ocurre cuando mezclas Inteligencia Artificial con una idea publicitaria brutal. 🎥✨ Hiperrealismo, neón y el gusto premium de ALEWENCES, todo generado en minutos. Olvídate de los límites creativos. Si puedes soñarlo, la IA puede crearlo. 🚀 (¡Para emprendedores y marcas!): ALTO 🛑 Deja de gastar miles en producciones lentas. Este anuncio de calidad Hollywood se creó con IA en una fracción del tiempo (¡y del coste!) 🤯. Una lata hiperrealista en un mundo cyberpunk. La Inteligencia Artificial es la nueva herramienta de marketing. Así es como se ve un anuncio cuando no hay límites."
+          "title": "Alewences · lata cyberpunk",
+          "description": "Concepto publicitario generado con IA que sitúa una lata de marca Alewences en una escena cyberpunk."
         }
-      }
+      },
+      "tags": [
+        "Generación visual con IA",
+        "Montaje de vídeo",
+        "Animación de carteles",
+        "Conceptos publicitarios"
+      ]
     },
     "music-event-visuals": {
-      "title": "Visuales para Eventos Musicales y VJing",
-      "category": "Música y Eventos",
-      "fullDescription": "Sumerge al público en experiencias musicales inolvidables mediante arte psicodélico, actuaciones dinámicas de VJ y una narrativa visual de vanguardia. Desde carteles de concierto alucinantes que capturan la esencia de la música electrónica hasta manipulaciones visuales en tiempo real que se sincronizan a la perfección con las sesiones de DJ, nuestro trabajo transforma eventos corrientes en viajes extraordinarios. Combinamos el diseño gráfico tradicional con la actuación de vídeo en directo, creando paisajes visuales que enriquecen la experiencia musical y dejan una huella duradera tanto en los asistentes a festivales como en los del club.",
-      "client": "Varios festivales de música y colectivos de DJ",
-      "duration": "1-2 semanas por proyecto",
+      "title": "Carteles, visuales y montaje musical",
+      "category": "Música y visuales",
+      "fullDescription": "Selección de carteles, animaciones y montajes vinculados a la música y la estética de club. La colección permite recorrer distintas composiciones gráficas y ver cómo cambian al incorporar movimiento y sonido.",
+      "client": "",
+      "duration": "",
       "videos": {
         "1": {
-          "title": "DISEÑO DE CARTEL MINIMALISTA PARA DISCOTECA",
-          "description": "Un cartel minimalista diseñado para un evento de discoteca, creado y editado con tecnología de IA. El visual presenta líneas limpias, una estética moderna y un ambiente refinado, combinando a la perfección la creatividad digital con un enfoque minimalista—ideal para promocionar experiencias de ocio nocturno exclusivas."
+          "title": "Cartel de club · composición minimalista",
+          "description": "Pieza audiovisual que presenta el diseño de un cartel de club con formas, tipografía y animación."
         },
         "2": {
-          "title": "PROMO PARA REDES SOCIALES: CARTEL DE DISCOTECA",
-          "description": "Edición de vídeo dinámica que transforma un cartel estático de discoteca en contenido atractivo para redes sociales con tecnología de IA. Este proyecto demuestra cómo dar vida a gráficas estáticas para lograr la máxima interacción en plataformas como Instagram y TikTok."
+          "title": "Cartel de club · versión para redes",
+          "description": "Edición que transforma una composición estática de un cartel en una pieza de vídeo."
         },
         "3": {
-          "title": "CREACIÓN DE CARTEL DE FESTIVAL CON IA",
-          "description": "Una mirada entre bastidores al proceso creativo de un cartel para un festival de música, editado y creado por completo con Inteligencia Artificial. Este proyecto destaca el poder de la IA tanto en el diseño visual como en la edición de vídeo profesional."
+          "title": "Cartel musical · proceso con IA",
+          "description": "Vídeo del proceso de creación y edición de una gráfica musical con herramientas de IA."
         },
         "4": {
-          "title": "SINERGIA AUDIOVISUAL",
-          "description": "Sumérgete en esta electrizante edición de vídeo, un montaje de gran energía que captura la intensidad y la narrativa del tema original. Este proyecto demuestra una habilidad excepcional para sincronizar efectos visuales dinámicos y transiciones rápidas con una banda sonora que habla de ambición, riesgo y determinación inquebrantable.\n\nLa propia música, la \"Song of Arcane\", también se creó con herramientas de Inteligencia Artificial.\n"
+          "title": "Song of Arcane · montaje audiovisual",
+          "description": "Montaje de imágenes, efectos y transiciones alrededor de la pieza musical Song of Arcane."
         },
         "5": {
-          "title": "PRODUCCIÓN DE VJING Y VISUALES EN DIRECTO",
-          "description": "Muestra de VJing y visuales en directo para un festival de música creados con tecnología de IA. Este vídeo demuestra cómo las herramientas modernas de IA permiten crear diseños de eventos de alta gama y experiencias visuales inmersivas con un coste y un tiempo de entrega considerablemente menores en comparación con los métodos tradicionales."
+          "title": "Visuales para música · demostración",
+          "description": "Demostración de visuales generados con IA y montaje para acompañar música."
         }
       },
       "gallery": {
@@ -721,100 +732,307 @@
             "description": "Cartel que presenta bloques de hormigón y escombros flotando en un vacío oscuro, atravesados por afiladas líneas láser blancas diagonales. El símbolo de infinito descansa sobre la estructura central. El diseño es minimalista pero agresivo, representando a la perfección la temática 'Digital Brutalism'."
           }
         }
-      }
+      },
+      "tags": [
+        "Cartelería",
+        "Visuales para música",
+        "Montaje audiovisual",
+        "Animación",
+        "IA"
+      ]
     },
     "ai-photographic-art": {
-      "title": "ARTE FOTOGRÁFICO Y VIDEOGRAFÍA POTENCIADOS POR INTELIGENCIA ARTIFICIAL",
-      "category": "Fotografía IA",
-      "fullDescription": "Especializado en la creación de arte fotográfico y producción audiovisual mediante la integración de la inteligencia artificial, mi trabajo combina creatividad, técnica y tecnología avanzada para ofrecer imágenes y vídeos únicos, transformando la visión artística en experiencias visuales innovadoras.",
-      "client": "Proyectos personales",
-      "duration": "N/A",
+      "title": "Arte visual y retrato con IA",
+      "category": "Arte visual con IA",
+      "fullDescription": "Colección de imágenes y vídeos que exploran retrato, naturaleza, fantasía y abstracción con herramientas de IA. Incluye la serie Alma Digital y una demostración de transformación de un retrato.",
+      "client": "",
+      "duration": "",
       "gallery": {
         "photographicArt": {
           "1": {
-            "title": "SERIE ALMA DIGITAL - CONCIENCIA ABSTRACTA",
-            "description": "Exploración de la intersección entre la conciencia humana y los reinos digitales. Esta pieza captura la conexión etérea entre mente, naturaleza y tecnología a través de elementos visuales abstractos potenciados por la inteligencia artificial."
+            "title": "Retrato · filamentos dorados",
+            "description": "Perfil construido con filamentos y puntos de luz dorada sobre un fondo negro."
           },
           "2": {
-            "title": "EL ABRAZO DIGITAL DE LA NATURALEZA",
-            "description": "Una mezcla armoniosa de belleza natural y realce digital que muestra cómo la tecnología de IA puede amplificar y reinterpretar el mundo orgánico en un arte fotográfico impresionante."
+            "title": "Retrato · halo turquesa",
+            "description": "Figura de perfil con un halo circular, filamentos y detalles luminosos en tonos verdes y azules."
           },
           "3": {
-            "title": "EMOCIONES PIXELADAS",
-            "description": "Emociones capturadas y transformadas mediante algoritmos digitales y procesamiento con IA. Cada píxel cuenta una historia de la experiencia humana reimaginada en la era digital a través de una fotografía innovadora."
+            "title": "Retrato · textura de luz",
+            "description": "Primer plano de un rostro con ojos cerrados, rodeado por una trama de filamentos dorados."
           },
           "4": {
-            "title": "SUEÑOS CIBERNÉTICOS",
-            "description": "Paisajes oníricos donde la realidad se encuentra con la imaginación a través de la fotografía potenciada por IA. Esta pieza representa la fusión del pensamiento consciente y los paisajes digitales subconscientes."
+            "title": "Fantasía · alas de fuego",
+            "description": "Figura con un vestido rojo y alas luminosas entre columnas en ruinas al atardecer."
           },
           "5": {
-            "title": "ALGORITMO DE LA HORA DORADA",
-            "description": "El momento perfecto capturado y realzado mediante algoritmos de IA. Un homenaje a la magia de la luz natural transformada por el arte digital y el procesamiento fotográfico inteligente."
+            "title": "Retrato · órbitas de color",
+            "description": "Figura rodeada de curvas luminosas, partículas y formas en espiral."
           },
           "6": {
-            "title": "RENACIMIENTO DIGITAL",
-            "description": "Principios artísticos clásicos reinterpretados a través de modernas herramientas digitales de IA. Un puente entre el arte tradicional y la tecnología contemporánea en la expresión fotográfica."
+            "title": "Retrato · anillos de luz",
+            "description": "Primer plano de un rostro atravesado por anillos luminosos sobre un fondo de galaxia."
           },
           "7": {
-            "title": "VISIONES DE RED NEURONAL",
-            "description": "Representaciones visuales inspiradas en las redes neuronales artificiales. Patrones abstractos que emergen de complejos procesos computacionales en el arte fotográfico generado con IA."
+            "title": "Retrato · círculo de neón",
+            "description": "Figura con los ojos cerrados enmarcada por un círculo naranja y estelas de color."
           },
           "8": {
-            "title": "ESTÉTICA CUÁNTICA",
-            "description": "Exploración de la belleza de composiciones visuales de inspiración cuántica a través de la fotografía con IA. Donde la física de partículas se encuentra con la expresión artística en la imagen digital."
+            "title": "Retrato · halo y puntos de luz",
+            "description": "Retrato de fantasía con un halo dorado, patrones de puntos en el rostro y luces de color."
           },
           "9": {
-            "title": "FRAGMENTOS DE MEMORIA",
-            "description": "Reconstrucciones digitales de fragmentos de memoria mediante el realce con IA. Recomponiendo el rompecabezas de la experiencia humana a través de la interpretación algorítmica en la fotografía."
+            "title": "Retrato · corona y filamentos",
+            "description": "Figura con una corona ornamental y filamentos luminosos en el cabello, sobre un fondo oscuro."
           },
           "10": {
-            "title": "SERENIDAD SINTÉTICA",
-            "description": "Tranquilidad artificial creada mediante síntesis digital y procesamiento con IA. Un apacible oasis digital elaborado con técnicas fotográficas innovadoras."
+            "title": "Retrato · esfera de energía",
+            "description": "Figura rodeada por grandes anillos de luz naranja y estelas azules, verdes y rojas."
           },
           "11": {
-            "title": "LIENZO DE CÓDIGO",
-            "description": "Arte creado a partir de líneas de código y pinceladas algorítmicas. Donde la programación se encuentra con la pintura en la fotografía digital y la creación visual potenciadas por IA."
+            "title": "Mathematical Inspiration",
+            "description": "Composición con un retrato, órbitas y un fondo de galaxia. El texto Mathematical Inspiration forma parte de la imagen."
           },
           "12": {
-            "title": "METAMORFOSIS DIGITAL",
-            "description": "Transformación a través de medios digitales y realce con IA. Evolución de la forma y el color guiada por algoritmos inteligentes en el arte fotográfico."
+            "title": "Retrato · árbol y recorrido de luz",
+            "description": "Retrato que integra un árbol, nubes y un recorrido luminoso en la silueta."
           },
           "13": {
-            "title": "CONCIENCIA FRACTAL",
-            "description": "Patrones infinitos de conciencia autosemejante. Exploración de la naturaleza fractal del pensamiento humano a través del arte visual potenciado por la inteligencia artificial."
+            "title": "Retrato · paisaje interior",
+            "description": "Composición que combina un rostro, un paisaje con agua y montañas, y filamentos de luz."
           },
           "14": {
-            "title": "EMOCIONES BINARIAS",
-            "description": "Emociones expresadas mediante código binario e interpretación digital. El lenguaje de los ordenadores hablando el lenguaje de los sentimientos en la fotografía con IA."
+            "title": "Retrato · halo y paisaje",
+            "description": "Figura con un halo elíptico y un paisaje de montañas y agua integrado en el cuerpo."
           },
           "15": {
-            "title": "ARMONÍA ALGORÍTMICA",
-            "description": "Equilibrio perfecto logrado mediante precisión matemática y visión artística. Donde los números crean belleza en composiciones fotográficas potenciadas por IA."
+            "title": "Retrato · luz entre los dedos",
+            "description": "Figura de perfil que sostiene un punto de luz; árboles, agua y estelas se integran en la composición."
           },
           "16": {
-            "title": "GÉNESIS DIGITAL",
-            "description": "El nacimiento de nuevas formas mediante la creación digital y el procesamiento con IA. Presenciando la génesis de ideas visuales en el reino digital a través de una fotografía innovadora."
+            "title": "Retrato · cascadas y filamentos",
+            "description": "Retrato que incorpora un paisaje con cascadas en el brazo y filamentos dorados alrededor del cabello."
           },
           "17": {
-            "title": "VÍAS NEURONALES",
-            "description": "Representación visual de las conexiones neuronales y los procesos de pensamiento. Cartografiando la compleja red de la cognición humana a través del arte digital y la fotografía potenciados por IA."
+            "title": "Retrato · brillo cósmico",
+            "description": "Primer plano sobre fondo oscuro, con puntos de luz y un acabado brillante en los labios."
           },
           "18": {
-            "title": "CÓDIGO CÓSMICO",
-            "description": "Patrones universales descodificados mediante el arte digital y el realce con IA. Conectando el cosmos a través de líneas de código y elementos visuales en la expresión fotográfica."
+            "title": "Moda · líneas de luz",
+            "description": "Figura de cuerpo entero con un vestido oscuro y líneas de luz azul, verde y violeta."
           }
         }
       },
       "videos": {
         "1": {
-          "title": "ALMA DIGITAL - INTERSECCIÓN ENTRE CONCIENCIA Y NATURALEZA",
-          "description": "Exploro la intersección entre la conciencia humana, la belleza de la naturaleza y el lenguaje de la tecnología. 🌀 Cada pieza de mi portfolio es un viaje, una emoción capturada en píxeles y algoritmos. Esta serie, 'Alma Digital', visualiza nuestra conexión interna con el universo digital y natural. Pero el arte no es solo para mirarlo. Es para sentirlo y poseerlo. Comenta qué te transmite esta imagen. Me encantaría leer tu interpretación. 👇 Y si sueñas con tener una pieza única de arte digital que represente tu propia historia o esencia"
+          "title": "Alma Digital · naturaleza y retrato",
+          "description": "Pieza de la serie Alma Digital que combina figura humana, naturaleza y tratamiento visual con IA."
         },
         "2": {
-          "title": "TRANSFORMACIÓN DE SELFIE A ARTE DE FANTASÍA",
-          "description": "¿Te imaginas convertir tu selfie favorita en una obra de arte única? Olvídate de los filtros genéricos que todo el mundo usa. Mi servicio transforma tus propias fotos en retratos de fantasía de alta costura, realzando tu belleza con un mágico toque dorado. 💫 Cada pieza está 100% personalizada. Es la forma perfecta de: ✔️ Crear una foto de perfil inolvidable. ✔️ Hacer un regalo que sorprenda de verdad. ✔️ Celebrarte con una versión artística que te encantará. Tú me envías tu foto y yo creo la magia. 🌟 ¿Lista para tu transformación?"
+          "title": "Del retrato a la fantasía",
+          "description": "Demostración de transformación de un retrato mediante IA, con estilismo de fantasía y detalles dorados."
         }
+      },
+      "tags": [
+        "Arte digital",
+        "Retrato",
+        "Fantasía visual",
+        "Imagen con IA",
+        "Vídeo"
+      ]
+    }
+  },
+  "clientWork": {
+    "real": "Trabajo real",
+    "read": "Ver caso",
+    "readNamed": "Ver caso de {{title}}",
+    "backToVideo": "Ir a vídeo y motion",
+    "commercialCase": "Ver caso en Alewences",
+    "pieces": "Piezas audiovisuales",
+    "filters": "Filtrar proyectos por categoría",
+    "previous": "Otros trabajos de diseño",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "selectedVideo": "Seleccionado",
+    "originalVideo": "Abrir vídeo en su origen",
+    "cases": {
+      "la-parrilla-de-champi": {
+        "title": "La Parrilla de Champi",
+        "summary": "Web bilingüe, rótulos de neón en 3D y piezas de vídeo para un restaurante de Noia.",
+        "intro": "El restaurante de Noia necesitaba una carta y una web que trasladaran el ambiente de la parrilla a la pantalla. La web reúne carta en castellano y gallego, información de visita y acceso a reservas.",
+        "role": "Mi aportación abarca diseño y desarrollo web, aplicación de la identidad, modelado de rótulos y edición de piezas promocionales.",
+        "visit": "Visitar la web de Champi",
+        "coverAlt": "Fotograma del spot de La Parrilla de Champi",
+        "workHeading": "De la parrilla a la web",
+        "chapters": {
+          "brand": {
+            "status": "Identidad aplicada",
+            "title": "La mascota de Champi en la web",
+            "description": "La mascota se adapta a la navegación, al hero y a piezas de temporada. Los rótulos «Churrasco» y «Niveles» trasladan a la carta el lenguaje de neón del restaurante. Su proceso se ve en la selección de vídeos.",
+            "alt": "Versión de la marca de La Parrilla de Champi con su mascota"
+          },
+          "seasonal": {
+            "status": "Ediciones publicadas",
+            "title": "Navidad y Feira Medieval",
+            "description": "La web se vistió para Navidad. Durante la Feira Medieval de Noia, la carta presentó un menú especial sobre el cartel de la feria y recuperó su presentación habitual al acabar."
+          },
+          "vacation": {
+            "status": "Aviso publicado · 27 oct–11 nov 2026",
+            "title": "Aviso de vacaciones",
+            "description": "Ilustración y aviso bilingüe de aquella pausa de temporada. El regreso se anunció para el 12 de noviembre de 2026.",
+            "alt": "Ilustración del aviso de vacaciones con la mascota de Champi"
+          },
+          "halloween": {
+            "status": "Diseño de temporada",
+            "title": "Una noche con mucho fuego",
+            "description": "Concepto de Halloween que explora cómo llevar la mascota y la parrilla a una campaña de temporada. La demostración está alojada en Alewences.",
+            "alt": "Captura del diseño de Halloween de Champi",
+            "link": "Ver demostración de Halloween"
+          },
+          "platter": {
+            "status": "Prototipo 3D",
+            "title": "Parrillada · reconstrucción de plato",
+            "description": "Estudio de cómo presentar la parrillada en 3D y realidad aumentada. Apariencia, tamaño, porción y experiencia en dispositivos siguen en validación.",
+            "alt": "Render del prototipo de parrillada con la comida sobre una tabla"
+          },
+          "display": {
+            "status": "Prototipo 3D",
+            "title": "Vitrina · exploración de cortes",
+            "description": "Exploración de una vitrina para consultar cortes de carne. La interacción con el modelo se acompaña de una lista accesible. Las dimensiones y la apariencia se están validando.",
+            "alt": "Render de la vitrina 3D de Champi con cortes en exposición"
+          }
+        }
+      },
+      "velvet-ecosistema": {
+        "title": "Velvet · Tres webs con Diego Hermo",
+        "summary": "Dirección visual y desarrollo de las webs de Velvet Tattoo Studio, El Camino Tattoo y Velvet Academy.",
+        "intro": "Con Diego Hermo y su equipo trabajé en tres recorridos. Velvet ayuda a elegir un artista para un encargo, El Camino acompaña a quien quiere recordar su peregrinación y Academy orienta a quien busca formarse en tatuaje.",
+        "role": "Mi aportación cubrió definición de producto, recorridos, wireframes, dirección visual y desarrollo. Las webs tienen su propia identidad y los estudios comparten herramientas de operación.",
+        "coverAlt": "Captura de la portada de Velvet Tattoo Studio",
+        "workHeading": "Las tres webs y su trabajo de diseño",
+        "chapters": {
+          "velvet": {
+            "status": "Web publicada",
+            "title": "Velvet Tattoo Studio",
+            "description": "Obra, artistas, protocolo y visita para conocer el estudio antes de solicitar una cita.",
+            "alt": "Captura de la web pública de Velvet Tattoo Studio",
+            "link": "Visitar Velvet Tattoo Studio"
+          },
+          "elcamino": {
+            "status": "Web publicada",
+            "title": "El Camino Tattoo",
+            "description": "Catálogo y solicitud de fecha para quien quiere llevarse un tatuaje como recuerdo del Camino de Santiago.",
+            "alt": "Captura de la web pública de El Camino Tattoo",
+            "link": "Visitar El Camino Tattoo"
+          },
+          "academy": {
+            "status": "Web publicada",
+            "title": "Velvet Academy",
+            "description": "Presentación de la formación con Diego Hermo, galería y consulta de información.",
+            "alt": "Captura de la web pública de Velvet Tattoo Academy",
+            "link": "Visitar Velvet Academy"
+          },
+          "velvet-logo": {
+            "status": "Marca del cliente · integración 3D",
+            "title": "Logo de Velvet Tattoo Studio",
+            "description": "Integración de la geometría del cliente y preparación de su versión estática para mostrar la misma marca cuando no se carga la escena.",
+            "alt": "Logo de Velvet con sus seis letras y halos"
+          },
+          "elcamino-logo": {
+            "status": "Marca del cliente · adaptación 3D",
+            "title": "Logo de El Camino Tattoo",
+            "description": "Adaptación e integración del activo del estudio, con una versión estática para su uso en web.",
+            "alt": "Versión web del logo de El Camino Tattoo"
+          },
+          "workflow": {
+            "status": "Esquema público",
+            "title": "Recorridos y decisiones de producto",
+            "description": "Wireframes conceptuales redibujados para explicar cómo alguien conoce el estudio, encuentra el recorrido adecuado y llega a una solicitud.",
+            "alt": "Wireframes conceptuales de Velvet con recorridos y estados de ejemplo"
+          },
+          "diploma": {
+            "status": "Entrega automática · estado del 10 nov 2026",
+            "title": "Pergamino personalizado de El Camino",
+            "description": "El envío automático se activó después de verificar la entrega con una cita ficticia. La firma digital pública seguía cerrada en esa fecha.",
+            "step1": "La solicitud puede incluir un pergamino.",
+            "step2": "El estudio registra la cita realizada y prepara el documento a partir de una ficha válida firmada.",
+            "step3": "El envío automático entrega el acceso al PDF en las citas que cumplen esas condiciones."
+          }
+        }
+      },
+      "beirocor": {
+        "title": "Beirocor",
+        "summary": "Diseño y desarrollo de la web ES/GL para una empresa de reformas de Noia, con trabajos de antes y después.",
+        "coverAlt": "Captura de la web pública de Beirocor",
+        "visit": "Visitar Beirocor"
+      }
+    },
+    "imagePosition": "Imagen {{current}} de {{total}}: {{title}}"
+  },
+  "recentWork": {
+    "heading": "Trabajo reciente y casos técnicos",
+    "intro": "Proyectos en curso, experimentos y casos de ingeniería con su estado y documentación disponible.",
+    "velvetCase": "Ver caso Velvet",
+    "read": "Leer caso",
+    "readNamed": "Leer el caso de {{title}}",
+    "repository": "Ver en GitHub",
+    "repositoryNamed": "Ver el repositorio de {{title}} en GitHub",
+    "archiveTitle": "Archivo profesional",
+    "archiveIntro": "Casos documentados de trabajo anterior, con mi contribución y el alcance de cada entrega. Floor Planner documenta mi labor de mentoría técnica y la implementación de la persona en prácticas.",
+    "archiveLink": "Ver el índice de los ocho casos",
+    "status": {
+      "client": "Trabajo real",
+      "prototype": "Prototipo local",
+      "experimental": "Proyecto experimental",
+      "development": "En desarrollo",
+      "documented": "Proyecto documentado"
+    },
+    "projects": {
+      "velvet": {
+        "title": "Ecosistema Velvet",
+        "description": "Definición de producto, UX y desarrollo de las tres webs con Diego Hermo y su equipo, además de herramientas compartidas para los estudios."
+      },
+      "rastro": {
+        "title": "Rastro",
+        "description": "Investigación de productos y proveedores con IA, resultados vinculados a fuentes y búsquedas recuperables. La precisión comercial y las búsquedas a gran escala siguen en validación."
+      },
+      "combivideo": {
+        "title": "combivideo",
+        "description": "Manifiesto de segmentos alternativos, selección reproducible y reproducción web. La validación con medios reales y distintos navegadores sigue en curso."
+      },
+      "palermo": {
+        "title": "Agenda de Palermo Estilistas",
+        "description": "Agenda de trabajo del salón en desarrollo local, con revisión de citas y dictado en validación."
+      },
+      "virusinvaders": {
+        "title": "VirusInvaders LTS",
+        "description": "Videojuego arcade en Unity y C#, con comportamiento modular de enemigos, ScriptableObjects y shaders HLSL."
+      },
+      "music-ia": {
+        "title": "Music IA",
+        "description": "Herramientas locales en TypeScript para generar música con proveedores intercambiables y trabajos reanudables. El flujo de vídeo musical y publicación sigue en desarrollo."
+      },
+      "wentwit": {
+        "title": "Wentwit",
+        "description": "Prototipo para preparar imágenes de agradecimiento a la comunidad de Twitch con revisión previa. La integración y el flujo de publicación se están validando."
+      }
+    },
+    "professional": {
+      "audionow": {
+        "title": "AudioNow",
+        "description": "Audio multilingüe en tiempo real y gestión de sesiones. El caso distingue el uso documentado de Palabra en sesiones en directo de la integración de OpenAI en entorno canario."
+      },
+      "online-registration": {
+        "title": "Online Registration",
+        "description": "Núcleo de registro y pagos con idempotencia y convivencia con el sistema anterior. El caso detalla el alcance entregado."
+      },
+      "printflow": {
+        "title": "PrintFlow",
+        "description": "Flujo de impresión bajo demanda que conecta la web, un escritorio Electron y las impresoras, con un modo para operar sin conexión."
       }
     }
+  },
+  "canvasLoader": {
+    "loading": "Cargando…"
   }
 }

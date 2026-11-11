@@ -1,84 +1,77 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { PerspectiveCamera, Float } from "@react-three/drei";
+import { lazy, Suspense, useRef } from "react";
+import PropTypes from "prop-types";
+import RenderBoundary from "../../components/RenderBoundary.jsx";
+import useVisibleMotion from "../../hooks/useVisibleMotion.js";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import CanvasLoader from "../../components/CanvasLoader.jsx";
 import { useMediaQuery } from "react-responsive";
-import Cube from "../../components/Cube.jsx";
-import Rings from "../../components/Rings.jsx";
-import Button from "../../components/Button.jsx";
 import SketchfabModel from "../../components/SketchfabModel.jsx";
 
-const DesignHero = () => {
+const reaperScene = "31eb7468dce246538fc15edf25f97ef8";
+
+const DesignDecoration = lazy(() => import("./DesignDecoration.jsx"));
+
+const DesignHero = ({ activeMedia, onSceneToggle }) => {
   const { t } = useTranslation();
+  const heroRef = useRef(null);
+  const motionVisible = useVisibleMotion(heroRef);
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const reducedMotion = useMediaQuery({ query: "(prefers-reduced-motion: reduce)" });
+  const sceneOpen = activeMedia === "scene";
 
   return (
-    <section className="min-h-screen w-full flex flex-col relative" id="home">
-      {/* Texto del hero - con z-index alto para estar encima */}
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 relative z-20">
-        <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-          {t("hero.greeting")} <span className="waving-hand">👋</span>
+    <section ref={heroRef} className="portfolio-anchor relative flex min-h-screen w-full flex-col" id="home" tabIndex={-1} aria-labelledby="design-hero-title">
+      <div className="c-space relative z-10 mx-auto mt-24 w-full sm:mt-36">
+        <p className="text-center text-2xl font-medium text-white sm:text-3xl">
+          {t("hero.greeting")} <span className="portfolio-motion waving-hand" aria-hidden="true">👋</span>
         </p>
-        <p className="hero_tag bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+        <h1 id="design-hero-title" data-route-focus tabIndex={-1} className="hero_tag bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
           {t("designHero.tagline")}
-        </p>
+        </h1>
       </div>
-      
-      <div className="w-full h-full absolute inset-0 pointer-events-none">
-        {/* Canvas 3D con elementos decorativos */}
-        <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
-            <group>
-              <Float speed={1.5} rotationIntensity={1.2} floatIntensity={2}>
-                <Cube 
-                  position={isMobile ? [5, -3, 0] : [9, -4, 0]} 
-                  scale={isMobile ? 0.8 : 1}
-                />
-              </Float>
-              
-              <Float speed={1.2} rotationIntensity={0.8} floatIntensity={1.5}>
-                <Cube 
-                  position={isMobile ? [-5, 3, 0] : [-9, 4, 0]}
-                  scale={isMobile ? 0.8 : 1}
-                />
-              </Float>
-              
-              <Rings position={isMobile ? [0, 0, -5] : [-15, 8, -5]} />
-            </group>
-            
-            <ambientLight intensity={1.2} />
-            <directionalLight position={[10, 10, 10]} intensity={0.7} />
-            <pointLight position={[-10, -10, -5]} intensity={0.5} color="#ff00ff" />
-            <pointLight position={[10, 10, 5]} intensity={0.5} color="#00ffff" />
-          </Suspense>
-        </Canvas>
+      {!activeMedia && !reducedMotion && !isMobile && motionVisible && (
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <RenderBoundary><Suspense fallback={null}><DesignDecoration /></Suspense></RenderBoundary>
+        </div>
+      )}
 
-        {/* Modelo de Sketchfab - Reaper Scene - Posicionado abajo */}
-        <div className="absolute inset-0 flex items-end justify-center pb-32 md:pb-24">
-          <SketchfabModel
-            modelId="31eb7468dce246538fc15edf25f97ef8"
-            title="Reaper Scene"
-            scale={isMobile ? 0.7 : 0.9}
-            position={[0, isMobile ? 50 : 30]}
-          />
+      <div className="c-space relative z-10 mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center gap-5 pb-5 pt-8">
+        {!sceneOpen && <Link to="/design?video=champi-rotulos#video-showcase" className="group block overflow-hidden rounded-2xl border border-white/15 bg-black/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300">
+          <img src="/media/portfolio/posters/champi-rotulos.webp" alt="" width="960" height="720" fetchPriority="high" className="aspect-video w-full object-cover object-top" />
+          <span className="flex flex-wrap items-center justify-between gap-2 px-5 py-3 text-sm text-white">
+            <span>{t("designHero.featuredWork")}</span><span className="text-pink-200 underline underline-offset-4">{t("designHero.featuredCta")} →</span>
+          </span>
+        </Link>}
+        <div id="model-3d-showcase" tabIndex={-1} className="portfolio-anchor flex w-full flex-col items-center gap-3">
+          <button
+            type="button"
+            onClick={onSceneToggle}
+            aria-expanded={sceneOpen}
+            aria-controls="design-scene-region"
+            className="min-h-11 rounded-full border border-white/20 bg-black/90 px-5 py-2 font-semibold text-white hover:border-pink-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300"
+          >
+            {t(sceneOpen ? "designHero.closeScene" : "designHero.openScene")}
+          </button>
+          <div id="design-scene-region" hidden={!sceneOpen} className="w-full">
+            {sceneOpen && <SketchfabModel modelId={reaperScene} title="Reaper Scene" />}
+          </div>
+          <a href={`https://sketchfab.com/models/${reaperScene}`} className="portfolio-link text-sm">{t("designHero.sceneSource")}</a>
         </div>
       </div>
-      
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space pointer-events-auto">
-        <a href="#design-projects" className="w-fit">
-          <Button
-            name={t("designHero.viewWork")}
-            isBeam
-            cotainerClass="sm:w-fit w-full sm:min-w-96"
-          />
-        </a>
+
+      <div className="c-space relative z-10 mx-auto w-full pb-7 text-center">
+        <Link to="/design#design-projects" className="btn w-fit min-h-11 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300">
+          <span className="relative flex h-3 w-3" aria-hidden="true">
+            <span className="portfolio-motion btn-ping" />
+            <span className="btn-ping_dot" />
+          </span>
+          {t("designHero.viewWork")}
+        </Link>
       </div>
     </section>
   );
 };
 
+DesignHero.propTypes = { activeMedia: PropTypes.string, onSceneToggle: PropTypes.func.isRequired };
 export default DesignHero;
-
