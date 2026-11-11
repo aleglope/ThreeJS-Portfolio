@@ -21,14 +21,14 @@ export const clientProjects = [
     id: "velvet-ecosistema",
     to: "/design/project/velvet-ecosistema",
     servicesPath: "/casos/velvet",
-    cover: image("velvet-web.webp", 1440, 900),
+    cover: image("velvet-web.webp", 1440, 810),
     chapters: [
-      { id: "velvet", image: image("velvet-web.webp", 1440, 900), href: "https://velvetatto.com/es" },
-      { id: "elcamino", image: image("elcamino-web.webp", 1440, 900), href: "https://elcaminotattoo.es/" },
-      { id: "academy", image: image("academy-web.webp", 1440, 900), href: "https://velvettattooacademy.es/" },
+      { id: "velvet", image: image("velvet-web.webp", 1440, 810), href: "https://velvetatto.com/es" },
+      { id: "elcamino", image: image("elcamino-web.webp", 1440, 810), href: "https://elcaminotattoo.es/" },
+      { id: "academy", image: image("academy-web.webp", 1440, 810), href: "https://velvettattooacademy.es/" },
       { id: "velvet-logo", image: image("velvet-logo.webp", 896, 211), contain: true },
       { id: "elcamino-logo", image: image("elcamino-logo.webp", 1000, 1000), contain: true },
-      { id: "workflow", image: image("velvet-wireframes.svg", 1200, 1100), contain: true },
+      { id: "workflow", image: { ...image("velvet-wireframes.svg", 1200, 1100), srcByLocale: { en: "/media/portfolio/velvet-wireframes-en.svg" } }, contain: true },
       { id: "diploma" },
     ],
     videoIds: [],
@@ -36,6 +36,6 @@ export const clientProjects = [
   {
     id: "beirocor",
     href: "https://beirocor.es/",
-    cover: image("beirocor-web.webp", 1440, 900),
+    cover: image("beirocor-web.webp", 1440, 810),
   },
 ];

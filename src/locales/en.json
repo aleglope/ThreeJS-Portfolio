@@ -117,7 +117,11 @@
         "term": "Reactive state management",
         "detail": "Observer pattern for cross-language synchronization"
       }
-    ]
+    ],
+    "loading": "Preparing the game…",
+    "loadError": "The game could not load. You can try again.",
+    "retry": "Try again",
+    "stop": "Close game"
   },
   "projectsData": {
     "rural-hacker-museum": {
@@ -252,33 +256,35 @@
     "viewWork": "View My Work",
     "openScene": "Open Reaper Scene in 3D",
     "closeScene": "Close 3D scene",
-    "sceneSource": "View Reaper Scene on Sketchfab"
+    "sceneSource": "Reaper Scene by Grell · Sketchfab",
+    "featuredWork": "Champi · 3D neon signs",
+    "featuredCta": "Watch the process"
   },
   "designProjectsData": {
     "brand-identity-design": {
-      "title": "BRAND IDENTITY & UX/UI DESIGN",
-      "description": "Complete brand identity with AI-enhanced logo design, UX/UI systems, and comprehensive brand guidelines."
+      "title": "Graphic design and visual studies",
+      "description": "Logo studies, product compositions and explorations of form, colour and materials."
     },
     "ai-advertising-content": {
-      "title": "AI-GENERATED ADVERTISING CONTENT",
-      "description": "Revolutionary advertising solutions using AI-generated videos, avatars, and automated content creation for brands."
+      "title": "Advertising concepts and motion with AI",
+      "description": "Concept ads, animated posters and scenes created with AI tools."
     },
     "music-event-visuals": {
-      "title": "MUSIC EVENT VISUALS & VJING",
-      "description": "Psychedelic posters, stunning concert visuals, and immersive VJ performances for DJ events and music festivals."
+      "title": "Posters, visuals and music edits",
+      "description": "Graphic and audiovisual pieces exploring music and club aesthetics."
     },
     "ai-photographic-art": {
-      "title": "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
-      "description": "Innovative visual art in photography and video, created and enhanced with artificial intelligence."
+      "title": "Visual art and portraiture with AI",
+      "description": "Portraiture, nature, fantasy and abstraction in a collection of images and videos."
     }
   },
   "designCategoriesData": {
     "All": "All",
     "AI Content": "AI Content",
-    "Music & Events": "Music & Events",
+    "Music & Events": "Music and visuals",
     "Graphic Design": "Graphic Design",
     "Video Editing": "Video Editing",
-    "AI Photography": "AI Photography",
+    "AI Photography": "Visual art with AI",
     "Client Work": "Client work"
   },
   "designProjectsUI": {
@@ -382,220 +388,237 @@
     "projectVideos": "Project Videos",
     "allVideos": "All Videos",
     "nowPlaying": "Now Playing",
-    "projectGallery": "Project Gallery"
+    "projectGallery": "Project Gallery",
+    "videosCount_one": "video",
+    "videosCount_other": "videos",
+    "categoriesCount_one": "category",
+    "categoriesCount_other": "categories"
   },
   "designGalleryGroups": {
-    "Brand": "Brand",
-    "UI/UX Designs": "UI/UX Designs",
-    "Logos": "Logos",
+    "Brand": "Product compositions",
+    "Logos": "Logo studies",
     "posters": "posters",
-    "photographicArt": "photographicArt"
+    "photographicArt": "photographicArt",
+    "Visual Studies": "Visual studies"
   },
   "projectDetailsData": {
     "brand-identity-design": {
-      "title": "Brand Identity UGC & Design from Website to Social Media Content",
-      "category": "Graphic Design",
-      "fullDescription": "Revolutionary brand identity creation combining AI-powered logo design with comprehensive UX/UI systems and strategic brand development. Our approach integrates cutting-edge AI tools for logo generation and refinement with traditional design excellence in user experience and interface design. From initial concept to full brand implementation, we create cohesive visual systems that not only look stunning but also drive user engagement and business growth. Each project includes extensive research, AI-enhanced logo variations, complete UX/UI design systems, and detailed brand guidelines that ensure consistent application across all digital and physical touchpoints.",
-      "client": "Multiple Tech Startups & Digital Agencies",
-      "duration": "8-12 weeks",
+      "title": "Graphic design and visual studies",
+      "category": "Graphic design",
+      "fullDescription": "A collection of logo studies, product compositions and visual explorations with AI. The pieces explore form, colour, materials and composition; the video presents a jewellery content demo.",
+      "client": "",
+      "duration": "",
       "videos": {
         "1": {
-          "title": "JEWELRY UGC - Luxury Products Showcase",
-          "description": "Simulated user-generated content (UGC) video showcasing high-end luxury jewelry with dynamic visual effects. Close-up shots of a golden cross necklace, gold ring with emerald, blue braided bracelet with a sparkling bead, and engagement ring with marquise-cut diamond."
+          "title": "Jewellery · UGC content demo",
+          "description": "A simulated UGC content demo featuring close-ups of jewellery and transitions between pieces."
         }
       },
       "gallery": {
         "Brand": {
           "1": {
-            "title": "Luxury Organic Jewelry",
-            "description": "We integrated this pearl ring with gold leaf into the website with elegant visuals and interactive product showcases, highlighting its natural elegance and premium quality while creating an immersive experience that builds value and encourages viewers to explore the product further."
+            "title": "Jewellery · pearl and leaf",
+            "description": "A visual study of a pearl ring with gold leaves on parchment, beside a feather, a key and a seal."
           },
           "2": {
-            "title": "gold ring with emerald gemstone",
-            "description": "Elegant gold ring featuring a brilliant-cut emerald gemstone set in a classic four-prong setting. The polished yellow gold band showcases refined craftsmanship, while the vibrant deep green emerald displays exceptional clarity and light refraction. Professional studio photography highlights the ring's luxurious details and premium quality, creating an immersive product showcase that emphasizes sophistication and timeless elegance."
+            "title": "Jewellery · green gemstone",
+            "description": "A product composition centred on a green gemstone and a gold ring, with attention to reflections and contrast."
           },
           "3": {
-            "title": "Luxury Pearl Ring with Gold Leaf Design",
-            "description": "Elegant pearl ring featuring a perfectly spherical pearl with iridescent pink, white, and subtle green overtones, set on a rose gold or warm yellow gold band intricately sculpted with organic flowing leaf motifs. The ring is showcased with a sharp, clean background featuring simple yet bold leaf elements that complement the natural botanical aesthetic. This professional studio photography is specifically designed for social media content, presenting the jewelry piece to clients with pristine clarity and sophisticated composition that highlights the ring's natural elegance and premium craftsmanship."
+            "title": "Jewellery · organic forms",
+            "description": "A study of a pearl ring with leaf forms. The composition combines metal, reflections and a botanical setting."
           },
           "4": {
-            "title": "Wellness & Mystical Beauty",
-            "description": "Luxurious cosmetic jar from the QOZALIS brand featuring a vibrant iridescent or holographic finish with shifting hues of purple, blue, green, and hints of yellow-orange. The jar's translucent body displays delicate golden line art with floral and leaf motifs, while the shiny metallic gold lid adds a premium touch. The product is presented in a pristine desert landscape setting with finely textured sandy surfaces sculpted into gentle ripples and dunes. Scattered rough-cut amethyst crystals in varying shades of deep violet to lavender complement the mystical aesthetic. This professional studio photography is expertly crafted for social media content, showcasing the wellness product to clients with sharp, clean composition and simple yet bold natural elements that emphasize spiritual luxury, self-care, and the brand's connection to holistic beauty."
+            "title": "Cosmetics · mineral landscape",
+            "description": "A composition of an iridescent container among sand and crystals, with lighting and gold details."
           },
           "5": {
-            "title": "AI-Generated Jewelry Advertisement",
-            "description": "AI-created advertising content featuring an elegant woman showcasing the brilliant-cut emerald ring in a sophisticated lifestyle setting. The portrait captures a woman with natural makeup and dark hair, her right hand gracefully positioned near her cheek to highlight the vibrant deep green emerald set in a classic four-prong yellow gold band. The composition emphasizes luxury and natural beauty, with the woman's calm, direct gaze and refined presentation drawing attention to the jewelry piece. The image is set against a soft, neutral beige background that provides a clean, unobtrusive backdrop, allowing the emerald's vivid green color to stand out prominently. This AI-generated advertisement is expertly designed for social media content, presenting the emerald ring to clients with sharp, clean composition and simple yet bold visual elements that emphasize sophistication, timeless elegance, and the premium quality of the jewelry piece."
+            "title": "Portrait with jewellery",
+            "description": "An AI image combining a portrait and a green gemstone ring. The framing draws attention to the hand and the jewel."
           },
           "6": {
-            "title": "Powerful Volcanic Fragrance",
-            "description": "Luxurious rectangular glass perfume bottle with a polished golden cap, dramatically positioned against an intense volcanic landscape. The sleek, modern bottle reflects the fiery orange and red glow of molten lava flowing around its base, creating a striking contrast between refined elegance and raw natural power. The scene features dark, rugged volcanic rock formations with glowing lava rivers and streams, while jagged volcanic mountains in the background emit smoke and display streaks of molten lava. The dramatic dark, smoky sky contrasts with the intense warm glow of the lava, illuminating the perfume bottle's reflective surfaces. This powerful visual composition expertly designed for social media content presents the fragrance to clients with sharp, clean photography and bold, dramatic natural elements that emphasize strength, exclusivity, passion, intensity, and the premium allure of the luxury perfume brand."
+            "title": "Perfume · volcanic landscape",
+            "description": "A perfume bottle composition against rock and lava. The contrast between glass and landscape defines the image."
           },
           "7": {
-            "title": "Pure Elegance Skincare",
-            "description": "Minimalist cosmetic or skincare bottle featuring a sleek cylindrical design made of frosted, translucent glass in a subtle muted green-grey tone that allows soft light diffusion. The bottle is elegantly topped with a smooth, light-colored wooden cap, likely bamboo or similar natural wood, adding an organic and eco-friendly touch. The product is positioned slightly off-center and tilted at a gentle angle, creating a dynamic yet balanced composition. The bottle is showcased against a lush, dense background of vibrant green moss exhibiting rich textures and varying shades from bright lime green to deeper forest greens, suggesting different natural growth patterns. The soft, natural lighting illuminates the scene from above, creating subtle shadows that enhance both the moss textures and the frosted glass surface. This professional studio photography is expertly designed for social media content, presenting the skincare product to clients with sharp, clean composition and simple yet bold natural elements that emphasize natural purity, serenity, eco-friendliness, and the sophisticated organic beauty of wellness-focused cosmetic brands."
+            "title": "Cosmetics · glass and moss",
+            "description": "A study of a frosted glass container on moss. The plant texture contrasts with the product surface."
           },
           "8": {
-            "title": "Vibrant Modern Fragrance",
-            "description": "Luxurious contemporary perfume bottle with a sleek design featuring a wider rounded base made of clear glass, containing a rich warm amber-toned liquid with pink and red reflections. The bottle's polished reflective gold neck leads to a clear, multi-faceted glass cap resembling a cut gemstone, adding a premium aesthetic. The product is dramatically positioned on a dark, rugged rock formation with an uneven, textured surface that reflects the ambient neon lighting and the bottle itself. The scene is enveloped in atmospheric purple and yellow neon lighting, with bright purple neon tubes on the left creating diagonal lines and vibrant yellow neon tubes on the right, framing the central subject. Billowing white and purple-tinged smoke or mist surrounds the bottle and rock, creating a soft, diffused effect that enhances the mysterious and luxurious ambiance. The interplay of purple and yellow neon colors creates a dynamic and modern aesthetic, with the bottle reflecting both hues in its liquid and glass surfaces. This professional studio photography is expertly designed for social media content, presenting the fragrance to clients with sharp, clean composition and simple yet bold lighting elements that emphasize modern luxury, sophistication, mystery, and the premium allure of high-end fragrance brands."
+            "title": "Perfume · neon light",
+            "description": "A product composition with violet and yellow light, smoke and a rocky base."
           },
           "9": {
-            "title": "Surreal Luxury Fashion Advertisement",
-            "description": "Surreal and luxurious advertisement featuring an elegantly posed fashion model embracing a colossal, transparent glass Chanel No. 5 perfume bottle in a vibrant field of wildflowers. The iconic rectangular bottle, significantly larger than the model, features a clear faceted stopper and a white label prominently displaying 'Nº 5' and 'CHANEL' in black lettering, containing a light amber-toned liquid visible through the clear glass. The model wears a voluminous, textured orange garment with large ruffled sleeves, richly embellished with numerous small white pearls or beads scattered across its surface. Her ensemble includes matching orange patterned tights with delicate lace or damask print, pointed-toe high heels adorned with pearl strings wrapping around her ankles, and a delicate pearl headpiece or tiara across her forehead. The scene is set in a dense, colorful field of wildflowers including shades of blue, purple, pink, red, orange, yellow, and white, creating a rich, textured carpet of blossoms under a serene, clear blue sky with subtle haze near the horizon. This professional studio photography is expertly designed for social media content, presenting the luxury fragrance brand to clients with sharp, clean composition and simple yet bold natural elements that blend high fashion, luxury branding, and natural beauty, emphasizing sophistication, dreamlike elegance, and the premium allure of iconic fragrance brands."
+            "title": "Perfume · scale and flowers",
+            "description": "A visual exploration of a figure and an oversized bottle among flowers. The bottle carries the Chanel No. 5 brand."
           },
           "10": {
-            "title": "Luxury Fashion Accessories Showcase",
-            "description": "Sophisticated fashion photography capturing a close-up, low-angle view of elegant legs and feet, emphasizing luxurious fashion accessories and opulent styling. The subject wears a voluminous, plush fur coat predominantly silver-grey with darker undertones, draping over the upper thighs and hips. The feet are adorned with elegant, strappy high-heeled sandals in a rich brown or bronze color, with intricate crisscrossing straps extending over the feet and ankles. The left ankle features multiple delicate silver-toned chains with small sparkling charms dangling gracefully, while the right ankle displays a single, thicker gold-toned chain. The toenails are painted with a light, subtle pink polish, and the left ring finger displays a prominent large rectangular diamond ring. A sophisticated silver watch with a dark face adorns the left wrist. Visible tattoos with intricate dark line work appear on the left foot near the ankle and faintly on the inner side of the right thigh, adding an artistic edge to the luxurious aesthetic. The scene is set against a dark, out-of-focus background suggesting an indoor setting with dim lighting, with the floor beneath featuring dark, textured tiles or bricks. This professional studio photography is expertly designed for social media content, presenting luxury fashion accessories to clients with sharp, clean composition and simple yet bold visual elements that emphasize opulence, sophisticated style, attention to detail, and the premium allure of high-end fashion brands."
+            "title": "Fashion · details and accessories",
+            "description": "A fashion composition focused on shoes, jewellery and textures, with close framing and a dark background."
           },
           "11": {
-            "title": "Fresh Natural Perfume",
-            "description": "Sleek, dark grey cylindrical perfume bottle with a matte finish, standing upright on a wet, textured rock surface in a natural, rugged environment near a waterfall or stream. The bottle's surface is covered with numerous small water droplets, suggesting a fresh, natural, or aquatic theme, while the dark grey cap features a subtle, intricate embossed pattern, possibly floral or abstract, adding an elegant touch. Vertically aligned text displaying the brand name 'VOJNOVIC' and 'DREAMLANDS' below it is visible on the front of the bottle, slightly raised or debossed, and also covered in water droplets. The dark, uneven rock on which the bottle rests appears wet and glistening, with small pools of water reflecting the light. Water actively falls from above and to the right of the bottle, creating streams and individual droplets captured mid-air, some splashing onto the bottle and the rock. In the background, a blurred waterfall is visible, creating a soft, misty backdrop of white and grey tones against darker rock formations. The overall lighting is subdued but highlights the water droplets and wet surfaces, giving the scene a cool, refreshing, and somewhat dramatic ambiance. The focus is sharp on the bottle and the immediate rock surface, with the background gently out of focus to emphasize the product. This professional studio photography is expertly designed for social media content, presenting the fragrance to clients with sharp, clean composition and simple yet bold natural elements that emphasize natural purity, strength, luxury, and the refreshing essence of the premium perfume brand."
+            "title": "Perfume · water and stone",
+            "description": "A visual study of a dark bottle on wet stone, surrounded by water and reflections."
           },
           "12": {
-            "title": "Innovative Green Cosmetics",
-            "description": "Sleek, matte olive-green squeeze tube, likely a cosmetic or skincare product, standing upright on a highly reflective, wet surface with subtle water droplets clinging to its surface, suggesting freshness or hydration. Vertical text 'GEGNEPMC' is prominently displayed on the right side of the tube, with smaller text below it. Around the base of the tube, three clear, spherical objects resembling glass or gel orbs are scattered. Two of these spheres contain numerous small, vibrant green, leaf-like or algae-like particles suspended within them, emphasizing a natural or botanical ingredient theme, with the most prominent sphere to the right of the tube larger and clearly showcasing the green particles. The reflective surface beneath the products is a light, luminous green or yellowish-green, with visible ripples and small splashes of water, creating dynamic reflections of the tube and spheres. The background is soft and out-of-focus, characterized by flowing, wavy patterns in varying shades of light green and yellow-green, reminiscent of draped fabric or soft light filtering through leaves. Several bokeh lights appearing as soft, glowing circles are scattered in the upper right portion of the background, adding a dreamy and luxurious ambiance. The overall lighting is soft and diffused, highlighting the textures and translucency of the objects. This professional studio photography is expertly designed for social media content, presenting the skincare product to clients with sharp, clean composition and simple yet bold natural elements that emphasize natural purity, botanical wellness, scientific innovation, natural actives, and the sophisticated organic beauty of green cosmetic brands."
+            "title": "Cosmetics · green and transparency",
+            "description": "A composition of a green container beside translucent spheres on a wet surface."
           },
           "13": {
-            "title": "Surreal Artistic Brand Expression",
-            "description": "Striking, surreal, and luxurious AI-generated portrait featuring an anthropomorphic dog-headed figure, demonstrating the limitless creative possibilities of AI-generated models that can fulfill any client expectation, from hyper-realistic to highly artistic and unconventional. The sophisticated figure, with a large muscular dog head (likely a Cane Corso or mastiff type) with dark grey coat, cropped ears, and white chest patch, wears stylish black aviator sunglasses and is dressed entirely in black with a fitted short-sleeved t-shirt and tailored trousers. The figure sits casually on the asphalt street, leaning slightly back against a gleaming black Lamborghini Urus, with the iconic golden bull emblem prominently displayed on the hood and illuminated LED headlights casting bright white glow. The scene is set in a vibrant metropolitan area at night, strongly resembling Times Square in New York City, with tall buildings adorned with numerous large, brightly lit digital billboards and neon signs in various colors, predominantly blues, reds, and whites, creating a dynamic and energetic urban glow. The figure wears a prominent silver-toned wristwatch with a dark face and polished black dress shoes. This AI-generated image showcases how client expectations can be met with artistic, surreal, or non-realistic approaches, breaking conventional boundaries of traditional photography. The professional composition is expertly designed for social media content, presenting luxury brand concepts to clients with sharp, clean composition and simple yet bold surreal elements that emphasize urban luxury, power, sophistication, enigmatic coolness, artistic expression, and the premium allure of brands willing to push creative boundaries through AI-generated content."
+            "title": "Surreal portrait · urban scene",
+            "description": "An AI image of a dog-headed figure beside a vehicle in an urban night scene."
           },
           "14": {
-            "title": "Sensory Liquid Art Beauty",
-            "description": "Luxurious cosmetic or skincare bottle centrally positioned and slightly angled, featuring a sleek cylindrical design with a gradient effect. The lower half is a translucent, frosted dark red, transitioning upwards to a more opaque, metallic gold or bronze cap made of reflective material, covered in numerous small water droplets suggesting freshness or a cooling effect. The bottle contains a dark red liquid visible through its translucent lower half, with subtle elegant script or branding visible on the golden part. A vibrant, thick stream of deep red liquid, resembling pomegranate juice or a rich serum, dramatically swirls around the bottle, forming an arc that originates from the upper left and sweeps downwards and to the right, partially enveloping the bottle. The splash is highly dynamic with visible ripples, waves, and smaller droplets breaking away from the main stream, conveying movement and energy. Several individual, glistening pomegranate seeds with their characteristic ruby-red color and irregular shapes are suspended in the air around the bottle and within the liquid splash, adding a natural, fresh, and vibrant element. Numerous clear water droplets are scattered throughout the scene, some clinging to the bottle, others floating freely, enhancing the sense of freshness and moisture. The background features a smooth, soft gradient transitioning from a warm, peachy-orange tone at the bottom to a lighter, rosy pink at the top, creating a harmonious and inviting aesthetic. The lighting is soft and diffused, highlighting the textures of the liquid, reflections on the bottle, and the translucency of the pomegranate seeds. This professional studio photography is expertly designed for social media content, presenting the skincare product to clients with sharp, clean composition and simple yet bold visual elements that emphasize vitality, luxury, natural efficacy, active ingredients, refreshing experience, and the premium quality of sophisticated beauty brands."
+            "title": "Cosmetics · red splash",
+            "description": "A visual study of a container surrounded by red liquid and pomegranate seeds. The composition explores motion and transparency."
           },
           "15": {
-            "title": "Minimalist Hair Styling Product",
-            "description": "Minimalist and serene product shot of a sleek, cylindrical matte black cosmetic jar with a low profile and flat matching lid, likely for hair styling from the TAPERED brand. The jar features a white label on the front displaying the brand name 'TAPERED.' in a clean, sans-serif font at the top, with the product name 'Cloudpaste' written in a larger, bolder font below it, and the description 'soft matte, weightless hold' printed in smaller text underneath, indicating its function. The jar is made of smooth, non-reflective material, possibly plastic or ceramic. The product rests on a cylindrical pedestal made of light-colored, rough-textured stone resembling sandstone or concrete, with a flat top and slightly wider base showcasing its natural, unrefined texture with visible imperfections and variations in tone, positioned centrally in the lower half of the frame. The background consists of a seamless corner where a light beige or tan-colored wall meets a matching floor, both surfaces having a subtle, textured finish giving them an organic, plaster-like appearance. Stretching horizontally across the mid-ground behind the product and pedestal is a soft, voluminous white cloud or mist, adding a dreamy, ethereal quality that directly references the 'Cloudpaste' product name and suggests a light, airy feel. The scene is illuminated by soft, diffused light appearing to come from the upper left, creating gentle but defined shadows with the pedestal casting a noticeable shadow to its right and slightly forward onto the floor, while the product itself casts a smaller, softer shadow on the pedestal. The cloud also creates subtle variations in light and shadow on the back wall, enhancing the depth of the scene. This professional studio photography is expertly designed for social media content, presenting the hair styling product to clients with sharp, clean composition and simple yet bold visual elements that emphasize natural elegance, modernity, tranquility, soft and weightless attributes, and the premium quality of sophisticated grooming brands."
-          }
-        },
-        "UI/UX Designs": {
-          "7": {
-            "title": "Web Interface Mockups",
-            "description": "High-fidelity web design mockups with user flow integration"
-          },
-          "8": {
-            "title": "Mobile App Screens",
-            "description": "Responsive mobile interface designs"
-          },
-          "9": {
-            "title": "Print Collateral",
-            "description": "Business cards, letterheads, and marketing materials"
+            "title": "Hair product · minimal composition",
+            "description": "A study of a dark container on a stone pedestal, with a cloud in the background and side lighting."
           }
         },
         "Logos": {
           "1": {
             "title": "FÊNIX MOTOS - The Rebirth",
-            "description": "Striking logo featuring a depiction of the Phoenix in full flight, with warm fiery colors (red, orange, yellow) and a radiant halo. The name 'FÊNIX MOTOS' in strong typography suggests rebirth, speed, and durability—ideal for a motorcycle, sports, or automotive brand."
+            "description": "A logo study with a phoenix in flight, warm colours and heavy lettering."
           },
           "2": {
             "title": "MONARCH - Geometric Butterfly",
-            "description": "Modern and elegant logo with a single-winged butterfly, designed in a polygonal or 'low poly' style in warm tones (orange, pink, purple). Conveys lightness, transformation, and an artistic touch—suitable for fashion, beauty, or technology."
+            "description": "A study of a geometric butterfly with facets and an orange, pink and purple palette."
           },
           "3": {
             "title": "TERFA TREASURE - Royal Monogram",
-            "description": "Luxurious design using large embossed uppercase letters 'TERFA' in gold, with a subtly integrated crown at the top. The word 'TREASURE' underneath reinforces the theme of value and exclusivity—perfect for a high-end, investment, or jewelry brand."
+            "description": "A study of raised gold lettering and a crown detail for a brand composition."
           },
           "4": {
             "title": "Iron Will - Wings/Speed Shield",
-            "description": "Modern, dynamic logo simulating a wing or a shield with a color gradient from yellow to purple. The design includes lines suggesting speed and strength, evoking movement and determination as reflected in the name 'Iron Will'—ideal for fitness, sports, or technology brands."
+            "description": "A study of a wing or shield symbol, with diagonal lines and a colour gradient."
           },
           "5": {
             "title": "GOLD PALACE - Ornamental Icon",
-            "description": "Highly ornamental and symmetrical logo in gold on a dark background. The icon at the top evokes palace architecture, domes, or a luxury interwoven pattern. The name 'GOLD PALACE' confirms the themes of royalty, luxury, and opulence."
+            "description": "A study of a symmetrical ornamental icon in gold against a dark background."
           },
           "6": {
             "title": "Gloryio - Flame Drop/Blazing G",
-            "description": "Modern logo with an abstract fire symbol or a vibrant flame drop that subtly forms the letter 'G' at its base. The gradient of warm colors and the glow suggest energy, success, or technology, together with the name 'Gloryio' in clear typography."
+            "description": "A study of a flame symbol suggesting a letter G, paired with a typographic name."
           },
           "7": {
             "title": "GANLO - Leopard/Jaguar Head",
-            "description": "Animal-inspired logo showing the head of a big cat (leopard or jaguar) with an intricate tribal pattern. Gold color on a dark blue/green background creates a luxurious and powerful contrast. Suggests a strong, fast, or luxury brand."
+            "description": "A study of a feline head with ornamental lines and gold against a dark background."
           },
           "8": {
             "title": "Virani - Diamond Jewelry",
-            "description": "Jewelry or luxury brand logo. Combines a stylized diamond design integrating the letter 'V' with an elegant, serif cursive type for the name 'Virani'. Gold on black color scheme projects wealth and exclusivity."
+            "description": "A study of a stylised diamond integrated with a V and a calligraphic name."
           },
           "9": {
             "title": "iillapro - Liquid Flame Typography",
-            "description": "Logo using a flame effect integrated into the 'iillapro' lettering. The style is bold and 'hot', with an orange-to-white gradient simulating heat and movement—ideal for spicy food, technology, or extreme sports brands."
+            "description": "A typographic exploration with a flame effect in orange and white."
           },
           "10": {
             "title": "NOVALINE - Shooting Star",
-            "description": "Clean, futuristic logo with the name 'NOVALINE' and a shooting star or comet icon. The bright purple star streak suggests speed, innovation, and a space or tech-focused approach—suited for internet services, software, or transport."
+            "description": "A study of a shooting star or comet beside a geometric wordmark."
           },
           "11": {
             "title": "MONT - Mountain Landscape",
-            "description": "Minimalist logo featuring the word 'MONT' with the letters filled with a snowy mountain peaks pattern in blue tones. Evokes a sense of nature, adventure, and the outdoors—perfect for clothing, tourism, or eco-friendly products."
+            "description": "A word study with a mountain landscape integrated into the letters."
           },
           "12": {
             "title": "LA CALLE - Street Style with Flames",
-            "description": "Vibrant and bold logo presenting the text 'LA CALLE' stylized with a flame effect. Uses a warm color palette ranging from red to orange-yellow, conveying energy, passion, or a 'hot' streetwear style—ideal for urban fashion or spicy food brands."
+            "description": "A lettering exploration with flames and a warm red, orange and yellow palette."
           },
           "13": {
             "title": "EKE - Tribal/Minimalist Bull Symbol",
-            "description": "Minimalist yet intricate logo design featuring the head of a bull (or ox) formed by geometric lines and tribal patterns, in gold on a textured dark blue background. Conveys strength, determination, and a premium or artisanal style."
+            "description": "A study of a bull’s head constructed with geometric and ornamental lines."
           },
           "14": {
             "title": "ROYAL HOME - Luxury Monogram",
-            "description": "Elegant and luxurious logo with an interwoven 'BR' monogram in metallic gold topped by a crown. The typographic style is classic and sophisticated, with the brand name 'ROYAL HOME' below, suggesting high quality and exclusivity for home or real estate."
+            "description": "A study of an interlaced monogram and crown, with a gold finish against a dark background."
+          }
+        },
+        "Visual Studies": {
+          "7": {
+            "title": "Galaxy and orbits",
+            "description": "A visual exploration of a spiral galaxy crossed by orbits and points of light."
+          },
+          "8": {
+            "title": "Neon spirals",
+            "description": "An abstract study of luminous curves, depth and colour against a dark background."
+          },
+          "9": {
+            "title": "Fractal form",
+            "description": "An abstract composition of filaments and concentric forms in pale and gold tones."
           }
         }
-      }
+      },
+      "tags": [
+        "Graphic design",
+        "Logo studies",
+        "Product imagery",
+        "Visual composition",
+        "AI"
+      ]
     },
     "ai-advertising-content": {
-      "title": "AI-Generated Advertising Content and Social Media Marketing",
-      "category": "AI Content",
-      "fullDescription": "Transform your brand's advertising with cutting-edge AI technology. Our AI-generated video solutions create stunning, professional-quality advertisements in record time. From custom AI avatars that represent your brand personality to automated video generation that adapts to your messaging, we deliver cost-effective, scalable advertising solutions that captivate audiences and drive engagement. Experience the future of marketing where creativity meets artificial intelligence.",
-      "client": "Multiple Clients",
-      "duration": "Instant to 72 hours",
+      "title": "Advertising concepts and motion with AI",
+      "category": "AI content",
+      "fullDescription": "A selection of concept ads, animated posters and AI-generated scenes. The work focuses on visual direction, editing and adapting content to social formats.",
+      "client": "",
+      "duration": "",
       "videos": {
         "1": {
-          "title": "Cinematic Experiences Forged with AI",
-          "description": "We demonstrate how artificial intelligence brings complex advertising ideas to life for beverage brands like Alewences. This work captures an aesthetic of luxury and nightlife with vibrant neon colors, high-end vehicles, and dynamic settings—all generated with cinematic precision. We create top-tier advertisements that position your product as the leader in its category, adhering to any specific requirements for color, model, or environment. The future of your beverage campaigns is here."
+          "title": "Alewences drink · night concept",
+          "description": "An advertising concept with an Alewences-branded drink, neon lights, vehicles and AI-generated night scenes."
         },
         "2": {
-          "title": "Convert Your Static Graphic into a Viral Ad",
-          "description": "We transform your event’s traditional graphic materials (posters, flyers) into immersive, high-impact promotional videos ready for social media. We use visual effects, animation, and strategic music to bring every detail of the poster to life, ensuring a visual hook that maximizes visibility and engagement across platforms like Instagram, TikTok, and Facebook. The result: An essential tool for your promoters to generate buzz and guarantee attendance at your next party or event."
+          "title": "From poster to video",
+          "description": "Animation and editing that turn a static poster into a promotional video."
         },
         "3": {
-          "title": "The Future of Fashion Advertising",
-          "description": "Transform your brand's advertising. Our AI Avatar technology seamlessly models your clothing line, creating high-impact, full-production video ads without the need for human models or studio intervention. Save time, reduce costs, and accelerate content creation. Every outfit, every style, instantly visualized."
+          "title": "Fashion · AI avatar demo",
+          "description": "A visual demonstration of clothing presented through an AI-generated character."
         },
         "4": {
-          "title": "HALLOWEEN AI HORROR FRIEND - XENOMORPH WITH FRESH BREATH",
-          "description": "When you ask Artificial Intelligence for a 'terrifying friend for Halloween' 🎃, but you forget to put in the prompt 'with fresh breath'. Be careful what you wish for! 😂 And that's because even the most fearsome Xenomorph in the universe needs help after lunch. Who would have thought that the real terror wasn't its double jaw, but the astronaut breath? 🤢➡️🍬 This video is just one of the craziness I've been creating with AI for this Halloween. Creativity has no limits!"
+          "title": "Halloween · humour with AI",
+          "description": "An AI-created comedy scene that pairs a horror character with an everyday situation."
         },
         "5": {
-          "title": "AI-GENERATED ALEWENCES CYBERPUNK AD - HYPERREALISTIC CAN",
-          "description": "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it. 🚀 (For Entrepreneurs and Brands!): STOP 🛑 Stop spending thousands on slow production. This Hollywood-quality blockbuster ad was created with AI in a fraction of the time (and cost!) 🤯. A hyperrealistic can in a cyberpunk world. Artificial Intelligence is the new marketing tool. This is what an ad looks like when there are no limits."
+          "title": "Alewences · cyberpunk can",
+          "description": "An AI-generated advertising concept placing an Alewences-branded can in a cyberpunk scene."
         }
-      }
+      },
+      "tags": [
+        "AI-generated visuals",
+        "Video editing",
+        "Poster animation",
+        "Advertising concepts"
+      ]
     },
     "music-event-visuals": {
-      "title": "Music Event Visuals & VJing",
-      "category": "Music & Events",
-      "fullDescription": "Immerse audiences in unforgettable music experiences through psychedelic art, dynamic VJ performances, and cutting-edge visual storytelling. From mind-bending concert posters that capture the essence of electronic music to real-time visual manipulations that sync perfectly with DJ sets, our work transforms ordinary events into extraordinary journeys. We blend traditional graphic design with live video performance, creating visual landscapes that enhance the musical experience and leave lasting impressions on festival-goers and club attendees alike.",
-      "client": "Various Music Festivals & DJ Collectives",
-      "duration": "1-2 weeks per project",
+      "title": "Posters, visuals and music edits",
+      "category": "Music and visuals",
+      "fullDescription": "A selection of posters, animations and edits connected to music and club aesthetics. The collection explores different graphic compositions and how they change when motion and sound are added.",
+      "client": "",
+      "duration": "",
       "videos": {
         "1": {
-          "title": "MINIMALIST NIGHTCLUB POSTER DESIGN",
-          "description": "A minimalist poster designed for a nightclub event, created and edited using AI technology. The visual features clean lines, modern aesthetics, and a refined atmosphere, perfectly blending digital creativity with a minimalist approach—ideal for promoting exclusive nightlife experiences."
+          "title": "Club poster · minimal composition",
+          "description": "An audiovisual piece presenting a club poster through shapes, typography and animation."
         },
         "2": {
-          "title": "SOCIAL MEDIA PROMO: NIGHTCLUB POSTER",
-          "description": "Dynamic video editing transforming a static nightclub poster into engaging social media content using AI technology. This project demonstrates how to bring static graphics to life for maximum engagement on platforms like Instagram and TikTok."
+          "title": "Club poster · social edit",
+          "description": "An edit that turns a static poster composition into a video piece."
         },
         "3": {
-          "title": "AI FESTIVAL POSTER CREATION",
-          "description": "A behind-the-scenes look at the creative process for a music festival poster, fully edited and created with Artificial Intelligence. This project highlights the power of AI in both visual design and professional video editing."
+          "title": "Music poster · AI process",
+          "description": "A video showing the creation and editing process for a music graphic using AI tools."
         },
         "4": {
-          "title": "AUDIO-VISUAL SYNERGY",
-          "description": "Dive into this electrifying video edit, a high-energy montage that captures the intensity and narrative of the original track. This project demonstrates exceptional skill in synchronizing dynamic visual effects and rapid transitions with a soundtrack that speaks of ambition, risk, and unwavering determination.\n\nThe music itself, the \"Song of Arcane,\" was also created using Artificial Intelligence tools.\n"
+          "title": "Song of Arcane · audiovisual edit",
+          "description": "An edit of images, effects and transitions built around the music piece Song of Arcane."
         },
         "5": {
-          "title": "VJING & LIVE VISUALS PRODUCTION",
-          "description": "Showcase of VJing and live visuals for a music festival created using AI technology. This video demonstrates how modern AI tools allow for the creation of high-end event designs and immersive visual experiences at a significantly reduced cost and turnaround time compared to traditional methods."
+          "title": "Music visuals · demo",
+          "description": "A demonstration of AI-generated visuals and editing to accompany music."
         }
       },
       "gallery": {
@@ -709,100 +732,114 @@
             "description": "Poster featuring floating concrete blocks and debris in a dark void, cut through by sharp, diagonal white laser lines. The infinity symbol rests on the central structure. The design is minimalist yet aggressive, perfectly representing the 'Digital Brutalism' theme."
           }
         }
-      }
+      },
+      "tags": [
+        "Poster design",
+        "Music visuals",
+        "Audiovisual editing",
+        "Animation",
+        "AI"
+      ]
     },
     "ai-photographic-art": {
-      "title": "PHOTOGRAPHIC ART AND VIDEOGRAPHY ENHANCED BY ARTIFICIAL INTELLIGENCE",
-      "category": "AI Photography",
-      "fullDescription": "Specializing in the creation of photographic art and audiovisual production through the integration of artificial intelligence, my work blends creativity, technique, and advanced technology to deliver unique images and videos, transforming artistic vision into innovative visual experiences.",
-      "client": "Personal Projects",
-      "duration": "N/A",
+      "title": "Visual art and portraiture with AI",
+      "category": "Visual art with AI",
+      "fullDescription": "A collection of images and videos exploring portraiture, nature, fantasy and abstraction with AI tools. It includes the Digital Soul series and a portrait transformation demo.",
+      "client": "",
+      "duration": "",
       "gallery": {
         "photographicArt": {
           "1": {
-            "title": "DIGITAL SOUL SERIES - ABSTRACT CONSCIOUSNESS",
-            "description": "Exploring the intersection between human consciousness and digital realms. This piece captures the ethereal connection between mind, nature, and technology through abstract visual elements enhanced by artificial intelligence."
+            "title": "Portrait · golden filaments",
+            "description": "A profile formed from golden filaments and points of light against a black background."
           },
           "2": {
-            "title": "NATURE'S DIGITAL EMBRACE",
-            "description": "A harmonious blend of natural beauty and digital enhancement, showcasing how AI technology can amplify and reinterpret the organic world in stunning photographic art."
+            "title": "Portrait · turquoise halo",
+            "description": "A profile with a circular halo, filaments and luminous details in green and blue tones."
           },
           "3": {
-            "title": "PIXELATED EMOTIONS",
-            "description": "Emotions captured and transformed through digital algorithms and AI processing. Each pixel tells a story of human experience reimagined in the digital age through innovative photography."
+            "title": "Portrait · texture of light",
+            "description": "A close-up of a face with closed eyes, surrounded by a mesh of golden filaments."
           },
           "4": {
-            "title": "CYBERNETIC DREAMS",
-            "description": "Dreamscapes where reality meets imagination through AI-enhanced photography. This piece represents the fusion of conscious thought and subconscious digital landscapes."
+            "title": "Fantasy · wings of fire",
+            "description": "A figure in a red dress with luminous wings among ruined columns at sunset."
           },
           "5": {
-            "title": "GOLDEN HOUR ALGORITHM",
-            "description": "The perfect moment captured and enhanced through AI algorithms. A tribute to the magic of natural light transformed by digital artistry and intelligent photographic processing."
+            "title": "Portrait · orbits of colour",
+            "description": "A figure surrounded by luminous curves, particles and spiral forms."
           },
           "6": {
-            "title": "DIGITAL RENAISSANCE",
-            "description": "Classical artistic principles reinterpreted through modern AI digital tools. A bridge between traditional art and contemporary technology in photographic expression."
+            "title": "Portrait · rings of light",
+            "description": "A close-up of a face crossed by luminous rings against a galaxy background."
           },
           "7": {
-            "title": "NEURAL NETWORK VISIONS",
-            "description": "Visual representations inspired by artificial neural networks. Abstract patterns that emerge from complex computational processes in AI-generated photographic art."
+            "title": "Portrait · neon circle",
+            "description": "A figure with closed eyes framed by an orange circle and trails of colour."
           },
           "8": {
-            "title": "QUANTUM AESTHETICS",
-            "description": "Exploring the beauty of quantum-inspired visual compositions through AI photography. Where particle physics meets artistic expression in digital imagery."
+            "title": "Portrait · halo and points of light",
+            "description": "A fantasy portrait with a golden halo, dotted facial patterns and coloured lights."
           },
           "9": {
-            "title": "MEMORY FRAGMENTS",
-            "description": "Digital reconstructions of memory fragments through AI enhancement. Piecing together the puzzle of human experience through algorithmic interpretation in photography."
+            "title": "Portrait · crown and filaments",
+            "description": "A figure with an ornamental crown and luminous filaments in the hair, against a dark background."
           },
           "10": {
-            "title": "SYNTHETIC SERENITY",
-            "description": "Artificial tranquility created through digital synthesis and AI processing. A peaceful digital oasis crafted through innovative photographic techniques."
+            "title": "Portrait · sphere of energy",
+            "description": "A figure surrounded by large orange rings of light and blue, green and red trails."
           },
           "11": {
-            "title": "CODE CANVAS",
-            "description": "Art created from lines of code and algorithmic brushstrokes. Where programming meets painting in AI-powered digital photography and visual creation."
+            "title": "Mathematical Inspiration",
+            "description": "A composition with a portrait, orbits and a galaxy background. The words Mathematical Inspiration are part of the image."
           },
           "12": {
-            "title": "DIGITAL METAMORPHOSIS",
-            "description": "Transformation through digital means and AI enhancement. Evolution of form and color guided by intelligent algorithms in photographic art."
+            "title": "Portrait · tree and path of light",
+            "description": "A portrait integrating a tree, clouds and a luminous path into the silhouette."
           },
           "13": {
-            "title": "FRACTAL CONSCIOUSNESS",
-            "description": "Infinite patterns of self-similar consciousness. Exploring the fractal nature of human thought through visual art enhanced by artificial intelligence."
+            "title": "Portrait · inner landscape",
+            "description": "A composition combining a face, a landscape of water and mountains, and filaments of light."
           },
           "14": {
-            "title": "BINARY EMOTIONS",
-            "description": "Emotions expressed through binary code and digital interpretation. The language of computers speaking the language of feelings in AI photography."
+            "title": "Portrait · halo and landscape",
+            "description": "A figure with an elliptical halo and a landscape of mountains and water integrated into the body."
           },
           "15": {
-            "title": "ALGORITHMIC HARMONY",
-            "description": "Perfect balance achieved through mathematical precision and artistic vision. Where numbers create beauty in AI-enhanced photographic compositions."
+            "title": "Portrait · light between the fingers",
+            "description": "A profile holding a point of light; trees, water and trails are integrated into the composition."
           },
           "16": {
-            "title": "DIGITAL GENESIS",
-            "description": "The birth of new forms through digital creation and AI processing. Witnessing the genesis of visual ideas in the digital realm through innovative photography."
+            "title": "Portrait · waterfalls and filaments",
+            "description": "A portrait incorporating a landscape of waterfalls in the arm, with golden filaments around the hair."
           },
           "17": {
-            "title": "NEURAL PATHWAYS",
-            "description": "Visual representation of neural connections and thought processes. Mapping the complex web of human cognition through AI-powered digital art and photography."
+            "title": "Portrait · cosmic shimmer",
+            "description": "A close-up against a dark background, with points of light and a glossy finish on the lips."
           },
           "18": {
-            "title": "COSMIC CODE",
-            "description": "Universal patterns decoded through digital artistry and AI enhancement. Connecting the cosmos through lines of code and visual elements in photographic expression."
+            "title": "Fashion · lines of light",
+            "description": "A full-length figure in a dark dress with blue, green and violet lines of light."
           }
         }
       },
       "videos": {
         "1": {
-          "title": "DIGITAL SOUL - CONSCIOUSNESS & NATURE INTERSECTION",
-          "description": "I explore the intersection between human consciousness, the beauty of nature, and the language of technology. 🌀 Each piece in my portfolio is a journey, an emotion captured in pixels and algorithms. This series, 'Digital Soul', visualizes our internal connection with the digital and natural universe. But art is not just for looking at. It's for feeling and owning. Comment what this image conveys to you. I would love to read your interpretation. 👇 And if you dream of having a unique piece of digital art that represents your own story or essence"
+          "title": "Digital Soul · nature and portraiture",
+          "description": "A piece from the Digital Soul series combining the human figure, nature and visual treatment with AI."
         },
         "2": {
-          "title": "SELFIE TO FANTASY ART TRANSFORMATION",
-          "description": "Can you imagine turning your favorite selfie into a unique work of art? Forget about the generic filters everyone uses. My service transforms your own photos into high-fashion fantasy portraits, highlighting your beauty with a magical golden touch. 💫 Each piece is 100% personalized. It's the perfect way to: ✔️ Create an unforgettable profile picture. ✔️ Make a gift that truly surprises. ✔️ Celebrate yourself with an artistic version you'll love. You send me your photo, and I create the magic. 🌟 Ready for your transformation?"
+          "title": "From portrait to fantasy",
+          "description": "A portrait transformation demo using AI, with fantasy styling and gold details."
         }
-      }
+      },
+      "tags": [
+        "Digital art",
+        "Portraiture",
+        "Visual fantasy",
+        "AI imagery",
+        "Video"
+      ]
     }
   },
   "clientWork": {
@@ -929,7 +966,8 @@
         "coverAlt": "Screenshot of the public Beirocor website",
         "visit": "Visit Beirocor"
       }
-    }
+    },
+    "imagePosition": "Image {{current}} of {{total}}: {{title}}"
   },
   "recentWork": {
     "heading": "Recent work and engineering cases",
@@ -993,5 +1031,8 @@
         "description": "An on-demand printing workflow connecting the web, an Electron desktop app and printers, with an offline mode."
       }
     }
+  },
+  "canvasLoader": {
+    "loading": "Loading…"
   }
 }
