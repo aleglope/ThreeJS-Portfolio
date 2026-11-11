@@ -1,6 +1,7 @@
-import { useState, useRef } from "react";
+/* eslint-disable react/prop-types -- Parent passes the shared media coordinator callbacks. */
+import { useLayoutEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ReactPlayer from "react-player";
 import {
   MdAutoAwesome,
   MdDesignServices,
@@ -12,10 +13,12 @@ import {
   MdMovieEdit,
   MdFolderSpecial,
 } from "react-icons/md";
+import PortfolioVideo from "../../components/PortfolioVideo.jsx";
 import useLocalizedVideoShowcase from "../../hooks/useLocalizedVideoShowcase.js";
 import useLocalizedVideoSkills from "../../hooks/useLocalizedVideoSkills.js";
+import { earlierVideos, mediaLocale } from "../../constants/portfolioMedia.js";
+import { servicesUrl } from "../../constants/services.js";
 
-// Icon mapping for skills
 const iconMap = {
   MdAutoAwesome,
   MdDesignServices,
@@ -28,229 +31,128 @@ const iconMap = {
   MdFolderSpecial,
 };
 
-const VideoShowcase = () => {
-  const { t } = useTranslation();
+const projectLinks = {
+  "la-parrilla-de-champi": { to: "/design/project/la-parrilla-de-champi" },
+  bretema: { href: "/muestras/reloj-bretema" },
+  nova: { href: "/#maquetas" },
+  alewences: { href: "/automatizacion-ia" },
+};
+
+const VideoShowcase = ({ playerVersion = 0, onPlayerOpen }) => {
+  const { t, i18n } = useTranslation();
   const videos = useLocalizedVideoShowcase();
   const skills = useLocalizedVideoSkills();
-  const [selectedVideoId, setSelectedVideoId] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoPlayerRef = useRef(null);
+  const [selectedVideoId, setSelectedVideoId] = useState(videos[0].id);
+  const [expanded, setExpanded] = useState(false);
+  const titleRef = useRef(null);
+  const selectionFocus = useRef(false);
 
-  const selectedVideo =
-    selectedVideoId != null
-      ? videos.find((v) => v.id === selectedVideoId) ?? null
-      : null;
+  const selectedVideo = videos.find(({ id }) => id === selectedVideoId);
+  const projectLink = projectLinks[selectedVideo.projectId];
+  const displayedVideos = expanded ? videos : videos.filter(({ featured }) => featured);
+  const locale = mediaLocale(i18n.resolvedLanguage);
 
-  // Function to detect mobile/tablet devices
-  const isMobileOrTablet = () => {
-    return window.innerWidth < 1024; // lg breakpoint in Tailwind
-  };
-
-  const handleVideoSelect = (video) => {
-    setSelectedVideoId(video.id);
-    setIsPlaying(false); // Reset playing state, ReactPlayer will handle autoplay
-
-    // Scroll to video player on mobile/tablet devices
-    if (isMobileOrTablet() && videoPlayerRef.current) {
-      setTimeout(() => {
-        videoPlayerRef.current.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }, 100); // Small delay to ensure video is set before scrolling
+  useLayoutEffect(() => {
+    if (selectionFocus.current) {
+      selectionFocus.current = false;
+      titleRef.current?.focus();
     }
-  };
+  }, [selectedVideoId]);
 
-  const handleClose = () => {
-    setSelectedVideoId(null);
-    setIsPlaying(false);
+  const choose = (id) => {
+    if (id === selectedVideoId) {
+      titleRef.current?.focus();
+      return;
+    }
+    selectionFocus.current = true;
+    setSelectedVideoId(id);
   };
 
   return (
-    <section className="c-space my-20 relative" id="video-showcase">
-      <div className="text-center mb-12">
-        <p className="head-text mb-4">{t("videoShowcaseUI.heading")}</p>
-        <p className="text-white-600 text-lg max-w-2xl mx-auto">
-          {t("videoShowcaseUI.subheading")}
-        </p>
+    <section className="portfolio-anchor c-space my-20" id="video-showcase" tabIndex={-1} aria-labelledby="video-showcase-title">
+      <div className="mb-9 max-w-2xl">
+        <h2 id="video-showcase-title" className="head-text mb-3">{t("videoShowcaseUI.heading")}</h2>
+        <p className="text-lg text-neutral-300">{t("videoShowcaseUI.subheading")}</p>
       </div>
 
-      {/* Featured Video Player */}
-      <div ref={videoPlayerRef} className="mb-16 max-w-5xl mx-auto">
-        <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-          {selectedVideo ? (
-            <div className="absolute inset-0 bg-black rounded-2xl border border-black-200 shadow-2xl">
-              {/* Video Player Container */}
-              <div className="absolute inset-0 bg-black rounded-2xl overflow-hidden">
-                {selectedVideo.videoUrl.includes("youtube.com") ||
-                selectedVideo.videoUrl.includes("youtu.be") ||
-                selectedVideo.videoUrl.includes("vimeo.com") ? (
-                  <ReactPlayer
-                    url={selectedVideo.videoUrl}
-                    width="100%"
-                    height="100%"
-                    controls={true}
-                    playing={isPlaying}
-                    volume={0.8}
-                    muted={false}
-                    loop={false}
-                    playsinline={true}
-                    pip={false}
-                    stopOnUnmount={true}
-                    light={false}
-                    className="react-player"
-                    style={{ position: "absolute", top: 0, left: 0 }}
-                    onReady={() => {
-                      // Auto-play cuando el video está listo
-                      setIsPlaying(true);
-                    }}
-                    onPlay={() => setIsPlaying(true)}
-                    onPause={() => setIsPlaying(false)}
-                    onError={(error) => {
-                      console.error("Error playing video:", error);
-                      setIsPlaying(false);
-                    }}
-                    config={{
-                      youtube: {
-                        playerVars: {
-                          autoplay: 1,
-                          controls: 1,
-                          modestbranding: 1,
-                          rel: 0,
-                          showinfo: 0,
-                          fs: 1,
-                          playsinline: 1,
-                        },
-                      },
-                    }}
-                  />
-                ) : (
-                  <video
-                    src={selectedVideo.videoUrl}
-                    controls
-                    autoPlay
-                    className="w-full h-full object-contain"
-                    onPlay={() => setIsPlaying(true)}
-                    onPause={() => setIsPlaying(false)}
-                    preload="auto"
-                    playsInline
-                  >
-                    Your browser does not support the video tag.
-                  </video>
-                )}
-              </div>
-
-              {/* Close Button */}
-              <button
-                onClick={handleClose}
-                className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/80 hover:bg-pink-500 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
-              >
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-
-              {/* Video Info Overlay */}
-              {!isPlaying && (
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pointer-events-none">
-                  <h3 className="text-white text-2xl font-bold mb-2">
-                    {selectedVideo.title}
-                  </h3>
-                  <p className="text-white-600">{selectedVideo.description}</p>
-                </div>
-              )}
-            </div>
+      <div id="portfolio-theater" className="grid items-center gap-6 rounded-2xl border border-white/10 bg-black-200 p-3 sm:p-6 md:grid-cols-[2fr_1fr] md:gap-9">
+        <div className="min-w-0 md:col-start-2 md:row-start-1">
+          <p className="mb-3 flex flex-wrap gap-x-3 gap-y-1 text-sm text-neutral-300">
+            <span className="font-semibold text-pink-300">{selectedVideo.status}</span>
+            <span>{selectedVideo.duration}</span>
+          </p>
+          <h3 ref={titleRef} tabIndex={-1} className="portfolio-anchor text-balance text-2xl font-semibold text-white sm:text-3xl">
+            {selectedVideo.title}
+          </h3>
+          <p className="mt-3 leading-relaxed text-neutral-300">{selectedVideo.description}</p>
+          <p className="mt-3 text-sm text-neutral-400">{t("portfolioVideo.originalAudio")}</p>
+          {projectLink.to ? (
+            <Link to={projectLink.to} className="portfolio-link mt-2">{t("portfolioVideo.project")}</Link>
           ) : (
-            <div className="absolute inset-0 bg-black-300 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <svg
-                  className="w-20 h-20 mx-auto mb-4 text-white-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <p className="text-white-600 text-lg mb-2">
-                  {t("videoShowcaseUI.emptyTitle")}
-                </p>
-                <p className="text-white-600/60 text-sm">
-                  {t("videoShowcaseUI.emptyHint")}
-                </p>
-              </div>
-            </div>
+            <a href={servicesUrl(projectLink.href)} className="portfolio-link mt-2">{t("portfolioVideo.related")}</a>
           )}
+        </div>
+        <div className="min-w-0 md:col-start-1 md:row-start-1">
+          <PortfolioVideo key={`${playerVersion}:${selectedVideoId}`} video={selectedVideo} onOpen={onPlayerOpen} />
         </div>
       </div>
 
-      {/* Video Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {videos.map((video) => (
-          <div
-            key={video.id}
-            onClick={() => handleVideoSelect(video)}
-            className="group relative bg-black-200 border border-black-300 rounded-xl overflow-hidden cursor-pointer hover:border-pink-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/20"
-          >
-            {/* Thumbnail */}
-            <div className="relative aspect-video overflow-hidden">
-              <img
-                src={video.thumbnail}
-                alt={video.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center shadow-lg shadow-pink-500/50 group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-8 h-8 text-white ml-1"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Duration Badge */}
-              <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/80 backdrop-blur-sm rounded text-white text-xs font-semibold">
-                {video.duration}
-              </div>
-            </div>
-
-            {/* Video Info */}
-            <div className="p-4">
-              <h4 className="text-white font-semibold mb-1 group-hover:text-pink-400 transition-colors">
-                {video.title}
-              </h4>
-              <p className="text-white-600 text-sm line-clamp-2">
-                {video.description}
-              </p>
-            </div>
-          </div>
-        ))}
+      <div className="mb-4 mt-10 flex flex-wrap items-center justify-between gap-x-6">
+        <h3 className="text-xl font-semibold text-white">
+          {t(expanded ? "videoShowcaseUI.collection" : "videoShowcaseUI.featured")}
+        </h3>
+        <button
+          type="button"
+          onClick={() => setExpanded((previous) => !previous)}
+          aria-expanded={expanded}
+          aria-controls="portfolio-video-list"
+          className="portfolio-link"
+        >
+          {expanded ? t("videoShowcaseUI.showFeatured") : t("videoShowcaseUI.showAll", { count: videos.length })}
+        </button>
       </div>
+      <ul id="portfolio-video-list" className="grid grid-cols-1 gap-3 min-[370px]:grid-cols-2 md:grid-cols-3">
+        {displayedVideos.map((video) => (
+          <li key={video.id} className="min-w-0">
+            <button
+              type="button"
+              onClick={() => choose(video.id)}
+              aria-pressed={video.id === selectedVideoId}
+              aria-controls="portfolio-theater"
+              className="group flex h-full w-full flex-col overflow-hidden rounded-xl border border-white/10 bg-black-200 text-left hover:border-pink-300/70 aria-pressed:border-pink-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-300"
+            >
+              <div className="relative aspect-video w-full bg-black">
+                <img
+                  src={video.poster}
+                  width={video.width}
+                  height={video.height}
+                  loading="lazy"
+                  decoding="async"
+                  alt=""
+                  className="h-full w-full object-contain"
+                />
+                <span className="absolute bottom-2 right-2 rounded bg-black/90 px-2 py-0.5 text-xs font-medium text-white">
+                  {video.duration}
+                </span>
+              </div>
+              <span className="px-3 pb-4 pt-3 font-semibold text-white group-hover:text-pink-200">{video.title}</span>
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      {expanded && (
+        <div className="mt-8 border-t border-white/10 pt-5">
+          <h3 className="text-lg font-semibold text-white">{t("videoShowcaseUI.archive")}</h3>
+          <ul className="mt-2 grid gap-x-6 sm:grid-cols-2">
+            {earlierVideos.map((video) => (
+              <li key={video.id}>
+                <a href={video.href} className="portfolio-link">{video.title[locale]} · YouTube</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* Skills Section */}
       <div className="mt-20 max-w-4xl mx-auto">

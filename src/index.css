@@ -370,3 +370,24 @@ button,
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #db2777, #7e22ce);
 }
+
+/* Shared controls for portfolio case pages and media. */
+.portfolio-link {
+  @apply inline-flex min-h-11 w-fit max-w-full items-center gap-2 rounded-sm py-2 font-semibold text-pink-300 underline underline-offset-4 hover:text-pink-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-300;
+  overflow-wrap: anywhere;
+}
+
+.portfolio-anchor {
+  scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, *, *::before, *::after {
+    scroll-behavior: auto !important;
+  }
+
+  .portfolio-motion {
+    animation: none !important;
+    transition: none !important;
+  }
+}

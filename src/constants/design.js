@@ -545,59 +545,6 @@ export const projectDetails = {
   },
 };
 
-// Video Showcase data
-export const videoShowcase = [
-  {
-    id: 1,
-    thumbnail: "/assets/spotlight1.png",
-    duration: "00:30",
-    videoUrl: "https://www.youtube.com/shorts/o0IVhvMOUqE",
-  },
-  {
-    id: 2,
-    thumbnail: "/assets/spotlight2.png",
-    duration: "00:28",
-    videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
-  },
-  {
-    id: 3,
-    thumbnail: "/assets/spotlight3.png",
-    duration: "00:41",
-    videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
-  },
-  {
-    id: 4,
-    thumbnail: "/assets/spotlight4.png",
-    duration: "00:25",
-    videoUrl: "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
-  },
-  // Professional/Corporate Content
-  {
-    id: 5,
-    thumbnail: "/assets/spotlight5.png",
-    duration: "00:45",
-    videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",
-  },
-  {
-    id: 6,
-    thumbnail: "/assets/spotlight1.png",
-    duration: "01:15",
-    videoUrl: "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
-  },
-  {
-    id: 7,
-    thumbnail: "/assets/spotlight2.png",
-    duration: "00:35",
-    videoUrl: "https://www.youtube.com/shorts/-48FW7i6peE",
-  },
-  {
-    id: 8,
-    thumbnail: "/assets/spotlight3.png",
-    duration: "00:55",
-    videoUrl: "https://youtube.com/shorts/vOZjQxlaAPY",
-  },
-];
-
 // Project categories for filtering
 export const designCategories = [
   "All",
