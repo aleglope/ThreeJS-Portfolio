@@ -1,3 +1,5 @@
+> Registro histórico: la ampliación de Diseño descrita aquí fue rechazada por Ale y se revierte en [RESTORE-DESIGN-2026-11-11.md](RESTORE-DESIGN-2026-11-11.md). Las comprobaciones técnicas no acreditan autorización del material ni aceptación visual.
+
 # AGonzL · Revisión local del 11 de noviembre de 2026
 
 Rama local `codex/portfolio-refresh-2026-11-11`. El servidor Vite escucha en `127.0.0.1:5178` y los enlaces a Alewences usan `VITE_SERVICES_URL=http://127.0.0.1:3016`. En un entorno sin esa variable el destino es `https://alewences.es`.

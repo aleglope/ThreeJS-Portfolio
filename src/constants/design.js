@@ -24,6 +24,13 @@ export const designProjects = [
     id: 1,
     category: "Graphic Design",
     image: "/assets/MatematicGalaxy.jpeg",
+    tags: [
+      "UX/UI Design",
+      "AI Logo Creation",
+      "Brand Identity",
+      "Web Design",
+      "Visual Systems",
+    ],
     hasDetailPage: true,
     slug: "brand-identity-design",
   },
@@ -31,6 +38,12 @@ export const designProjects = [
     id: 2,
     category: "AI Content",
     videoUrl: "/assets/MandalaIA.jpeg",
+    tags: [
+      "AI Video Generation",
+      "AI Avatars",
+      "Automated Advertising",
+      "Brand Storytelling",
+    ],
     hasDetailPage: true,
     slug: "ai-advertising-content",
   },
@@ -38,22 +51,43 @@ export const designProjects = [
     id: 3,
     category: "Music & Events",
     image: "/assets/MatematicNeon.jpeg",
+    tags: [
+      "VJing",
+      "Psychedelic Art",
+      "Concert Posters",
+      "Live Visuals",
+      "Music Events",
+    ],
     hasDetailPage: true,
     slug: "music-event-visuals",
   },
   {
     id: 4,
     image: "/assets/MatematicAurora.jpeg",
+    tags: ["Video Production", "Color Grading", "Sound Design"],
     hasDetailPage: true,
     slug: "ai-photographic-art",
     category: "AI Photography",
   },
 ];
 
-// Text and tags are localized in src/locales. Video dimensions come from docs/qa/mobile-2026-11-11.json.
+// Detailed project data with videos
 export const projectDetails = {
   "brand-identity-design": {
     id: 1,
+    year: "2024",
+    tags: [
+      "UX/UI Design",
+      "AI Logo Creation",
+      "Brand Identity",
+      "Web Design",
+      "Visual Systems",
+      "User Experience",
+      "Interface Design",
+      "Brand Strategy",
+      "AI-Enhanced Design",
+      "Digital Branding",
+    ],
     coverImage: "/assets/AIBrand.png",
     imageGallery: {
       Brand: [
@@ -118,7 +152,7 @@ export const projectDetails = {
           image: "/assets/brands/marca15.png",
         },
       ],
-      "Visual Studies": [
+      "UI/UX Designs": [
         {
           id: 7,
           image: "/assets/MatematicGalaxy.jpeg",
@@ -195,7 +229,6 @@ export const projectDetails = {
       {
         id: 1,
         videoUrl: "https://www.youtube.com/shorts/bPf5CPI8kGg",
-        width: 720, height: 720,
         thumbnail: "https://i.ytimg.com/vi/bPf5CPI8kGg/hqdefault.jpg",
         duration: "1:20",
       },
@@ -203,47 +236,65 @@ export const projectDetails = {
   },
   "ai-advertising-content": {
     id: 2,
+    year: "2025",
+    tags: [
+      "AI Video Generation",
+      "AI Avatars",
+      "Automated Advertising",
+      "Brand Storytelling",
+      "Machine Learning",
+      "Neural Networks",
+      "Deep Learning",
+      "Creative AI",
+    ],
     coverImage: "/assets/AIGeneratedAdvertising.png",
     videos: [
       {
         id: 1,
         videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",
-        width: 720, height: 1280,
-        thumbnail: "https://i.ytimg.com/vi/W5W5vN9W628/hqdefault.jpg",
+        thumbnail: "/assets/spotlight1.png",
         duration: "1:02",
       },
       {
         id: 2,
         videoUrl: "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
-        width: 720, height: 1280,
-        thumbnail: "https://i.ytimg.com/vi/d0cXdWOA9TA/hqdefault.jpg",
-        duration: "0:22",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "00:23",
       },
       {
         id: 3,
         videoUrl: "https://www.youtube.com/shorts/-48FW7i6peE",
-        width: 720, height: 820,
-        thumbnail: "https://i.ytimg.com/vi/-48FW7i6peE/hqdefault.jpg",
-        duration: "0:51",
+        thumbnail: "/assets/spotlight3.png",
+        duration: "00:51",
       },
       {
         id: 4,
         videoUrl: "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
-        width: 720, height: 1280,
-        thumbnail: "https://i.ytimg.com/vi/P_b8DT46CHM/hqdefault.jpg",
-        duration: "0:13",
+        thumbnail: "/assets/spotlight4.png",
+        duration: "00:25",
       },
       {
         id: 5,
         videoUrl: "https://www.youtube.com/shorts/o0IVhvMOUqE",
-        width: 592, height: 1072,
-        thumbnail: "https://i.ytimg.com/vi/o0IVhvMOUqE/hqdefault.jpg",
-        duration: "0:12",
+        thumbnail: "/assets/spotlight5.png",
+        duration: "00:30",
       },
     ],
   },
   "music-event-visuals": {
     id: 3,
+    year: "2024",
+    tags: [
+      "VJing",
+      "Psychedelic Art",
+      "Concert Posters",
+      "Live Visuals",
+      "Music Events",
+      "Electronic Music",
+      "Festival Design",
+      "Real-time Graphics",
+      "Audio-visual Sync",
+    ],
     coverImage: "/assets/photoVJing.png",
     imageGallery: {
       posters: [
@@ -361,42 +412,45 @@ export const projectDetails = {
       {
         id: 1,
         videoUrl: "https://www.youtube.com/watch?v=vOZjQxlaAPY",
-        width: 480, height: 480,
-        thumbnail: "https://i.ytimg.com/vi/vOZjQxlaAPY/hqdefault.jpg",
-        duration: "0:24",
+        thumbnail: "/assets/spotlight1.png",
+        duration: "00:25",
       },
       {
         id: 2,
         videoUrl: "https://www.youtube.com/watch?v=zwHNArb4730",
-        width: 854, height: 480,
-        thumbnail: "https://i.ytimg.com/vi/zwHNArb4730/hqdefault.jpg",
-        duration: "0:16",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "00:16",
       },
       {
         id: 3,
         videoUrl: "https://youtube.com/shorts/H7lUU5mzyio?feature=share",
-        width: 720, height: 1280,
-        thumbnail: "https://i.ytimg.com/vi/H7lUU5mzyio/hqdefault.jpg",
-        duration: "2:57",
+        thumbnail: "/assets/spotlight3.png",
+        duration: "02:57",
       },
       {
         id: 4,
         videoUrl: "https://www.youtube.com/watch?v=Pthshy6sEHY",
-        width: 640, height: 360,
-        thumbnail: "https://i.ytimg.com/vi/Pthshy6sEHY/hqdefault.jpg",
-        duration: "2:14",
+        thumbnail: "/assets/spotlight4.png",
+        duration: "02:15",
       },
       {
         id: 5,
         videoUrl: "https://www.youtube.com/watch?v=1LTbk3_hLCU",
-        width: 356, height: 640,
-        thumbnail: "https://i.ytimg.com/vi/1LTbk3_hLCU/hqdefault.jpg",
-        duration: "5:01",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "05:00",
       },
     ],
   },
   "ai-photographic-art": {
     id: 4,
+    year: "2025",
+    tags: [
+      "artistic photography",
+      "digital art",
+      "AI photography",
+      "innovative visuals",
+      "AI-powered photography",
+    ],
     coverImage: "/assets/photoart/art1.png",
     imageGallery: {
       photographicArt: [
@@ -478,29 +532,79 @@ export const projectDetails = {
       {
         id: 1,
         videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
-        width: 720, height: 720,
-        thumbnail: "https://i.ytimg.com/vi/7UwD7YRqOLg/hqdefault.jpg",
-        duration: "0:28",
+        thumbnail: "/assets/spotlight1.png",
+        duration: "00:28",
       },
       {
         id: 2,
         videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
-        width: 720, height: 1280,
-        thumbnail: "https://i.ytimg.com/vi/jrcoY_lo0Nw/hqdefault.jpg",
-        duration: "0:40",
+        thumbnail: "/assets/spotlight2.png",
+        duration: "00:41",
       },
     ],
   },
 };
 
+// Video Showcase data
+export const videoShowcase = [
+  {
+    id: 1,
+    thumbnail: "/assets/spotlight1.png",
+    duration: "00:30",
+    videoUrl: "https://www.youtube.com/shorts/o0IVhvMOUqE",
+  },
+  {
+    id: 2,
+    thumbnail: "/assets/spotlight2.png",
+    duration: "00:28",
+    videoUrl: "https://youtube.com/shorts/7UwD7YRqOLg?feature=share",
+  },
+  {
+    id: 3,
+    thumbnail: "/assets/spotlight3.png",
+    duration: "00:41",
+    videoUrl: "https://youtube.com/shorts/jrcoY_lo0Nw?feature=share",
+  },
+  {
+    id: 4,
+    thumbnail: "/assets/spotlight4.png",
+    duration: "00:25",
+    videoUrl: "https://youtube.com/shorts/P_b8DT46CHM?feature=share",
+  },
+  // Professional/Corporate Content
+  {
+    id: 5,
+    thumbnail: "/assets/spotlight5.png",
+    duration: "00:45",
+    videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",
+  },
+  {
+    id: 6,
+    thumbnail: "/assets/spotlight1.png",
+    duration: "01:15",
+    videoUrl: "https://youtube.com/shorts/d0cXdWOA9TA?feature=share",
+  },
+  {
+    id: 7,
+    thumbnail: "/assets/spotlight2.png",
+    duration: "00:35",
+    videoUrl: "https://www.youtube.com/shorts/-48FW7i6peE",
+  },
+  {
+    id: 8,
+    thumbnail: "/assets/spotlight3.png",
+    duration: "00:55",
+    videoUrl: "https://youtube.com/shorts/vOZjQxlaAPY",
+  },
+];
+
 // Project categories for filtering
 export const designCategories = [
   "All",
-  "Client Work",
   "AI Content",
   "Music & Events",
   "Graphic Design",
-  "AI Photography",
+  "Video Editing",
 ];
 
 // Project types for contact form
