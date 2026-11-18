@@ -1,0 +1,29 @@
+{
+  "scope": "One authorized R05 video in existing ai-advertising-content detail; original categories, routes and videos preserved",
+  "date": "2026-11-18",
+  "source_revision": "Champi R05",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 18,
+    "video": "H.264",
+    "audio": "AAC"
+  },
+  "files": [
+    {
+      "path": "media/design/champi-navidad-2026/champi-tres-menus-navidad-18s-9x16.mp4",
+      "bytes": 7216318,
+      "sha256": "82ea29da2090ee0e027ef0a6fe2a710cb4fda8aa89cbea959d8445f00d7ac604"
+    },
+    {
+      "path": "media/design/champi-navidad-2026/champi-tres-menus-navidad-9x16.png",
+      "bytes": 2178258,
+      "sha256": "a4cbfcedc0475a7feb30aa2911391265ea753cb25227af3b9f2a0f097b581531"
+    },
+    {
+      "path": "media/design/champi-navidad-2026/music-credit.txt",
+      "bytes": 527,
+      "sha256": "462487bf8903fab90978ab1936d200b9f44877a0c8eafe6919d6ba636e81c3c5"
+    }
+  ]
+}

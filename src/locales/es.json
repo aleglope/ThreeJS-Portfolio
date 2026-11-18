@@ -366,7 +366,10 @@
     "projectVideos": "Vídeos del proyecto",
     "allVideos": "Todos los vídeos",
     "nowPlaying": "Reproduciendo",
-    "projectGallery": "Galería del proyecto"
+    "projectGallery": "Galería del proyecto",
+    "musicCredit": "Música:",
+    "musicAdaptation": "Fragmento editado, con ajuste de ritmo y nivel, fundidos y mezcla con efectos.",
+    "selectedVideo": "Seleccionado"
   },
   "designGalleryGroups": {
     "Brand": "Marca",
@@ -551,6 +554,10 @@
         "5": {
           "title": "ANUNCIO CYBERPUNK DE ALEWENCES GENERADO CON IA - LATA HIPERREALISTA",
           "description": "🤯 ¿Crees que esto lo grabó un equipo de rodaje? Piénsalo otra vez. 💡 Esto es lo que ocurre cuando mezclas Inteligencia Artificial con una idea publicitaria brutal. 🎥✨ Hiperrealismo, neón y el gusto premium de ALEWENCES, todo generado en minutos. Olvídate de los límites creativos. Si puedes soñarlo, la IA puede crearlo. 🚀 (¡Para emprendedores y marcas!): ALTO 🛑 Deja de gastar miles en producciones lentas. Este anuncio de calidad Hollywood se creó con IA en una fracción del tiempo (¡y del coste!) 🤯. Una lata hiperrealista en un mundo cyberpunk. La Inteligencia Artificial es la nueva herramienta de marketing. Así es como se ve un anuncio cuando no hay límites."
+        },
+        "6": {
+          "title": "Tres menús, un anuncio: Navidad en La Parrilla de Champi",
+          "description": "De las fotos reales de la carta a una pieza de 18 segundos para redes sociales. Reunimos los menús de 35, 45 y 60 € con collage animado, precios legibles, música y un cierre que invita a reservar por teléfono. Dirección de arte y edición asistida por IA, conservando la identidad del restaurante y sus platos reales. Un ejemplo de cómo convertir la oferta de un negocio local en un anuncio claro y visual."
         }
       }
     },
