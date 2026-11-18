@@ -1,0 +1,87 @@
+{
+  "viewportChecks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentWidth": 390,
+      "video": {
+        "width": 348,
+        "height": 633,
+        "fit": "contain",
+        "duration": 18
+      }
+    },
+    {
+      "brokenImages": [],
+      "documentWidth": 320,
+      "video": [
+        {
+          "duration": 18,
+          "error": null,
+          "fit": "contain",
+          "height": 426,
+          "videoHeight": 1920,
+          "videoWidth": 1080,
+          "width": 278
+        }
+      ],
+      "viewport": {
+        "height": 568,
+        "width": 320
+      }
+    },
+    {
+      "brokenImages": [],
+      "documentWidth": 844,
+      "video": [
+        {
+          "duration": 18,
+          "error": null,
+          "fit": "contain",
+          "height": 292.5,
+          "videoHeight": 1920,
+          "videoWidth": 1080,
+          "width": 762
+        }
+      ],
+      "viewport": {
+        "height": 390,
+        "width": 844
+      }
+    },
+    {
+      "brokenImages": [],
+      "documentWidth": 1440,
+      "video": [
+        {
+          "duration": 18,
+          "error": null,
+          "fit": "contain",
+          "height": 675,
+          "videoHeight": 1920,
+          "videoWidth": 1080,
+          "width": 787.328125
+        }
+      ],
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    }
+  ],
+  "playback": {
+    "duration": 18,
+    "ended": true,
+    "error": null,
+    "muted": false
+  },
+  "languageSwitch": [
+    "es",
+    "en",
+    "es"
+  ],
+  "existingYoutubeSelectable": true,
+  "consoleErrors": []
+}

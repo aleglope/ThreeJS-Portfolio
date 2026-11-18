@@ -236,7 +236,7 @@ export const projectDetails = {
   },
   "ai-advertising-content": {
     id: 2,
-    year: "2025",
+    year: "2025–2026",
     tags: [
       "AI Video Generation",
       "AI Avatars",
@@ -249,6 +249,21 @@ export const projectDetails = {
     ],
     coverImage: "/assets/AIGeneratedAdvertising.png",
     videos: [
+      {
+        id: 6,
+        videoUrl: "/media/design/champi-navidad-2026/champi-tres-menus-navidad-18s-9x16.mp4",
+        thumbnail: "/media/design/champi-navidad-2026/champi-tres-menus-navidad-9x16.png",
+        duration: "00:18",
+        orientation: "portrait",
+        thumbnailFit: "contain",
+        musicCredit: {
+          track: "Wish Background",
+          author: "Kevin MacLeod (incompetech.com)",
+          sourceUrl: "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100391",
+          license: "CC BY 4.0",
+          licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+        },
+      },
       {
         id: 1,
         videoUrl: "https://www.youtube.com/shorts/W5W5vN9W628",

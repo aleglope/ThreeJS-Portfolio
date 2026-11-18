@@ -50,19 +50,41 @@ test("literal media, model and texture references resolve to nonempty files", ()
   assert.deepEqual(failures, []);
 });
 
-test("Design keeps the original categories, project routes, videos and gallery assets", () => {
+test("Design keeps the original inventory alongside the authorized Champi addition", () => {
   const actual = {
     categories: designCategories,
     projects: designProjects.map(({slug, category, image, videoUrl}) => ({slug, category, image, videoUrl})),
     showcase: videoShowcase.map(({id, videoUrl, thumbnail}) => ({id, videoUrl, thumbnail})),
     details: Object.fromEntries(Object.entries(projectDetails).map(([slug, project]) => [slug, {
-      videos: project.videos.map(({id, videoUrl, thumbnail}) => ({id, videoUrl, thumbnail})),
+      videos: project.videos
+        .filter((video) => !(slug === "ai-advertising-content" && video.id === 6))
+        .map(({id, videoUrl, thumbnail}) => ({id, videoUrl, thumbnail})),
       galleries: Object.fromEntries(Object.entries(project.imageGallery || {}).map(([key, images]) => [key, images.map(({image}) => image)])),
     }])),
   };
   assert.deepEqual(JSON.parse(JSON.stringify(actual)), originalDesign.inventory);
   for (const locale of Object.values(locales)) {
     for (const { id } of videoShowcase) assert.ok(locale.videoShowcaseData[id]?.title?.trim(), `Missing original video title: ${id}`);
+  }
+});
+
+test("Champi is one playable, credited addition in the existing advertising category", () => {
+  const videos = projectDetails["ai-advertising-content"].videos;
+  assert.deepEqual(videos.map(({id}) => id), [6, 1, 2, 3, 4, 5]);
+  const video = videos[0];
+  assert.equal(extname(publicAsset(video.videoUrl)), ".mp4");
+  publicAsset(video.thumbnail);
+  assert.equal(video.orientation, "portrait");
+  assert.equal(video.thumbnailFit, "contain");
+  assert.equal(video.duration, "00:18");
+  assert.equal(video.musicCredit.licenseUrl, "https://creativecommons.org/licenses/by/4.0/");
+  for (const locale of Object.values(locales)) {
+    const content = locale.projectDetailsData["ai-advertising-content"].videos[6];
+    assert.ok(content.title.trim());
+    assert.ok(content.description.trim());
+    for (const field of ["musicCredit", "musicAdaptation", "selectedVideo"]) {
+      assert.ok(locale.projectDetailUI[field].trim());
+    }
   }
 });
 
