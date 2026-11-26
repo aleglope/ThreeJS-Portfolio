@@ -366,7 +366,10 @@
     "projectVideos": "Project Videos",
     "allVideos": "All Videos",
     "nowPlaying": "Now Playing",
-    "projectGallery": "Project Gallery"
+    "projectGallery": "Project Gallery",
+    "musicCredit": "Music:",
+    "musicAdaptation": "Edited excerpt with tempo and level adjustments, fades and sound effects.",
+    "selectedVideo": "Selected"
   },
   "designGalleryGroups": {
     "Brand": "Brand",
@@ -551,6 +554,10 @@
         "5": {
           "title": "AI-GENERATED ALEWENCES CYBERPUNK AD - HYPERREALISTIC CAN",
           "description": "🤯 Do you think this was filmed by a shooting crew? Think again. 💡 This is what happens when you mix Artificial Intelligence with a brutal advertising idea. 🎥✨ Hyperrealism, neon and the premium taste of ALEWENCES, all generated in minutes. Forget about creative limits. If you can dream it, AI can create it. 🚀 (For Entrepreneurs and Brands!): STOP 🛑 Stop spending thousands on slow production. This Hollywood-quality blockbuster ad was created with AI in a fraction of the time (and cost!) 🤯. A hyperrealistic can in a cyberpunk world. Artificial Intelligence is the new marketing tool. This is what an ad looks like when there are no limits."
+        },
+        "6": {
+          "title": "Three menus, one advert: Christmas at La Parrilla de Champi",
+          "description": "Real menu photographs turned into an 18-second social video. The €35, €45 and €60 menus come together through animated collage, readable pricing, music and a closing invitation to book by phone. Art direction and AI-assisted editing preserve the restaurant’s identity and real dishes. A practical example of turning a local business’s offer into a clear, visual advert."
         }
       }
     },

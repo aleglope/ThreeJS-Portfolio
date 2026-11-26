@@ -186,7 +186,9 @@ const ProjectDetail = () => {
                 {/* Video Player */}
                 <div
                   className="relative bg-black"
-                  style={{ paddingTop: "56.25%" }}
+                  style={selectedVideo.orientation === "portrait"
+                    ? { height: "min(75svh, 720px)" }
+                    : { paddingTop: "56.25%" }}
                 >
                   <div className="absolute inset-0">
                     {selectedVideo.videoUrl.includes("youtube.com") ||
@@ -223,10 +225,17 @@ const ProjectDetail = () => {
                       />
                     ) : (
                       <video
+                        key={selectedVideo.videoUrl}
                         src={selectedVideo.videoUrl}
+                        poster={selectedVideo.thumbnail}
+                        aria-label={selectedVideo.title}
                         controls
+                        preload="metadata"
                         className="w-full h-full object-contain"
                         playsInline
+                        onPlay={() => setIsPlaying(true)}
+                        onPause={() => setIsPlaying(false)}
+                        onEnded={() => setIsPlaying(false)}
                       />
                     )}
                   </div>
@@ -243,6 +252,17 @@ const ProjectDetail = () => {
                       {selectedVideo.duration}
                     </span>
                   </div>
+                  {selectedVideo.musicCredit && (
+                    <p className="mt-4 text-xs leading-relaxed text-white-600">
+                      {t("projectDetailUI.musicCredit")} {" "}
+                      <a href={selectedVideo.musicCredit.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-pink-400">
+                        {selectedVideo.musicCredit.track} — {selectedVideo.musicCredit.author}
+                      </a>. {" "}
+                      <a href={selectedVideo.musicCredit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-pink-400">
+                        {selectedVideo.musicCredit.license}
+                      </a>. {t("projectDetailUI.musicAdaptation")}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
@@ -256,6 +276,7 @@ const ProjectDetail = () => {
                 {project.videos.map((video) => (
                   <button
                     key={video.id}
+                    aria-pressed={selectedVideo.id === video.id}
                     onClick={() => {
                       setSelectedVideoId(video.id);
                       setIsPlaying(false);
@@ -272,7 +293,8 @@ const ProjectDetail = () => {
                         <img
                           src={video.thumbnail}
                           alt={video.title}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          loading="lazy"
+                          className={`w-full h-full transition-transform duration-300 ${video.thumbnailFit === "contain" ? "object-contain" : "object-cover group-hover:scale-110"}`}
                         />
                         {/* Play Overlay */}
                         <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -293,7 +315,9 @@ const ProjectDetail = () => {
                         {/* Currently Playing Badge */}
                         {selectedVideo.id === video.id && (
                           <div className="absolute top-2 left-2 px-2 py-1 bg-pink-500 rounded text-white text-xs font-semibold">
-                            {t("projectDetailUI.nowPlaying")}
+                            {t(video.orientation === "portrait" && !isPlaying
+                              ? "projectDetailUI.selectedVideo"
+                              : "projectDetailUI.nowPlaying")}
                           </div>
                         )}
                       </div>
